@@ -41,7 +41,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OliveDrab;
-            this.label1.Location = new System.Drawing.Point(13, 549);
+            this.label1.Location = new System.Drawing.Point(3, 539);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 13);
             this.label1.TabIndex = 0;
@@ -86,7 +86,6 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(480, 600);
             this.Name = "Splash";
-            this.Padding = new System.Windows.Forms.Padding(10);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MAP Planner";
             this.TopMost = true;
