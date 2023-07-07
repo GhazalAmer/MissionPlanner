@@ -7971,5 +7971,20 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             if (InputBox.Show("Opacity 0.0-1.0", "Enter opacity (0.0-1.0)", ref ans) == DialogResult.OK)
                 GDAL.GDALProvider.Instance.opacity = double.Parse(InputBox.value);
         }
+
+        private void FollowMePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelWaypoints_CloseClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearClick_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

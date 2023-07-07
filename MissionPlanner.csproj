@@ -54,6 +54,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <CodeAnalysisRuleSet>
     </CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace>MissionPlanner</RootNamespace>
@@ -290,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightPlanner.uk.resx">
       <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlannerMarakeb.resx">
+      <DependentUpon>FlightPlannerMarakeb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Help.uk.resx">
       <DependentUpon>Help.cs</DependentUpon>
@@ -895,6 +899,12 @@
     <Compile Include="GCSViews\ConfigurationView\DeviceInfo.cs" />
     <Compile Include="GCSViews\ConfigurationView\DroneCANModel.cs" />
     <Compile Include="GCSViews\ConfigurationView\uitype.cs" />
+    <Compile Include="GCSViews\FlightPlannerMarakeb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\FlightPlannerMarakeb.Designer.cs">
+      <DependentUpon>FlightPlannerMarakeb.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Joystick\JoystickAxis.cs">
       <SubType>UserControl</SubType>
@@ -908,6 +918,7 @@
       <DependentUpon>MainV2.cs</DependentUpon>
     </Compile>
     <Compile Include="NativeMethods.cs" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Drivers\cubeorangeplus.cat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
