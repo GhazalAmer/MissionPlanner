@@ -7971,5 +7971,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             if (InputBox.Show("Opacity 0.0-1.0", "Enter opacity (0.0-1.0)", ref ans) == DialogResult.OK)
                 GDAL.GDALProvider.Instance.opacity = double.Parse(InputBox.value);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("FlightData");
+        }
     }
 }

@@ -4843,6 +4843,7 @@
     <Content Include="aircraft.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="BlackBKG.jpg" />
     <Content Include="Drivers\CubeOrangePlus.inf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
