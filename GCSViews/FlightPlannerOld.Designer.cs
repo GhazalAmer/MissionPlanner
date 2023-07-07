@@ -1978,16 +1978,7 @@
             // 
             // FlightPlanner
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.panelBASE);
-            resources.ApplyResources(this, "$this");
-            this.Name = "FlightPlanner";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightPlanner_FormClosing);
-            this.Load += new System.EventHandler(this.FlightPlanner_Load);
-            this.Resize += new System.EventHandler(this.Planner_Resize);
-            this.panelMap.ResumeLayout(false);
-            this.panelMap.PerformLayout();
+        
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.DrawPanel.ResumeLayout(false);
@@ -2013,7 +2004,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.WPTh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WPSp)).EndInit();
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Commands)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -2032,19 +2022,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LatDeg)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.panelBASE.ResumeLayout(false);
-            this.panelWaypoints.ResumeLayout(false);
-            this.panelWaypoints.PerformLayout();
-            this.panelAction.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();            
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource1)).EndInit();
             this.ResumeLayout(false);
 

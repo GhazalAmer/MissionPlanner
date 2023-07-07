@@ -45,46 +45,43 @@ namespace MissionPlanner.GCSViews
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightPlanner));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.CHK_verifyheight = new System.Windows.Forms.CheckBox();
-            this.TXT_WPRad = new System.Windows.Forms.TextBox();
-            this.TXT_DefaultAlt = new System.Windows.Forms.TextBox();
-            this.LBL_WPRad = new System.Windows.Forms.Label();
-            this.LBL_defalutalt = new System.Windows.Forms.Label();
-            this.TXT_loiterrad = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.but_writewpfast = new MissionPlanner.Controls.MyButton();
-            this.BUT_write = new MissionPlanner.Controls.MyButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.newhome = new MissionPlanner.Controls.MyButton();
+            this.ToolsBTN = new MissionPlanner.Controls.MyButton();
+            this.EditButton = new MissionPlanner.Controls.MyButton();
+            this.Reversewpbutton = new MissionPlanner.Controls.MyButton();
+            this.BUT_loadwpfile = new MissionPlanner.Controls.MyButton();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.myButton11 = new MissionPlanner.Controls.MyButton();
+            this.myButton10 = new MissionPlanner.Controls.MyButton();
+            this.myButton9 = new MissionPlanner.Controls.MyButton();
+            this.myButton8 = new MissionPlanner.Controls.MyButton();
             this.BUT_read = new MissionPlanner.Controls.MyButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.TXT_homealt = new System.Windows.Forms.TextBox();
-            this.TXT_homelng = new System.Windows.Forms.TextBox();
-            this.TXT_homelat = new System.Windows.Forms.TextBox();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label6 = new System.Windows.Forms.Label();
-            this.coords1 = new MissionPlanner.Controls.Coords();
-            this.lbl_status = new System.Windows.Forms.Label();
-            this.panelWaypoints = new System.Windows.Forms.Panel();
-            this.chk_usemavftp = new System.Windows.Forms.CheckBox();
-            this.but_mincommands = new MissionPlanner.Controls.MyButton();
-            this.CMB_altmode = new System.Windows.Forms.ComboBox();
-            this.CHK_splinedefault = new System.Windows.Forms.CheckBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.TXT_altwarn = new System.Windows.Forms.TextBox();
-            this.Commands = new MissionPlanner.Controls.MyDataGridView();
+            this.BUT_write = new MissionPlanner.Controls.MyButton();
+            this.HOLDQUICK = new MissionPlanner.Controls.MyButton();
+            this.BUT_saveWPFile = new MissionPlanner.Controls.MyButton();
+            this.ClearClick = new MissionPlanner.Controls.MyButton();
+            this.AUTOQUICK = new MissionPlanner.Controls.MyButton();
+            this.switchview = new MissionPlanner.Controls.MyButton();
+            this.SpeedPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.myButton6 = new MissionPlanner.Controls.MyButton();
+            this.myButton7 = new MissionPlanner.Controls.MyButton();
+            this.WPTh = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.WPSp = new System.Windows.Forms.NumericUpDown();
+            this.myButton1 = new MissionPlanner.Controls.MyButton();
+            this.Commands = new System.Windows.Forms.DataGridView();
             this.Command = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Param1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Param2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,379 +103,498 @@ namespace MissionPlanner.GCSViews
             this.Dist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TagData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BUT_Add = new MissionPlanner.Controls.MyButton();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.panelAction = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.chk_grid = new System.Windows.Forms.CheckBox();
-            this.comboBoxMapType = new System.Windows.Forms.ComboBox();
-            this.lnk_kml = new System.Windows.Forms.LinkLabel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_wpfile = new System.Windows.Forms.Label();
-            this.BUT_loadwpfile = new MissionPlanner.Controls.MyButton();
-            this.BUT_saveWPFile = new MissionPlanner.Controls.MyButton();
-            this.splitter2 = new System.Windows.Forms.Splitter();
+            this.panelBASE = new System.Windows.Forms.Panel();
+            this.splitter2 = new BSE.Windows.Forms.Splitter();
+            this.splitter1 = new BSE.Windows.Forms.Splitter();
             this.panelMap = new System.Windows.Forms.Panel();
+            this.zoom_out = new MissionPlanner.Controls.MyButton();
+            this.zoom_in = new MissionPlanner.Controls.MyButton();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.myButton22 = new MissionPlanner.Controls.MyButton();
+            this.myButton21 = new MissionPlanner.Controls.MyButton();
+            this.myButton18 = new MissionPlanner.Controls.MyButton();
+            this.label19 = new System.Windows.Forms.Label();
+            this.Cancel = new MissionPlanner.Controls.MyButton();
+            this.FollowMePanel = new System.Windows.Forms.Panel();
+            this.DrawPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.SavePolysBTN = new MissionPlanner.Controls.MyButton();
+            this.ImportPolysBTN = new MissionPlanner.Controls.MyButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.NewDrawPoly = new MissionPlanner.Controls.MyButton();
+            this.ApplyPoly = new MissionPlanner.Controls.MyButton();
+            this.DeletePoly = new MissionPlanner.Controls.MyButton();
+            this.label23 = new System.Windows.Forms.Label();
+            this.PolyNameBox = new System.Windows.Forms.TextBox();
+            this.ColorBTN = new System.Windows.Forms.Button();
+            this.measurePanel = new System.Windows.Forms.Panel();
+            this.UnitsMeasureBTN = new MissionPlanner.Controls.MyButton();
+            this.measureLabel = new System.Windows.Forms.Label();
+            this.ToolsTable = new System.Windows.Forms.TableLayoutPanel();
+            this.DrawBTN = new MissionPlanner.Controls.MyButton();
+            this.MeasureBTN = new MissionPlanner.Controls.MyButton();
+            this.Joystick_Panel = new System.Windows.Forms.Panel();
+            this.FormatPanel = new System.Windows.Forms.Panel();
+            this.myButton17 = new MissionPlanner.Controls.MyButton();
+            this.myButton16 = new MissionPlanner.Controls.MyButton();
+            this.myButton15 = new MissionPlanner.Controls.MyButton();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
+            this.PlaceAfterPanel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.myButton19 = new MissionPlanner.Controls.MyButton();
+            this.myButton20 = new MissionPlanner.Controls.MyButton();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.SwarmPanel = new System.Windows.Forms.Panel();
+            this.Joystickbutton = new MissionPlanner.Controls.MyButton();
+            this.myButton5 = new MissionPlanner.Controls.MyButton();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.myButton3 = new MissionPlanner.Controls.MyButton();
+            this.label15 = new System.Windows.Forms.Label();
+            this.TXT_WPRad = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.myButton13 = new MissionPlanner.Controls.MyButton();
+            this.Deletebu = new MissionPlanner.Controls.MyButton();
+            this.myButton14 = new MissionPlanner.Controls.MyButton();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.BackWP = new System.Windows.Forms.Button();
+            this.WPNumber = new System.Windows.Forms.NumericUpDown();
+            this.NextWP = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.myButton4 = new MissionPlanner.Controls.MyButton();
+            this.myButton2 = new MissionPlanner.Controls.MyButton();
+            this.myButton12 = new MissionPlanner.Controls.MyButton();
+            this.EW = new System.Windows.Forms.Button();
+            this.NS = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.LongSec = new System.Windows.Forms.NumericUpDown();
+            this.LongMin = new System.Windows.Forms.NumericUpDown();
+            this.LongDeg = new System.Windows.Forms.NumericUpDown();
+            this.LatSec = new System.Windows.Forms.NumericUpDown();
+            this.LatMin = new System.Windows.Forms.NumericUpDown();
+            this.LatDeg = new System.Windows.Forms.NumericUpDown();
+            this.cmb_missiontype = new System.Windows.Forms.ComboBox();
+            this.MainMap = new MissionPlanner.Controls.myGMAP();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.HOMECLICK = new System.Windows.Forms.Button();
+            this.mytest = new MissionPlanner.Controls.MyButton();
+            this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_homedist = new System.Windows.Forms.Label();
             this.lbl_prevdist = new System.Windows.Forms.Label();
             this.trackBar1 = new MissionPlanner.Controls.MyTrackBar();
             this.label11 = new System.Windows.Forms.Label();
-            this.lbl_distance = new System.Windows.Forms.Label();
-            this.cmb_missiontype = new System.Windows.Forms.ComboBox();
-            this.MainMap = new MissionPlanner.Controls.myGMAP();
+            this.panelWaypoints = new BSE.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelAction = new BSE.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.coords1 = new MissionPlanner.Controls.Coords();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.chk_grid = new System.Windows.Forms.CheckBox();
+            this.lbl_status = new System.Windows.Forms.Label();
+            this.comboBoxMapType = new System.Windows.Forms.ComboBox();
+            this.lnk_kml = new System.Windows.Forms.LinkLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_wpfile = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.LinkLabel();
+            this.TXT_homelat = new System.Windows.Forms.TextBox();
+            this.TXT_homelng = new System.Windows.Forms.TextBox();
+            this.TXT_homealt = new System.Windows.Forms.TextBox();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CMB_altmode = new System.Windows.Forms.ComboBox();
+            this.CHK_splinedefault = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.TXT_altwarn = new System.Windows.Forms.TextBox();
+            this.LBL_WPRad = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TXT_loiterrad = new System.Windows.Forms.TextBox();
+            this.LBL_defalutalt = new System.Windows.Forms.Label();
+            this.TXT_DefaultAlt = new System.Windows.Forms.TextBox();
+            this.CHK_verifyheight = new System.Windows.Forms.CheckBox();
+            this.BUT_Add = new MissionPlanner.Controls.MyButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.insertWpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.currentPositionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.insertSplineWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loiterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loiterForeverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loitertimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loitercirclesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jumpstartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jumpwPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rTLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.landToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.takeoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setROIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.polygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addPolygonPointToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromSHPToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromCurrentWaypointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.offsetPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.geoFenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GeoFenceuploadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GeoFencedownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setReturnLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadFromFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setRallyPointToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.getRallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveRallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearRallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToFileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadFromFileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.autoWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createWpCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createSplineCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createCircleSurveyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.surveyGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mapToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ContextMeasure = new System.Windows.Forms.ToolStripMenuItem();
-            this.rotateMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prefetchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prefetchWPPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kMLOverlayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.elevationGraphToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reverseWPsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileLoadSaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadWPFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadAndAppendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveWPFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadKMLFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadSHPFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pOIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.poiaddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.poideleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.poieditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trackerHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifyAltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enterUTMCoordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.switchDockingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addPolygonPointToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromSHPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fenceInclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fenceExclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelBASE = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.contextMenuStripPoly = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.convertWPToPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.offsetPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.drawAPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.but_mincommands = new MissionPlanner.Controls.MyButton();
+            this.chk_usemavftp = new System.Windows.Forms.CheckBox();
+            this.rallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.geoFenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createSplineCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createCircleSurveyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pOIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trackerHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fenceInclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fenceExclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStripZoom = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.zoomToVehicleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomToMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomToHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gDALOpacityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel5.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panelWaypoints.SuspendLayout();
+            this.contextMenuStripPoly = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.currentStateBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.SpeedPanel.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPTh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPSp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
+            this.panelBASE.SuspendLayout();
+            this.panelMap.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.DrawPanel.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.measurePanel.SuspendLayout();
+            this.ToolsTable.SuspendLayout();
+            this.FormatPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.PlaceAfterPanel.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LongSec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongDeg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatSec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatDeg)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.panelWaypoints.SuspendLayout();
             this.panelAction.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panelMap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
-            this.panelBASE.SuspendLayout();
             this.contextMenuStripPoly.SuspendLayout();
-            this.contextMenuStripZoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // CHK_verifyheight
+            // currentStateBindingSource
             // 
-            resources.ApplyResources(this.CHK_verifyheight, "CHK_verifyheight");
-            this.CHK_verifyheight.Name = "CHK_verifyheight";
-            this.CHK_verifyheight.UseVisualStyleBackColor = true;
+            this.currentStateBindingSource.DataSource = typeof(MissionPlanner.CurrentState);
             // 
-            // TXT_WPRad
+            // newhome
             // 
-            resources.ApplyResources(this.TXT_WPRad, "TXT_WPRad");
-            this.TXT_WPRad.Name = "TXT_WPRad";
-            this.TXT_WPRad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_WPRad_KeyPress);
-            this.TXT_WPRad.Leave += new System.EventHandler(this.TXT_WPRad_Leave);
+            resources.ApplyResources(this.newhome, "newhome");
+            this.newhome.BGGradBot = System.Drawing.Color.DarkGray;
+            this.newhome.BGGradTop = System.Drawing.Color.DimGray;
+            this.newhome.Name = "newhome";
+            this.newhome.Outline = System.Drawing.Color.Black;
+            this.newhome.TextColor = System.Drawing.Color.Black;
+            this.newhome.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.newhome.UseVisualStyleBackColor = true;
             // 
-            // TXT_DefaultAlt
+            // ToolsBTN
             // 
-            resources.ApplyResources(this.TXT_DefaultAlt, "TXT_DefaultAlt");
-            this.TXT_DefaultAlt.Name = "TXT_DefaultAlt";
-            this.TXT_DefaultAlt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_DefaultAlt_KeyPress);
-            this.TXT_DefaultAlt.Leave += new System.EventHandler(this.TXT_DefaultAlt_Leave);
+            resources.ApplyResources(this.ToolsBTN, "ToolsBTN");
+            this.ToolsBTN.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ToolsBTN.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ToolsBTN.Name = "ToolsBTN";
+            this.ToolsBTN.Outline = System.Drawing.Color.Black;
+            this.ToolsBTN.TextColor = System.Drawing.Color.White;
+            this.ToolsBTN.TextColorNotEnabled = System.Drawing.Color.White;
+            this.ToolsBTN.UseVisualStyleBackColor = true;
             // 
-            // LBL_WPRad
+            // EditButton
             // 
-            resources.ApplyResources(this.LBL_WPRad, "LBL_WPRad");
-            this.LBL_WPRad.Name = "LBL_WPRad";
+            resources.ApplyResources(this.EditButton, "EditButton");
+            this.EditButton.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.EditButton.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Outline = System.Drawing.Color.Black;
+            this.EditButton.TabStop = false;
+            this.EditButton.TextColor = System.Drawing.Color.White;
+            this.EditButton.TextColorNotEnabled = System.Drawing.Color.White;
+            this.EditButton.UseVisualStyleBackColor = true;
             // 
-            // LBL_defalutalt
+            // Reversewpbutton
             // 
-            resources.ApplyResources(this.LBL_defalutalt, "LBL_defalutalt");
-            this.LBL_defalutalt.Name = "LBL_defalutalt";
+            resources.ApplyResources(this.Reversewpbutton, "Reversewpbutton");
+            this.Reversewpbutton.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Reversewpbutton.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Reversewpbutton.Name = "Reversewpbutton";
+            this.Reversewpbutton.Outline = System.Drawing.Color.Black;
+            this.Reversewpbutton.TextColor = System.Drawing.Color.White;
+            this.Reversewpbutton.TextColorNotEnabled = System.Drawing.Color.White;
+            this.Reversewpbutton.UseVisualStyleBackColor = true;
             // 
-            // TXT_loiterrad
+            // BUT_loadwpfile
             // 
-            resources.ApplyResources(this.TXT_loiterrad, "TXT_loiterrad");
-            this.TXT_loiterrad.Name = "TXT_loiterrad";
-            this.TXT_loiterrad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_loiterrad_KeyPress);
-            this.TXT_loiterrad.Leave += new System.EventHandler(this.TXT_loiterrad_Leave);
+            resources.ApplyResources(this.BUT_loadwpfile, "BUT_loadwpfile");
+            this.BUT_loadwpfile.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_loadwpfile.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_loadwpfile.Name = "BUT_loadwpfile";
+            this.BUT_loadwpfile.Outline = System.Drawing.Color.Black;
+            this.BUT_loadwpfile.TextColor = System.Drawing.Color.White;
+            this.BUT_loadwpfile.TextColorNotEnabled = System.Drawing.Color.White;
+            this.BUT_loadwpfile.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // panel9
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Controls.Add(this.myButton11);
+            this.panel9.Controls.Add(this.myButton10);
+            this.panel9.Controls.Add(this.myButton9);
+            this.panel9.Controls.Add(this.myButton8);
+            this.panel9.Name = "panel9";
             // 
-            // panel5
+            // myButton11
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.but_writewpfast);
-            this.panel5.Controls.Add(this.BUT_write);
-            this.panel5.Controls.Add(this.BUT_read);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
+            resources.ApplyResources(this.myButton11, "myButton11");
+            this.myButton11.BGGradBot = System.Drawing.Color.Gainsboro;
+            this.myButton11.BGGradTop = System.Drawing.Color.Gainsboro;
+            this.myButton11.Name = "myButton11";
+            this.myButton11.Outline = System.Drawing.Color.Black;
+            this.myButton11.TextColor = System.Drawing.Color.Black;
+            this.myButton11.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton11.UseVisualStyleBackColor = true;
             // 
-            // but_writewpfast
+            // myButton10
             // 
-            resources.ApplyResources(this.but_writewpfast, "but_writewpfast");
-            this.but_writewpfast.Name = "but_writewpfast";
-            this.but_writewpfast.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.but_writewpfast.UseVisualStyleBackColor = true;
-            this.but_writewpfast.Click += new System.EventHandler(this.but_writewpfast_Click);
+            resources.ApplyResources(this.myButton10, "myButton10");
+            this.myButton10.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton10.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton10.Name = "myButton10";
+            this.myButton10.Outline = System.Drawing.Color.Black;
+            this.myButton10.TextColor = System.Drawing.Color.White;
+            this.myButton10.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton10.UseVisualStyleBackColor = true;
             // 
-            // BUT_write
+            // myButton9
             // 
-            resources.ApplyResources(this.BUT_write, "BUT_write");
-            this.BUT_write.Name = "BUT_write";
-            this.BUT_write.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.BUT_write.UseVisualStyleBackColor = true;
-            this.BUT_write.Click += new System.EventHandler(this.BUT_write_Click);
+            resources.ApplyResources(this.myButton9, "myButton9");
+            this.myButton9.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton9.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton9.Name = "myButton9";
+            this.myButton9.Outline = System.Drawing.Color.Black;
+            this.myButton9.TextColor = System.Drawing.Color.White;
+            this.myButton9.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton9.UseVisualStyleBackColor = true;
+            // 
+            // myButton8
+            // 
+            resources.ApplyResources(this.myButton8, "myButton8");
+            this.myButton8.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton8.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton8.Name = "myButton8";
+            this.myButton8.Outline = System.Drawing.Color.Black;
+            this.myButton8.TextColor = System.Drawing.Color.White;
+            this.myButton8.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton8.UseVisualStyleBackColor = true;
             // 
             // BUT_read
             // 
             resources.ApplyResources(this.BUT_read, "BUT_read");
+            this.BUT_read.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_read.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BUT_read.Name = "BUT_read";
-            this.BUT_read.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_read.Outline = System.Drawing.Color.Black;
+            this.BUT_read.TextColor = System.Drawing.Color.White;
+            this.BUT_read.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_read.UseVisualStyleBackColor = true;
-            this.BUT_read.Click += new System.EventHandler(this.BUT_read_Click);
             // 
-            // panel1
+            // BUT_write
             // 
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.Label1);
-            this.panel1.Controls.Add(this.TXT_homealt);
-            this.panel1.Controls.Add(this.TXT_homelng);
-            this.panel1.Controls.Add(this.TXT_homelat);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.BUT_write, "BUT_write");
+            this.BUT_write.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_write.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_write.Name = "BUT_write";
+            this.BUT_write.Outline = System.Drawing.Color.Black;
+            this.BUT_write.TextColor = System.Drawing.Color.White;
+            this.BUT_write.TextColorNotEnabled = System.Drawing.Color.White;
+            this.BUT_write.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // HOLDQUICK
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            this.label4.TabStop = true;
-            this.label4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.label4_LinkClicked);
+            resources.ApplyResources(this.HOLDQUICK, "HOLDQUICK");
+            this.HOLDQUICK.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.HOLDQUICK.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.HOLDQUICK.Name = "HOLDQUICK";
+            this.HOLDQUICK.Outline = System.Drawing.Color.Black;
+            this.HOLDQUICK.TextColor = System.Drawing.Color.White;
+            this.HOLDQUICK.TextColorNotEnabled = System.Drawing.Color.White;
+            this.HOLDQUICK.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // BUT_saveWPFile
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.BUT_saveWPFile, "BUT_saveWPFile");
+            this.BUT_saveWPFile.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_saveWPFile.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_saveWPFile.Name = "BUT_saveWPFile";
+            this.BUT_saveWPFile.Outline = System.Drawing.Color.Black;
+            this.BUT_saveWPFile.TextColor = System.Drawing.Color.White;
+            this.BUT_saveWPFile.TextColorNotEnabled = System.Drawing.Color.White;
+            this.BUT_saveWPFile.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // ClearClick
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            this.ClearClick.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ClearClick.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            resources.ApplyResources(this.ClearClick, "ClearClick");
+            this.ClearClick.Name = "ClearClick";
+            this.ClearClick.Outline = System.Drawing.Color.Black;
+            this.ClearClick.TabStop = false;
+            this.ClearClick.TextColor = System.Drawing.Color.White;
+            this.ClearClick.TextColorNotEnabled = System.Drawing.Color.White;
+            this.ClearClick.UseVisualStyleBackColor = true;
+            this.ClearClick.Click += new System.EventHandler(this.ClearClick_Click);
             // 
-            // Label1
+            // AUTOQUICK
             // 
-            resources.ApplyResources(this.Label1, "Label1");
-            this.Label1.Name = "Label1";
+            resources.ApplyResources(this.AUTOQUICK, "AUTOQUICK");
+            this.AUTOQUICK.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.AUTOQUICK.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.AUTOQUICK.Name = "AUTOQUICK";
+            this.AUTOQUICK.Outline = System.Drawing.Color.Black;
+            this.AUTOQUICK.TextColor = System.Drawing.Color.White;
+            this.AUTOQUICK.TextColorNotEnabled = System.Drawing.Color.White;
+            this.AUTOQUICK.UseVisualStyleBackColor = true;
             // 
-            // TXT_homealt
+            // switchview
             // 
-            resources.ApplyResources(this.TXT_homealt, "TXT_homealt");
-            this.TXT_homealt.Name = "TXT_homealt";
-            this.TXT_homealt.TextChanged += new System.EventHandler(this.TXT_homealt_TextChanged);
+            resources.ApplyResources(this.switchview, "switchview");
+            this.switchview.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.switchview.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.switchview.Name = "switchview";
+            this.switchview.Outline = System.Drawing.Color.Black;
+            this.switchview.TextColor = System.Drawing.Color.White;
+            this.switchview.TextColorNotEnabled = System.Drawing.Color.White;
+            this.switchview.UseVisualStyleBackColor = true;
             // 
-            // TXT_homelng
+            // SpeedPanel
             // 
-            resources.ApplyResources(this.TXT_homelng, "TXT_homelng");
-            this.TXT_homelng.Name = "TXT_homelng";
-            this.TXT_homelng.TextChanged += new System.EventHandler(this.TXT_homelng_TextChanged);
+            resources.ApplyResources(this.SpeedPanel, "SpeedPanel");
+            this.SpeedPanel.Controls.Add(this.tableLayoutPanel3);
+            this.SpeedPanel.Controls.Add(this.WPTh);
+            this.SpeedPanel.Controls.Add(this.label16);
+            this.SpeedPanel.Controls.Add(this.label14);
+            this.SpeedPanel.Controls.Add(this.WPSp);
+            this.SpeedPanel.Name = "SpeedPanel";
             // 
-            // TXT_homelat
+            // tableLayoutPanel3
             // 
-            resources.ApplyResources(this.TXT_homelat, "TXT_homelat");
-            this.TXT_homelat.Name = "TXT_homelat";
-            this.TXT_homelat.TextChanged += new System.EventHandler(this.TXT_homelat_TextChanged);
-            this.TXT_homelat.Enter += new System.EventHandler(this.TXT_homelat_Enter);
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.myButton6, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.myButton7, 1, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
-            // dataGridViewImageColumn1
+            // myButton6
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
-            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            resources.ApplyResources(this.myButton6, "myButton6");
+            this.myButton6.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton6.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton6.Name = "myButton6";
+            this.myButton6.Outline = System.Drawing.Color.Black;
+            this.myButton6.TabStop = false;
+            this.myButton6.TextColor = System.Drawing.Color.White;
+            this.myButton6.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton6.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewImageColumn2
+            // myButton7
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
-            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            resources.ApplyResources(this.myButton7, "myButton7");
+            this.myButton7.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton7.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton7.Name = "myButton7";
+            this.myButton7.Outline = System.Drawing.Color.Black;
+            this.myButton7.TabStop = false;
+            this.myButton7.TextColor = System.Drawing.Color.White;
+            this.myButton7.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton7.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // WPTh
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            this.WPTh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.WPTh, "WPTh");
+            this.WPTh.ForeColor = System.Drawing.Color.Black;
+            this.WPTh.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.WPTh.Name = "WPTh";
+            this.WPTh.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
             // 
-            // coords1
+            // label16
             // 
-            this.coords1.Alt = 0D;
-            this.coords1.AltSource = "";
-            this.coords1.AltUnit = "m";
-            this.coords1.Lat = 0D;
-            this.coords1.Lng = 0D;
-            resources.ApplyResources(this.coords1, "coords1");
-            this.coords1.Name = "coords1";
-            this.coords1.Vertical = true;
-            this.coords1.SystemChanged += new System.EventHandler(this.coords1_SystemChanged);
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
             // 
-            // lbl_status
+            // label14
             // 
-            resources.ApplyResources(this.lbl_status, "lbl_status");
-            this.lbl_status.Name = "lbl_status";
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
             // 
-            // panelWaypoints
+            // WPSp
             // 
-            this.panelWaypoints.Controls.Add(this.chk_usemavftp);
-            this.panelWaypoints.Controls.Add(this.but_mincommands);
-            this.panelWaypoints.Controls.Add(this.CMB_altmode);
-            this.panelWaypoints.Controls.Add(this.CHK_splinedefault);
-            this.panelWaypoints.Controls.Add(this.label17);
-            this.panelWaypoints.Controls.Add(this.TXT_altwarn);
-            this.panelWaypoints.Controls.Add(this.LBL_WPRad);
-            this.panelWaypoints.Controls.Add(this.label5);
-            this.panelWaypoints.Controls.Add(this.TXT_loiterrad);
-            this.panelWaypoints.Controls.Add(this.LBL_defalutalt);
-            this.panelWaypoints.Controls.Add(this.Commands);
-            this.panelWaypoints.Controls.Add(this.TXT_DefaultAlt);
-            this.panelWaypoints.Controls.Add(this.CHK_verifyheight);
-            this.panelWaypoints.Controls.Add(this.TXT_WPRad);
-            this.panelWaypoints.Controls.Add(this.BUT_Add);
-            resources.ApplyResources(this.panelWaypoints, "panelWaypoints");
-            this.panelWaypoints.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelWaypoints.Name = "panelWaypoints";
+            this.WPSp.BackColor = System.Drawing.Color.Gray;
+            this.WPSp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.WPSp.DecimalPlaces = 1;
+            resources.ApplyResources(this.WPSp, "WPSp");
+            this.WPSp.ForeColor = System.Drawing.Color.White;
+            this.WPSp.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.WPSp.Name = "WPSp";
             // 
-            // chk_usemavftp
+            // myButton1
             // 
-            resources.ApplyResources(this.chk_usemavftp, "chk_usemavftp");
-            this.chk_usemavftp.Name = "chk_usemavftp";
-            this.chk_usemavftp.UseVisualStyleBackColor = true;
-            this.chk_usemavftp.CheckedChanged += new System.EventHandler(this.chk_usemavftp_CheckedChanged);
-            // 
-            // but_mincommands
-            // 
-            resources.ApplyResources(this.but_mincommands, "but_mincommands");
-            this.but_mincommands.Name = "but_mincommands";
-            this.but_mincommands.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.but_mincommands.UseVisualStyleBackColor = true;
-            this.but_mincommands.Click += new System.EventHandler(this.but_mincommands_Click);
-            // 
-            // CMB_altmode
-            // 
-            this.CMB_altmode.FormattingEnabled = true;
-            resources.ApplyResources(this.CMB_altmode, "CMB_altmode");
-            this.CMB_altmode.Name = "CMB_altmode";
-            this.CMB_altmode.SelectedIndexChanged += new System.EventHandler(this.CMB_altmode_SelectedIndexChanged);
-            // 
-            // CHK_splinedefault
-            // 
-            resources.ApplyResources(this.CHK_splinedefault, "CHK_splinedefault");
-            this.CHK_splinedefault.Name = "CHK_splinedefault";
-            this.CHK_splinedefault.UseVisualStyleBackColor = true;
-            this.CHK_splinedefault.CheckedChanged += new System.EventHandler(this.CHK_splinedefault_CheckedChanged);
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            // 
-            // TXT_altwarn
-            // 
-            resources.ApplyResources(this.TXT_altwarn, "TXT_altwarn");
-            this.TXT_altwarn.Name = "TXT_altwarn";
+            resources.ApplyResources(this.myButton1, "myButton1");
+            this.myButton1.BackColor = System.Drawing.Color.Transparent;
+            this.myButton1.BGGradBot = System.Drawing.Color.White;
+            this.myButton1.BGGradTop = System.Drawing.Color.White;
+            this.myButton1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "mode", true));
+            this.myButton1.DataBindings.Add(new System.Windows.Forms.Binding("TextColor", this.currentStateBindingSource, "link_color", true));
+            this.myButton1.FlatAppearance.BorderSize = 0;
+            this.myButton1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.myButton1.Name = "myButton1";
+            this.myButton1.Outline = System.Drawing.Color.White;
+            this.myButton1.TabStop = false;
+            this.myButton1.TextColor = System.Drawing.Color.Black;
+            this.myButton1.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton1.UseVisualStyleBackColor = false;
             // 
             // Commands
             // 
             this.Commands.AllowUserToAddRows = false;
             resources.ApplyResources(this.Commands, "Commands");
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Commands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Commands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.Commands.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Command,
             this.Param1,
@@ -501,112 +617,117 @@ namespace MissionPlanner.GCSViews
             this.Dist,
             this.AZ,
             this.TagData});
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Commands.DefaultCellStyle = dataGridViewCellStyle14;
             this.Commands.Name = "Commands";
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.Format = "N0";
-            dataGridViewCellStyle7.NullValue = "0";
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Commands.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            this.Commands.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.Commands.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellContentClick);
-            this.Commands.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellEndEdit);
-            this.Commands.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.Commands_DataError);
-            this.Commands.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.Commands_DefaultValuesNeeded);
-            this.Commands.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.Commands_EditingControlShowing);
-            this.Commands.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_RowEnter);
-            this.Commands.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.Commands_RowsAdded);
-            this.Commands.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.Commands_RowsRemoved);
-            this.Commands.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.Commands_RowValidating);
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.Format = "N0";
+            dataGridViewCellStyle15.NullValue = "0";
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Commands.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            this.Commands.RowsDefaultCellStyle = dataGridViewCellStyle16;
             // 
             // Command
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(68)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            this.Command.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Command.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(68)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            this.Command.DefaultCellStyle = dataGridViewCellStyle11;
             this.Command.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
             resources.ApplyResources(this.Command, "Command");
             this.Command.Name = "Command";
             // 
             // Param1
             // 
+            this.Param1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Param1, "Param1");
             this.Param1.Name = "Param1";
             this.Param1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Param2
             // 
+            this.Param2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Param2, "Param2");
             this.Param2.Name = "Param2";
             this.Param2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Param3
             // 
+            this.Param3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Param3, "Param3");
             this.Param3.Name = "Param3";
             this.Param3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Param4
             // 
+            this.Param4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Param4, "Param4");
             this.Param4.Name = "Param4";
             this.Param4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Lat
             // 
+            this.Lat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Lat, "Lat");
             this.Lat.Name = "Lat";
             this.Lat.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Lon
             // 
+            this.Lon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Lon, "Lon");
             this.Lon.Name = "Lon";
             this.Lon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Alt
             // 
+            this.Alt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Alt, "Alt");
             this.Alt.Name = "Alt";
             this.Alt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Frame
             // 
-            resources.ApplyResources(this.Frame, "Frame");
             this.Frame.Name = "Frame";
             // 
             // coordZone
             // 
-            resources.ApplyResources(this.coordZone, "coordZone");
             this.coordZone.Name = "coordZone";
             // 
             // coordEasting
             // 
-            resources.ApplyResources(this.coordEasting, "coordEasting");
             this.coordEasting.Name = "coordEasting";
             // 
             // coordNorthing
             // 
-            resources.ApplyResources(this.coordNorthing, "coordNorthing");
             this.coordNorthing.Name = "coordNorthing";
             // 
             // MGRS
             // 
-            resources.ApplyResources(this.MGRS, "MGRS");
             this.MGRS.Name = "MGRS";
             // 
             // Delete
             // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Delete, "Delete");
             this.Delete.Name = "Delete";
             this.Delete.Text = "X";
             // 
             // Up
             // 
-            this.Up.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Up.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            this.Up.DefaultCellStyle = dataGridViewCellStyle12;
             resources.ApplyResources(this.Up, "Up");
             this.Up.Image = ((System.Drawing.Image)(resources.GetObject("Up.Image")));
             this.Up.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -614,7 +735,9 @@ namespace MissionPlanner.GCSViews
             // 
             // Down
             // 
-            this.Down.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Down.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Down.DefaultCellStyle = dataGridViewCellStyle13;
             resources.ApplyResources(this.Down, "Down");
             this.Down.Image = ((System.Drawing.Image)(resources.GetObject("Down.Image")));
             this.Down.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -622,6 +745,7 @@ namespace MissionPlanner.GCSViews
             // 
             // Grad
             // 
+            this.Grad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Grad, "Grad");
             this.Grad.Name = "Grad";
             this.Grad.ReadOnly = true;
@@ -629,13 +753,13 @@ namespace MissionPlanner.GCSViews
             // 
             // Angle
             // 
-            resources.ApplyResources(this.Angle, "Angle");
             this.Angle.Name = "Angle";
             this.Angle.ReadOnly = true;
             this.Angle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Dist
             // 
+            this.Dist.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.Dist, "Dist");
             this.Dist.Name = "Dist";
             this.Dist.ReadOnly = true;
@@ -643,6 +767,7 @@ namespace MissionPlanner.GCSViews
             // 
             // AZ
             // 
+            this.AZ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             resources.ApplyResources(this.AZ, "AZ");
             this.AZ.Name = "AZ";
             this.AZ.ReadOnly = true;
@@ -650,31 +775,1000 @@ namespace MissionPlanner.GCSViews
             // 
             // TagData
             // 
-            resources.ApplyResources(this.TagData, "TagData");
             this.TagData.Name = "TagData";
             this.TagData.ReadOnly = true;
             // 
-            // BUT_Add
+            // panelBASE
             // 
-            resources.ApplyResources(this.BUT_Add, "BUT_Add");
-            this.BUT_Add.Name = "BUT_Add";
-            this.BUT_Add.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.toolTip1.SetToolTip(this.BUT_Add, resources.GetString("BUT_Add.ToolTip"));
-            this.BUT_Add.UseVisualStyleBackColor = true;
-            this.BUT_Add.Click += new System.EventHandler(this.BUT_Add_Click);
+            this.panelBASE.Controls.Add(this.splitter2);
+            this.panelBASE.Controls.Add(this.splitter1);
+            this.panelBASE.Controls.Add(this.panelMap);
+            this.panelBASE.Controls.Add(this.panelWaypoints);
+            this.panelBASE.Controls.Add(this.label6);
+            resources.ApplyResources(this.panelBASE, "panelBASE");
+            this.panelBASE.Name = "panelBASE";
+            // 
+            // splitter2
+            // 
+            this.splitter2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.splitter2, "splitter2");
+            this.splitter2.Name = "splitter2";
+            this.splitter2.TabStop = false;
             // 
             // splitter1
             // 
+            this.splitter1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.splitter1, "splitter1");
             this.splitter1.Name = "splitter1";
             this.splitter1.TabStop = false;
             // 
+            // panelMap
+            // 
+            this.panelMap.Controls.Add(this.zoom_out);
+            this.panelMap.Controls.Add(this.zoom_in);
+            this.panelMap.Controls.Add(this.tableLayoutPanel6);
+            this.panelMap.Controls.Add(this.FollowMePanel);
+            this.panelMap.Controls.Add(this.DrawPanel);
+            this.panelMap.Controls.Add(this.measurePanel);
+            this.panelMap.Controls.Add(this.ToolsTable);
+            this.panelMap.Controls.Add(this.Joystick_Panel);
+            this.panelMap.Controls.Add(this.FormatPanel);
+            this.panelMap.Controls.Add(this.PlaceAfterPanel);
+            this.panelMap.Controls.Add(this.SpeedPanel);
+            this.panelMap.Controls.Add(this.panel9);
+            this.panelMap.Controls.Add(this.newhome);
+            this.panelMap.Controls.Add(this.Commands);
+            this.panelMap.Controls.Add(this.SwarmPanel);
+            this.panelMap.Controls.Add(this.Joystickbutton);
+            this.panelMap.Controls.Add(this.myButton5);
+            this.panelMap.Controls.Add(this.panel8);
+            this.panelMap.Controls.Add(this.panel7);
+            this.panelMap.Controls.Add(this.panel6);
+            this.panelMap.Controls.Add(this.cmb_missiontype);
+            this.panelMap.Controls.Add(this.MainMap);
+            this.panelMap.Controls.Add(this.tableLayoutPanel1);
+            this.panelMap.Controls.Add(this.button1);
+            this.panelMap.Controls.Add(this.HOMECLICK);
+            this.panelMap.Controls.Add(this.mytest);
+            this.panelMap.Controls.Add(this.lbl_distance);
+            this.panelMap.Controls.Add(this.lbl_homedist);
+            this.panelMap.Controls.Add(this.lbl_prevdist);
+            this.panelMap.Controls.Add(this.trackBar1);
+            this.panelMap.Controls.Add(this.label11);
+            resources.ApplyResources(this.panelMap, "panelMap");
+            this.panelMap.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelMap.Name = "panelMap";
+            // 
+            // zoom_out
+            // 
+            resources.ApplyResources(this.zoom_out, "zoom_out");
+            this.zoom_out.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.zoom_out.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.zoom_out.Name = "zoom_out";
+            this.zoom_out.Outline = System.Drawing.Color.Transparent;
+            this.zoom_out.TextColor = System.Drawing.Color.White;
+            this.zoom_out.TextColorNotEnabled = System.Drawing.Color.White;
+            this.zoom_out.UseVisualStyleBackColor = true;
+            // 
+            // zoom_in
+            // 
+            resources.ApplyResources(this.zoom_in, "zoom_in");
+            this.zoom_in.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.zoom_in.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.zoom_in.Name = "zoom_in";
+            this.zoom_in.Outline = System.Drawing.Color.Transparent;
+            this.zoom_in.TextColor = System.Drawing.Color.White;
+            this.zoom_in.TextColorNotEnabled = System.Drawing.Color.White;
+            this.zoom_in.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel6
+            // 
+            resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.MistyRose;
+            this.tableLayoutPanel6.Controls.Add(this.myButton22, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.myButton21, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.myButton18, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label19, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.Cancel, 3, 1);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            // 
+            // myButton22
+            // 
+            resources.ApplyResources(this.myButton22, "myButton22");
+            this.myButton22.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton22.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton22.Name = "myButton22";
+            this.myButton22.Outline = System.Drawing.Color.Black;
+            this.myButton22.TextColor = System.Drawing.Color.White;
+            this.myButton22.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton22.UseVisualStyleBackColor = true;
+            // 
+            // myButton21
+            // 
+            resources.ApplyResources(this.myButton21, "myButton21");
+            this.myButton21.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton21.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton21.Name = "myButton21";
+            this.myButton21.Outline = System.Drawing.Color.Black;
+            this.myButton21.TextColor = System.Drawing.Color.White;
+            this.myButton21.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton21.UseVisualStyleBackColor = true;
+            // 
+            // myButton18
+            // 
+            resources.ApplyResources(this.myButton18, "myButton18");
+            this.myButton18.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton18.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton18.Name = "myButton18";
+            this.myButton18.Outline = System.Drawing.Color.Black;
+            this.myButton18.TextColor = System.Drawing.Color.White;
+            this.myButton18.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton18.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.tableLayoutPanel6.SetColumnSpan(this.label19, 4);
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Name = "label19";
+            // 
+            // Cancel
+            // 
+            resources.ApplyResources(this.Cancel, "Cancel");
+            this.Cancel.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Cancel.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Outline = System.Drawing.Color.Black;
+            this.Cancel.TextColor = System.Drawing.Color.White;
+            this.Cancel.TextColorNotEnabled = System.Drawing.Color.White;
+            this.Cancel.UseVisualStyleBackColor = true;
+            // 
+            // FollowMePanel
+            // 
+            resources.ApplyResources(this.FollowMePanel, "FollowMePanel");
+            this.FollowMePanel.Name = "FollowMePanel";
+            this.FollowMePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.FollowMePanel_Paint);
+            // 
+            // DrawPanel
+            // 
+            resources.ApplyResources(this.DrawPanel, "DrawPanel");
+            this.DrawPanel.Controls.Add(this.tableLayoutPanel8);
+            this.DrawPanel.Name = "DrawPanel";
+            // 
+            // tableLayoutPanel8
+            // 
+            resources.ApplyResources(this.tableLayoutPanel8, "tableLayoutPanel8");
+            this.tableLayoutPanel8.Controls.Add(this.SavePolysBTN, 0, 4);
+            this.tableLayoutPanel8.Controls.Add(this.ImportPolysBTN, 0, 4);
+            this.tableLayoutPanel8.Controls.Add(this.label22, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.NewDrawPoly, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.ApplyPoly, 0, 3);
+            this.tableLayoutPanel8.Controls.Add(this.DeletePoly, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.label23, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.PolyNameBox, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.ColorBTN, 1, 2);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            // 
+            // SavePolysBTN
+            // 
+            resources.ApplyResources(this.SavePolysBTN, "SavePolysBTN");
+            this.SavePolysBTN.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.SavePolysBTN.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.SavePolysBTN.Name = "SavePolysBTN";
+            this.SavePolysBTN.Outline = System.Drawing.Color.Black;
+            this.SavePolysBTN.TabStop = false;
+            this.SavePolysBTN.TextColor = System.Drawing.Color.White;
+            this.SavePolysBTN.TextColorNotEnabled = System.Drawing.Color.White;
+            this.SavePolysBTN.UseVisualStyleBackColor = true;
+            // 
+            // ImportPolysBTN
+            // 
+            resources.ApplyResources(this.ImportPolysBTN, "ImportPolysBTN");
+            this.ImportPolysBTN.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ImportPolysBTN.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ImportPolysBTN.Name = "ImportPolysBTN";
+            this.ImportPolysBTN.Outline = System.Drawing.Color.Black;
+            this.ImportPolysBTN.TabStop = false;
+            this.ImportPolysBTN.TextColor = System.Drawing.Color.White;
+            this.ImportPolysBTN.TextColorNotEnabled = System.Drawing.Color.White;
+            this.ImportPolysBTN.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // NewDrawPoly
+            // 
+            resources.ApplyResources(this.NewDrawPoly, "NewDrawPoly");
+            this.NewDrawPoly.BGGradBot = System.Drawing.Color.DarkGray;
+            this.NewDrawPoly.BGGradTop = System.Drawing.Color.DimGray;
+            this.tableLayoutPanel8.SetColumnSpan(this.NewDrawPoly, 2);
+            this.NewDrawPoly.Name = "NewDrawPoly";
+            this.NewDrawPoly.Outline = System.Drawing.Color.Black;
+            this.NewDrawPoly.TabStop = false;
+            this.NewDrawPoly.TextColor = System.Drawing.Color.Black;
+            this.NewDrawPoly.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.NewDrawPoly.UseVisualStyleBackColor = true;
+            // 
+            // ApplyPoly
+            // 
+            resources.ApplyResources(this.ApplyPoly, "ApplyPoly");
+            this.ApplyPoly.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ApplyPoly.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ApplyPoly.Name = "ApplyPoly";
+            this.ApplyPoly.Outline = System.Drawing.Color.Black;
+            this.ApplyPoly.TabStop = false;
+            this.ApplyPoly.TextColor = System.Drawing.Color.White;
+            this.ApplyPoly.TextColorNotEnabled = System.Drawing.Color.White;
+            this.ApplyPoly.UseVisualStyleBackColor = true;
+            // 
+            // DeletePoly
+            // 
+            resources.ApplyResources(this.DeletePoly, "DeletePoly");
+            this.DeletePoly.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.DeletePoly.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DeletePoly.Name = "DeletePoly";
+            this.DeletePoly.Outline = System.Drawing.Color.Black;
+            this.DeletePoly.TabStop = false;
+            this.DeletePoly.TextColor = System.Drawing.Color.White;
+            this.DeletePoly.TextColorNotEnabled = System.Drawing.Color.White;
+            this.DeletePoly.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // PolyNameBox
+            // 
+            resources.ApplyResources(this.PolyNameBox, "PolyNameBox");
+            this.PolyNameBox.Name = "PolyNameBox";
+            // 
+            // ColorBTN
+            // 
+            this.ColorBTN.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.ColorBTN, "ColorBTN");
+            this.ColorBTN.Name = "ColorBTN";
+            this.ColorBTN.UseVisualStyleBackColor = false;
+            // 
+            // measurePanel
+            // 
+            resources.ApplyResources(this.measurePanel, "measurePanel");
+            this.measurePanel.Controls.Add(this.UnitsMeasureBTN);
+            this.measurePanel.Controls.Add(this.measureLabel);
+            this.measurePanel.Name = "measurePanel";
+            // 
+            // UnitsMeasureBTN
+            // 
+            resources.ApplyResources(this.UnitsMeasureBTN, "UnitsMeasureBTN");
+            this.UnitsMeasureBTN.BGGradBot = System.Drawing.Color.DarkGray;
+            this.UnitsMeasureBTN.BGGradTop = System.Drawing.Color.DimGray;
+            this.UnitsMeasureBTN.Name = "UnitsMeasureBTN";
+            this.UnitsMeasureBTN.Outline = System.Drawing.Color.Black;
+            this.UnitsMeasureBTN.TabStop = false;
+            this.UnitsMeasureBTN.TextColor = System.Drawing.Color.Black;
+            this.UnitsMeasureBTN.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.UnitsMeasureBTN.UseVisualStyleBackColor = true;
+            // 
+            // measureLabel
+            // 
+            resources.ApplyResources(this.measureLabel, "measureLabel");
+            this.measureLabel.BackColor = System.Drawing.Color.White;
+            this.measureLabel.ForeColor = System.Drawing.Color.Black;
+            this.measureLabel.Name = "measureLabel";
+            // 
+            // ToolsTable
+            // 
+            resources.ApplyResources(this.ToolsTable, "ToolsTable");
+            this.ToolsTable.Controls.Add(this.DrawBTN, 0, 1);
+            this.ToolsTable.Controls.Add(this.MeasureBTN, 0, 0);
+            this.ToolsTable.Name = "ToolsTable";
+            // 
+            // DrawBTN
+            // 
+            resources.ApplyResources(this.DrawBTN, "DrawBTN");
+            this.DrawBTN.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.DrawBTN.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.DrawBTN.Name = "DrawBTN";
+            this.DrawBTN.Outline = System.Drawing.Color.Black;
+            this.DrawBTN.TextColor = System.Drawing.Color.White;
+            this.DrawBTN.TextColorNotEnabled = System.Drawing.Color.White;
+            this.DrawBTN.UseVisualStyleBackColor = true;
+            // 
+            // MeasureBTN
+            // 
+            resources.ApplyResources(this.MeasureBTN, "MeasureBTN");
+            this.MeasureBTN.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.MeasureBTN.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.MeasureBTN.Name = "MeasureBTN";
+            this.MeasureBTN.Outline = System.Drawing.Color.Black;
+            this.MeasureBTN.TextColor = System.Drawing.Color.White;
+            this.MeasureBTN.TextColorNotEnabled = System.Drawing.Color.White;
+            this.MeasureBTN.UseVisualStyleBackColor = true;
+            // 
+            // Joystick_Panel
+            // 
+            resources.ApplyResources(this.Joystick_Panel, "Joystick_Panel");
+            this.Joystick_Panel.Name = "Joystick_Panel";
+            // 
+            // FormatPanel
+            // 
+            resources.ApplyResources(this.FormatPanel, "FormatPanel");
+            this.FormatPanel.Controls.Add(this.myButton17);
+            this.FormatPanel.Controls.Add(this.myButton16);
+            this.FormatPanel.Controls.Add(this.myButton15);
+            this.FormatPanel.Controls.Add(this.numericUpDown2);
+            this.FormatPanel.Controls.Add(this.label18);
+            this.FormatPanel.Name = "FormatPanel";
+            // 
+            // myButton17
+            // 
+            resources.ApplyResources(this.myButton17, "myButton17");
+            this.myButton17.BGGradBot = System.Drawing.Color.DarkGray;
+            this.myButton17.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton17.Name = "myButton17";
+            this.myButton17.Outline = System.Drawing.Color.Black;
+            this.myButton17.TabStop = false;
+            this.myButton17.TextColor = System.Drawing.Color.Black;
+            this.myButton17.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton17.UseVisualStyleBackColor = true;
+            // 
+            // myButton16
+            // 
+            resources.ApplyResources(this.myButton16, "myButton16");
+            this.myButton16.BGGradBot = System.Drawing.Color.DarkGray;
+            this.myButton16.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton16.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.myButton16.Name = "myButton16";
+            this.myButton16.Outline = System.Drawing.Color.Black;
+            this.myButton16.TabStop = false;
+            this.myButton16.TextColor = System.Drawing.Color.Black;
+            this.myButton16.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton16.UseVisualStyleBackColor = true;
+            // 
+            // myButton15
+            // 
+            resources.ApplyResources(this.myButton15, "myButton15");
+            this.myButton15.BGGradBot = System.Drawing.Color.DarkGray;
+            this.myButton15.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton15.Name = "myButton15";
+            this.myButton15.Outline = System.Drawing.Color.Black;
+            this.myButton15.TabStop = false;
+            this.myButton15.TextColor = System.Drawing.Color.Black;
+            this.myButton15.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton15.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.numericUpDown2, "numericUpDown2");
+            this.numericUpDown2.ForeColor = System.Drawing.Color.Black;
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // PlaceAfterPanel
+            // 
+            resources.ApplyResources(this.PlaceAfterPanel, "PlaceAfterPanel");
+            this.PlaceAfterPanel.Controls.Add(this.tableLayoutPanel7);
+            this.PlaceAfterPanel.Controls.Add(this.numericUpDown1);
+            this.PlaceAfterPanel.Controls.Add(this.label20);
+            this.PlaceAfterPanel.Controls.Add(this.label21);
+            this.PlaceAfterPanel.Controls.Add(this.numericUpDown3);
+            this.PlaceAfterPanel.Name = "PlaceAfterPanel";
+            // 
+            // tableLayoutPanel7
+            // 
+            resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
+            this.tableLayoutPanel7.Controls.Add(this.myButton19, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.myButton20, 1, 0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            // 
+            // myButton19
+            // 
+            resources.ApplyResources(this.myButton19, "myButton19");
+            this.myButton19.BGGradBot = System.Drawing.Color.DarkGray;
+            this.myButton19.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton19.Name = "myButton19";
+            this.myButton19.Outline = System.Drawing.Color.Black;
+            this.myButton19.TabStop = false;
+            this.myButton19.TextColor = System.Drawing.Color.Black;
+            this.myButton19.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton19.UseVisualStyleBackColor = true;
+            // 
+            // myButton20
+            // 
+            resources.ApplyResources(this.myButton20, "myButton20");
+            this.myButton20.BGGradBot = System.Drawing.Color.DarkGray;
+            this.myButton20.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton20.Name = "myButton20";
+            this.myButton20.Outline = System.Drawing.Color.Black;
+            this.myButton20.TabStop = false;
+            this.myButton20.TextColor = System.Drawing.Color.Black;
+            this.myButton20.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton20.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
+            this.numericUpDown1.ForeColor = System.Drawing.Color.Black;
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.BackColor = System.Drawing.Color.Gray;
+            this.numericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.numericUpDown3, "numericUpDown3");
+            this.numericUpDown3.ForeColor = System.Drawing.Color.White;
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // SwarmPanel
+            // 
+            resources.ApplyResources(this.SwarmPanel, "SwarmPanel");
+            this.SwarmPanel.Name = "SwarmPanel";
+            // 
+            // Joystickbutton
+            // 
+            resources.ApplyResources(this.Joystickbutton, "Joystickbutton");
+            this.Joystickbutton.BGGradBot = System.Drawing.Color.DarkGray;
+            this.Joystickbutton.BGGradTop = System.Drawing.Color.DimGray;
+            this.Joystickbutton.Name = "Joystickbutton";
+            this.Joystickbutton.Outline = System.Drawing.Color.Black;
+            this.Joystickbutton.TabStop = false;
+            this.Joystickbutton.TextColor = System.Drawing.Color.Black;
+            this.Joystickbutton.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.Joystickbutton.UseVisualStyleBackColor = true;
+            // 
+            // myButton5
+            // 
+            resources.ApplyResources(this.myButton5, "myButton5");
+            this.myButton5.BGGradBot = System.Drawing.Color.DarkGray;
+            this.myButton5.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton5.Name = "myButton5";
+            this.myButton5.Outline = System.Drawing.Color.Black;
+            this.myButton5.TabStop = false;
+            this.myButton5.TextColor = System.Drawing.Color.Black;
+            this.myButton5.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton5.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Controls.Add(this.myButton3);
+            this.panel8.Controls.Add(this.label15);
+            this.panel8.Controls.Add(this.TXT_WPRad);
+            this.panel8.Name = "panel8";
+            // 
+            // myButton3
+            // 
+            resources.ApplyResources(this.myButton3, "myButton3");
+            this.myButton3.BGGradBot = System.Drawing.Color.DarkGray;
+            this.myButton3.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton3.Name = "myButton3";
+            this.myButton3.Outline = System.Drawing.Color.Black;
+            this.myButton3.TabStop = false;
+            this.myButton3.TextColor = System.Drawing.Color.Black;
+            this.myButton3.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton3.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // TXT_WPRad
+            // 
+            resources.ApplyResources(this.TXT_WPRad, "TXT_WPRad");
+            this.TXT_WPRad.Name = "TXT_WPRad";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // panel6
+            // 
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Controls.Add(this.tableLayoutPanel4);
+            this.panel6.Controls.Add(this.tableLayoutPanel5);
+            this.panel6.Controls.Add(this.tableLayoutPanel2);
+            this.panel6.Controls.Add(this.EW);
+            this.panel6.Controls.Add(this.NS);
+            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.LongSec);
+            this.panel6.Controls.Add(this.LongMin);
+            this.panel6.Controls.Add(this.LongDeg);
+            this.panel6.Controls.Add(this.LatSec);
+            this.panel6.Controls.Add(this.LatMin);
+            this.panel6.Controls.Add(this.LatDeg);
+            this.panel6.Name = "panel6";
+            // 
+            // tableLayoutPanel4
+            // 
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+            this.tableLayoutPanel4.Controls.Add(this.myButton13, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.Deletebu, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.myButton14, 2, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // myButton13
+            // 
+            resources.ApplyResources(this.myButton13, "myButton13");
+            this.myButton13.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton13.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton13.Name = "myButton13";
+            this.myButton13.Outline = System.Drawing.Color.Black;
+            this.myButton13.TabStop = false;
+            this.myButton13.TextColor = System.Drawing.Color.White;
+            this.myButton13.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton13.UseVisualStyleBackColor = true;
+            // 
+            // Deletebu
+            // 
+            resources.ApplyResources(this.Deletebu, "Deletebu");
+            this.Deletebu.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Deletebu.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Deletebu.Name = "Deletebu";
+            this.Deletebu.Outline = System.Drawing.Color.Black;
+            this.Deletebu.TabStop = false;
+            this.Deletebu.TextColor = System.Drawing.Color.White;
+            this.Deletebu.TextColorNotEnabled = System.Drawing.Color.White;
+            this.Deletebu.UseVisualStyleBackColor = true;
+            // 
+            // myButton14
+            // 
+            resources.ApplyResources(this.myButton14, "myButton14");
+            this.myButton14.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton14.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton14.Name = "myButton14";
+            this.myButton14.Outline = System.Drawing.Color.Black;
+            this.myButton14.TabStop = false;
+            this.myButton14.TextColor = System.Drawing.Color.White;
+            this.myButton14.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton14.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel5
+            // 
+            resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
+            this.tableLayoutPanel5.Controls.Add(this.BackWP, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.WPNumber, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.NextWP, 2, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            // 
+            // BackWP
+            // 
+            this.BackWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            resources.ApplyResources(this.BackWP, "BackWP");
+            this.BackWP.Name = "BackWP";
+            this.BackWP.UseVisualStyleBackColor = false;
+            // 
+            // WPNumber
+            // 
+            this.WPNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.WPNumber, "WPNumber");
+            this.WPNumber.ForeColor = System.Drawing.Color.Black;
+            this.WPNumber.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.WPNumber.Name = "WPNumber";
+            // 
+            // NextWP
+            // 
+            this.NextWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            resources.ApplyResources(this.NextWP, "NextWP");
+            this.NextWP.Name = "NextWP";
+            this.NextWP.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.myButton4, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.myButton2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.myButton12, 2, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // myButton4
+            // 
+            resources.ApplyResources(this.myButton4, "myButton4");
+            this.myButton4.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton4.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton4.Name = "myButton4";
+            this.myButton4.Outline = System.Drawing.Color.Black;
+            this.myButton4.TabStop = false;
+            this.myButton4.TextColor = System.Drawing.Color.White;
+            this.myButton4.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton4.UseVisualStyleBackColor = true;
+            // 
+            // myButton2
+            // 
+            resources.ApplyResources(this.myButton2, "myButton2");
+            this.myButton2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton2.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton2.Name = "myButton2";
+            this.myButton2.Outline = System.Drawing.Color.Black;
+            this.myButton2.TabStop = false;
+            this.myButton2.TextColor = System.Drawing.Color.White;
+            this.myButton2.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton2.UseVisualStyleBackColor = true;
+            // 
+            // myButton12
+            // 
+            resources.ApplyResources(this.myButton12, "myButton12");
+            this.myButton12.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton12.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton12.Name = "myButton12";
+            this.myButton12.Outline = System.Drawing.Color.Black;
+            this.myButton12.TabStop = false;
+            this.myButton12.TextColor = System.Drawing.Color.White;
+            this.myButton12.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton12.UseVisualStyleBackColor = true;
+            // 
+            // EW
+            // 
+            this.EW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            resources.ApplyResources(this.EW, "EW");
+            this.EW.Name = "EW";
+            this.EW.UseVisualStyleBackColor = false;
+            // 
+            // NS
+            // 
+            this.NS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            resources.ApplyResources(this.NS, "NS");
+            this.NS.Name = "NS";
+            this.NS.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // LongSec
+            // 
+            this.LongSec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LongSec.DecimalPlaces = 2;
+            resources.ApplyResources(this.LongSec, "LongSec");
+            this.LongSec.ForeColor = System.Drawing.Color.Black;
+            this.LongSec.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LongSec.Name = "LongSec";
+            // 
+            // LongMin
+            // 
+            this.LongMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LongMin.DecimalPlaces = 3;
+            resources.ApplyResources(this.LongMin, "LongMin");
+            this.LongMin.ForeColor = System.Drawing.Color.Black;
+            this.LongMin.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LongMin.Name = "LongMin";
+            // 
+            // LongDeg
+            // 
+            this.LongDeg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LongDeg.DecimalPlaces = 5;
+            resources.ApplyResources(this.LongDeg, "LongDeg");
+            this.LongDeg.ForeColor = System.Drawing.Color.Black;
+            this.LongDeg.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LongDeg.Name = "LongDeg";
+            // 
+            // LatSec
+            // 
+            this.LatSec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LatSec.DecimalPlaces = 2;
+            resources.ApplyResources(this.LatSec, "LatSec");
+            this.LatSec.ForeColor = System.Drawing.Color.Black;
+            this.LatSec.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.LatSec.Name = "LatSec";
+            // 
+            // LatMin
+            // 
+            this.LatMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LatMin.DecimalPlaces = 3;
+            resources.ApplyResources(this.LatMin, "LatMin");
+            this.LatMin.ForeColor = System.Drawing.Color.Black;
+            this.LatMin.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.LatMin.Name = "LatMin";
+            // 
+            // LatDeg
+            // 
+            this.LatDeg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LatDeg.DecimalPlaces = 5;
+            resources.ApplyResources(this.LatDeg, "LatDeg");
+            this.LatDeg.ForeColor = System.Drawing.Color.Black;
+            this.LatDeg.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LatDeg.Name = "LatDeg";
+            // 
+            // cmb_missiontype
+            // 
+            this.cmb_missiontype.FormattingEnabled = true;
+            this.cmb_missiontype.Items.AddRange(new object[] {
+            resources.GetString("cmb_missiontype.Items"),
+            resources.GetString("cmb_missiontype.Items1"),
+            resources.GetString("cmb_missiontype.Items2")});
+            resources.ApplyResources(this.cmb_missiontype, "cmb_missiontype");
+            this.cmb_missiontype.Name = "cmb_missiontype";
+            this.cmb_missiontype.SelectedIndexChanged += new System.EventHandler(this.Cmb_missiontype_SelectedIndexChanged);
+            // 
+            // MainMap
+            // 
+            this.MainMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.MainMap.Bearing = 0F;
+            this.MainMap.CanDragMap = true;
+            this.MainMap.Cursor = System.Windows.Forms.Cursors.Default;
+            this.MainMap.EmptyTileColor = System.Drawing.Color.Gray;
+            this.MainMap.GrayScaleMode = false;
+            this.MainMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.MainMap.HoldInvalidation = false;
+            this.MainMap.LevelsKeepInMemmory = 5;
+            resources.ApplyResources(this.MainMap, "MainMap");
+            this.MainMap.MarkersEnabled = true;
+            this.MainMap.MaxZoom = 19;
+            this.MainMap.MinZoom = 0;
+            this.MainMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.MainMap.Name = "MainMap";
+            this.MainMap.NegativeMode = false;
+            this.MainMap.PolygonsEnabled = true;
+            this.MainMap.RetryLoadTile = 0;
+            this.MainMap.RoutesEnabled = false;
+            this.MainMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
+            this.MainMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.MainMap.ShowTileGridLines = false;
+            this.MainMap.Zoom = 0D;
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DimGray;
+            this.tableLayoutPanel1.Controls.Add(this.ToolsBTN, 11, 0);
+            this.tableLayoutPanel1.Controls.Add(this.EditButton, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.Reversewpbutton, 10, 0);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_loadwpfile, 9, 0);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_read, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_write, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.HOLDQUICK, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_saveWPFile, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ClearClick, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.AUTOQUICK, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.switchview, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.myButton1, 5, 0);
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // HOMECLICK
+            // 
+            resources.ApplyResources(this.HOMECLICK, "HOMECLICK");
+            this.HOMECLICK.BackColor = System.Drawing.Color.DimGray;
+            this.HOMECLICK.Name = "HOMECLICK";
+            this.HOMECLICK.UseVisualStyleBackColor = false;
+            // 
+            // mytest
+            // 
+            this.mytest.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(222)))), ((int)(((byte)(233)))));
+            this.mytest.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(156)))), ((int)(((byte)(197)))));
+            resources.ApplyResources(this.mytest, "mytest");
+            this.mytest.Name = "mytest";
+            this.mytest.TabStop = false;
+            this.mytest.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.mytest.UseVisualStyleBackColor = true;
+            // 
+            // lbl_distance
+            // 
+            resources.ApplyResources(this.lbl_distance, "lbl_distance");
+            this.lbl_distance.Name = "lbl_distance";
+            // 
+            // lbl_homedist
+            // 
+            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
+            this.lbl_homedist.Name = "lbl_homedist";
+            // 
+            // lbl_prevdist
+            // 
+            resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
+            this.lbl_prevdist.Name = "lbl_prevdist";
+            // 
+            // trackBar1
+            // 
+            resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.BackColor = System.Drawing.Color.White;
+            this.trackBar1.LargeChange = 0.005F;
+            this.trackBar1.Maximum = 24F;
+            this.trackBar1.Minimum = 1F;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.SmallChange = 0.001F;
+            this.trackBar1.TickFrequency = 1F;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.trackBar1.Value = 2F;
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // panelWaypoints
+            // 
+            this.panelWaypoints.AssociatedSplitter = this.splitter1;
+            this.panelWaypoints.BackColor = System.Drawing.Color.Transparent;
+            this.panelWaypoints.CaptionFont = new System.Drawing.Font("Segoe UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.panelWaypoints.CaptionHeight = 21;
+            this.panelWaypoints.ColorScheme = BSE.Windows.Forms.ColorScheme.Custom;
+            this.panelWaypoints.Controls.Add(this.panel1);
+            this.panelWaypoints.Controls.Add(this.panelAction);
+            this.panelWaypoints.Controls.Add(this.CMB_altmode);
+            this.panelWaypoints.Controls.Add(this.CHK_splinedefault);
+            this.panelWaypoints.Controls.Add(this.label17);
+            this.panelWaypoints.Controls.Add(this.TXT_altwarn);
+            this.panelWaypoints.Controls.Add(this.LBL_WPRad);
+            this.panelWaypoints.Controls.Add(this.label5);
+            this.panelWaypoints.Controls.Add(this.TXT_loiterrad);
+            this.panelWaypoints.Controls.Add(this.LBL_defalutalt);
+            this.panelWaypoints.Controls.Add(this.TXT_DefaultAlt);
+            this.panelWaypoints.Controls.Add(this.CHK_verifyheight);
+            this.panelWaypoints.Controls.Add(this.BUT_Add);
+            this.panelWaypoints.CustomColors.BorderColor = System.Drawing.Color.Black;
+            this.panelWaypoints.CustomColors.CaptionCloseIcon = System.Drawing.Color.White;
+            this.panelWaypoints.CustomColors.CaptionExpandIcon = System.Drawing.Color.White;
+            this.panelWaypoints.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(222)))), ((int)(((byte)(233)))));
+            this.panelWaypoints.CustomColors.CaptionGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(156)))), ((int)(((byte)(197)))));
+            this.panelWaypoints.CustomColors.CaptionGradientMiddle = System.Drawing.Color.Transparent;
+            this.panelWaypoints.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.Transparent;
+            this.panelWaypoints.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.Transparent;
+            this.panelWaypoints.CustomColors.CaptionText = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.panelWaypoints.CustomColors.CollapsedCaptionText = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.panelWaypoints.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panelWaypoints.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panelWaypoints.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.panelWaypoints, "panelWaypoints");
+            this.panelWaypoints.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelWaypoints.Image = null;
+            this.panelWaypoints.Name = "panelWaypoints";
+            this.panelWaypoints.ShowExpandIcon = true;
+            this.panelWaypoints.ToolTipTextCloseIcon = null;
+            this.panelWaypoints.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panelWaypoints.ToolTipTextExpandIconPanelExpanded = null;
+            this.panelWaypoints.CloseClick += new System.EventHandler<System.EventArgs>(this.panelWaypoints_CloseClick);
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
             // panelAction
             // 
+            this.panelAction.AssociatedSplitter = this.splitter2;
+            this.panelAction.BackColor = System.Drawing.Color.Transparent;
+            this.panelAction.CaptionFont = new System.Drawing.Font("Segoe UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.panelAction.CaptionHeight = 21;
+            this.panelAction.ColorScheme = BSE.Windows.Forms.ColorScheme.Custom;
             this.panelAction.Controls.Add(this.flowLayoutPanel1);
-            resources.ApplyResources(this.panelAction, "panelAction");
+            this.panelAction.CustomColors.BorderColor = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.CaptionCloseIcon = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.CaptionExpandIcon = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.CaptionGradientBegin = System.Drawing.Color.Empty;
+            this.panelAction.CustomColors.CaptionGradientEnd = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.CaptionGradientMiddle = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.CaptionText = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.panelAction.CustomColors.CollapsedCaptionText = System.Drawing.Color.Transparent;
+            this.panelAction.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panelAction.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panelAction.CustomColors.InnerBorderColor = System.Drawing.Color.Transparent;
             this.panelAction.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelAction.Image = null;
+            resources.ApplyResources(this.panelAction, "panelAction");
             this.panelAction.Name = "panelAction";
+            this.panelAction.ShowExpandIcon = true;
+            this.panelAction.ToolTipTextCloseIcon = null;
+            this.panelAction.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panelAction.ToolTipTextExpandIconPanelExpanded = null;
             // 
             // flowLayoutPanel1
             // 
@@ -682,7 +1776,13 @@ namespace MissionPlanner.GCSViews
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.Controls.Add(this.label4);
+            this.flowLayoutPanel1.Controls.Add(this.TXT_homelat);
+            this.flowLayoutPanel1.Controls.Add(this.TXT_homelng);
+            this.flowLayoutPanel1.Controls.Add(this.TXT_homealt);
+            this.flowLayoutPanel1.Controls.Add(this.Label1);
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.label3);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
@@ -691,6 +1791,17 @@ namespace MissionPlanner.GCSViews
             this.panel4.Controls.Add(this.coords1);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
+            // 
+            // coords1
+            // 
+            this.coords1.Alt = 0D;
+            this.coords1.AltSource = "";
+            this.coords1.AltUnit = "m";
+            this.coords1.Lat = 0D;
+            this.coords1.Lng = 0D;
+            resources.ApplyResources(this.coords1, "coords1");
+            this.coords1.Name = "coords1";
+            this.coords1.Vertical = true;
             // 
             // panel3
             // 
@@ -706,7 +1817,11 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.chk_grid, "chk_grid");
             this.chk_grid.Name = "chk_grid";
             this.chk_grid.UseVisualStyleBackColor = true;
-            this.chk_grid.CheckedChanged += new System.EventHandler(this.chk_grid_CheckedChanged);
+            // 
+            // lbl_status
+            // 
+            resources.ApplyResources(this.lbl_status, "lbl_status");
+            this.lbl_status.Name = "lbl_status";
             // 
             // comboBoxMapType
             // 
@@ -721,14 +1836,10 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.lnk_kml, "lnk_kml");
             this.lnk_kml.Name = "lnk_kml";
             this.lnk_kml.TabStop = true;
-            this.lnk_kml.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk_kml_LinkClicked);
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lbl_wpfile);
-            this.panel2.Controls.Add(this.BUT_loadwpfile);
-            this.panel2.Controls.Add(this.BUT_saveWPFile);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
@@ -737,441 +1848,173 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.lbl_wpfile, "lbl_wpfile");
             this.lbl_wpfile.Name = "lbl_wpfile";
             // 
-            // BUT_loadwpfile
+            // panel5
             // 
-            resources.ApplyResources(this.BUT_loadwpfile, "BUT_loadwpfile");
-            this.BUT_loadwpfile.Name = "BUT_loadwpfile";
-            this.BUT_loadwpfile.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.BUT_loadwpfile.UseVisualStyleBackColor = true;
-            this.BUT_loadwpfile.Click += new System.EventHandler(this.BUT_loadwpfile_Click);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
             // 
-            // BUT_saveWPFile
+            // label4
             // 
-            resources.ApplyResources(this.BUT_saveWPFile, "BUT_saveWPFile");
-            this.BUT_saveWPFile.Name = "BUT_saveWPFile";
-            this.BUT_saveWPFile.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.BUT_saveWPFile.UseVisualStyleBackColor = true;
-            this.BUT_saveWPFile.Click += new System.EventHandler(this.BUT_saveWPFile_Click);
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            this.label4.TabStop = true;
             // 
-            // splitter2
+            // TXT_homelat
             // 
-            resources.ApplyResources(this.splitter2, "splitter2");
-            this.splitter2.Name = "splitter2";
-            this.splitter2.TabStop = false;
+            resources.ApplyResources(this.TXT_homelat, "TXT_homelat");
+            this.TXT_homelat.Name = "TXT_homelat";
             // 
-            // panelMap
+            // TXT_homelng
             // 
-            this.panelMap.Controls.Add(this.lbl_homedist);
-            this.panelMap.Controls.Add(this.lbl_prevdist);
-            this.panelMap.Controls.Add(this.trackBar1);
-            this.panelMap.Controls.Add(this.label11);
-            this.panelMap.Controls.Add(this.lbl_distance);
-            this.panelMap.Controls.Add(this.cmb_missiontype);
-            this.panelMap.Controls.Add(this.MainMap);
-            resources.ApplyResources(this.panelMap, "panelMap");
-            this.panelMap.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMap.Name = "panelMap";
-            this.panelMap.Resize += new System.EventHandler(this.panelMap_Resize);
+            resources.ApplyResources(this.TXT_homelng, "TXT_homelng");
+            this.TXT_homelng.Name = "TXT_homelng";
             // 
-            // lbl_homedist
+            // TXT_homealt
             // 
-            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
-            this.lbl_homedist.Name = "lbl_homedist";
+            resources.ApplyResources(this.TXT_homealt, "TXT_homealt");
+            this.TXT_homealt.Name = "TXT_homealt";
             // 
-            // lbl_prevdist
+            // Label1
             // 
-            resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
-            this.lbl_prevdist.Name = "lbl_prevdist";
+            resources.ApplyResources(this.Label1, "Label1");
+            this.Label1.Name = "Label1";
             // 
-            // trackBar1
+            // label2
             // 
-            resources.ApplyResources(this.trackBar1, "trackBar1");
-            this.trackBar1.LargeChange = 0.005F;
-            this.trackBar1.Maximum = 24F;
-            this.trackBar1.Minimum = 1F;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.SmallChange = 0.001F;
-            this.trackBar1.TickFrequency = 1F;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.trackBar1.Value = 2F;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
-            // label11
+            // label3
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
-            // lbl_distance
+            // CMB_altmode
             // 
-            resources.ApplyResources(this.lbl_distance, "lbl_distance");
-            this.lbl_distance.Name = "lbl_distance";
+            this.CMB_altmode.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_altmode, "CMB_altmode");
+            this.CMB_altmode.Name = "CMB_altmode";
             // 
-            // cmb_missiontype
+            // CHK_splinedefault
             // 
-            resources.ApplyResources(this.cmb_missiontype, "cmb_missiontype");
-            this.cmb_missiontype.FormattingEnabled = true;
-            this.cmb_missiontype.Items.AddRange(new object[] {
-            resources.GetString("cmb_missiontype.Items"),
-            resources.GetString("cmb_missiontype.Items1"),
-            resources.GetString("cmb_missiontype.Items2")});
-            this.cmb_missiontype.Name = "cmb_missiontype";
-            this.cmb_missiontype.SelectedIndexChanged += new System.EventHandler(this.Cmb_missiontype_SelectedIndexChanged);
+            resources.ApplyResources(this.CHK_splinedefault, "CHK_splinedefault");
+            this.CHK_splinedefault.Name = "CHK_splinedefault";
+            this.CHK_splinedefault.UseVisualStyleBackColor = true;
             // 
-            // MainMap
+            // label17
             // 
-            resources.ApplyResources(this.MainMap, "MainMap");
-            this.MainMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.MainMap.Bearing = 0F;
-            this.MainMap.CanDragMap = true;
-            this.MainMap.ContextMenuStrip = this.contextMenuStrip1;
-            this.MainMap.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MainMap.EmptyTileColor = System.Drawing.Color.Gray;
-            this.MainMap.GrayScaleMode = false;
-            this.MainMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.MainMap.HoldInvalidation = false;
-            this.MainMap.LevelsKeepInMemmory = 5;
-            this.MainMap.MarkersEnabled = true;
-            this.MainMap.MaxZoom = 24;
-            this.MainMap.MinZoom = 0;
-            this.MainMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionWithoutCenter;
-            this.MainMap.Name = "MainMap";
-            this.MainMap.NegativeMode = false;
-            this.MainMap.PolygonsEnabled = true;
-            this.MainMap.RetryLoadTile = 0;
-            this.MainMap.RoutesEnabled = false;
-            this.MainMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
-            this.MainMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.MainMap.ShowTileGridLines = false;
-            this.MainMap.Zoom = 0D;
-            this.MainMap.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMap_Paint);
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            // 
+            // TXT_altwarn
+            // 
+            resources.ApplyResources(this.TXT_altwarn, "TXT_altwarn");
+            this.TXT_altwarn.Name = "TXT_altwarn";
+            // 
+            // LBL_WPRad
+            // 
+            resources.ApplyResources(this.LBL_WPRad, "LBL_WPRad");
+            this.LBL_WPRad.Name = "LBL_WPRad";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // TXT_loiterrad
+            // 
+            resources.ApplyResources(this.TXT_loiterrad, "TXT_loiterrad");
+            this.TXT_loiterrad.Name = "TXT_loiterrad";
+            // 
+            // LBL_defalutalt
+            // 
+            resources.ApplyResources(this.LBL_defalutalt, "LBL_defalutalt");
+            this.LBL_defalutalt.Name = "LBL_defalutalt";
+            // 
+            // TXT_DefaultAlt
+            // 
+            resources.ApplyResources(this.TXT_DefaultAlt, "TXT_DefaultAlt");
+            this.TXT_DefaultAlt.Name = "TXT_DefaultAlt";
+            // 
+            // CHK_verifyheight
+            // 
+            resources.ApplyResources(this.CHK_verifyheight, "CHK_verifyheight");
+            this.CHK_verifyheight.Name = "CHK_verifyheight";
+            this.CHK_verifyheight.UseVisualStyleBackColor = true;
+            // 
+            // BUT_Add
+            // 
+            this.BUT_Add.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(222)))), ((int)(((byte)(233)))));
+            this.BUT_Add.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(156)))), ((int)(((byte)(197)))));
+            resources.ApplyResources(this.BUT_Add, "BUT_Add");
+            this.BUT_Add.Name = "BUT_Add";
+            this.BUT_Add.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.toolTip1.SetToolTip(this.BUT_Add, resources.GetString("BUT_Add.ToolTip"));
+            this.BUT_Add.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // dataGridViewImageColumn1
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle17;
+            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // dataGridViewImageColumn2
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle18;
+            resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
+            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteWPToolStripMenuItem,
-            this.insertWpToolStripMenuItem,
-            this.insertSplineWPToolStripMenuItem,
-            this.loiterToolStripMenuItem,
-            this.jumpToolStripMenuItem,
-            this.rTLToolStripMenuItem,
-            this.landToolStripMenuItem,
-            this.takeoffToolStripMenuItem,
-            this.setROIToolStripMenuItem,
-            this.clearMissionToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.polygonToolStripMenuItem,
-            this.geoFenceToolStripMenuItem,
-            this.rallyPointsToolStripMenuItem,
-            this.autoWPToolStripMenuItem,
-            this.mapToolToolStripMenuItem,
-            this.fileLoadSaveToolStripMenuItem,
-            this.pOIToolStripMenuItem,
-            this.trackerHomeToolStripMenuItem,
-            this.modifyAltToolStripMenuItem,
-            this.enterUTMCoordToolStripMenuItem,
-            this.switchDockingToolStripMenuItem,
-            this.setHomeHereToolStripMenuItem});
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.ShowImageMargin = false;
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
-            this.contextMenuStrip1.Closed += new System.Windows.Forms.ToolStripDropDownClosedEventHandler(this.contextMenuStrip1_Closed);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
-            // deleteWPToolStripMenuItem
+            // timer1
             // 
-            this.deleteWPToolStripMenuItem.Name = "deleteWPToolStripMenuItem";
-            resources.ApplyResources(this.deleteWPToolStripMenuItem, "deleteWPToolStripMenuItem");
-            this.deleteWPToolStripMenuItem.Click += new System.EventHandler(this.deleteWPToolStripMenuItem_Click);
+            this.timer1.Interval = 1200;
             // 
-            // insertWpToolStripMenuItem
+            // but_mincommands
             // 
-            this.insertWpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.currentPositionToolStripMenuItem});
-            this.insertWpToolStripMenuItem.Name = "insertWpToolStripMenuItem";
-            resources.ApplyResources(this.insertWpToolStripMenuItem, "insertWpToolStripMenuItem");
-            this.insertWpToolStripMenuItem.Click += new System.EventHandler(this.insertWpToolStripMenuItem_Click);
+            resources.ApplyResources(this.but_mincommands, "but_mincommands");
+            this.but_mincommands.Name = "but_mincommands";
+            this.but_mincommands.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.but_mincommands.UseVisualStyleBackColor = true;
+            this.but_mincommands.Click += new System.EventHandler(this.but_mincommands_Click);
             // 
-            // currentPositionToolStripMenuItem
+            // chk_usemavftp
             // 
-            this.currentPositionToolStripMenuItem.Name = "currentPositionToolStripMenuItem";
-            resources.ApplyResources(this.currentPositionToolStripMenuItem, "currentPositionToolStripMenuItem");
-            this.currentPositionToolStripMenuItem.Click += new System.EventHandler(this.currentPositionToolStripMenuItem_Click);
-            // 
-            // insertSplineWPToolStripMenuItem
-            // 
-            this.insertSplineWPToolStripMenuItem.Name = "insertSplineWPToolStripMenuItem";
-            resources.ApplyResources(this.insertSplineWPToolStripMenuItem, "insertSplineWPToolStripMenuItem");
-            this.insertSplineWPToolStripMenuItem.Click += new System.EventHandler(this.insertSplineWPToolStripMenuItem_Click);
-            // 
-            // loiterToolStripMenuItem
-            // 
-            this.loiterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loiterForeverToolStripMenuItem,
-            this.loitertimeToolStripMenuItem,
-            this.loitercirclesToolStripMenuItem});
-            this.loiterToolStripMenuItem.Name = "loiterToolStripMenuItem";
-            resources.ApplyResources(this.loiterToolStripMenuItem, "loiterToolStripMenuItem");
-            // 
-            // loiterForeverToolStripMenuItem
-            // 
-            this.loiterForeverToolStripMenuItem.Name = "loiterForeverToolStripMenuItem";
-            resources.ApplyResources(this.loiterForeverToolStripMenuItem, "loiterForeverToolStripMenuItem");
-            this.loiterForeverToolStripMenuItem.Click += new System.EventHandler(this.loiterForeverToolStripMenuItem_Click);
-            // 
-            // loitertimeToolStripMenuItem
-            // 
-            this.loitertimeToolStripMenuItem.Name = "loitertimeToolStripMenuItem";
-            resources.ApplyResources(this.loitertimeToolStripMenuItem, "loitertimeToolStripMenuItem");
-            this.loitertimeToolStripMenuItem.Click += new System.EventHandler(this.loitertimeToolStripMenuItem_Click);
-            // 
-            // loitercirclesToolStripMenuItem
-            // 
-            this.loitercirclesToolStripMenuItem.Name = "loitercirclesToolStripMenuItem";
-            resources.ApplyResources(this.loitercirclesToolStripMenuItem, "loitercirclesToolStripMenuItem");
-            this.loitercirclesToolStripMenuItem.Click += new System.EventHandler(this.loitercirclesToolStripMenuItem_Click);
-            // 
-            // jumpToolStripMenuItem
-            // 
-            this.jumpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.jumpstartToolStripMenuItem,
-            this.jumpwPToolStripMenuItem});
-            this.jumpToolStripMenuItem.Name = "jumpToolStripMenuItem";
-            resources.ApplyResources(this.jumpToolStripMenuItem, "jumpToolStripMenuItem");
-            // 
-            // jumpstartToolStripMenuItem
-            // 
-            this.jumpstartToolStripMenuItem.Name = "jumpstartToolStripMenuItem";
-            resources.ApplyResources(this.jumpstartToolStripMenuItem, "jumpstartToolStripMenuItem");
-            this.jumpstartToolStripMenuItem.Click += new System.EventHandler(this.jumpstartToolStripMenuItem_Click);
-            // 
-            // jumpwPToolStripMenuItem
-            // 
-            this.jumpwPToolStripMenuItem.Name = "jumpwPToolStripMenuItem";
-            resources.ApplyResources(this.jumpwPToolStripMenuItem, "jumpwPToolStripMenuItem");
-            this.jumpwPToolStripMenuItem.Click += new System.EventHandler(this.jumpwPToolStripMenuItem_Click);
-            // 
-            // rTLToolStripMenuItem
-            // 
-            this.rTLToolStripMenuItem.Name = "rTLToolStripMenuItem";
-            resources.ApplyResources(this.rTLToolStripMenuItem, "rTLToolStripMenuItem");
-            this.rTLToolStripMenuItem.Click += new System.EventHandler(this.rTLToolStripMenuItem_Click);
-            // 
-            // landToolStripMenuItem
-            // 
-            this.landToolStripMenuItem.Name = "landToolStripMenuItem";
-            resources.ApplyResources(this.landToolStripMenuItem, "landToolStripMenuItem");
-            this.landToolStripMenuItem.Click += new System.EventHandler(this.landToolStripMenuItem_Click);
-            // 
-            // takeoffToolStripMenuItem
-            // 
-            this.takeoffToolStripMenuItem.Name = "takeoffToolStripMenuItem";
-            resources.ApplyResources(this.takeoffToolStripMenuItem, "takeoffToolStripMenuItem");
-            this.takeoffToolStripMenuItem.Click += new System.EventHandler(this.takeoffToolStripMenuItem_Click);
-            // 
-            // setROIToolStripMenuItem
-            // 
-            this.setROIToolStripMenuItem.Name = "setROIToolStripMenuItem";
-            resources.ApplyResources(this.setROIToolStripMenuItem, "setROIToolStripMenuItem");
-            this.setROIToolStripMenuItem.Click += new System.EventHandler(this.setROIToolStripMenuItem_Click);
-            // 
-            // clearMissionToolStripMenuItem
-            // 
-            this.clearMissionToolStripMenuItem.Name = "clearMissionToolStripMenuItem";
-            resources.ApplyResources(this.clearMissionToolStripMenuItem, "clearMissionToolStripMenuItem");
-            this.clearMissionToolStripMenuItem.Click += new System.EventHandler(this.clearMissionToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
-            // 
-            // polygonToolStripMenuItem
-            // 
-            this.polygonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addPolygonPointToolStripMenuItem2,
-            this.clearPolygonToolStripMenuItem2,
-            this.savePolygonToolStripMenuItem2,
-            this.loadPolygonToolStripMenuItem2,
-            this.fromSHPToolStripMenuItem2,
-            this.fromCurrentWaypointsToolStripMenuItem,
-            this.offsetPolygonToolStripMenuItem2,
-            this.areaToolStripMenuItem2});
-            this.polygonToolStripMenuItem.Name = "polygonToolStripMenuItem";
-            resources.ApplyResources(this.polygonToolStripMenuItem, "polygonToolStripMenuItem");
-            // 
-            // addPolygonPointToolStripMenuItem2
-            // 
-            this.addPolygonPointToolStripMenuItem2.Name = "addPolygonPointToolStripMenuItem2";
-            resources.ApplyResources(this.addPolygonPointToolStripMenuItem2, "addPolygonPointToolStripMenuItem2");
-            this.addPolygonPointToolStripMenuItem2.Click += new System.EventHandler(this.addPolygonPointToolStripMenuItem_Click);
-            // 
-            // clearPolygonToolStripMenuItem2
-            // 
-            this.clearPolygonToolStripMenuItem2.Name = "clearPolygonToolStripMenuItem2";
-            resources.ApplyResources(this.clearPolygonToolStripMenuItem2, "clearPolygonToolStripMenuItem2");
-            this.clearPolygonToolStripMenuItem2.Click += new System.EventHandler(this.clearPolygonToolStripMenuItem_Click);
-            // 
-            // savePolygonToolStripMenuItem2
-            // 
-            this.savePolygonToolStripMenuItem2.Name = "savePolygonToolStripMenuItem2";
-            resources.ApplyResources(this.savePolygonToolStripMenuItem2, "savePolygonToolStripMenuItem2");
-            this.savePolygonToolStripMenuItem2.Click += new System.EventHandler(this.savePolygonToolStripMenuItem_Click);
-            // 
-            // loadPolygonToolStripMenuItem2
-            // 
-            this.loadPolygonToolStripMenuItem2.Name = "loadPolygonToolStripMenuItem2";
-            resources.ApplyResources(this.loadPolygonToolStripMenuItem2, "loadPolygonToolStripMenuItem2");
-            this.loadPolygonToolStripMenuItem2.Click += new System.EventHandler(this.loadPolygonToolStripMenuItem_Click);
-            // 
-            // fromSHPToolStripMenuItem2
-            // 
-            this.fromSHPToolStripMenuItem2.Name = "fromSHPToolStripMenuItem2";
-            resources.ApplyResources(this.fromSHPToolStripMenuItem2, "fromSHPToolStripMenuItem2");
-            this.fromSHPToolStripMenuItem2.Click += new System.EventHandler(this.fromSHPToolStripMenuItem_Click);
-            // 
-            // fromCurrentWaypointsToolStripMenuItem
-            // 
-            this.fromCurrentWaypointsToolStripMenuItem.Name = "fromCurrentWaypointsToolStripMenuItem";
-            resources.ApplyResources(this.fromCurrentWaypointsToolStripMenuItem, "fromCurrentWaypointsToolStripMenuItem");
-            this.fromCurrentWaypointsToolStripMenuItem.Click += new System.EventHandler(this.fromCurrentWaypointsMenuItem_Click);
-            // 
-            // offsetPolygonToolStripMenuItem2
-            // 
-            this.offsetPolygonToolStripMenuItem2.Name = "offsetPolygonToolStripMenuItem2";
-            resources.ApplyResources(this.offsetPolygonToolStripMenuItem2, "offsetPolygonToolStripMenuItem2");
-            this.offsetPolygonToolStripMenuItem2.Click += new System.EventHandler(this.offsetPolygonToolStripMenuItem_Click);
-            // 
-            // areaToolStripMenuItem2
-            // 
-            this.areaToolStripMenuItem2.Name = "areaToolStripMenuItem2";
-            resources.ApplyResources(this.areaToolStripMenuItem2, "areaToolStripMenuItem2");
-            this.areaToolStripMenuItem2.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
-            // 
-            // geoFenceToolStripMenuItem
-            // 
-            this.geoFenceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.GeoFenceuploadToolStripMenuItem,
-            this.GeoFencedownloadToolStripMenuItem,
-            this.setReturnLocationToolStripMenuItem,
-            this.loadFromFileToolStripMenuItem,
-            this.saveToFileToolStripMenuItem,
-            this.clearToolStripMenuItem});
-            this.geoFenceToolStripMenuItem.Name = "geoFenceToolStripMenuItem";
-            resources.ApplyResources(this.geoFenceToolStripMenuItem, "geoFenceToolStripMenuItem");
-            // 
-            // GeoFenceuploadToolStripMenuItem
-            // 
-            this.GeoFenceuploadToolStripMenuItem.Name = "GeoFenceuploadToolStripMenuItem";
-            resources.ApplyResources(this.GeoFenceuploadToolStripMenuItem, "GeoFenceuploadToolStripMenuItem");
-            this.GeoFenceuploadToolStripMenuItem.Click += new System.EventHandler(this.GeoFenceuploadToolStripMenuItem_Click);
-            // 
-            // GeoFencedownloadToolStripMenuItem
-            // 
-            this.GeoFencedownloadToolStripMenuItem.Name = "GeoFencedownloadToolStripMenuItem";
-            resources.ApplyResources(this.GeoFencedownloadToolStripMenuItem, "GeoFencedownloadToolStripMenuItem");
-            this.GeoFencedownloadToolStripMenuItem.Click += new System.EventHandler(this.GeoFencedownloadToolStripMenuItem_Click);
-            // 
-            // setReturnLocationToolStripMenuItem
-            // 
-            this.setReturnLocationToolStripMenuItem.Name = "setReturnLocationToolStripMenuItem";
-            resources.ApplyResources(this.setReturnLocationToolStripMenuItem, "setReturnLocationToolStripMenuItem");
-            this.setReturnLocationToolStripMenuItem.Click += new System.EventHandler(this.setReturnLocationToolStripMenuItem_Click);
-            // 
-            // loadFromFileToolStripMenuItem
-            // 
-            this.loadFromFileToolStripMenuItem.Name = "loadFromFileToolStripMenuItem";
-            resources.ApplyResources(this.loadFromFileToolStripMenuItem, "loadFromFileToolStripMenuItem");
-            this.loadFromFileToolStripMenuItem.Click += new System.EventHandler(this.loadFromFileToolStripMenuItem_Click);
-            // 
-            // saveToFileToolStripMenuItem
-            // 
-            this.saveToFileToolStripMenuItem.Name = "saveToFileToolStripMenuItem";
-            resources.ApplyResources(this.saveToFileToolStripMenuItem, "saveToFileToolStripMenuItem");
-            this.saveToFileToolStripMenuItem.Click += new System.EventHandler(this.saveToFileToolStripMenuItem_Click);
-            // 
-            // clearToolStripMenuItem
-            // 
-            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            resources.ApplyResources(this.clearToolStripMenuItem, "clearToolStripMenuItem");
-            this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
+            resources.ApplyResources(this.chk_usemavftp, "chk_usemavftp");
+            this.chk_usemavftp.Name = "chk_usemavftp";
+            this.chk_usemavftp.UseVisualStyleBackColor = true;
+            this.chk_usemavftp.CheckedChanged += new System.EventHandler(this.chk_usemavftp_CheckedChanged);
             // 
             // rallyPointsToolStripMenuItem
             // 
-            this.rallyPointsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setRallyPointToolStripMenuItem,
-            this.getRallyPointsToolStripMenuItem,
-            this.saveRallyPointsToolStripMenuItem,
-            this.clearRallyPointsToolStripMenuItem,
-            this.saveToFileToolStripMenuItem1,
-            this.loadFromFileToolStripMenuItem1});
             this.rallyPointsToolStripMenuItem.Name = "rallyPointsToolStripMenuItem";
             resources.ApplyResources(this.rallyPointsToolStripMenuItem, "rallyPointsToolStripMenuItem");
             // 
-            // setRallyPointToolStripMenuItem
+            // geoFenceToolStripMenuItem
             // 
-            this.setRallyPointToolStripMenuItem.Name = "setRallyPointToolStripMenuItem";
-            resources.ApplyResources(this.setRallyPointToolStripMenuItem, "setRallyPointToolStripMenuItem");
-            this.setRallyPointToolStripMenuItem.Click += new System.EventHandler(this.setRallyPointToolStripMenuItem_Click);
-            // 
-            // getRallyPointsToolStripMenuItem
-            // 
-            this.getRallyPointsToolStripMenuItem.Name = "getRallyPointsToolStripMenuItem";
-            resources.ApplyResources(this.getRallyPointsToolStripMenuItem, "getRallyPointsToolStripMenuItem");
-            this.getRallyPointsToolStripMenuItem.Click += new System.EventHandler(this.getRallyPointsToolStripMenuItem_Click);
-            // 
-            // saveRallyPointsToolStripMenuItem
-            // 
-            this.saveRallyPointsToolStripMenuItem.Name = "saveRallyPointsToolStripMenuItem";
-            resources.ApplyResources(this.saveRallyPointsToolStripMenuItem, "saveRallyPointsToolStripMenuItem");
-            this.saveRallyPointsToolStripMenuItem.Click += new System.EventHandler(this.saveRallyPointsToolStripMenuItem_Click);
-            // 
-            // clearRallyPointsToolStripMenuItem
-            // 
-            this.clearRallyPointsToolStripMenuItem.Name = "clearRallyPointsToolStripMenuItem";
-            resources.ApplyResources(this.clearRallyPointsToolStripMenuItem, "clearRallyPointsToolStripMenuItem");
-            this.clearRallyPointsToolStripMenuItem.Click += new System.EventHandler(this.clearRallyPointsToolStripMenuItem_Click);
-            // 
-            // saveToFileToolStripMenuItem1
-            // 
-            this.saveToFileToolStripMenuItem1.Name = "saveToFileToolStripMenuItem1";
-            resources.ApplyResources(this.saveToFileToolStripMenuItem1, "saveToFileToolStripMenuItem1");
-            this.saveToFileToolStripMenuItem1.Click += new System.EventHandler(this.saveToFileToolStripMenuItem1_Click);
-            // 
-            // loadFromFileToolStripMenuItem1
-            // 
-            this.loadFromFileToolStripMenuItem1.Name = "loadFromFileToolStripMenuItem1";
-            resources.ApplyResources(this.loadFromFileToolStripMenuItem1, "loadFromFileToolStripMenuItem1");
-            this.loadFromFileToolStripMenuItem1.Click += new System.EventHandler(this.loadFromFileToolStripMenuItem1_Click);
-            // 
-            // autoWPToolStripMenuItem
-            // 
-            this.autoWPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createWpCircleToolStripMenuItem,
-            this.createSplineCircleToolStripMenuItem,
-            this.areaToolStripMenuItem1,
-            this.textToolStripMenuItem,
-            this.createCircleSurveyToolStripMenuItem,
-            this.surveyGridToolStripMenuItem});
-            this.autoWPToolStripMenuItem.Name = "autoWPToolStripMenuItem";
-            resources.ApplyResources(this.autoWPToolStripMenuItem, "autoWPToolStripMenuItem");
-            // 
-            // createWpCircleToolStripMenuItem
-            // 
-            this.createWpCircleToolStripMenuItem.Name = "createWpCircleToolStripMenuItem";
-            resources.ApplyResources(this.createWpCircleToolStripMenuItem, "createWpCircleToolStripMenuItem");
-            this.createWpCircleToolStripMenuItem.Click += new System.EventHandler(this.createWpCircleToolStripMenuItem_Click);
+            this.geoFenceToolStripMenuItem.Name = "geoFenceToolStripMenuItem";
+            resources.ApplyResources(this.geoFenceToolStripMenuItem, "geoFenceToolStripMenuItem");
             // 
             // createSplineCircleToolStripMenuItem
             // 
             this.createSplineCircleToolStripMenuItem.Name = "createSplineCircleToolStripMenuItem";
             resources.ApplyResources(this.createSplineCircleToolStripMenuItem, "createSplineCircleToolStripMenuItem");
             this.createSplineCircleToolStripMenuItem.Click += new System.EventHandler(this.createSplineCircleToolStripMenuItem_Click);
-            // 
-            // areaToolStripMenuItem1
-            // 
-            this.areaToolStripMenuItem1.Name = "areaToolStripMenuItem1";
-            resources.ApplyResources(this.areaToolStripMenuItem1, "areaToolStripMenuItem1");
-            this.areaToolStripMenuItem1.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
             // 
             // textToolStripMenuItem
             // 
@@ -1185,142 +2028,10 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.createCircleSurveyToolStripMenuItem, "createCircleSurveyToolStripMenuItem");
             this.createCircleSurveyToolStripMenuItem.Click += new System.EventHandler(this.createCircleSurveyToolStripMenuItem_Click);
             // 
-            // surveyGridToolStripMenuItem
-            // 
-            this.surveyGridToolStripMenuItem.Name = "surveyGridToolStripMenuItem";
-            resources.ApplyResources(this.surveyGridToolStripMenuItem, "surveyGridToolStripMenuItem");
-            this.surveyGridToolStripMenuItem.Click += new System.EventHandler(this.surveyGridToolStripMenuItem_Click);
-            // 
-            // mapToolToolStripMenuItem
-            // 
-            this.mapToolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ContextMeasure,
-            this.rotateMapToolStripMenuItem,
-            this.zoomToToolStripMenuItem,
-            this.prefetchToolStripMenuItem,
-            this.prefetchWPPathToolStripMenuItem,
-            this.kMLOverlayToolStripMenuItem,
-            this.elevationGraphToolStripMenuItem,
-            this.reverseWPsToolStripMenuItem,
-            this.gDALOpacityToolStripMenuItem});
-            this.mapToolToolStripMenuItem.Name = "mapToolToolStripMenuItem";
-            resources.ApplyResources(this.mapToolToolStripMenuItem, "mapToolToolStripMenuItem");
-            // 
-            // ContextMeasure
-            // 
-            this.ContextMeasure.Name = "ContextMeasure";
-            resources.ApplyResources(this.ContextMeasure, "ContextMeasure");
-            this.ContextMeasure.Click += new System.EventHandler(this.ContextMeasure_Click);
-            // 
-            // rotateMapToolStripMenuItem
-            // 
-            this.rotateMapToolStripMenuItem.Name = "rotateMapToolStripMenuItem";
-            resources.ApplyResources(this.rotateMapToolStripMenuItem, "rotateMapToolStripMenuItem");
-            this.rotateMapToolStripMenuItem.Click += new System.EventHandler(this.rotateMapToolStripMenuItem_Click);
-            // 
-            // zoomToToolStripMenuItem
-            // 
-            this.zoomToToolStripMenuItem.Name = "zoomToToolStripMenuItem";
-            resources.ApplyResources(this.zoomToToolStripMenuItem, "zoomToToolStripMenuItem");
-            this.zoomToToolStripMenuItem.Click += new System.EventHandler(this.zoomToToolStripMenuItem_Click);
-            // 
-            // prefetchToolStripMenuItem
-            // 
-            this.prefetchToolStripMenuItem.Name = "prefetchToolStripMenuItem";
-            resources.ApplyResources(this.prefetchToolStripMenuItem, "prefetchToolStripMenuItem");
-            this.prefetchToolStripMenuItem.Click += new System.EventHandler(this.prefetchToolStripMenuItem_Click);
-            // 
-            // prefetchWPPathToolStripMenuItem
-            // 
-            this.prefetchWPPathToolStripMenuItem.Name = "prefetchWPPathToolStripMenuItem";
-            resources.ApplyResources(this.prefetchWPPathToolStripMenuItem, "prefetchWPPathToolStripMenuItem");
-            this.prefetchWPPathToolStripMenuItem.Click += new System.EventHandler(this.prefetchWPPathToolStripMenuItem_Click);
-            // 
-            // kMLOverlayToolStripMenuItem
-            // 
-            this.kMLOverlayToolStripMenuItem.Name = "kMLOverlayToolStripMenuItem";
-            resources.ApplyResources(this.kMLOverlayToolStripMenuItem, "kMLOverlayToolStripMenuItem");
-            this.kMLOverlayToolStripMenuItem.Click += new System.EventHandler(this.kMLOverlayToolStripMenuItem_Click);
-            // 
-            // elevationGraphToolStripMenuItem
-            // 
-            this.elevationGraphToolStripMenuItem.Name = "elevationGraphToolStripMenuItem";
-            resources.ApplyResources(this.elevationGraphToolStripMenuItem, "elevationGraphToolStripMenuItem");
-            this.elevationGraphToolStripMenuItem.Click += new System.EventHandler(this.elevationGraphToolStripMenuItem_Click);
-            // 
-            // reverseWPsToolStripMenuItem
-            // 
-            this.reverseWPsToolStripMenuItem.Name = "reverseWPsToolStripMenuItem";
-            resources.ApplyResources(this.reverseWPsToolStripMenuItem, "reverseWPsToolStripMenuItem");
-            this.reverseWPsToolStripMenuItem.Click += new System.EventHandler(this.reverseWPsToolStripMenuItem_Click);
-            // 
-            // fileLoadSaveToolStripMenuItem
-            // 
-            this.fileLoadSaveToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loadWPFileToolStripMenuItem,
-            this.loadAndAppendToolStripMenuItem,
-            this.saveWPFileToolStripMenuItem,
-            this.loadKMLFileToolStripMenuItem,
-            this.loadSHPFileToolStripMenuItem});
-            this.fileLoadSaveToolStripMenuItem.Name = "fileLoadSaveToolStripMenuItem";
-            resources.ApplyResources(this.fileLoadSaveToolStripMenuItem, "fileLoadSaveToolStripMenuItem");
-            // 
-            // loadWPFileToolStripMenuItem
-            // 
-            this.loadWPFileToolStripMenuItem.Name = "loadWPFileToolStripMenuItem";
-            resources.ApplyResources(this.loadWPFileToolStripMenuItem, "loadWPFileToolStripMenuItem");
-            this.loadWPFileToolStripMenuItem.Click += new System.EventHandler(this.loadWPFileToolStripMenuItem_Click);
-            // 
-            // loadAndAppendToolStripMenuItem
-            // 
-            this.loadAndAppendToolStripMenuItem.Name = "loadAndAppendToolStripMenuItem";
-            resources.ApplyResources(this.loadAndAppendToolStripMenuItem, "loadAndAppendToolStripMenuItem");
-            this.loadAndAppendToolStripMenuItem.Click += new System.EventHandler(this.loadAndAppendToolStripMenuItem_Click);
-            // 
-            // saveWPFileToolStripMenuItem
-            // 
-            this.saveWPFileToolStripMenuItem.Name = "saveWPFileToolStripMenuItem";
-            resources.ApplyResources(this.saveWPFileToolStripMenuItem, "saveWPFileToolStripMenuItem");
-            this.saveWPFileToolStripMenuItem.Click += new System.EventHandler(this.saveWPFileToolStripMenuItem_Click);
-            // 
-            // loadKMLFileToolStripMenuItem
-            // 
-            this.loadKMLFileToolStripMenuItem.Name = "loadKMLFileToolStripMenuItem";
-            resources.ApplyResources(this.loadKMLFileToolStripMenuItem, "loadKMLFileToolStripMenuItem");
-            this.loadKMLFileToolStripMenuItem.Click += new System.EventHandler(this.loadKMLFileToolStripMenuItem_Click);
-            // 
-            // loadSHPFileToolStripMenuItem
-            // 
-            this.loadSHPFileToolStripMenuItem.Name = "loadSHPFileToolStripMenuItem";
-            resources.ApplyResources(this.loadSHPFileToolStripMenuItem, "loadSHPFileToolStripMenuItem");
-            this.loadSHPFileToolStripMenuItem.Click += new System.EventHandler(this.loadSHPFileToolStripMenuItem_Click);
-            // 
             // pOIToolStripMenuItem
             // 
-            this.pOIToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.poiaddToolStripMenuItem,
-            this.poideleteToolStripMenuItem,
-            this.poieditToolStripMenuItem});
             this.pOIToolStripMenuItem.Name = "pOIToolStripMenuItem";
             resources.ApplyResources(this.pOIToolStripMenuItem, "pOIToolStripMenuItem");
-            // 
-            // poiaddToolStripMenuItem
-            // 
-            this.poiaddToolStripMenuItem.Name = "poiaddToolStripMenuItem";
-            resources.ApplyResources(this.poiaddToolStripMenuItem, "poiaddToolStripMenuItem");
-            this.poiaddToolStripMenuItem.Click += new System.EventHandler(this.poiaddToolStripMenuItem_Click);
-            // 
-            // poideleteToolStripMenuItem
-            // 
-            this.poideleteToolStripMenuItem.Name = "poideleteToolStripMenuItem";
-            resources.ApplyResources(this.poideleteToolStripMenuItem, "poideleteToolStripMenuItem");
-            this.poideleteToolStripMenuItem.Click += new System.EventHandler(this.poideleteToolStripMenuItem_Click);
-            // 
-            // poieditToolStripMenuItem
-            // 
-            this.poieditToolStripMenuItem.Name = "poieditToolStripMenuItem";
-            resources.ApplyResources(this.poieditToolStripMenuItem, "poieditToolStripMenuItem");
-            this.poieditToolStripMenuItem.Click += new System.EventHandler(this.poieditToolStripMenuItem_Click);
             // 
             // trackerHomeToolStripMenuItem
             // 
@@ -1328,65 +2039,20 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.trackerHomeToolStripMenuItem, "trackerHomeToolStripMenuItem");
             this.trackerHomeToolStripMenuItem.Click += new System.EventHandler(this.trackerHomeToolStripMenuItem_Click);
             // 
-            // modifyAltToolStripMenuItem
+            // autoWPToolStripMenuItem
             // 
-            this.modifyAltToolStripMenuItem.Name = "modifyAltToolStripMenuItem";
-            resources.ApplyResources(this.modifyAltToolStripMenuItem, "modifyAltToolStripMenuItem");
-            this.modifyAltToolStripMenuItem.Click += new System.EventHandler(this.modifyAltToolStripMenuItem_Click);
+            this.autoWPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createSplineCircleToolStripMenuItem,
+            this.textToolStripMenuItem,
+            this.createCircleSurveyToolStripMenuItem});
+            this.autoWPToolStripMenuItem.Name = "autoWPToolStripMenuItem";
+            resources.ApplyResources(this.autoWPToolStripMenuItem, "autoWPToolStripMenuItem");
             // 
-            // enterUTMCoordToolStripMenuItem
+            // deleteWPToolStripMenuItem
             // 
-            this.enterUTMCoordToolStripMenuItem.Name = "enterUTMCoordToolStripMenuItem";
-            resources.ApplyResources(this.enterUTMCoordToolStripMenuItem, "enterUTMCoordToolStripMenuItem");
-            this.enterUTMCoordToolStripMenuItem.Click += new System.EventHandler(this.enterUTMCoordToolStripMenuItem_Click);
-            // 
-            // switchDockingToolStripMenuItem
-            // 
-            this.switchDockingToolStripMenuItem.Name = "switchDockingToolStripMenuItem";
-            resources.ApplyResources(this.switchDockingToolStripMenuItem, "switchDockingToolStripMenuItem");
-            this.switchDockingToolStripMenuItem.Click += new System.EventHandler(this.switchDockingToolStripMenuItem_Click);
-            // 
-            // setHomeHereToolStripMenuItem
-            // 
-            this.setHomeHereToolStripMenuItem.Name = "setHomeHereToolStripMenuItem";
-            resources.ApplyResources(this.setHomeHereToolStripMenuItem, "setHomeHereToolStripMenuItem");
-            this.setHomeHereToolStripMenuItem.Click += new System.EventHandler(this.setHomeHereToolStripMenuItem_Click);
-            // 
-            // addPolygonPointToolStripMenuItem
-            // 
-            this.addPolygonPointToolStripMenuItem.Name = "addPolygonPointToolStripMenuItem";
-            resources.ApplyResources(this.addPolygonPointToolStripMenuItem, "addPolygonPointToolStripMenuItem");
-            this.addPolygonPointToolStripMenuItem.Click += new System.EventHandler(this.addPolygonPointToolStripMenuItem_Click);
-            // 
-            // clearPolygonToolStripMenuItem
-            // 
-            this.clearPolygonToolStripMenuItem.Name = "clearPolygonToolStripMenuItem";
-            resources.ApplyResources(this.clearPolygonToolStripMenuItem, "clearPolygonToolStripMenuItem");
-            this.clearPolygonToolStripMenuItem.Click += new System.EventHandler(this.clearPolygonToolStripMenuItem_Click);
-            // 
-            // savePolygonToolStripMenuItem
-            // 
-            this.savePolygonToolStripMenuItem.Name = "savePolygonToolStripMenuItem";
-            resources.ApplyResources(this.savePolygonToolStripMenuItem, "savePolygonToolStripMenuItem");
-            this.savePolygonToolStripMenuItem.Click += new System.EventHandler(this.savePolygonToolStripMenuItem_Click);
-            // 
-            // loadPolygonToolStripMenuItem
-            // 
-            this.loadPolygonToolStripMenuItem.Name = "loadPolygonToolStripMenuItem";
-            resources.ApplyResources(this.loadPolygonToolStripMenuItem, "loadPolygonToolStripMenuItem");
-            this.loadPolygonToolStripMenuItem.Click += new System.EventHandler(this.loadPolygonToolStripMenuItem_Click);
-            // 
-            // fromSHPToolStripMenuItem
-            // 
-            this.fromSHPToolStripMenuItem.Name = "fromSHPToolStripMenuItem";
-            resources.ApplyResources(this.fromSHPToolStripMenuItem, "fromSHPToolStripMenuItem");
-            this.fromSHPToolStripMenuItem.Click += new System.EventHandler(this.fromSHPToolStripMenuItem_Click);
-            // 
-            // areaToolStripMenuItem
-            // 
-            this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
-            resources.ApplyResources(this.areaToolStripMenuItem, "areaToolStripMenuItem");
-            this.areaToolStripMenuItem.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
+            this.deleteWPToolStripMenuItem.Name = "deleteWPToolStripMenuItem";
+            resources.ApplyResources(this.deleteWPToolStripMenuItem, "deleteWPToolStripMenuItem");
+            this.deleteWPToolStripMenuItem.Click += new System.EventHandler(this.deleteWPToolStripMenuItem_Click);
             // 
             // fenceInclusionToolStripMenuItem
             // 
@@ -1400,32 +2066,14 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.fenceExclusionToolStripMenuItem, "fenceExclusionToolStripMenuItem");
             this.fenceExclusionToolStripMenuItem.Click += new System.EventHandler(this.FenceExclusionToolStripMenuItem_Click);
             // 
-            // panelBASE
+            // contextMenuStripZoom
             // 
-            this.panelBASE.Controls.Add(this.splitter2);
-            this.panelBASE.Controls.Add(this.splitter1);
-            this.panelBASE.Controls.Add(this.panelMap);
-            this.panelBASE.Controls.Add(this.panelWaypoints);
-            this.panelBASE.Controls.Add(this.panelAction);
-            resources.ApplyResources(this.panelBASE, "panelBASE");
-            this.panelBASE.Name = "panelBASE";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.contextMenuStripZoom.Name = "contextMenuStripZoom";
+            resources.ApplyResources(this.contextMenuStripZoom, "contextMenuStripZoom");
             // 
             // contextMenuStripPoly
             // 
             this.contextMenuStripPoly.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addPolygonPointToolStripMenuItem,
-            this.clearPolygonToolStripMenuItem,
-            this.savePolygonToolStripMenuItem,
-            this.loadPolygonToolStripMenuItem,
-            this.fromSHPToolStripMenuItem,
-            this.convertWPToPolygonToolStripMenuItem,
-            this.offsetPolygonToolStripMenuItem,
-            this.areaToolStripMenuItem,
             this.fenceInclusionToolStripMenuItem,
             this.fenceExclusionToolStripMenuItem});
             this.contextMenuStripPoly.Name = "contextMenuStripPoly";
@@ -1433,65 +2081,9 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.contextMenuStripPoly, "contextMenuStripPoly");
             this.contextMenuStripPoly.Opening += new System.ComponentModel.CancelEventHandler(this.ContextMenuStripPoly_Opening);
             // 
-            // convertWPToPolygonToolStripMenuItem
+            // currentStateBindingSource1
             // 
-            this.convertWPToPolygonToolStripMenuItem.Name = "convertWPToPolygonToolStripMenuItem";
-            resources.ApplyResources(this.convertWPToPolygonToolStripMenuItem, "convertWPToPolygonToolStripMenuItem");
-            this.convertWPToPolygonToolStripMenuItem.Click += new System.EventHandler(this.fromCurrentWaypointsMenuItem_Click);
-            // 
-            // offsetPolygonToolStripMenuItem
-            // 
-            this.offsetPolygonToolStripMenuItem.Name = "offsetPolygonToolStripMenuItem";
-            resources.ApplyResources(this.offsetPolygonToolStripMenuItem, "offsetPolygonToolStripMenuItem");
-            this.offsetPolygonToolStripMenuItem.Click += new System.EventHandler(this.offsetPolygonToolStripMenuItem_Click);
-            // 
-            // drawAPolygonToolStripMenuItem
-            // 
-            this.drawAPolygonToolStripMenuItem.Name = "drawAPolygonToolStripMenuItem";
-            resources.ApplyResources(this.drawAPolygonToolStripMenuItem, "drawAPolygonToolStripMenuItem");
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
-            // 
-            // testToolStripMenuItem
-            // 
-            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            resources.ApplyResources(this.testToolStripMenuItem, "testToolStripMenuItem");
-            // 
-            // contextMenuStripZoom
-            // 
-            this.contextMenuStripZoom.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zoomToVehicleToolStripMenuItem,
-            this.zoomToMissionToolStripMenuItem,
-            this.zoomToHomeToolStripMenuItem});
-            this.contextMenuStripZoom.Name = "contextMenuStripZoom";
-            resources.ApplyResources(this.contextMenuStripZoom, "contextMenuStripZoom");
-            // 
-            // zoomToVehicleToolStripMenuItem
-            // 
-            this.zoomToVehicleToolStripMenuItem.Name = "zoomToVehicleToolStripMenuItem";
-            resources.ApplyResources(this.zoomToVehicleToolStripMenuItem, "zoomToVehicleToolStripMenuItem");
-            this.zoomToVehicleToolStripMenuItem.Click += new System.EventHandler(this.zoomToVehicleToolStripMenuItem_Click);
-            // 
-            // zoomToMissionToolStripMenuItem
-            // 
-            this.zoomToMissionToolStripMenuItem.Name = "zoomToMissionToolStripMenuItem";
-            resources.ApplyResources(this.zoomToMissionToolStripMenuItem, "zoomToMissionToolStripMenuItem");
-            this.zoomToMissionToolStripMenuItem.Click += new System.EventHandler(this.zoomToMissionToolStripMenuItem_Click);
-            // 
-            // zoomToHomeToolStripMenuItem
-            // 
-            this.zoomToHomeToolStripMenuItem.Name = "zoomToHomeToolStripMenuItem";
-            resources.ApplyResources(this.zoomToHomeToolStripMenuItem, "zoomToHomeToolStripMenuItem");
-            this.zoomToHomeToolStripMenuItem.Click += new System.EventHandler(this.zoomToHomeToolStripMenuItem_Click);
-            // 
-            // gDALOpacityToolStripMenuItem
-            // 
-            this.gDALOpacityToolStripMenuItem.Name = "gDALOpacityToolStripMenuItem";
-            resources.ApplyResources(this.gDALOpacityToolStripMenuItem, "gDALOpacityToolStripMenuItem");
-            this.gDALOpacityToolStripMenuItem.Click += new System.EventHandler(this.gDALOpacityToolStripMenuItem_Click);
+            this.currentStateBindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
             // 
             // FlightPlanner
             // 
@@ -1502,179 +2094,102 @@ namespace MissionPlanner.GCSViews
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightPlanner_FormClosing);
             this.Load += new System.EventHandler(this.FlightPlanner_Load);
             this.Resize += new System.EventHandler(this.Planner_Resize);
-            this.panel5.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.SpeedPanel.ResumeLayout(false);
+            this.SpeedPanel.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPTh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPSp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Commands)).EndInit();
+            this.panelBASE.ResumeLayout(false);
+            this.panelMap.ResumeLayout(false);
+            this.panelMap.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.DrawPanel.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
+            this.measurePanel.ResumeLayout(false);
+            this.measurePanel.PerformLayout();
+            this.ToolsTable.ResumeLayout(false);
+            this.ToolsTable.PerformLayout();
+            this.FormatPanel.ResumeLayout(false);
+            this.FormatPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.PlaceAfterPanel.ResumeLayout(false);
+            this.PlaceAfterPanel.PerformLayout();
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LongSec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongDeg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatSec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatDeg)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panelWaypoints.ResumeLayout(false);
             this.panelWaypoints.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Commands)).EndInit();
             this.panelAction.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panelMap.ResumeLayout(false);
-            this.panelMap.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
-            this.panelBASE.ResumeLayout(false);
             this.contextMenuStripPoly.ResumeLayout(false);
-            this.contextMenuStripZoom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
 
         #endregion
-        public Panel panelWaypoints;
-        public Panel panelAction;
-        public Controls.myGMAP MainMap;
-        public System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        public System.Windows.Forms.CheckBox CHK_verifyheight;
-        public System.Windows.Forms.TextBox TXT_WPRad;
-        public System.Windows.Forms.TextBox TXT_DefaultAlt;
-        public System.Windows.Forms.TextBox TXT_loiterrad;
-        public System.Windows.Forms.CheckBox CHK_splinedefault;
-        public System.Windows.Forms.ComboBox CMB_altmode;
-        public MyButton BUT_read;
-        public MyButton BUT_write;
-        public Panel panel5;
-        public Panel panel1;
-        public LinkLabel label4;
-        public Label label3;
-        public Label label2;
-        public Label Label1;
-        public TextBox TXT_homealt;
-        public TextBox TXT_homelng;
-        public TextBox TXT_homelat;
-        public DataGridViewImageColumn dataGridViewImageColumn1;
-        public DataGridViewImageColumn dataGridViewImageColumn2;
-        public Label label6;
-        public Label lbl_status;
-        public MyDataGridView Commands;
-        public MyButton BUT_Add;
-        public Label LBL_WPRad;
-        public Label LBL_defalutalt;
-        public Label label5;
-        public Panel panelMap;
-        public MyTrackBar trackBar1;
-        public Label label11;
-        public Label lbl_distance;
-        public Label lbl_prevdist;
-        public Splitter splitter1;
-        public Panel panelBASE;
-        public Label lbl_homedist;
-        public ToolTip toolTip1;
-        public ToolStripMenuItem clearMissionToolStripMenuItem;
-        public ToolStripMenuItem addPolygonPointToolStripMenuItem;
-        public ToolStripMenuItem clearPolygonToolStripMenuItem;
-        public ToolStripMenuItem loiterToolStripMenuItem;
-        public ToolStripMenuItem loiterForeverToolStripMenuItem;
-        public ToolStripMenuItem loitertimeToolStripMenuItem;
-        public ToolStripMenuItem loitercirclesToolStripMenuItem;
-        public ToolStripMenuItem jumpToolStripMenuItem;
-        public ToolStripMenuItem jumpstartToolStripMenuItem;
-        public ToolStripMenuItem jumpwPToolStripMenuItem;
-        public ToolStripSeparator toolStripSeparator1;
-        public ToolStripMenuItem deleteWPToolStripMenuItem;
-        public Timer timer1;
-        public ToolStripMenuItem setROIToolStripMenuItem;
-        public ToolStripMenuItem mapToolToolStripMenuItem;
-        public ToolStripMenuItem ContextMeasure;
-        public ToolStripMenuItem rotateMapToolStripMenuItem;
-        public ToolStripMenuItem zoomToToolStripMenuItem;
-        public ToolStripMenuItem prefetchToolStripMenuItem;
-        public ToolStripMenuItem kMLOverlayToolStripMenuItem;
-        public ToolStripMenuItem elevationGraphToolStripMenuItem;
-        public ToolStripMenuItem rTLToolStripMenuItem;
-        public ToolStripMenuItem landToolStripMenuItem;
-        public ToolStripMenuItem takeoffToolStripMenuItem;
-        public ComboBox comboBoxMapType;
-        public ToolStripMenuItem fileLoadSaveToolStripMenuItem;
-        public ToolStripMenuItem loadWPFileToolStripMenuItem;
-        public ToolStripMenuItem saveWPFileToolStripMenuItem;
-        public ToolStripMenuItem trackerHomeToolStripMenuItem;
-        public ToolStripMenuItem reverseWPsToolStripMenuItem;
-        public ToolStripMenuItem loadAndAppendToolStripMenuItem;
-        public ToolStripMenuItem savePolygonToolStripMenuItem;
-        public ToolStripMenuItem loadPolygonToolStripMenuItem;
-        public CheckBox chk_grid;
-        public ToolStripMenuItem insertWpToolStripMenuItem;
-        public ToolStripMenuItem loadKMLFileToolStripMenuItem;
-        public LinkLabel lnk_kml;
-        public ToolStripMenuItem modifyAltToolStripMenuItem;
-        public ToolStripMenuItem prefetchWPPathToolStripMenuItem;
-        public Label label17;
-        public TextBox TXT_altwarn;
-        public ToolStripMenuItem pOIToolStripMenuItem;
-        public ToolStripMenuItem poiaddToolStripMenuItem;
-        public ToolStripMenuItem poideleteToolStripMenuItem;
-        public ToolStripMenuItem poieditToolStripMenuItem;
-        public ToolStripMenuItem enterUTMCoordToolStripMenuItem;
-        public ToolStripMenuItem loadSHPFileToolStripMenuItem;
-        public Coords coords1;
-        public MyButton BUT_loadwpfile;
-        public MyButton BUT_saveWPFile;
-        public Panel panel2;
-        public Panel panel4;
-        public Panel panel3;
-        public FlowLayoutPanel flowLayoutPanel1;
-        public ToolStripMenuItem switchDockingToolStripMenuItem;
-        public Splitter splitter2;
-        public ToolStripMenuItem insertSplineWPToolStripMenuItem;
-        public ToolStripMenuItem fromSHPToolStripMenuItem;
-        public Label lbl_wpfile;
-        public ToolStripMenuItem areaToolStripMenuItem;
-        public ToolStripMenuItem setHomeHereToolStripMenuItem;
-        public ToolStripMenuItem currentPositionToolStripMenuItem;
-        public MyButton but_writewpfast;
-        public ComboBox cmb_missiontype;
-        public ContextMenuStrip contextMenuStripPoly;
-        public ToolStripMenuItem drawAPolygonToolStripMenuItem;
-        public ToolStripMenuItem fenceInclusionToolStripMenuItem;
-        public ToolStripMenuItem fenceExclusionToolStripMenuItem;
-        public ToolStripMenuItem autoWPToolStripMenuItem;
-        public ToolStripMenuItem createWpCircleToolStripMenuItem;
-        public ToolStripMenuItem createSplineCircleToolStripMenuItem;
-        public ToolStripMenuItem areaToolStripMenuItem1;
-        public ToolStripMenuItem textToolStripMenuItem;
-        public ToolStripMenuItem createCircleSurveyToolStripMenuItem;
-        public ToolStripMenuItem surveyGridToolStripMenuItem;
-        public ToolStripMenuItem geoFenceToolStripMenuItem;
-        public ToolStripMenuItem GeoFenceuploadToolStripMenuItem;
-        public ToolStripMenuItem GeoFencedownloadToolStripMenuItem;
-        public ToolStripMenuItem setReturnLocationToolStripMenuItem;
-        public ToolStripMenuItem loadFromFileToolStripMenuItem;
-        public ToolStripMenuItem saveToFileToolStripMenuItem;
-        public ToolStripMenuItem clearToolStripMenuItem;
-        public ToolStripMenuItem rallyPointsToolStripMenuItem;
-        public ToolStripMenuItem setRallyPointToolStripMenuItem;
-        public ToolStripMenuItem getRallyPointsToolStripMenuItem;
-        public ToolStripMenuItem saveRallyPointsToolStripMenuItem;
-        public ToolStripMenuItem clearRallyPointsToolStripMenuItem;
-        public ToolStripMenuItem saveToFileToolStripMenuItem1;
-        public ToolStripMenuItem loadFromFileToolStripMenuItem1;
-        public MyButton but_mincommands;
-        private ToolStripMenuItem polygonToolStripMenuItem;
-        private ToolStripMenuItem toolStripMenuItem3;
-        private ToolStripMenuItem testToolStripMenuItem;
-        public ToolStripMenuItem addPolygonPointToolStripMenuItem2;
-        public ToolStripMenuItem clearPolygonToolStripMenuItem2;
-        public ToolStripMenuItem savePolygonToolStripMenuItem2;
-        public ToolStripMenuItem loadPolygonToolStripMenuItem2;
-        public ToolStripMenuItem fromSHPToolStripMenuItem2;
-        public ToolStripMenuItem areaToolStripMenuItem2;
-        private ContextMenuStrip contextMenuStripZoom;
-        private ToolStripMenuItem zoomToVehicleToolStripMenuItem;
-        private ToolStripMenuItem zoomToMissionToolStripMenuItem;
-        private ToolStripMenuItem zoomToHomeToolStripMenuItem;
-        private ToolStripMenuItem convertWPToPolygonToolStripMenuItem;
-        private ToolStripMenuItem fromCurrentWaypointsToolStripMenuItem;
-        private ToolStripMenuItem offsetPolygonToolStripMenuItem;
-        private ToolStripMenuItem offsetPolygonToolStripMenuItem2;
-        public CheckBox chk_usemavftp;
+
+        private BindingSource currentStateBindingSource;
+        private MyButton newhome;
+        private MyButton ToolsBTN;
+        public MyButton EditButton;
+        private MyButton Reversewpbutton;
+        private MyButton BUT_loadwpfile;
+        private Panel panel9;
+        private MyButton myButton11;
+        private MyButton myButton10;
+        private MyButton myButton9;
+        private MyButton myButton8;
+        private MyButton BUT_read;
+        private MyButton BUT_write;
+        private MyButton HOLDQUICK;
+        private MyButton BUT_saveWPFile;
+        private MyButton ClearClick;
+        private MyButton AUTOQUICK;
+        private MyButton switchview;
+        private Panel SpeedPanel;
+        private TableLayoutPanel tableLayoutPanel3;
+        public MyButton myButton6;
+        public MyButton myButton7;
+        private NumericUpDown WPTh;
+        private Label label16;
+        private Label label14;
+        private NumericUpDown WPSp;
+        public MyButton myButton1;
+        private DataGridView Commands;
         private DataGridViewComboBoxColumn Command;
         private DataGridViewTextBoxColumn Param1;
         private DataGridViewTextBoxColumn Param2;
@@ -1683,19 +2198,164 @@ namespace MissionPlanner.GCSViews
         private DataGridViewTextBoxColumn Lat;
         private DataGridViewTextBoxColumn Lon;
         private DataGridViewTextBoxColumn Alt;
-        private DataGridViewComboBoxColumn Frame;
-        private DataGridViewTextBoxColumn coordZone;
-        private DataGridViewTextBoxColumn coordEasting;
-        private DataGridViewTextBoxColumn coordNorthing;
-        private DataGridViewTextBoxColumn MGRS;
         private DataGridViewButtonColumn Delete;
         private DataGridViewImageColumn Up;
         private DataGridViewImageColumn Down;
         private DataGridViewTextBoxColumn Grad;
-        private DataGridViewTextBoxColumn Angle;
         private DataGridViewTextBoxColumn Dist;
         private DataGridViewTextBoxColumn AZ;
+        private Panel panelBASE;
+        private BSE.Windows.Forms.Splitter splitter2;
+        private BSE.Windows.Forms.Splitter splitter1;
+        private Panel panelMap;
+        private MyButton zoom_out;
+        private MyButton zoom_in;
+        private TableLayoutPanel tableLayoutPanel6;
+        private MyButton myButton22;
+        private MyButton myButton21;
+        private MyButton myButton18;
+        private Label label19;
+        private MyButton Cancel;
+        private Panel FollowMePanel;
+        private Panel DrawPanel;
+        private TableLayoutPanel tableLayoutPanel8;
+        public MyButton SavePolysBTN;
+        public MyButton ImportPolysBTN;
+        private Label label22;
+        public MyButton NewDrawPoly;
+        public MyButton ApplyPoly;
+        public MyButton DeletePoly;
+        private Label label23;
+        private TextBox PolyNameBox;
+        private Button ColorBTN;
+        private Panel measurePanel;
+        public MyButton UnitsMeasureBTN;
+        private Label measureLabel;
+        private TableLayoutPanel ToolsTable;
+        private MyButton DrawBTN;
+        private MyButton MeasureBTN;
+        private Panel Joystick_Panel;
+        private Panel FormatPanel;
+        public MyButton myButton17;
+        public MyButton myButton16;
+        public MyButton myButton15;
+        private NumericUpDown numericUpDown2;
+        private Label label18;
+        private Panel PlaceAfterPanel;
+        private TableLayoutPanel tableLayoutPanel7;
+        public MyButton myButton19;
+        public MyButton myButton20;
+        private NumericUpDown numericUpDown1;
+        private Label label20;
+        private Label label21;
+        private NumericUpDown numericUpDown3;
+        private Panel SwarmPanel;
+        private MyButton Joystickbutton;
+        private MyButton myButton5;
+        private Panel panel8;
+        public MyButton myButton3;
+        private Label label15;
+        private TextBox TXT_WPRad;
+        private Panel panel7;
+        private Panel panel6;
+        private TableLayoutPanel tableLayoutPanel4;
+        public MyButton myButton13;
+        public MyButton Deletebu;
+        public MyButton myButton14;
+        private TableLayoutPanel tableLayoutPanel5;
+        private Button BackWP;
+        private NumericUpDown WPNumber;
+        private Button NextWP;
+        private TableLayoutPanel tableLayoutPanel2;
+        public MyButton myButton4;
+        public MyButton myButton2;
+        public MyButton myButton12;
+        private Button EW;
+        private Button NS;
+        private Label label13;
+        private Label label12;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private NumericUpDown LongSec;
+        private NumericUpDown LongMin;
+        private NumericUpDown LongDeg;
+        private NumericUpDown LatSec;
+        private NumericUpDown LatMin;
+        private NumericUpDown LatDeg;
+        public myGMAP MainMap;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button button1;
+        private Button HOMECLICK;
+        public MyButton mytest;
+        private Label lbl_distance;
+        private Label lbl_homedist;
+        private Label lbl_prevdist;
+        private MyTrackBar trackBar1;
+        private Label label11;
+        private BSE.Windows.Forms.Panel panelWaypoints;
+        private Panel panel1;
+        private BSE.Windows.Forms.Panel panelAction;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel4;
+        private Coords coords1;
+        private Panel panel3;
+        private CheckBox chk_grid;
+        private Label lbl_status;
+        private ComboBox comboBoxMapType;
+        private ToolTip toolTip1;
+        private LinkLabel lnk_kml;
+        private Panel panel2;
+        private Label lbl_wpfile;
+        private Panel panel5;
+        private LinkLabel label4;
+        private TextBox TXT_homelat;
+        private TextBox TXT_homelng;
+        private TextBox TXT_homealt;
+        private Label Label1;
+        private Label label2;
+        private Label label3;
+        private ComboBox CMB_altmode;
+        private CheckBox CHK_splinedefault;
+        private Label label17;
+        private TextBox TXT_altwarn;
+        private Label LBL_WPRad;
+        private Label label5;
+        private TextBox TXT_loiterrad;
+        private Label LBL_defalutalt;
+        private TextBox TXT_DefaultAlt;
+        private CheckBox CHK_verifyheight;
+        private MyButton BUT_Add;
+        private Label label6;
+        private DataGridViewImageColumn dataGridViewImageColumn1;
+        private DataGridViewImageColumn dataGridViewImageColumn2;
+        public ContextMenuStrip contextMenuStrip1;
+        private Timer timer1;
+        private BindingSource currentStateBindingSource1;
+
+        public MyButton but_mincommands;
+        public ComboBox cmb_missiontype;
+        private DataGridViewComboBoxColumn Frame;
+        public CheckBox chk_usemavftp;
+        public ToolStripMenuItem rallyPointsToolStripMenuItem;
+        public ToolStripMenuItem geoFenceToolStripMenuItem;
+        public ToolStripMenuItem createSplineCircleToolStripMenuItem;
+        public ToolStripMenuItem textToolStripMenuItem;
+        public ToolStripMenuItem createCircleSurveyToolStripMenuItem;
+        public ToolStripMenuItem pOIToolStripMenuItem;
+        public ToolStripMenuItem trackerHomeToolStripMenuItem;
+        public ToolStripMenuItem autoWPToolStripMenuItem;
+        private DataGridViewTextBoxColumn coordZone;
+        private DataGridViewTextBoxColumn coordEasting;
+        private DataGridViewTextBoxColumn coordNorthing;
+        private DataGridViewTextBoxColumn MGRS;
+        public ToolStripMenuItem deleteWPToolStripMenuItem;
+        public ToolStripMenuItem fenceInclusionToolStripMenuItem;
+        public ToolStripMenuItem fenceExclusionToolStripMenuItem;
         private DataGridViewTextBoxColumn TagData;
-        private ToolStripMenuItem gDALOpacityToolStripMenuItem;
+        private DataGridViewTextBoxColumn Angle;
+        private ContextMenuStrip contextMenuStripZoom;
+        public ContextMenuStrip contextMenuStripPoly;
     }
 }
