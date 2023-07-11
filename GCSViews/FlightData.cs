@@ -6674,5 +6674,34 @@ namespace MissionPlanner.GCSViews
             }
             catch { }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (panel5.Visible == true)
+            {
+                panel5.Visible = false;
+                
+            }
+            else
+            {
+                panel5.Visible = true;
+               
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("FlightPlanner");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("SWConfig");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("HWConfig");
+        }
     }
 }

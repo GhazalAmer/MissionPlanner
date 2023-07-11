@@ -61,6 +61,11 @@ namespace MissionPlanner.GCSViews
             this.backstageViewPagesonar = new System.Windows.Forms.Label();
             this.backstageViewPagetradheli = new System.Windows.Forms.Label();
             this.backstageViewPagewizard = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // backstageView
@@ -216,8 +221,38 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.backstageViewPagewizard, "backstageViewPagewizard");
             this.backstageViewPagewizard.Name = "backstageViewPagewizard";
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.button4);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // InitialSetup
             // 
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.backstageViewPageaccel);
             this.Controls.Add(this.backstageViewPageairspeed);
             this.Controls.Add(this.backstageViewPageAntTrack);
@@ -252,6 +287,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this, "$this");
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HardwareConfig_FormClosing);
             this.Load += new System.EventHandler(this.HardwareConfig_Load);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -291,6 +327,9 @@ namespace MissionPlanner.GCSViews
         private Label backstageViewPagewizard;
 
         internal Controls.BackstageView.BackstageView backstageView;
-
+        private Panel panel5;
+        private Button button5;
+        private Button button4;
+        private Button button1;
     }
 }
