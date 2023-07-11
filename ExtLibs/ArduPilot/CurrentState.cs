@@ -1817,7 +1817,7 @@ namespace MissionPlanner
 
         [GroupText("Software")] public bool landed { get; set; }
 
-        [GroupText("Software")] public bool safteyactive { get; set; }
+        [GroupText("Software")] public bool safetyactive { get; set; }
 
         [GroupText("Terrain")] public bool terrainactive { get; set; }
 
@@ -2661,7 +2661,7 @@ namespace MissionPlanner
 
                             terrainactive = sensors_health.terrain && sensors_enabled.terrain && sensors_present.terrain;
 
-                            safteyactive = !sensors_enabled.motor_control;
+                            safetyactive = !sensors_enabled.motor_control;
 
                             if (errors_count1 > 0 || errors_count2 > 0)
                             {
