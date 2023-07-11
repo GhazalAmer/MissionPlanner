@@ -483,6 +483,10 @@ namespace MissionPlanner
             set => _groundspeed = value;
         }
 
+        // stats
+        public string link_color { get; set; }
+
+
         // accel
         [DisplayText("Accel X")]
         [GroupText("Sensor")]
