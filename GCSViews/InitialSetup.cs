@@ -333,12 +333,23 @@ namespace MissionPlanner.GCSViews
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (panel5.Visible == true)
-            { panel5.Visible = false; }
+            backstageView.Enabled = false;
+            if (panel1.Visible == true)
+            { panel1.Visible = false; }
             else
             {
-                panel5.Visible = true;
+                panel1.Visible = true;
             }
+        }
+
+        private void backstageViewPageinstfw_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backstageView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

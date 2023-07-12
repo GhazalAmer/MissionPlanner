@@ -6299,15 +6299,15 @@ namespace MissionPlanner.GCSViews
 
         private void label7_Click(object sender, EventArgs e)
         {
+
+ 
             if (panel9.Visible == true)
             {
                 panel9.Visible = false;
-                panel3.Enabled = true;
             }
             else
             {
                 panel9.Visible = true;
-                panel3.Enabled = false;
             }
         }
 
@@ -6315,13 +6315,14 @@ namespace MissionPlanner.GCSViews
         {
             NextWpPanel.Visible = true;
             panel9.Enabled = false;
-            panel3.Enabled = false;
+          //  panel3.Enabled = false;
         }
 
         private void myButton12_Click(object sender, EventArgs e)
         {
-            myButton12.Enabled = false;
+           // myButton12.Enabled = false;
             NextWpPanel.Visible = false;
+            panel9.Enabled=true;
             try
             {
                 ((Button)sender).Enabled = false;
@@ -6357,6 +6358,16 @@ namespace MissionPlanner.GCSViews
 
         private void myButton9_Click(object sender, EventArgs e)
         {
+
+            if (panel9.Visible == true)
+            {
+                panel9.Visible = false;
+            }
+            else
+            {
+                panel9.Visible = true;
+            }
+
             try
             {
                 ((Button)sender).Enabled = false;
@@ -6368,6 +6379,16 @@ namespace MissionPlanner.GCSViews
 
         private void myButton10_Click(object sender, EventArgs e)
         {
+
+            if (panel9.Visible == true)
+            {
+                panel9.Visible = false;
+            }
+            else
+            {
+                panel9.Visible = true;
+            }
+
             try
             {
                 ((Button)sender).Enabled = false;
@@ -6380,27 +6401,27 @@ namespace MissionPlanner.GCSViews
         private void myButton11_Click(object sender, EventArgs e)
         {
             panel9.Visible = false;
-            panel3.Enabled = true;
+           // panel3.Enabled = true;
         }
 
         private void AutoPan_Click(object sender, EventArgs e)
         {
-            String Auto_pan_status = (String)MainV2.config["CHK_autopan"];
-            if (Auto_pan_status == "False")
-            {
-                CHK_autopan.Checked = true;
-                MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
-                AutoPan.BackColor = Color.Gray;
-                //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
-                //MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
-            }
-            else
-            {
-                CHK_autopan.Checked = false;
-                MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
-                AutoPan.BackColor = Color.Silver;
-                //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
-            }
+            //String Auto_pan_status = (String)MainV2.config["CHK_autopan"];
+            //if (Auto_pan_status == "False")
+            //{
+            //    CHK_autopan.Checked = true;
+            //    MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+            //    AutoPan.BackColor = Color.Gray;
+            //    //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
+            //    //MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+            //}
+            //else
+            //{
+            //    CHK_autopan.Checked = false;
+            //    MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+            //    AutoPan.BackColor = Color.Silver;
+            //    //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
+            //}
         }
 
         private void EngageAutoNumeris_ValueChanged(object sender, EventArgs e)
@@ -6447,14 +6468,24 @@ namespace MissionPlanner.GCSViews
 
         private void myButton6_Click(object sender, EventArgs e)
         {
-            if (panel4.Visible == true)
-            { panel4.Visible = false; }
+            if (panel4.Visible == true && tableLayoutPanel6.Visible ==true)
+
+            { panel4.Visible = false;
+              tableLayoutPanel6.Visible = false;
+            }
             else
-            { panel4.Visible = true; }
+            { panel4.Visible = true;
+              tableLayoutPanel6.Visible=true;
+            }
         }
 
         private void GOTOButt_Click(object sender, EventArgs e)
         {
+            if (panel4.Visible == true)
+            { panel4.Visible = false; }
+            else
+            { panel4.Visible = true; }
+
             try
             {
                 ((Button)sender).Enabled = false;
@@ -6677,31 +6708,141 @@ namespace MissionPlanner.GCSViews
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (panel5.Visible == true)
-            {
-                panel5.Visible = false;
+            //if (panel5.Visible == true)
+            //{
+            //    panel5.Visible = false;
                 
-            }
-            else
-            {
-                panel5.Visible = true;
+            //}
+            //else
+            //{
+            //    panel5.Visible = true;
                
-            }
+            //}
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+
             MainV2.MyView.ShowScreen("FlightPlanner");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+
             MainV2.MyView.ShowScreen("SWConfig");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+
             MainV2.MyView.ShowScreen("HWConfig");
+        }
+
+        private void myButton13_Click(object sender, EventArgs e)
+        {
+            String Auto_pan_status = (String)MainV2.config["CHK_autopan"];
+            if (Auto_pan_status == "False")
+            {
+                CHK_autopan.Checked = true;
+                MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+                AutoPan.BackColor = Color.Gray;
+                //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
+                //MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+            }
+            else
+            {
+                CHK_autopan.Checked = false;
+                MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+                AutoPan.BackColor = Color.Silver;
+                //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
+            }
+        }
+
+        private void myButton14_Click(object sender, EventArgs e)
+        {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myButton4_Click(object sender, EventArgs e)
+        {
+            if (NextWpPanel.Visible == true)
+            {
+                NextWpPanel.Visible = false;
+                panel9.Enabled = true;
+
+            }
+            else
+            {
+                NextWpPanel.Visible = true;
+                
+
+
+            }
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

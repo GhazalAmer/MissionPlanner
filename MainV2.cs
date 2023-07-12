@@ -4350,7 +4350,7 @@ namespace MissionPlanner
 
             this.SuspendLayout();
 
-            panel1.Visible = false;
+            //panel1.Visible = false;
 
             this.ResumeLayout();
         }
@@ -4358,10 +4358,10 @@ namespace MissionPlanner
         void menu_MouseEnter(object sender, EventArgs e)
         {
             this.SuspendLayout();
-            panel1.Location = new Point(0, 0);
-            panel1.Width = menu.Width;
-            panel1.BringToFront();
-            panel1.Visible = true;
+           //// panel1.Location = new Point(0, 0);
+           // panel1.Width = menu.Width;
+           // panel1.BringToFront();
+           // panel1.Visible = true;
             this.ResumeLayout();
         }
 
@@ -4379,22 +4379,22 @@ namespace MissionPlanner
             if (!hide)
             {
                 this.SuspendLayout();
-                panel1.Dock = DockStyle.Top;
-                panel1.SendToBack();
-                panel1.Visible = true;
+               // panel1.Dock = DockStyle.Top;
+               // panel1.SendToBack();
+               //// panel1.Visible = true;
                 menu.Visible = false;
                 MainMenu.MouseLeave -= MainMenu_MouseLeave;
-                panel1.MouseLeave -= MainMenu_MouseLeave;
+               // panel1.MouseLeave -= MainMenu_MouseLeave;
                 toolStripConnectionControl.MouseLeave -= MainMenu_MouseLeave;
                 this.ResumeLayout();
             }
             else
             {
                 this.SuspendLayout();
-                panel1.Dock = DockStyle.None;
-                panel1.Visible = false;
+               // panel1.Dock = DockStyle.None;
+                //panel1.Visible = false;
                 MainMenu.MouseLeave += MainMenu_MouseLeave;
-                panel1.MouseLeave += MainMenu_MouseLeave;
+                //panel1.MouseLeave += MainMenu_MouseLeave;
                 toolStripConnectionControl.MouseLeave += MainMenu_MouseLeave;
                 menu.Visible = true;
                 menu.SendToBack();
@@ -4809,6 +4809,17 @@ namespace MissionPlanner
 
             // save config
             SaveConfig();
+        }
+
+        private void MainV2_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
