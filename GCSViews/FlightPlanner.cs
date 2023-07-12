@@ -295,6 +295,17 @@ namespace MissionPlanner.GCSViews
             drawnpolygon.Stroke = new Pen(Color.Red, 2);
             drawnpolygon.Fill = Brushes.Transparent;
 
+            currentwp = new GMapOverlay("currentwp");
+            MainMap.Overlays.Add(currentwp);
+            MeasurePts = new GMapOverlay("MeasurePts");
+            MainMap.Overlays.Add(MeasurePts);
+
+            MeasureRoute = new GMapRoute("MeasureRoute");
+
+            MeasureRoute.Stroke = new Pen(Color.Orange, 3);
+            MeasureRoute.Stroke.DashStyle = DashStyle.Custom;
+
+
             /*
             var timer = new System.Timers.Timer();
 
@@ -9350,6 +9361,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton12_Click(object sender, EventArgs e)
         {
+            Show_BTNs();
+        }
+
+        private void myButton20_Click(object sender, EventArgs e)
+        {
+            PlaceAfterPanel.Visible = false;
             Show_BTNs();
         }
     }

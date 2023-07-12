@@ -1246,6 +1246,7 @@ namespace MissionPlanner.GCSViews
             this.myButton20.TextColor = System.Drawing.Color.Black;
             this.myButton20.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton20.UseVisualStyleBackColor = true;
+            this.myButton20.Click += new System.EventHandler(this.myButton20_Click);
             // 
             // numericUpDown1
             // 
