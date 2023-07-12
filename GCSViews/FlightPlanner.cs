@@ -8094,5 +8094,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             { ToolsTable.Visible = false; }
             else { ToolsTable.Visible = true; }
         }
+
+        private void BUT_write_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

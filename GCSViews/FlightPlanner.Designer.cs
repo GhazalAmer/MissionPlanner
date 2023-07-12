@@ -230,90 +230,6 @@ namespace MissionPlanner.GCSViews
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-<<<<<<< HEAD
-=======
-            this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.insertWpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.currentPositionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.insertSplineWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loiterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loiterForeverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loitertimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loitercirclesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jumpstartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jumpwPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rTLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.landToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.takeoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setROIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.polygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addPolygonPointToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromSHPToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromCurrentWaypointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.offsetPolygonToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.geoFenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GeoFenceuploadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GeoFencedownloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setReturnLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadFromFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setRallyPointToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.getRallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveRallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearRallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToFileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadFromFileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.autoWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createWpCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createSplineCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createCircleSurveyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.surveyGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mapToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ContextMeasure = new System.Windows.Forms.ToolStripMenuItem();
-            this.rotateMapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomToToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prefetchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prefetchWPPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kMLOverlayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.elevationGraphToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reverseWPsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gDALOpacityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileLoadSaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadWPFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadAndAppendToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveWPFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadKMLFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadSHPFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pOIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.poiaddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.poideleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.poieditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trackerHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifyAltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enterUTMCoordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.switchDockingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addPolygonPointToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromSHPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.areaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fenceInclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fenceExclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelBASE = new System.Windows.Forms.Panel();
->>>>>>> FlightDataScreen
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.but_mincommands = new MissionPlanner.Controls.MyButton();
@@ -330,7 +246,6 @@ namespace MissionPlanner.GCSViews
             this.fenceInclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fenceExclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStripZoom = new System.Windows.Forms.ContextMenuStrip(this.components);
-<<<<<<< HEAD
             this.contextMenuStripPoly = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.currentStateBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
@@ -339,15 +254,6 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WPTh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WPSp)).BeginInit();
-=======
-            this.zoomToVehicleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomToMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomToHomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel5.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panelWaypoints.SuspendLayout();
->>>>>>> FlightDataScreen
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelBASE.SuspendLayout();
             this.panelMap.SuspendLayout();
@@ -522,6 +428,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_write.TextColor = System.Drawing.Color.White;
             this.BUT_write.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_write.UseVisualStyleBackColor = true;
+            this.BUT_write.Click += new System.EventHandler(this.BUT_write_Click_1);
             // 
             // HOLDQUICK
             // 
@@ -1969,23 +1876,8 @@ namespace MissionPlanner.GCSViews
             // 
             // TXT_homelng
             // 
-<<<<<<< HEAD
             resources.ApplyResources(this.TXT_homelng, "TXT_homelng");
             this.TXT_homelng.Name = "TXT_homelng";
-=======
-            this.panelMap.Controls.Add(this.button1);
-            this.panelMap.Controls.Add(this.lbl_homedist);
-            this.panelMap.Controls.Add(this.lbl_prevdist);
-            this.panelMap.Controls.Add(this.trackBar1);
-            this.panelMap.Controls.Add(this.label11);
-            this.panelMap.Controls.Add(this.lbl_distance);
-            this.panelMap.Controls.Add(this.cmb_missiontype);
-            this.panelMap.Controls.Add(this.MainMap);
-            resources.ApplyResources(this.panelMap, "panelMap");
-            this.panelMap.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panelMap.Name = "panelMap";
-            this.panelMap.Resize += new System.EventHandler(this.panelMap_Resize);
->>>>>>> FlightDataScreen
             // 
             // TXT_homealt
             // 
@@ -2096,33 +1988,6 @@ namespace MissionPlanner.GCSViews
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-<<<<<<< HEAD
-=======
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteWPToolStripMenuItem,
-            this.insertWpToolStripMenuItem,
-            this.insertSplineWPToolStripMenuItem,
-            this.loiterToolStripMenuItem,
-            this.jumpToolStripMenuItem,
-            this.rTLToolStripMenuItem,
-            this.landToolStripMenuItem,
-            this.takeoffToolStripMenuItem,
-            this.setROIToolStripMenuItem,
-            this.clearMissionToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.polygonToolStripMenuItem,
-            this.geoFenceToolStripMenuItem,
-            this.rallyPointsToolStripMenuItem,
-            this.autoWPToolStripMenuItem,
-            this.mapToolToolStripMenuItem,
-            this.fileLoadSaveToolStripMenuItem,
-            this.pOIToolStripMenuItem,
-            this.trackerHomeToolStripMenuItem,
-            this.modifyAltToolStripMenuItem,
-            this.enterUTMCoordToolStripMenuItem,
-            this.switchDockingToolStripMenuItem,
-            this.setHomeHereToolStripMenuItem});
->>>>>>> FlightDataScreen
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
@@ -2173,125 +2038,6 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.createCircleSurveyToolStripMenuItem, "createCircleSurveyToolStripMenuItem");
             this.createCircleSurveyToolStripMenuItem.Click += new System.EventHandler(this.createCircleSurveyToolStripMenuItem_Click);
             // 
-<<<<<<< HEAD
-=======
-            // surveyGridToolStripMenuItem
-            // 
-            this.surveyGridToolStripMenuItem.Name = "surveyGridToolStripMenuItem";
-            resources.ApplyResources(this.surveyGridToolStripMenuItem, "surveyGridToolStripMenuItem");
-            this.surveyGridToolStripMenuItem.Click += new System.EventHandler(this.surveyGridToolStripMenuItem_Click);
-            // 
-            // mapToolToolStripMenuItem
-            // 
-            this.mapToolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ContextMeasure,
-            this.rotateMapToolStripMenuItem,
-            this.zoomToToolStripMenuItem,
-            this.prefetchToolStripMenuItem,
-            this.prefetchWPPathToolStripMenuItem,
-            this.kMLOverlayToolStripMenuItem,
-            this.elevationGraphToolStripMenuItem,
-            this.reverseWPsToolStripMenuItem,
-            this.gDALOpacityToolStripMenuItem});
-            this.mapToolToolStripMenuItem.Name = "mapToolToolStripMenuItem";
-            resources.ApplyResources(this.mapToolToolStripMenuItem, "mapToolToolStripMenuItem");
-            // 
-            // ContextMeasure
-            // 
-            this.ContextMeasure.Name = "ContextMeasure";
-            resources.ApplyResources(this.ContextMeasure, "ContextMeasure");
-            this.ContextMeasure.Click += new System.EventHandler(this.ContextMeasure_Click);
-            // 
-            // rotateMapToolStripMenuItem
-            // 
-            this.rotateMapToolStripMenuItem.Name = "rotateMapToolStripMenuItem";
-            resources.ApplyResources(this.rotateMapToolStripMenuItem, "rotateMapToolStripMenuItem");
-            this.rotateMapToolStripMenuItem.Click += new System.EventHandler(this.rotateMapToolStripMenuItem_Click);
-            // 
-            // zoomToToolStripMenuItem
-            // 
-            this.zoomToToolStripMenuItem.Name = "zoomToToolStripMenuItem";
-            resources.ApplyResources(this.zoomToToolStripMenuItem, "zoomToToolStripMenuItem");
-            this.zoomToToolStripMenuItem.Click += new System.EventHandler(this.zoomToToolStripMenuItem_Click);
-            // 
-            // prefetchToolStripMenuItem
-            // 
-            this.prefetchToolStripMenuItem.Name = "prefetchToolStripMenuItem";
-            resources.ApplyResources(this.prefetchToolStripMenuItem, "prefetchToolStripMenuItem");
-            this.prefetchToolStripMenuItem.Click += new System.EventHandler(this.prefetchToolStripMenuItem_Click);
-            // 
-            // prefetchWPPathToolStripMenuItem
-            // 
-            this.prefetchWPPathToolStripMenuItem.Name = "prefetchWPPathToolStripMenuItem";
-            resources.ApplyResources(this.prefetchWPPathToolStripMenuItem, "prefetchWPPathToolStripMenuItem");
-            this.prefetchWPPathToolStripMenuItem.Click += new System.EventHandler(this.prefetchWPPathToolStripMenuItem_Click);
-            // 
-            // kMLOverlayToolStripMenuItem
-            // 
-            this.kMLOverlayToolStripMenuItem.Name = "kMLOverlayToolStripMenuItem";
-            resources.ApplyResources(this.kMLOverlayToolStripMenuItem, "kMLOverlayToolStripMenuItem");
-            this.kMLOverlayToolStripMenuItem.Click += new System.EventHandler(this.kMLOverlayToolStripMenuItem_Click);
-            // 
-            // elevationGraphToolStripMenuItem
-            // 
-            this.elevationGraphToolStripMenuItem.Name = "elevationGraphToolStripMenuItem";
-            resources.ApplyResources(this.elevationGraphToolStripMenuItem, "elevationGraphToolStripMenuItem");
-            this.elevationGraphToolStripMenuItem.Click += new System.EventHandler(this.elevationGraphToolStripMenuItem_Click);
-            // 
-            // reverseWPsToolStripMenuItem
-            // 
-            this.reverseWPsToolStripMenuItem.Name = "reverseWPsToolStripMenuItem";
-            resources.ApplyResources(this.reverseWPsToolStripMenuItem, "reverseWPsToolStripMenuItem");
-            this.reverseWPsToolStripMenuItem.Click += new System.EventHandler(this.reverseWPsToolStripMenuItem_Click);
-            // 
-            // gDALOpacityToolStripMenuItem
-            // 
-            this.gDALOpacityToolStripMenuItem.Name = "gDALOpacityToolStripMenuItem";
-            resources.ApplyResources(this.gDALOpacityToolStripMenuItem, "gDALOpacityToolStripMenuItem");
-            this.gDALOpacityToolStripMenuItem.Click += new System.EventHandler(this.gDALOpacityToolStripMenuItem_Click);
-            // 
-            // fileLoadSaveToolStripMenuItem
-            // 
-            this.fileLoadSaveToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loadWPFileToolStripMenuItem,
-            this.loadAndAppendToolStripMenuItem,
-            this.saveWPFileToolStripMenuItem,
-            this.loadKMLFileToolStripMenuItem,
-            this.loadSHPFileToolStripMenuItem});
-            this.fileLoadSaveToolStripMenuItem.Name = "fileLoadSaveToolStripMenuItem";
-            resources.ApplyResources(this.fileLoadSaveToolStripMenuItem, "fileLoadSaveToolStripMenuItem");
-            // 
-            // loadWPFileToolStripMenuItem
-            // 
-            this.loadWPFileToolStripMenuItem.Name = "loadWPFileToolStripMenuItem";
-            resources.ApplyResources(this.loadWPFileToolStripMenuItem, "loadWPFileToolStripMenuItem");
-            this.loadWPFileToolStripMenuItem.Click += new System.EventHandler(this.loadWPFileToolStripMenuItem_Click);
-            // 
-            // loadAndAppendToolStripMenuItem
-            // 
-            this.loadAndAppendToolStripMenuItem.Name = "loadAndAppendToolStripMenuItem";
-            resources.ApplyResources(this.loadAndAppendToolStripMenuItem, "loadAndAppendToolStripMenuItem");
-            this.loadAndAppendToolStripMenuItem.Click += new System.EventHandler(this.loadAndAppendToolStripMenuItem_Click);
-            // 
-            // saveWPFileToolStripMenuItem
-            // 
-            this.saveWPFileToolStripMenuItem.Name = "saveWPFileToolStripMenuItem";
-            resources.ApplyResources(this.saveWPFileToolStripMenuItem, "saveWPFileToolStripMenuItem");
-            this.saveWPFileToolStripMenuItem.Click += new System.EventHandler(this.saveWPFileToolStripMenuItem_Click);
-            // 
-            // loadKMLFileToolStripMenuItem
-            // 
-            this.loadKMLFileToolStripMenuItem.Name = "loadKMLFileToolStripMenuItem";
-            resources.ApplyResources(this.loadKMLFileToolStripMenuItem, "loadKMLFileToolStripMenuItem");
-            this.loadKMLFileToolStripMenuItem.Click += new System.EventHandler(this.loadKMLFileToolStripMenuItem_Click);
-            // 
-            // loadSHPFileToolStripMenuItem
-            // 
-            this.loadSHPFileToolStripMenuItem.Name = "loadSHPFileToolStripMenuItem";
-            resources.ApplyResources(this.loadSHPFileToolStripMenuItem, "loadSHPFileToolStripMenuItem");
-            this.loadSHPFileToolStripMenuItem.Click += new System.EventHandler(this.loadSHPFileToolStripMenuItem_Click);
-            // 
->>>>>>> FlightDataScreen
             // pOIToolStripMenuItem
             // 
             this.pOIToolStripMenuItem.Name = "pOIToolStripMenuItem";
@@ -2348,69 +2094,7 @@ namespace MissionPlanner.GCSViews
             // 
             // currentStateBindingSource1
             // 
-<<<<<<< HEAD
             this.currentStateBindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
-=======
-            this.convertWPToPolygonToolStripMenuItem.Name = "convertWPToPolygonToolStripMenuItem";
-            resources.ApplyResources(this.convertWPToPolygonToolStripMenuItem, "convertWPToPolygonToolStripMenuItem");
-            this.convertWPToPolygonToolStripMenuItem.Click += new System.EventHandler(this.fromCurrentWaypointsMenuItem_Click);
-            // 
-            // offsetPolygonToolStripMenuItem
-            // 
-            this.offsetPolygonToolStripMenuItem.Name = "offsetPolygonToolStripMenuItem";
-            resources.ApplyResources(this.offsetPolygonToolStripMenuItem, "offsetPolygonToolStripMenuItem");
-            this.offsetPolygonToolStripMenuItem.Click += new System.EventHandler(this.offsetPolygonToolStripMenuItem_Click);
-            // 
-            // drawAPolygonToolStripMenuItem
-            // 
-            this.drawAPolygonToolStripMenuItem.Name = "drawAPolygonToolStripMenuItem";
-            resources.ApplyResources(this.drawAPolygonToolStripMenuItem, "drawAPolygonToolStripMenuItem");
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
-            // 
-            // testToolStripMenuItem
-            // 
-            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            resources.ApplyResources(this.testToolStripMenuItem, "testToolStripMenuItem");
-            // 
-            // contextMenuStripZoom
-            // 
-            this.contextMenuStripZoom.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStripZoom.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zoomToVehicleToolStripMenuItem,
-            this.zoomToMissionToolStripMenuItem,
-            this.zoomToHomeToolStripMenuItem});
-            this.contextMenuStripZoom.Name = "contextMenuStripZoom";
-            resources.ApplyResources(this.contextMenuStripZoom, "contextMenuStripZoom");
-            // 
-            // zoomToVehicleToolStripMenuItem
-            // 
-            this.zoomToVehicleToolStripMenuItem.Name = "zoomToVehicleToolStripMenuItem";
-            resources.ApplyResources(this.zoomToVehicleToolStripMenuItem, "zoomToVehicleToolStripMenuItem");
-            this.zoomToVehicleToolStripMenuItem.Click += new System.EventHandler(this.zoomToVehicleToolStripMenuItem_Click);
-            // 
-            // zoomToMissionToolStripMenuItem
-            // 
-            this.zoomToMissionToolStripMenuItem.Name = "zoomToMissionToolStripMenuItem";
-            resources.ApplyResources(this.zoomToMissionToolStripMenuItem, "zoomToMissionToolStripMenuItem");
-            this.zoomToMissionToolStripMenuItem.Click += new System.EventHandler(this.zoomToMissionToolStripMenuItem_Click);
-            // 
-            // zoomToHomeToolStripMenuItem
-            // 
-            this.zoomToHomeToolStripMenuItem.Name = "zoomToHomeToolStripMenuItem";
-            resources.ApplyResources(this.zoomToHomeToolStripMenuItem, "zoomToHomeToolStripMenuItem");
-            this.zoomToHomeToolStripMenuItem.Click += new System.EventHandler(this.zoomToHomeToolStripMenuItem_Click);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
->>>>>>> FlightDataScreen
             // 
             // FlightPlanner
             // 
@@ -2681,13 +2365,9 @@ namespace MissionPlanner.GCSViews
         public ToolStripMenuItem fenceInclusionToolStripMenuItem;
         public ToolStripMenuItem fenceExclusionToolStripMenuItem;
         private DataGridViewTextBoxColumn TagData;
-<<<<<<< HEAD
         private DataGridViewTextBoxColumn Angle;
         private ContextMenuStrip contextMenuStripZoom;
         public ContextMenuStrip contextMenuStripPoly;
-=======
         private ToolStripMenuItem gDALOpacityToolStripMenuItem;
-        private Button button1;
->>>>>>> FlightDataScreen
     }
 }
