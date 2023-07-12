@@ -359,6 +359,8 @@ namespace MissionPlanner
 
 
         public static bool ShowAirports { get; set; }
+        public static List<GMap.NET.WindowsForms.GMapPolygon> list_of_polys;
+        public static GMap.NET.WindowsForms.GMapOverlay PolygonsOverlay;
         public static bool ShowTFR { get; set; }
         public static Hashtable config = new Hashtable();
         private Utilities.adsb _adsb;

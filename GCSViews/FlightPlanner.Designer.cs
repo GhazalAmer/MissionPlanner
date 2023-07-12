@@ -330,6 +330,7 @@ namespace MissionPlanner.GCSViews
             this.EditButton.TextColor = System.Drawing.Color.White;
             this.EditButton.TextColorNotEnabled = System.Drawing.Color.White;
             this.EditButton.UseVisualStyleBackColor = true;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // Reversewpbutton
             // 
@@ -341,6 +342,7 @@ namespace MissionPlanner.GCSViews
             this.Reversewpbutton.TextColor = System.Drawing.Color.White;
             this.Reversewpbutton.TextColorNotEnabled = System.Drawing.Color.White;
             this.Reversewpbutton.UseVisualStyleBackColor = true;
+            this.Reversewpbutton.Click += new System.EventHandler(this.Reversewpbutton_Click);
             // 
             // BUT_loadwpfile
             // 
@@ -352,6 +354,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_loadwpfile.TextColor = System.Drawing.Color.White;
             this.BUT_loadwpfile.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_loadwpfile.UseVisualStyleBackColor = true;
+            this.BUT_loadwpfile.Click += new System.EventHandler(this.BUT_loadwpfile_Click_1);
             // 
             // panel9
             // 
@@ -384,6 +387,7 @@ namespace MissionPlanner.GCSViews
             this.myButton10.TextColor = System.Drawing.Color.White;
             this.myButton10.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton10.UseVisualStyleBackColor = true;
+            this.myButton10.Click += new System.EventHandler(this.myButton10_Click);
             // 
             // myButton9
             // 
@@ -395,6 +399,7 @@ namespace MissionPlanner.GCSViews
             this.myButton9.TextColor = System.Drawing.Color.White;
             this.myButton9.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton9.UseVisualStyleBackColor = true;
+            this.myButton9.Click += new System.EventHandler(this.myButton9_Click);
             // 
             // myButton8
             // 
@@ -406,6 +411,7 @@ namespace MissionPlanner.GCSViews
             this.myButton8.TextColor = System.Drawing.Color.White;
             this.myButton8.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton8.UseVisualStyleBackColor = true;
+            this.myButton8.Click += new System.EventHandler(this.myButton8_Click);
             // 
             // BUT_read
             // 
@@ -417,6 +423,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_read.TextColor = System.Drawing.Color.White;
             this.BUT_read.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_read.UseVisualStyleBackColor = true;
+            this.BUT_read.Click += new System.EventHandler(this.BUT_read_Click_1);
             // 
             // BUT_write
             // 
@@ -452,6 +459,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_saveWPFile.TextColor = System.Drawing.Color.White;
             this.BUT_saveWPFile.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_saveWPFile.UseVisualStyleBackColor = true;
+            this.BUT_saveWPFile.Click += new System.EventHandler(this.BUT_saveWPFile_Click_1);
             // 
             // ClearClick
             // 
@@ -518,6 +526,7 @@ namespace MissionPlanner.GCSViews
             this.myButton6.TextColor = System.Drawing.Color.White;
             this.myButton6.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton6.UseVisualStyleBackColor = true;
+            this.myButton6.Click += new System.EventHandler(this.myButton6_Click);
             // 
             // myButton7
             // 
@@ -530,6 +539,7 @@ namespace MissionPlanner.GCSViews
             this.myButton7.TextColor = System.Drawing.Color.White;
             this.myButton7.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton7.UseVisualStyleBackColor = true;
+            this.myButton7.Click += new System.EventHandler(this.myButton7_Click);
             // 
             // WPTh
             // 
@@ -644,6 +654,14 @@ namespace MissionPlanner.GCSViews
             this.Commands.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
             this.Commands.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.Commands.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellContentClick_1);
+            this.Commands.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellEndEdit);
+            this.Commands.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.Commands_DataError);
+            this.Commands.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.Commands_DefaultValuesNeeded);
+            this.Commands.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.Commands_EditingControlShowing);
+            this.Commands.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_RowEnter_1);
+            this.Commands.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.Commands_RowsAdded);
+            this.Commands.RowValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_RowValidated);
             // 
             // Command
             // 
@@ -903,6 +921,7 @@ namespace MissionPlanner.GCSViews
             this.myButton21.TextColor = System.Drawing.Color.White;
             this.myButton21.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton21.UseVisualStyleBackColor = true;
+            this.myButton21.Click += new System.EventHandler(this.myButton21_Click);
             // 
             // myButton18
             // 
@@ -914,6 +933,7 @@ namespace MissionPlanner.GCSViews
             this.myButton18.TextColor = System.Drawing.Color.White;
             this.myButton18.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton18.UseVisualStyleBackColor = true;
+            this.myButton18.Click += new System.EventHandler(this.myButton18_Click);
             // 
             // label19
             // 
@@ -932,6 +952,7 @@ namespace MissionPlanner.GCSViews
             this.Cancel.TextColor = System.Drawing.Color.White;
             this.Cancel.TextColorNotEnabled = System.Drawing.Color.White;
             this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // FollowMePanel
             // 
@@ -970,6 +991,7 @@ namespace MissionPlanner.GCSViews
             this.SavePolysBTN.TextColor = System.Drawing.Color.White;
             this.SavePolysBTN.TextColorNotEnabled = System.Drawing.Color.White;
             this.SavePolysBTN.UseVisualStyleBackColor = true;
+            this.SavePolysBTN.Click += new System.EventHandler(this.SavePolysBTN_Click);
             // 
             // ImportPolysBTN
             // 
@@ -982,6 +1004,7 @@ namespace MissionPlanner.GCSViews
             this.ImportPolysBTN.TextColor = System.Drawing.Color.White;
             this.ImportPolysBTN.TextColorNotEnabled = System.Drawing.Color.White;
             this.ImportPolysBTN.UseVisualStyleBackColor = true;
+            this.ImportPolysBTN.Click += new System.EventHandler(this.ImportPolysBTN_Click);
             // 
             // label22
             // 
@@ -1000,6 +1023,7 @@ namespace MissionPlanner.GCSViews
             this.NewDrawPoly.TextColor = System.Drawing.Color.Black;
             this.NewDrawPoly.TextColorNotEnabled = System.Drawing.Color.Black;
             this.NewDrawPoly.UseVisualStyleBackColor = true;
+            this.NewDrawPoly.Click += new System.EventHandler(this.NewDrawPoly_Click);
             // 
             // ApplyPoly
             // 
@@ -1012,6 +1036,7 @@ namespace MissionPlanner.GCSViews
             this.ApplyPoly.TextColor = System.Drawing.Color.White;
             this.ApplyPoly.TextColorNotEnabled = System.Drawing.Color.White;
             this.ApplyPoly.UseVisualStyleBackColor = true;
+            this.ApplyPoly.Click += new System.EventHandler(this.ApplyPoly_Click);
             // 
             // DeletePoly
             // 
@@ -1024,6 +1049,7 @@ namespace MissionPlanner.GCSViews
             this.DeletePoly.TextColor = System.Drawing.Color.White;
             this.DeletePoly.TextColorNotEnabled = System.Drawing.Color.White;
             this.DeletePoly.UseVisualStyleBackColor = true;
+            this.DeletePoly.Click += new System.EventHandler(this.DeletePoly_Click);
             // 
             // label23
             // 
@@ -1034,6 +1060,7 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.PolyNameBox, "PolyNameBox");
             this.PolyNameBox.Name = "PolyNameBox";
+            this.PolyNameBox.TextChanged += new System.EventHandler(this.PolyNameBox_TextChanged);
             // 
             // ColorBTN
             // 
@@ -1041,6 +1068,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.ColorBTN, "ColorBTN");
             this.ColorBTN.Name = "ColorBTN";
             this.ColorBTN.UseVisualStyleBackColor = false;
+            this.ColorBTN.Click += new System.EventHandler(this.ColorBTN_Click);
             // 
             // measurePanel
             // 
@@ -1085,6 +1113,7 @@ namespace MissionPlanner.GCSViews
             this.DrawBTN.TextColor = System.Drawing.Color.White;
             this.DrawBTN.TextColorNotEnabled = System.Drawing.Color.White;
             this.DrawBTN.UseVisualStyleBackColor = true;
+            this.DrawBTN.Click += new System.EventHandler(this.DrawBTN_Click);
             // 
             // MeasureBTN
             // 
@@ -1096,11 +1125,13 @@ namespace MissionPlanner.GCSViews
             this.MeasureBTN.TextColor = System.Drawing.Color.White;
             this.MeasureBTN.TextColorNotEnabled = System.Drawing.Color.White;
             this.MeasureBTN.UseVisualStyleBackColor = true;
+            this.MeasureBTN.Click += new System.EventHandler(this.MeasureBTN_Click);
             // 
             // Joystick_Panel
             // 
             resources.ApplyResources(this.Joystick_Panel, "Joystick_Panel");
             this.Joystick_Panel.Name = "Joystick_Panel";
+            this.Joystick_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Joystick_Panel_Paint);
             // 
             // FormatPanel
             // 
@@ -1123,6 +1154,7 @@ namespace MissionPlanner.GCSViews
             this.myButton17.TextColor = System.Drawing.Color.Black;
             this.myButton17.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton17.UseVisualStyleBackColor = true;
+            this.myButton17.Click += new System.EventHandler(this.myButton17_Click);
             // 
             // myButton16
             // 
@@ -1136,6 +1168,7 @@ namespace MissionPlanner.GCSViews
             this.myButton16.TextColor = System.Drawing.Color.Black;
             this.myButton16.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton16.UseVisualStyleBackColor = true;
+            this.myButton16.Click += new System.EventHandler(this.myButton16_Click);
             // 
             // myButton15
             // 
@@ -1148,6 +1181,7 @@ namespace MissionPlanner.GCSViews
             this.myButton15.TextColor = System.Drawing.Color.Black;
             this.myButton15.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton15.UseVisualStyleBackColor = true;
+            this.myButton15.Click += new System.EventHandler(this.myButton15_Click);
             // 
             // numericUpDown2
             // 
@@ -1199,6 +1233,7 @@ namespace MissionPlanner.GCSViews
             this.myButton19.TextColor = System.Drawing.Color.Black;
             this.myButton19.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton19.UseVisualStyleBackColor = true;
+            this.myButton19.Click += new System.EventHandler(this.myButton19_Click);
             // 
             // myButton20
             // 
@@ -1256,6 +1291,7 @@ namespace MissionPlanner.GCSViews
             0,
             0,
             0});
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             // 
             // SwarmPanel
             // 
@@ -1273,6 +1309,7 @@ namespace MissionPlanner.GCSViews
             this.Joystickbutton.TextColor = System.Drawing.Color.Black;
             this.Joystickbutton.TextColorNotEnabled = System.Drawing.Color.Black;
             this.Joystickbutton.UseVisualStyleBackColor = true;
+            this.Joystickbutton.Click += new System.EventHandler(this.Joystickbutton_Click);
             // 
             // myButton5
             // 
@@ -1285,6 +1322,7 @@ namespace MissionPlanner.GCSViews
             this.myButton5.TextColor = System.Drawing.Color.Black;
             this.myButton5.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton5.UseVisualStyleBackColor = true;
+            this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
             // 
             // panel8
             // 
@@ -1305,6 +1343,7 @@ namespace MissionPlanner.GCSViews
             this.myButton3.TextColor = System.Drawing.Color.Black;
             this.myButton3.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton3.UseVisualStyleBackColor = true;
+            this.myButton3.Click += new System.EventHandler(this.myButton3_Click);
             // 
             // label15
             // 
@@ -1402,6 +1441,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.BackWP, "BackWP");
             this.BackWP.Name = "BackWP";
             this.BackWP.UseVisualStyleBackColor = false;
+            this.BackWP.Click += new System.EventHandler(this.BackWP_Click);
             // 
             // WPNumber
             // 
@@ -1414,6 +1454,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.WPNumber.Name = "WPNumber";
+            this.WPNumber.ValueChanged += new System.EventHandler(this.WPNumber_ValueChanged);
             // 
             // NextWP
             // 
@@ -1421,6 +1462,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.NextWP, "NextWP");
             this.NextWP.Name = "NextWP";
             this.NextWP.UseVisualStyleBackColor = false;
+            this.NextWP.Click += new System.EventHandler(this.NextWP_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -1522,6 +1564,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.LongSec.Name = "LongSec";
+            this.LongSec.ValueChanged += new System.EventHandler(this.LongSec_ValueChanged);
             // 
             // LongMin
             // 
@@ -1535,6 +1578,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.LongMin.Name = "LongMin";
+            this.LongMin.ValueChanged += new System.EventHandler(this.LongMin_ValueChanged);
             // 
             // LongDeg
             // 
@@ -1548,6 +1592,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.LongDeg.Name = "LongDeg";
+            this.LongDeg.ValueChanged += new System.EventHandler(this.LongDeg_ValueChanged);
             // 
             // LatSec
             // 
@@ -1561,6 +1606,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.LatSec.Name = "LatSec";
+            this.LatSec.ValueChanged += new System.EventHandler(this.LatSec_ValueChanged);
             // 
             // LatMin
             // 
@@ -1574,6 +1620,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.LatMin.Name = "LatMin";
+            this.LatMin.ValueChanged += new System.EventHandler(this.LatMin_ValueChanged);
             // 
             // LatDeg
             // 
@@ -1587,6 +1634,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.LatDeg.Name = "LatDeg";
+            this.LatDeg.ValueChanged += new System.EventHandler(this.LatDeg_ValueChanged);
             // 
             // cmb_missiontype
             // 
