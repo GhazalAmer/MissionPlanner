@@ -3499,14 +3499,14 @@ namespace MissionPlanner.GCSViews
             objForm.Show();
             //////////////////////////////////////////////////
             /////////////////////////////////////////////////
-            MyUserControl joy = new JoystickSetup();
-            ThemeManager.ApplyThemeTo(joy);
-            joy.Show();
+            /*MyUserControl joy = new JoystickSetup();
+            ThemeManager.ApplyThemeTo(joy);*/
+            /*joy.Show();*/
             /*joy.TopLevel = false;*/
-            Joystick_Panel.Controls.Add(joy);
+            /*Joystick_Panel.Controls.Add(joy);*/
             /*joy.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;*/
-            joy.Dock = DockStyle.Fill;
-            joy.Show();
+            /*joy.Dock = DockStyle.Fill;
+            joy.Show();*/
             //////////////////////////////////////////////////
             ////////////////////////////////////////////////////
             Form fllowmeform = new FollowMe();

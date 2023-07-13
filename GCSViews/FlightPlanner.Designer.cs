@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using MissionPlanner.Controls;
+using MissionPlanner.Joystick;
 
 namespace MissionPlanner.GCSViews
 {
@@ -248,6 +249,7 @@ namespace MissionPlanner.GCSViews
             this.contextMenuStripZoom = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStripPoly = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.currentStateBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.joy = new JoystickSetup();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.panel9.SuspendLayout();
             this.SpeedPanel.SuspendLayout();
@@ -1131,6 +1133,8 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.Joystick_Panel, "Joystick_Panel");
             this.Joystick_Panel.Name = "Joystick_Panel";
+            this.joy.Dock = DockStyle.Fill;
+            this.Joystick_Panel.Controls.Add(joy);
             this.Joystick_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Joystick_Panel_Paint);
             // 
             // FormatPanel
@@ -2423,5 +2427,6 @@ namespace MissionPlanner.GCSViews
         private ContextMenuStrip contextMenuStripZoom;
         public ContextMenuStrip contextMenuStripPoly;
         private ToolStripMenuItem gDALOpacityToolStripMenuItem;
+        MyUserControl joy;
     }
 }

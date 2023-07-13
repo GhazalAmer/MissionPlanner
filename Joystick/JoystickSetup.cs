@@ -512,7 +512,7 @@ namespace MissionPlanner.Joystick
 
         private void chk_manualcontrol_CheckedChanged(object sender, EventArgs e)
         {
-            MainV2.joystick.manual_control = chk_manualcontrol.Checked;
+            /*MainV2.joystick.manual_control = chk_manualcontrol.Checked;*/
         }
 
         public void Deactivate()
