@@ -6481,10 +6481,17 @@ namespace MissionPlanner.GCSViews
 
         private void GOTOButt_Click(object sender, EventArgs e)
         {
-            if (panel4.Visible == true)
-            { panel4.Visible = false; }
+            if (panel4.Visible == true && tableLayoutPanel6.Visible == true)
+            { 
+                panel4.Visible = false;
+                tableLayoutPanel6.Visible = false;
+            }
             else
-            { panel4.Visible = true; }
+            { 
+              panel4.Visible = true;
+                tableLayoutPanel6.Visible = true;
+
+            }
 
             try
             {

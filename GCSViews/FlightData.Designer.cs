@@ -252,8 +252,8 @@ namespace MissionPlanner.GCSViews
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.GOTOButt = new MissionPlanner.Controls.MyButton();
-            this.NextWP = new System.Windows.Forms.Button();
             this.WPNumber = new System.Windows.Forms.NumericUpDown();
+            this.NextWP = new System.Windows.Forms.Button();
             this.BackWP = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.myTrackBar1 = new MissionPlanner.Controls.MyTrackBar();
@@ -2664,7 +2664,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 3420D;
+            this.windDir1.Direction = 3600D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3150,14 +3150,6 @@ namespace MissionPlanner.GCSViews
             this.GOTOButt.UseVisualStyleBackColor = false;
             this.GOTOButt.Click += new System.EventHandler(this.GOTOButt_Click);
             // 
-            // NextWP
-            // 
-            this.NextWP.BackColor = System.Drawing.Color.DarkGray;
-            resources.ApplyResources(this.NextWP, "NextWP");
-            this.NextWP.Name = "NextWP";
-            this.NextWP.UseVisualStyleBackColor = false;
-            this.NextWP.Click += new System.EventHandler(this.NextWP_Click);
-            // 
             // WPNumber
             // 
             this.WPNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -3169,6 +3161,14 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.WPNumber.Name = "WPNumber";
+            // 
+            // NextWP
+            // 
+            this.NextWP.BackColor = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.NextWP, "NextWP");
+            this.NextWP.Name = "NextWP";
+            this.NextWP.UseVisualStyleBackColor = false;
+            this.NextWP.Click += new System.EventHandler(this.NextWP_Click);
             // 
             // BackWP
             // 
