@@ -1059,6 +1059,7 @@ mc:Ignorable=""d""
 
         private static void ApplyTheme(Control temp, int level)
         {
+            return; // stop themeing
             if (level == 0)
             {
                 temp.BackColor = BGColor;

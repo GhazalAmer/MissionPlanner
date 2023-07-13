@@ -249,7 +249,7 @@ namespace MissionPlanner.GCSViews
             this.contextMenuStripZoom = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStripPoly = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.currentStateBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.joy = new JoystickSetup();
+            this.joy = new MissionPlanner.Joystick.JoystickSetup();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.panel9.SuspendLayout();
             this.SpeedPanel.SuspendLayout();
@@ -264,6 +264,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel8.SuspendLayout();
             this.measurePanel.SuspendLayout();
             this.ToolsTable.SuspendLayout();
+            this.Joystick_Panel.SuspendLayout();
             this.FormatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.PlaceAfterPanel.SuspendLayout();
@@ -1131,10 +1132,9 @@ namespace MissionPlanner.GCSViews
             // 
             // Joystick_Panel
             // 
+            this.Joystick_Panel.Controls.Add(this.joy);
             resources.ApplyResources(this.Joystick_Panel, "Joystick_Panel");
             this.Joystick_Panel.Name = "Joystick_Panel";
-            this.joy.Dock = DockStyle.Fill;
-            this.Joystick_Panel.Controls.Add(joy);
             this.Joystick_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Joystick_Panel_Paint);
             // 
             // FormatPanel
@@ -2154,6 +2154,12 @@ namespace MissionPlanner.GCSViews
             // 
             this.currentStateBindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
             // 
+            // joy
+            // 
+            resources.ApplyResources(this.joy, "joy");
+            this.joy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.joy.Name = "joy";
+            // 
             // FlightPlanner
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -2184,6 +2190,7 @@ namespace MissionPlanner.GCSViews
             this.measurePanel.PerformLayout();
             this.ToolsTable.ResumeLayout(false);
             this.ToolsTable.PerformLayout();
+            this.Joystick_Panel.ResumeLayout(false);
             this.FormatPanel.ResumeLayout(false);
             this.FormatPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -2427,6 +2434,6 @@ namespace MissionPlanner.GCSViews
         private ContextMenuStrip contextMenuStripZoom;
         public ContextMenuStrip contextMenuStripPoly;
         private ToolStripMenuItem gDALOpacityToolStripMenuItem;
-        MyUserControl joy;
+        private JoystickSetup joy;
     }
 }
