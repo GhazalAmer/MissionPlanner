@@ -197,22 +197,37 @@ namespace MissionPlanner.GCSViews
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MainV2.MyView.ShowScreen("FlightPlanner");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            MainV2.MyView.ShowScreen("FlightData");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (panel5.Visible == true)
-            { panel5.Visible = false; }
+           
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible == true)
+            { panel1.Visible = false; }
             else
             {
-                panel5.Visible = true;
+                panel1.Visible = true;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("FlightPlanner");
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("FlightData");
+
         }
     }
 }
