@@ -323,11 +323,23 @@ namespace MissionPlanner.GCSViews
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (panel1.Visible == true)
+            { panel1.Visible = false; }
+            else
+            {
+                panel1.Visible = true;
+            }
             MainV2.MyView.ShowScreen("FlightPlanner");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (panel1.Visible == true)
+            { panel1.Visible = false; }
+            else
+            {
+                panel1.Visible = true;
+            }
             MainV2.MyView.ShowScreen("FlightData");
         }
 
