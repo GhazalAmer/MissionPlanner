@@ -1111,5 +1111,46 @@ SIM_DRIFT_TIME=0
         {
             _ = StartSwarmSeperate(Firmwares.ArduRover);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (panel2.Visible == true)
+            { panel2.Visible = false; }
+            else
+            {
+                panel2.Visible = true;
+            }
+            MainV2.MyView.ShowScreen("FlightPlanner");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (panel2.Visible == true)
+            { panel2.Visible = false; }
+            else
+            {
+                panel2.Visible = true;
+            }
+            MainV2.MyView.ShowScreen("FlightData");
+
+        }
+
+        private void myButton1_Click(object sender, EventArgs e)
+        {
+            myGMAP1.Enabled = false;
+
+            if (panel2.Visible == true)
+            { panel2.Visible = false; }
+            else
+            {
+                panel2.Visible = true;
+            }
+        }
     }
 }

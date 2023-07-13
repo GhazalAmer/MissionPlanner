@@ -6873,10 +6873,25 @@ namespace MissionPlanner.GCSViews
 
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            } else {
+                panel3.Visible = true;
+
+            }
+
+            MainV2.MyView.ShowScreen("Simulation");
+        }
+    
         private void boatStatusPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
+            
      
 
         private void myButton15_Click(object sender, EventArgs e)
@@ -6925,6 +6940,22 @@ namespace MissionPlanner.GCSViews
             }
 
             MainV2.MyView.ShowScreen("FlightPlanner");
+        }
+
+        private void myButton18_Click(object sender, EventArgs e)
+        {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+
+            MainV2.MyView.ShowScreen("Simulation");
         }
     }
 }

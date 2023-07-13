@@ -220,6 +220,12 @@ namespace MissionPlanner.GCSViews
 
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
         private void myButton15_Click(object sender, EventArgs e)
         {
             MainV2.MyView.ShowScreen("FlightData");

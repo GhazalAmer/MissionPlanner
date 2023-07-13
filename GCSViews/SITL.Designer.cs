@@ -42,6 +42,9 @@ namespace MissionPlanner.GCSViews
             this.pictureBoxrover = new MissionPlanner.Controls.PictureBoxMouseOver();
             this.pictureBoxplane = new MissionPlanner.Controls.PictureBoxMouseOver();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,12 +62,14 @@ namespace MissionPlanner.GCSViews
             this.cmb_model = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.num_simspeed = new System.Windows.Forms.NumericUpDown();
+            this.myButton1 = new MissionPlanner.Controls.MyButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxheli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxquad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxrover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxplane)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_heading)).BeginInit();
@@ -181,9 +186,31 @@ namespace MissionPlanner.GCSViews
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.myGMAP1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Name = "panel2";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox2
             // 
@@ -225,6 +252,7 @@ namespace MissionPlanner.GCSViews
             // groupBox4
             // 
             resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Controls.Add(this.myButton1);
             this.groupBox4.Controls.Add(this.but_swarmrover);
             this.groupBox4.Controls.Add(this.but_swarmplane);
             this.groupBox4.Controls.Add(this.but_swarmseq);
@@ -243,6 +271,7 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.but_swarmrover, "but_swarmrover");
             this.but_swarmrover.Name = "but_swarmrover";
+            this.but_swarmrover.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.but_swarmrover.UseVisualStyleBackColor = true;
             this.but_swarmrover.Click += new System.EventHandler(this.but_swarmrover_Click);
             // 
@@ -250,6 +279,7 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.but_swarmplane, "but_swarmplane");
             this.but_swarmplane.Name = "but_swarmplane";
+            this.but_swarmplane.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.but_swarmplane.UseVisualStyleBackColor = true;
             this.but_swarmplane.Click += new System.EventHandler(this.but_swarmplane_Click);
             // 
@@ -257,6 +287,7 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.but_swarmseq, "but_swarmseq");
             this.but_swarmseq.Name = "but_swarmseq";
+            this.but_swarmseq.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.but_swarmseq.UseVisualStyleBackColor = true;
             this.but_swarmseq.Click += new System.EventHandler(this.but_swarmseq_Click);
             // 
@@ -264,6 +295,7 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.but_swarmlink, "but_swarmlink");
             this.but_swarmlink.Name = "but_swarmlink";
+            this.but_swarmlink.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.but_swarmlink.UseVisualStyleBackColor = true;
             this.but_swarmlink.Click += new System.EventHandler(this.but_swarmlink_Click);
             // 
@@ -349,6 +381,14 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             // 
+            // myButton1
+            // 
+            resources.ApplyResources(this.myButton1, "myButton1");
+            this.myButton1.Name = "myButton1";
+            this.myButton1.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.myButton1.UseVisualStyleBackColor = true;
+            this.myButton1.Click += new System.EventHandler(this.myButton1_Click);
+            // 
             // SITL
             // 
             this.Controls.Add(this.groupBox4);
@@ -364,6 +404,7 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxrover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxplane)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -405,5 +446,9 @@ namespace MissionPlanner.GCSViews
         private System.Windows.Forms.CheckBox chk_skipdownload;
         private MyButton but_swarmrover;
         private MyButton but_swarmplane;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private MyButton myButton1;
     }
 }

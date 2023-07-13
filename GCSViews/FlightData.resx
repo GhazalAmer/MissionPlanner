@@ -691,7 +691,7 @@
     <value>modifyandSetLoiterRad</value>
   </data>
   <data name="&gt;&gt;modifyandSetLoiterRad.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetLoiterRad.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -850,7 +850,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -886,7 +886,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1579,7 +1579,7 @@
     <value>checkListControl1</value>
   </data>
   <data name="&gt;&gt;checkListControl1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PreFlight.CheckListControl, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.PreFlight.CheckListControl, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;checkListControl1.Parent" xml:space="preserve">
     <value>tabPagePreFlight</value>
@@ -3065,7 +3065,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3077,7 +3077,7 @@
     <value>3, 31</value>
   </data>
   <data name="servoOptions2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
+    <value>394, 34</value>
   </data>
   <data name="servoOptions2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3086,7 +3086,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3095,10 +3095,10 @@
     <value>1</value>
   </data>
   <data name="servoOptions3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 64</value>
+    <value>3, 71</value>
   </data>
   <data name="servoOptions3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
+    <value>394, 34</value>
   </data>
   <data name="servoOptions3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3107,7 +3107,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3116,10 +3116,10 @@
     <value>2</value>
   </data>
   <data name="servoOptions4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 97</value>
+    <value>3, 111</value>
   </data>
   <data name="servoOptions4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
+    <value>394, 34</value>
   </data>
   <data name="servoOptions4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3128,7 +3128,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3137,10 +3137,10 @@
     <value>3</value>
   </data>
   <data name="servoOptions5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 130</value>
+    <value>3, 151</value>
   </data>
   <data name="servoOptions5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
+    <value>394, 34</value>
   </data>
   <data name="servoOptions5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3149,7 +3149,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3158,10 +3158,10 @@
     <value>4</value>
   </data>
   <data name="servoOptions6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 163</value>
+    <value>3, 191</value>
   </data>
   <data name="servoOptions6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
+    <value>394, 34</value>
   </data>
   <data name="servoOptions6.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3170,7 +3170,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3179,10 +3179,10 @@
     <value>5</value>
   </data>
   <data name="servoOptions7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 196</value>
+    <value>3, 231</value>
   </data>
   <data name="servoOptions7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
+    <value>394, 34</value>
   </data>
   <data name="servoOptions7.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3191,7 +3191,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3200,10 +3200,10 @@
     <value>6</value>
   </data>
   <data name="servoOptions8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 229</value>
+    <value>3, 271</value>
   </data>
   <data name="servoOptions8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 24</value>
+    <value>369, 30</value>
   </data>
   <data name="servoOptions8.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -3212,7 +3212,7 @@
     <value>servoOptions8</value>
   </data>
   <data name="&gt;&gt;servoOptions8.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions8.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3221,10 +3221,10 @@
     <value>7</value>
   </data>
   <data name="servoOptions9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 259</value>
+    <value>3, 307</value>
   </data>
   <data name="servoOptions9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 24</value>
+    <value>369, 30</value>
   </data>
   <data name="servoOptions9.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -3233,7 +3233,7 @@
     <value>servoOptions9</value>
   </data>
   <data name="&gt;&gt;servoOptions9.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions9.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3242,10 +3242,10 @@
     <value>8</value>
   </data>
   <data name="servoOptions10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 289</value>
+    <value>3, 343</value>
   </data>
   <data name="servoOptions10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 24</value>
+    <value>369, 30</value>
   </data>
   <data name="servoOptions10.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -3254,7 +3254,7 @@
     <value>servoOptions10</value>
   </data>
   <data name="&gt;&gt;servoOptions10.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions10.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3263,10 +3263,10 @@
     <value>9</value>
   </data>
   <data name="servoOptions11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 319</value>
+    <value>3, 379</value>
   </data>
   <data name="servoOptions11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 22</value>
+    <value>369, 28</value>
   </data>
   <data name="servoOptions11.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -3275,7 +3275,7 @@
     <value>servoOptions11</value>
   </data>
   <data name="&gt;&gt;servoOptions11.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions11.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3284,10 +3284,10 @@
     <value>10</value>
   </data>
   <data name="servoOptions12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 347</value>
+    <value>3, 413</value>
   </data>
   <data name="servoOptions12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 22</value>
+    <value>369, 28</value>
   </data>
   <data name="servoOptions12.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -3296,7 +3296,7 @@
     <value>servoOptions12</value>
   </data>
   <data name="&gt;&gt;servoOptions12.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions12.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3305,10 +3305,10 @@
     <value>11</value>
   </data>
   <data name="relayOptions1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 375</value>
+    <value>3, 447</value>
   </data>
   <data name="relayOptions1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 22</value>
+    <value>248, 28</value>
   </data>
   <data name="relayOptions1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -3317,7 +3317,7 @@
     <value>relayOptions1</value>
   </data>
   <data name="&gt;&gt;relayOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3326,10 +3326,10 @@
     <value>12</value>
   </data>
   <data name="relayOptions2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 403</value>
+    <value>3, 481</value>
   </data>
   <data name="relayOptions2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 22</value>
+    <value>248, 28</value>
   </data>
   <data name="relayOptions2.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -3338,7 +3338,7 @@
     <value>relayOptions2</value>
   </data>
   <data name="&gt;&gt;relayOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3347,10 +3347,10 @@
     <value>13</value>
   </data>
   <data name="relayOptions3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 431</value>
+    <value>3, 515</value>
   </data>
   <data name="relayOptions3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 22</value>
+    <value>248, 28</value>
   </data>
   <data name="relayOptions3.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -3359,7 +3359,7 @@
     <value>relayOptions3</value>
   </data>
   <data name="&gt;&gt;relayOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3368,10 +3368,10 @@
     <value>14</value>
   </data>
   <data name="relayOptions4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 459</value>
+    <value>3, 549</value>
   </data>
   <data name="relayOptions4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 22</value>
+    <value>248, 28</value>
   </data>
   <data name="relayOptions4.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -3380,7 +3380,7 @@
     <value>relayOptions4</value>
   </data>
   <data name="&gt;&gt;relayOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3389,10 +3389,10 @@
     <value>15</value>
   </data>
   <data name="relayOptions5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 487</value>
+    <value>3, 583</value>
   </data>
   <data name="relayOptions5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 22</value>
+    <value>369, 28</value>
   </data>
   <data name="relayOptions5.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -3401,7 +3401,7 @@
     <value>relayOptions5</value>
   </data>
   <data name="&gt;&gt;relayOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3410,10 +3410,10 @@
     <value>16</value>
   </data>
   <data name="relayOptions6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 515</value>
+    <value>3, 617</value>
   </data>
   <data name="relayOptions6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 22</value>
+    <value>369, 28</value>
   </data>
   <data name="relayOptions6.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -3422,7 +3422,7 @@
     <value>relayOptions6</value>
   </data>
   <data name="&gt;&gt;relayOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3497,7 +3497,7 @@
     <value>auxOptions1</value>
   </data>
   <data name="&gt;&gt;auxOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3518,7 +3518,7 @@
     <value>auxOptions2</value>
   </data>
   <data name="&gt;&gt;auxOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3539,7 +3539,7 @@
     <value>auxOptions3</value>
   </data>
   <data name="&gt;&gt;auxOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3560,7 +3560,7 @@
     <value>auxOptions4</value>
   </data>
   <data name="&gt;&gt;auxOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3581,7 +3581,7 @@
     <value>auxOptions5</value>
   </data>
   <data name="&gt;&gt;auxOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3602,7 +3602,7 @@
     <value>auxOptions6</value>
   </data>
   <data name="&gt;&gt;auxOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3623,7 +3623,7 @@
     <value>auxOptions7</value>
   </data>
   <data name="&gt;&gt;auxOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -5270,7 +5270,7 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.3.8598.26149, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.DistanceBar, MissionPlanner, Version=1.3.8598.27983, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -6028,7 +6028,7 @@
     <value>NoControl</value>
   </data>
   <data name="restartroutebutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1089, 0</value>
+    <value>1088, 0</value>
   </data>
   <data name="restartroutebutton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -6128,7 +6128,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>932, 0</value>
+    <value>931, 0</value>
   </data>
   <data name="myButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -6209,7 +6209,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>571, 0</value>
+    <value>570, 0</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -6309,7 +6309,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 0</value>
+    <value>336, 0</value>
   </data>
   <data name="myButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -6406,7 +6406,7 @@
     <value>NoControl</value>
   </data>
   <data name="MeasureBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 0</value>
+    <value>162, 0</value>
   </data>
   <data name="MeasureBTN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -8699,7 +8699,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="switchview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 65</value>
+    <value>162, 65</value>
   </data>
   <data name="switchview.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -8793,13 +8793,13 @@
     <value>NoControl</value>
   </data>
   <data name="myButton14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1390, 0</value>
+    <value>1389, 0</value>
   </data>
   <data name="myButton14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 65</value>
+    <value>147, 65</value>
   </data>
   <data name="myButton14.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -8893,7 +8893,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1244, 0</value>
+    <value>1243, 0</value>
   </data>
   <data name="myButton13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -8950,10 +8950,98 @@
     <value>6</value>
   </data>
   <data name="tableLayoutPanel7.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="myButton14" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="myButton13" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="switchview" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="restartroutebutton" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="myButton6" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="MeasureBTN" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="myButton5" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,48.35681,Percent,51.64319,Absolute,230,Absolute,365,Absolute,157,Absolute,155,Absolute,146,Absolute,145" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="myButton14" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="myButton13" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="switchview" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="restartroutebutton" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="myButton6" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="MeasureBTN" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="myButton5" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,48.35681,Percent,51.64319,Absolute,230,Absolute,365,Absolute,157,Absolute,155,Absolute,146,Absolute,146" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
+  </data>
+  <data name="myButton18.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIAAAAAhCAMAAAAmoFOyAAAABGdBTUEAALGPC/xhBQAAAwBQTFRFQ0NE
+        Q0RDQ0REQ0RFRENDRENERENFRERDRERER0dGRkZHR0ZIR0hGRkhHR0hISEdGSEdHSEdISEhHSkpKSkpL
+        SkpMSkxKSkxLTEpLTk1OTk1PTk5NTk5OTk5PUlFRUlFSUlFTUVJRUVJSUVJTVVVVVVVWVVZVVVZWWVlY
+        WFhZWFhaWFpYWFpZXFxcXFxdX2FfX2BgX2BhYF9gYF9hYGBfYGBgYGBhY2NjY2NkY2NlY2RjY2RkZGNj
+        ZGNkZGRjZGRkZ2dmZmZnZmZoZ2hmZmhnZ2hoaGdmaGZnaGZoaGhnampqamprampsamxqamxrbGprbm1u
+        bm1vbm5tbm5ubm5vcnFxcnFycnFzcXJxcXJycXJzdXR1dXR2dXZ0dXZ1dXZ2eHl4eHh5eHh6eHp4eHp5
+        fHx8fHx9f4CAf4CBgH+AgH+BgIB/gICAgICBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnHC6twAAAAlwSFlzAAAO
+        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
+</value>
+  </data>
+  <data name="myButton18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="myButton18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="myButton18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="myButton18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 114</value>
+  </data>
+  <data name="myButton18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 39</value>
+  </data>
+  <data name="myButton18.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="myButton18.Text" xml:space="preserve">
+    <value>Simulation</value>
+  </data>
+  <data name="myButton18.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;myButton18.Name" xml:space="preserve">
+    <value>myButton18</value>
+  </data>
+  <data name="&gt;&gt;myButton18.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myButton18.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;myButton18.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="myButton17.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -9044,7 +9132,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;myButton17.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="myButton16.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -9132,7 +9220,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;myButton16.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="myButton15.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -9220,13 +9308,13 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;myButton15.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1397, 694</value>
+    <value>1397, 640</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 114</value>
+    <value>136, 156</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>

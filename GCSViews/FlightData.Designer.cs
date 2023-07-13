@@ -296,6 +296,7 @@ namespace MissionPlanner.GCSViews
             this.barRenderer1 = new BrightIdeasSoftware.BarRenderer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.boatStatusPanel = new System.Windows.Forms.Panel();
+            this.myButton18 = new MissionPlanner.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -2649,7 +2650,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 9540D;
+            this.windDir1.Direction = 9720D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3474,6 +3475,7 @@ namespace MissionPlanner.GCSViews
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Controls.Add(this.myButton18);
             this.panel3.Controls.Add(this.myButton17);
             this.panel3.Controls.Add(this.myButton16);
             this.panel3.Controls.Add(this.myButton15);
@@ -3540,6 +3542,20 @@ namespace MissionPlanner.GCSViews
             this.boatStatusPanel.BackColor = System.Drawing.Color.Transparent;
             this.boatStatusPanel.ForeColor = System.Drawing.Color.Transparent;
             this.boatStatusPanel.Name = "boatStatusPanel";
+            // 
+            // myButton18
+            // 
+            this.myButton18.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.myButton18, "myButton18");
+            this.myButton18.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton18.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton18.ForeColor = System.Drawing.Color.White;
+            this.myButton18.Name = "myButton18";
+            this.myButton18.Outline = System.Drawing.Color.Black;
+            this.myButton18.TextColor = System.Drawing.Color.White;
+            this.myButton18.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton18.UseVisualStyleBackColor = false;
+            this.myButton18.Click += new System.EventHandler(this.myButton18_Click);
             // 
             // FlightData
             // 
@@ -3949,5 +3965,6 @@ namespace MissionPlanner.GCSViews
         private Controls.MyButton myButton15;
         private Controls.MyButton myButton17;
         private Controls.MyButton myButton16;
+        private Controls.MyButton myButton18;
     }
 }

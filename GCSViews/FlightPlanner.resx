@@ -2419,42 +2419,6 @@ Click "Cancel" to stay on this page</value>
   <data name="ToolsTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DrawBTN" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="MeasureBTN" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="joy.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="joy.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="joy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="joy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="joy.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>566, 452</value>
-  </data>
-  <data name="joy.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>566, 331</value>
-  </data>
-  <data name="joy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>566, 334</value>
-  </data>
-  <data name="joy.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;joy.Name" xml:space="preserve">
-    <value>joy</value>
-  </data>
-  <data name="&gt;&gt;joy.Type" xml:space="preserve">
-    <value>MissionPlanner.Joystick.JoystickSetup, MissionPlanner, Version=1.3.8598.24337, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;joy.Parent" xml:space="preserve">
-    <value>Joystick_Panel</value>
-  </data>
-  <data name="&gt;&gt;joy.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="Joystick_Panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 186</value>
   </data>
