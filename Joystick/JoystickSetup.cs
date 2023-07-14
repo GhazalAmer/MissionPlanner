@@ -96,6 +96,7 @@ namespace MissionPlanner.Joystick
                         .GetValue(MainV2.comPort.MAV.cs);
                 };
 
+                ax.Visible = false;
                 Controls.Add(ax);
 
                 y += ax.Height;
@@ -283,6 +284,166 @@ namespace MissionPlanner.Joystick
             {
                 
             }
+
+            // =====================================================
+            float rc1_min = 0;
+            float rc1_max = 0;
+            float rc1_trim = 0;
+            float rc3_min = 0;
+            float rc3_max = 0;
+            float rc3_trim = 0;
+            int green;
+            int red;
+            if (MainV2.comPort.MAV.param.ContainsKey("RC" + 1 + "_MIN"))
+            {
+                rc1_min = (float)(MainV2.comPort.MAV.param["RC" + 1 + "_MIN"]);
+                rc1_max = (float)(MainV2.comPort.MAV.param["RC" + 1 + "_MAX"]);
+                rc1_trim = (float)(MainV2.comPort.MAV.param["RC" + 1 + "_TRIM"]);
+            }
+            else
+            {
+                rc1_min = 1100;
+                rc1_max = 1900;
+                rc1_trim = 1500;
+            }
+            if (MainV2.comPort.MAV.param.ContainsKey("RC" + 3 + "_MIN"))
+            {
+                rc3_min = (float)(MainV2.comPort.MAV.param["RC" + 3 + "_MIN"]);
+                rc3_max = (float)(MainV2.comPort.MAV.param["RC" + 3 + "_MAX"]);
+                rc3_trim = (float)(MainV2.comPort.MAV.param["RC" + 3 + "_TRIM"]);
+            }
+            else
+            {
+
+                rc3_min = 1100;
+                rc3_max = 1900;
+                rc3_trim = 1500;
+            }
+            float steering_percent;
+            float throttle_percent;
+            if (MainV2.comPort.MAV.cs.rcoverridech1 > rc1_trim)
+            {
+                steering_percent = (float)((MainV2.comPort.MAV.cs.rcoverridech1 - rc1_trim) / (rc1_max - rc1_trim));
+                //int red = (int)(float)(255 - steering_percent * 255);
+                green = (int)(float)(steering_percent * 255);
+                if (green <= 255 && green >= 0)
+                {
+                    SteerCircBar.ProgressColor = Color.FromArgb(0, green, 0);
+                }
+            }
+            else
+            {
+                steering_percent = (float)((MainV2.comPort.MAV.cs.rcoverridech1 - rc1_min) / (rc1_trim - rc1_min)) - 1;
+                red = (int)(float)(-steering_percent * 255);
+                //int green = (int)(float)(steering_percent * 255);
+                if (red <= 255 && red >= 0)
+                {
+                    SteerCircBar.ProgressColor = Color.FromArgb(red, 0, 0);
+                }
+            }
+
+            if (MainV2.comPort.MAV.cs.rcoverridech2 > 1600)
+            { GearState.Text = "F"; }
+            else if (MainV2.comPort.MAV.cs.rcoverridech2 < 1400)
+            { GearState.Text = "R"; }
+            else
+            { GearState.Text = "N"; }
+            if (MainV2.comPort.MAV.cs.rcoverridech3 > rc3_trim + 50)
+            {
+
+
+                throttle_percent = (float)((MainV2.comPort.MAV.cs.rcoverridech3 - rc3_trim) / (rc3_max - rc3_trim)) * 255;
+                if (throttle_percent <= 255 && throttle_percent >= 0)
+                {
+                    ThrottleCircBar.ProgressColor = Color.FromArgb(0, (int)throttle_percent, 0);
+                }
+                throttle_percent = (float)(throttle_percent / 255.0 * 1.0);
+                // GearState.Text = throttle_percent.ToString();
+            }
+            else if (MainV2.comPort.MAV.cs.rcoverridech3 < rc3_trim - 50)
+            {
+
+
+                throttle_percent = (float)((MainV2.comPort.MAV.cs.rcoverridech3 - rc3_trim) / (rc3_min - rc3_trim)) * 255;
+                if (throttle_percent <= 255 && throttle_percent >= 0)
+                {
+                    ThrottleCircBar.ProgressColor = Color.FromArgb((int)throttle_percent, 0, 0);
+                }
+                throttle_percent = (float)(throttle_percent / 255.0 * -1.0);
+                // GearState.Text = throttle_percent.ToString();
+            }
+            else
+            {
+                ThrottleCircBar.ProgressColor = Color.FromArgb(255, 165, 0);
+                throttle_percent = 0;
+                //GearState.Text = throttle_percent.ToString();
+            }
+            if (MainV2.comPort.MAV.cs.rcoverridech4 > 1600)
+            {
+                ENG_label.Text = "ENG STR";
+                ENG_label.ForeColor = Color.FromArgb(0, 255, 0);
+            }
+            else if (MainV2.comPort.MAV.cs.rcoverridech4 < 1400)
+            {
+                ENG_label.Text = "ENG STP";
+                ENG_label.ForeColor = Color.FromArgb(255, 0, 0);
+            }
+            else
+            {
+                ENG_label.Text = "ENG ---";
+                ENG_label.ForeColor = Color.FromArgb(0, 0, 0);
+            }
+            if (MainV2.comPort.MAV.cs.rcoverridech6 > 1600)
+            {
+                ANCH_label.Text = "Gear H";
+                ANCH_label.ForeColor = Color.FromArgb(0, 0, 255);
+            }
+            else if (MainV2.comPort.MAV.cs.rcoverridech6 < 1400)
+            {
+                ANCH_label.Text = "Gear L";
+                ANCH_label.ForeColor = Color.FromArgb(0, 0, 255);
+            }
+            /*if (MainV2.comPort.MAV.cs.rcoverridech6 > 1600)
+            {
+                AUX_label.ForeColor = Color.FromArgb(0, 255, 0);
+            }
+            else
+            {
+                AUX_label.ForeColor = Color.FromArgb(0, 0, 0);
+            }*/
+            // GearState.Text = MainV2.comPort.MAV.cs.rcoverridech3.ToString();
+
+            progressBarRoll.Value = MainV2.comPort.MAV.cs.rcoverridech1;
+            progressBarPith.Value = MainV2.comPort.MAV.cs.rcoverridech2;
+            SteerCircBar.StartAngle = (int)(80 - steering_percent * 90);
+            progressBarThrottle.Value = MainV2.comPort.MAV.cs.rcoverridech3;
+            ThrottleCircBar.StartAngle = 260 + (int)(float)(((float)(throttle_percent + 1.0) / 2.0 * 90.0) - 45);
+            //label3.Text = ThrottleCircBar.Value.ToString();
+            progressBarRudder.Value = MainV2.comPort.MAV.cs.rcoverridech4;
+            ProgressBarCH5.Value = MainV2.comPort.MAV.cs.rcoverridech5;
+            ProgressBarCH6.Value = MainV2.comPort.MAV.cs.rcoverridech6;
+            ProgressBarCH7.Value = MainV2.comPort.MAV.cs.rcoverridech7;
+            ProgressBarCH8.Value = MainV2.comPort.MAV.cs.rcoverridech8;
+
+            try
+            {
+                progressBarRoll.maxline = MainV2.joystick.getRawValueForChannel(1);
+                progressBarPith.maxline = MainV2.joystick.getRawValueForChannel(2);
+                progressBarThrottle.maxline = MainV2.joystick.getRawValueForChannel(3);
+                progressBarRudder.maxline = MainV2.joystick.getRawValueForChannel(4);
+                ProgressBarCH5.maxline = MainV2.joystick.getRawValueForChannel(5);
+                ProgressBarCH6.maxline = MainV2.joystick.getRawValueForChannel(6);
+                ProgressBarCH7.maxline = MainV2.joystick.getRawValueForChannel(7);
+                ProgressBarCH8.maxline = MainV2.joystick.getRawValueForChannel(8);
+            }
+            catch
+            {
+                //Exception Error in the application. -2147024866 (DIERR_INPUTLOST)
+
+            }
+            // =====================================================
+
+
 
             try
             {
@@ -524,6 +685,16 @@ namespace MissionPlanner.Joystick
                 MainV2.joystick.UnAcquireJoyStick();
                 MainV2.joystick = null;
             }
+        }
+
+        private void CMB_joysticks_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MainV2.joystick != null && MainV2.joystick.enabled == false)
+                    MainV2.joystick.UnAcquireJoyStick();
+            }
+            catch { }
         }
     }
 }

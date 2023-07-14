@@ -111,11 +111,13 @@ namespace MissionPlanner.Joystick
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Name = "label17";
             // 
             // AUX_label
             // 
             resources.ApplyResources(this.AUX_label, "AUX_label");
+            this.AUX_label.ForeColor = System.Drawing.Color.White;
             this.AUX_label.Name = "AUX_label";
             // 
             // ANCH_label
@@ -130,35 +132,35 @@ namespace MissionPlanner.Joystick
             // 
             // AuxBtn
             // 
-            resources.ApplyResources(this.AuxBtn, "AuxBtn");
             this.AuxBtn.FormattingEnabled = true;
             this.AuxBtn.Items.AddRange(new object[] {
             resources.GetString("AuxBtn.Items"),
             resources.GetString("AuxBtn.Items1"),
             resources.GetString("AuxBtn.Items2"),
             resources.GetString("AuxBtn.Items3")});
+            resources.ApplyResources(this.AuxBtn, "AuxBtn");
             this.AuxBtn.Name = "AuxBtn";
             // 
             // AnchUpBtn
             // 
-            resources.ApplyResources(this.AnchUpBtn, "AnchUpBtn");
             this.AnchUpBtn.FormattingEnabled = true;
             this.AnchUpBtn.Items.AddRange(new object[] {
             resources.GetString("AnchUpBtn.Items"),
             resources.GetString("AnchUpBtn.Items1"),
             resources.GetString("AnchUpBtn.Items2"),
             resources.GetString("AnchUpBtn.Items3")});
+            resources.ApplyResources(this.AnchUpBtn, "AnchUpBtn");
             this.AnchUpBtn.Name = "AnchUpBtn";
             // 
             // AnchDown
             // 
-            resources.ApplyResources(this.AnchDown, "AnchDown");
             this.AnchDown.FormattingEnabled = true;
             this.AnchDown.Items.AddRange(new object[] {
             resources.GetString("AnchDown.Items"),
             resources.GetString("AnchDown.Items1"),
             resources.GetString("AnchDown.Items2"),
             resources.GetString("AnchDown.Items3")});
+            resources.ApplyResources(this.AnchDown, "AnchDown");
             this.AnchDown.Name = "AnchDown";
             // 
             // EngStBtn
@@ -711,10 +713,12 @@ namespace MissionPlanner.Joystick
             this.CMB_joysticks.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_joysticks, "CMB_joysticks");
             this.CMB_joysticks.Name = "CMB_joysticks";
+            this.CMB_joysticks.SelectedIndexChanged += new System.EventHandler(this.CMB_joysticks_SelectedIndexChanged_1);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // JoystickSetup
             // 

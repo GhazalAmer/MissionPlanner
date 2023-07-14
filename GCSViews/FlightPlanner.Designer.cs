@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using GMap.NET.MapProviders;
 using MissionPlanner.Controls;
 using MissionPlanner.Joystick;
 
@@ -135,6 +136,7 @@ namespace MissionPlanner.GCSViews
             this.DrawBTN = new MissionPlanner.Controls.MyButton();
             this.MeasureBTN = new MissionPlanner.Controls.MyButton();
             this.Joystick_Panel = new System.Windows.Forms.Panel();
+            this.joy = new MissionPlanner.Joystick.JoystickSetup();
             this.FormatPanel = new System.Windows.Forms.Panel();
             this.myButton17 = new MissionPlanner.Controls.MyButton();
             this.myButton16 = new MissionPlanner.Controls.MyButton();
@@ -249,7 +251,6 @@ namespace MissionPlanner.GCSViews
             this.contextMenuStripZoom = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStripPoly = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.currentStateBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.joy = new MissionPlanner.Joystick.JoystickSetup();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.panel9.SuspendLayout();
             this.SpeedPanel.SuspendLayout();
@@ -1137,6 +1138,12 @@ namespace MissionPlanner.GCSViews
             this.Joystick_Panel.Name = "Joystick_Panel";
             this.Joystick_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Joystick_Panel_Paint);
             // 
+            // joy
+            // 
+            resources.ApplyResources(this.joy, "joy");
+            this.joy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.joy.Name = "joy";
+            // 
             // FormatPanel
             // 
             resources.ApplyResources(this.FormatPanel, "FormatPanel");
@@ -1682,6 +1689,8 @@ namespace MissionPlanner.GCSViews
             this.MainMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MainMap.ShowTileGridLines = false;
             this.MainMap.Zoom = 0D;
+            this.MainMap.Load += new System.EventHandler(this.MainMap_Load);
+            this.MainMap.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMap_Paint_1);
             // 
             // tableLayoutPanel1
             // 
@@ -2153,12 +2162,6 @@ namespace MissionPlanner.GCSViews
             // currentStateBindingSource1
             // 
             this.currentStateBindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // joy
-            // 
-            resources.ApplyResources(this.joy, "joy");
-            this.joy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.joy.Name = "joy";
             // 
             // FlightPlanner
             // 
