@@ -8,12 +8,11 @@ namespace MissionPlanner.GCSViews
 
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.hud1 = new MissionPlanner.Controls.HUD();
-            this.contextMenuStripHud = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStripHud = new System.Windows.Forms.ContextMenuStrip();
             this.videoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordHudToAVIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -29,18 +28,18 @@ namespace MissionPlanner.GCSViews
             this.groundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setBatteryCellCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showIconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceHud = new System.Windows.Forms.BindingSource();
             this.tabControlactions = new System.Windows.Forms.TabControl();
-            this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip();
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.multiLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabQuick = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
             this.quickView6 = new MissionPlanner.Controls.QuickView();
-            this.contextMenuStripQuickView = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStripQuickView = new System.Windows.Forms.ContextMenuStrip();
             this.setViewCountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource();
             this.quickView5 = new MissionPlanner.Controls.QuickView();
             this.quickView4 = new MissionPlanner.Controls.QuickView();
             this.quickView3 = new MissionPlanner.Controls.QuickView();
@@ -81,7 +80,7 @@ namespace MissionPlanner.GCSViews
             this.checkListControl1 = new MissionPlanner.Controls.PreFlight.CheckListControl();
             this.tabGauges = new System.Windows.Forms.TabPage();
             this.Gvspeed = new AGaugeApp.AGauge();
-            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource();
             this.Gheading = new MissionPlanner.Controls.HSI();
             this.Galt = new AGaugeApp.AGauge();
             this.Gspeed = new AGaugeApp.AGauge();
@@ -143,7 +142,7 @@ namespace MissionPlanner.GCSViews
             this.BUT_PayloadFolder = new MissionPlanner.Controls.MyButton();
             this.groupBoxRoll = new System.Windows.Forms.GroupBox();
             this.TXT_gimbalRollPos = new System.Windows.Forms.TextBox();
-            this.bindingSourcePayloadTab = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourcePayloadTab = new System.Windows.Forms.BindingSource();
             this.trackBarRoll = new System.Windows.Forms.TrackBar();
             this.groupBoxYaw = new System.Windows.Forms.GroupBox();
             this.TXT_gimbalYawPos = new System.Windows.Forms.TextBox();
@@ -183,7 +182,7 @@ namespace MissionPlanner.GCSViews
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
-            this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip();
             this.goHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flyToHereAltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flyToCoordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -205,7 +204,7 @@ namespace MissionPlanner.GCSViews
             this.but_disablejoystick = new MissionPlanner.Controls.MyButton();
             this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
             this.windDir1 = new MissionPlanner.Controls.WindDir();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -220,12 +219,12 @@ namespace MissionPlanner.GCSViews
             this.CHK_autopan = new System.Windows.Forms.CheckBox();
             this.CB_tuning = new System.Windows.Forms.CheckBox();
             this.gMapControl1 = new MissionPlanner.Controls.myGMAP();
-            this.ZedGraphTimer = new System.Windows.Forms.Timer(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.ZedGraphTimer = new System.Windows.Forms.Timer();
+            this.toolTip1 = new System.Windows.Forms.ToolTip();
             this.openScriptDialog = new System.Windows.Forms.OpenFileDialog();
-            this.scriptChecker = new System.Windows.Forms.Timer(this.components);
-            this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
-            this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
+            this.scriptChecker = new System.Windows.Forms.Timer();
+            this.Messagetabtimer = new System.Windows.Forms.Timer();
+            this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource();
             this.LightCTRLBtn = new MissionPlanner.Controls.MyButton();
             this.restartroutebutton = new MissionPlanner.Controls.MyButton();
             this.myButton6 = new MissionPlanner.Controls.MyButton();
@@ -2664,7 +2663,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 3600D;
+            this.windDir1.Direction = 3780D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3461,6 +3460,7 @@ namespace MissionPlanner.GCSViews
             // 
             // tableLayoutPanel7
             // 
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.DarkGray;
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.Controls.Add(this.myButton14, 7, 0);
             this.tableLayoutPanel7.Controls.Add(this.label7, 3, 0);
