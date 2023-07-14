@@ -551,7 +551,7 @@ namespace MissionPlanner.GCSViews
 
             Form boatstatus = new boatView();
             boatstatus.TopLevel = false;
-          //  boatStatusPanel.Controls.Add(boatstatus);
+            boatStatusPanel.Controls.Add(boatstatus);
             boatstatus.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             boatstatus.Dock = DockStyle.Fill;
             boatstatus.Show();
