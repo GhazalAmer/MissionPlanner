@@ -545,7 +545,25 @@ namespace MissionPlanner.GCSViews
             }
 
             hud1.doResize();
+
+
+            ////////////////////////////////////////////////////
+
+            Form boatstatus = new boatView();
+            boatstatus.TopLevel = false;
+          //  boatStatusPanel.Controls.Add(boatstatus);
+            boatstatus.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            boatstatus.Dock = DockStyle.Fill;
+            boatstatus.Show();
+
+
         }
+
+
+
+
+
+
 
         public void BUT_playlog_Click(object sender, EventArgs e)
         {
@@ -6848,6 +6866,11 @@ namespace MissionPlanner.GCSViews
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boatStatusPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

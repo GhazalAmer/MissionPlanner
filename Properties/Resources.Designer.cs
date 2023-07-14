@@ -1201,6 +1201,26 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap milkor_boat_3 {
+            get {
+                object obj = ResourceManager.GetObject("milkor_boat_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap milkor_boat_31 {
+            get {
+                object obj = ResourceManager.GetObject("milkor_boat_31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap MinimOSD {
             get {
                 object obj = ResourceManager.GetObject("MinimOSD", resourceCulture);

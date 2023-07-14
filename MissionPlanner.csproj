@@ -78,6 +78,9 @@
     <EmbeddedResource Include="Antenna\TrackerUI.uk.resx">
       <DependentUpon>TrackerUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="boatView.resx">
+      <DependentUpon>boatView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\AuthKeys.uk.resx">
       <DependentUpon>AuthKeys.cs</DependentUpon>
     </EmbeddedResource>
@@ -682,6 +685,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Antenna\TrackerGeneric.cs" />
+    <Compile Include="boatView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="boatView.Designer.cs">
+      <DependentUpon>boatView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Common.cs" />
     <Compile Include="Controls\DroneCANSubscriber.cs">
       <SubType>UserControl</SubType>
@@ -4871,6 +4880,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\MAP-logo-web.jpg" />
+    <None Include="Resources\milkor_boat_3.png" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
