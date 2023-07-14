@@ -2405,7 +2405,7 @@ Click "Cancel" to stay on this page</value>
     <value>joy</value>
   </data>
   <data name="&gt;&gt;joy.Type" xml:space="preserve">
-    <value>MissionPlanner.Joystick.JoystickSetup, MissionPlanner, Version=1.3.8594.23941, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Joystick.JoystickSetup, MissionPlanner, Version=1.3.8595.11413, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;joy.Parent" xml:space="preserve">
     <value>Joystick_Panel</value>
