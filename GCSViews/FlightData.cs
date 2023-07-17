@@ -6876,11 +6876,7 @@ namespace MissionPlanner.GCSViews
         {
 
         }
-        
-        private void boatStatusPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
 
         private void myButton15_Click(object sender, EventArgs e)
         {

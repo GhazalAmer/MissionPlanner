@@ -214,8 +214,8 @@ namespace MissionPlanner
             // 
             // ConnectButtt
             // 
-            resources.ApplyResources(this.ConnectButtt, "ConnectButtt");
             this.ConnectButtt.BackColor = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.ConnectButtt, "ConnectButtt");
             this.ConnectButtt.ForeColor = System.Drawing.Color.White;
             this.ConnectButtt.Name = "ConnectButtt";
             this.ConnectButtt.UseVisualStyleBackColor = false;
@@ -239,7 +239,7 @@ namespace MissionPlanner
             // MainV2
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.ConnectButtt);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menu);
