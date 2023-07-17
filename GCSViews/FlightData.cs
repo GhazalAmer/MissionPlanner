@@ -6831,7 +6831,8 @@ namespace MissionPlanner.GCSViews
 
         private void gMapControl1_Load(object sender, EventArgs e)
         {
-            
+            gMapControl1.MapProvider = GoogleMapProvider.Instance;
+            gMapControl1.Zoom = 0D;
         }
 
         private void myButton4_Click(object sender, EventArgs e)
