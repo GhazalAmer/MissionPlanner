@@ -425,6 +425,15 @@ namespace MissionPlanner.GCSViews
 
             tabControlactions.Multiline = Settings.Instance.GetBoolean("tabControlactions_Multiline", false);
 
+            ////////////////////////////////////////////////////
+
+            Form boatstatus = new boatView();
+            boatstatus.TopLevel = false;
+            boatStatusPanel.Controls.Add(boatstatus);
+            boatstatus.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            boatstatus.Dock = DockStyle.Fill;
+            boatstatus.Show();
+
         }
 
         public void Activate()
@@ -547,14 +556,6 @@ namespace MissionPlanner.GCSViews
             hud1.doResize();
 
 
-            ////////////////////////////////////////////////////
-
-            Form boatstatus = new boatView();
-            boatstatus.TopLevel = false;
-            boatStatusPanel.Controls.Add(boatstatus);
-            boatstatus.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            boatstatus.Dock = DockStyle.Fill;
-            boatstatus.Show();
 
 
         }
