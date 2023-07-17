@@ -333,13 +333,7 @@ namespace MissionPlanner.GCSViews
 
         private void button1_Click(object sender, EventArgs e)
         {
-            backstageView.Enabled = false;
-            if (panel1.Visible == true)
-            { panel1.Visible = false; }
-            else
-            {
-                panel1.Visible = true;
-            }
+
         }
 
         private void backstageViewPageinstfw_Click(object sender, EventArgs e)
@@ -350,6 +344,27 @@ namespace MissionPlanner.GCSViews
         private void backstageView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void myButton15_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("FlightData");
+        }
+
+        private void myButton1_Click(object sender, EventArgs e)
+        {
+            MainV2.MyView.ShowScreen("FlightPlanner");
+        }
+
+        private void myButton2_Click(object sender, EventArgs e)
+        {
+            backstageView.Enabled = false;
+            if (panel1.Visible == true)
+            { panel1.Visible = false; }
+            else
+            {
+                panel1.Visible = true;
+            }
         }
     }
 }

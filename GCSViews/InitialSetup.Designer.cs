@@ -61,10 +61,10 @@ namespace MissionPlanner.GCSViews
             this.backstageViewPagesonar = new System.Windows.Forms.Label();
             this.backstageViewPagetradheli = new System.Windows.Forms.Label();
             this.backstageViewPagewizard = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.myButton15 = new MissionPlanner.Controls.MyButton();
+            this.myButton1 = new MissionPlanner.Controls.MyButton();
+            this.myButton2 = new MissionPlanner.Controls.MyButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -223,38 +223,59 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.backstageViewPagewizard, "backstageViewPagewizard");
             this.backstageViewPagewizard.Name = "backstageViewPagewizard";
             // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.myButton15);
+            this.panel1.Controls.Add(this.myButton1);
             this.panel1.Name = "panel1";
+            // 
+            // myButton15
+            // 
+            this.myButton15.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.myButton15, "myButton15");
+            this.myButton15.BGGradBot = System.Drawing.Color.Black;
+            this.myButton15.BGGradTop = System.Drawing.Color.Black;
+            this.myButton15.ForeColor = System.Drawing.Color.White;
+            this.myButton15.Name = "myButton15";
+            this.myButton15.Outline = System.Drawing.Color.Black;
+            this.myButton15.TextColor = System.Drawing.Color.White;
+            this.myButton15.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton15.UseVisualStyleBackColor = false;
+            this.myButton15.Click += new System.EventHandler(this.myButton15_Click);
+            // 
+            // myButton1
+            // 
+            this.myButton1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.myButton1, "myButton1");
+            this.myButton1.BGGradBot = System.Drawing.Color.Black;
+            this.myButton1.BGGradTop = System.Drawing.Color.Black;
+            this.myButton1.ForeColor = System.Drawing.Color.Black;
+            this.myButton1.Name = "myButton1";
+            this.myButton1.Outline = System.Drawing.Color.Black;
+            this.myButton1.TextColor = System.Drawing.Color.White;
+            this.myButton1.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton1.UseVisualStyleBackColor = false;
+            this.myButton1.Click += new System.EventHandler(this.myButton1_Click);
+            // 
+            // myButton2
+            // 
+            resources.ApplyResources(this.myButton2, "myButton2");
+            this.myButton2.BackColor = System.Drawing.Color.Transparent;
+            this.myButton2.BGGradBot = System.Drawing.Color.Black;
+            this.myButton2.BGGradTop = System.Drawing.Color.Black;
+            this.myButton2.ForeColor = System.Drawing.Color.Black;
+            this.myButton2.Name = "myButton2";
+            this.myButton2.Outline = System.Drawing.Color.Black;
+            this.myButton2.TextColor = System.Drawing.Color.White;
+            this.myButton2.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton2.UseVisualStyleBackColor = false;
+            this.myButton2.Click += new System.EventHandler(this.myButton2_Click);
             // 
             // InitialSetup
             // 
+            this.Controls.Add(this.myButton2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.backstageViewPageaccel);
             this.Controls.Add(this.backstageViewPageairspeed);
             this.Controls.Add(this.backstageViewPageAntTrack);
@@ -329,9 +350,9 @@ namespace MissionPlanner.GCSViews
         private Label backstageViewPagewizard;
 
         internal Controls.BackstageView.BackstageView backstageView;
-        private Button button5;
-        private Button button4;
-        private Button button1;
         private Panel panel1;
+        private Controls.MyButton myButton15;
+        private Controls.MyButton myButton1;
+        private Controls.MyButton myButton2;
     }
 }

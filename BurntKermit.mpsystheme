@@ -3,7 +3,7 @@
   <colors>
     <ThemeColor>
       <strColorItemName>Background</strColorItemName>
-      <clrColor Web="#262728" />
+      <clrColor Web="#323232" />
       <strVariableName>BGColor</strVariableName>
     </ThemeColor>
     <ThemeColor>
@@ -23,17 +23,17 @@
     </ThemeColor>
     <ThemeColor>
       <strColorItemName>Button Text</strColorItemName>
-      <clrColor Web="#405704" />
+      <clrColor Web="White" />
       <strVariableName>ButtonTextColor</strVariableName>
     </ThemeColor>
     <ThemeColor>
       <strColorItemName>Button Background top</strColorItemName>
-      <clrColor Web="#737373" />
+      <clrColor Web="#232323" />
       <strVariableName>ButBG</strVariableName>
     </ThemeColor>
     <ThemeColor>
       <strColorItemName>Button Background bottom</strColorItemName>
-      <clrColor Web="#9b9b9b" />
+      <clrColor Web="#323232" />
       <strVariableName>ButBGBot</strVariableName>
     </ThemeColor>
     <ThemeColor>

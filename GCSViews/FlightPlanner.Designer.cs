@@ -585,7 +585,7 @@ namespace MissionPlanner.GCSViews
             // myButton1
             // 
             resources.ApplyResources(this.myButton1, "myButton1");
-            this.myButton1.BackColor = System.Drawing.Color.Transparent;
+            this.myButton1.BackColor = System.Drawing.Color.White;
             this.myButton1.BGGradBot = System.Drawing.Color.White;
             this.myButton1.BGGradTop = System.Drawing.Color.White;
             this.myButton1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "mode", true));
@@ -724,22 +724,27 @@ namespace MissionPlanner.GCSViews
             // 
             // Frame
             // 
+            resources.ApplyResources(this.Frame, "Frame");
             this.Frame.Name = "Frame";
             // 
             // coordZone
             // 
+            resources.ApplyResources(this.coordZone, "coordZone");
             this.coordZone.Name = "coordZone";
             // 
             // coordEasting
             // 
+            resources.ApplyResources(this.coordEasting, "coordEasting");
             this.coordEasting.Name = "coordEasting";
             // 
             // coordNorthing
             // 
+            resources.ApplyResources(this.coordNorthing, "coordNorthing");
             this.coordNorthing.Name = "coordNorthing";
             // 
             // MGRS
             // 
+            resources.ApplyResources(this.MGRS, "MGRS");
             this.MGRS.Name = "MGRS";
             // 
             // Delete
@@ -778,6 +783,7 @@ namespace MissionPlanner.GCSViews
             // 
             // Angle
             // 
+            resources.ApplyResources(this.Angle, "Angle");
             this.Angle.Name = "Angle";
             this.Angle.ReadOnly = true;
             this.Angle.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -800,6 +806,7 @@ namespace MissionPlanner.GCSViews
             // 
             // TagData
             // 
+            resources.ApplyResources(this.TagData, "TagData");
             this.TagData.Name = "TagData";
             this.TagData.ReadOnly = true;
             // 
@@ -2132,6 +2139,7 @@ namespace MissionPlanner.GCSViews
             // 
             // contextMenuStripZoom
             // 
+            this.contextMenuStripZoom.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripZoom.Name = "contextMenuStripZoom";
             resources.ApplyResources(this.contextMenuStripZoom, "contextMenuStripZoom");
             // 

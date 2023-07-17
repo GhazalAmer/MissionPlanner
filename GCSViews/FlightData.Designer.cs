@@ -50,13 +50,10 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BUT_SendMSG = new MissionPlanner.Controls.MyButton();
             this.BUT_abortland = new MissionPlanner.Controls.MyButton();
-            this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
             this.BUT_clear_track = new MissionPlanner.Controls.MyButton();
             this.CMB_action = new System.Windows.Forms.ComboBox();
             this.BUTactiondo = new MissionPlanner.Controls.MyButton();
             this.BUT_resumemis = new MissionPlanner.Controls.MyButton();
-            this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
-            this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
             this.CMB_setwp = new System.Windows.Forms.ComboBox();
             this.BUT_ARM = new MissionPlanner.Controls.MyButton();
             this.BUT_mountmode = new MissionPlanner.Controls.MyButton();
@@ -78,7 +75,6 @@ namespace MissionPlanner.GCSViews
             this.myButton2 = new MissionPlanner.Controls.MyButton();
             this.myButton3 = new MissionPlanner.Controls.MyButton();
             this.tabPagePreFlight = new System.Windows.Forms.TabPage();
-            this.checkListControl1 = new MissionPlanner.Controls.PreFlight.CheckListControl();
             this.tabGauges = new System.Windows.Forms.TabPage();
             this.Gvspeed = new AGaugeApp.AGauge();
             this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
@@ -104,33 +100,8 @@ namespace MissionPlanner.GCSViews
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
-            this.servoOptions1 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions2 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions3 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions4 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions5 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions6 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions7 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions8 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions9 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions10 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions11 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions12 = new MissionPlanner.Controls.ServoOptions();
-            this.relayOptions1 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions2 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions3 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions4 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions5 = new MissionPlanner.Controls.RelayOptions();
-            this.relayOptions6 = new MissionPlanner.Controls.RelayOptions();
             this.tabAuxFunction = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.auxOptions1 = new MissionPlanner.Controls.AuxOptions();
-            this.auxOptions2 = new MissionPlanner.Controls.AuxOptions();
-            this.auxOptions3 = new MissionPlanner.Controls.AuxOptions();
-            this.auxOptions4 = new MissionPlanner.Controls.AuxOptions();
-            this.auxOptions5 = new MissionPlanner.Controls.AuxOptions();
-            this.auxOptions6 = new MissionPlanner.Controls.AuxOptions();
-            this.auxOptions7 = new MissionPlanner.Controls.AuxOptions();
             this.tabScripts = new System.Windows.Forms.TabPage();
             this.checkBoxRedirectOutput = new System.Windows.Forms.CheckBox();
             this.BUT_edit_selected = new MissionPlanner.Controls.MyButton();
@@ -203,7 +174,6 @@ namespace MissionPlanner.GCSViews
             this.onOffCameraOverlapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jumpToTagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.but_disablejoystick = new MissionPlanner.Controls.MyButton();
-            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
             this.windDir1 = new MissionPlanner.Controls.WindDir();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
@@ -285,14 +255,44 @@ namespace MissionPlanner.GCSViews
             this.label11 = new System.Windows.Forms.Label();
             this.MouseLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.switchview = new MissionPlanner.Controls.MyButton();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.myButton14 = new MissionPlanner.Controls.MyButton();
             this.myButton13 = new MissionPlanner.Controls.MyButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.myButton17 = new MissionPlanner.Controls.MyButton();
+            this.myButton16 = new MissionPlanner.Controls.MyButton();
+            this.myButton15 = new MissionPlanner.Controls.MyButton();
+            this.modifyandSetLoiterRad = new MissionPlanner.Controls.ModifyandSet();
+            this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
+            this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
+            this.checkListControl1 = new MissionPlanner.Controls.PreFlight.CheckListControl();
+            this.servoOptions1 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions2 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions3 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions4 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions5 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions6 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions7 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions8 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions9 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions10 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions11 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions12 = new MissionPlanner.Controls.ServoOptions();
+            this.relayOptions1 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions2 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions3 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions4 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions5 = new MissionPlanner.Controls.RelayOptions();
+            this.relayOptions6 = new MissionPlanner.Controls.RelayOptions();
+            this.auxOptions1 = new MissionPlanner.Controls.AuxOptions();
+            this.auxOptions2 = new MissionPlanner.Controls.AuxOptions();
+            this.auxOptions3 = new MissionPlanner.Controls.AuxOptions();
+            this.auxOptions4 = new MissionPlanner.Controls.AuxOptions();
+            this.auxOptions5 = new MissionPlanner.Controls.AuxOptions();
+            this.auxOptions6 = new MissionPlanner.Controls.AuxOptions();
+            this.auxOptions7 = new MissionPlanner.Controls.AuxOptions();
+            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -860,34 +860,6 @@ namespace MissionPlanner.GCSViews
             this.BUT_abortland.UseVisualStyleBackColor = true;
             this.BUT_abortland.Click += new System.EventHandler(this.BUT_abortland_Click);
             // 
-            // modifyandSetLoiterRad
-            // 
-            resources.ApplyResources(this.modifyandSetLoiterRad, "modifyandSetLoiterRad");
-            this.modifyandSetLoiterRad.ButtonText = "Set Loiter Rad";
-            this.modifyandSetLoiterRad.DecimalPlaces = 0;
-            this.modifyandSetLoiterRad.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.modifyandSetLoiterRad.Name = "modifyandSetLoiterRad";
-            this.modifyandSetLoiterRad.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetLoiterRad.Click += new System.EventHandler(this.modifyandSetLoiterRad_Click);
-            // 
             // BUT_clear_track
             // 
             this.BUT_clear_track.ColorMouseDown = System.Drawing.Color.Empty;
@@ -930,63 +902,6 @@ namespace MissionPlanner.GCSViews
             this.BUT_resumemis.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.BUT_resumemis.UseVisualStyleBackColor = true;
             this.BUT_resumemis.Click += new System.EventHandler(this.BUT_resumemis_Click);
-            // 
-            // modifyandSetAlt
-            // 
-            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
-            this.modifyandSetAlt.ButtonText = "Change Alt";
-            this.modifyandSetAlt.DecimalPlaces = 1;
-            this.modifyandSetAlt.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Name = "modifyandSetAlt";
-            this.modifyandSetAlt.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
-            // 
-            // modifyandSetSpeed
-            // 
-            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
-            this.modifyandSetSpeed.ButtonText = "Change Speed";
-            this.modifyandSetSpeed.DecimalPlaces = 1;
-            this.modifyandSetSpeed.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
-            this.modifyandSetSpeed.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
-            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
             // 
             // CMB_setwp
             // 
@@ -1211,11 +1126,6 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.tabPagePreFlight, "tabPagePreFlight");
             this.tabPagePreFlight.Name = "tabPagePreFlight";
             this.tabPagePreFlight.UseVisualStyleBackColor = true;
-            // 
-            // checkListControl1
-            // 
-            resources.ApplyResources(this.checkListControl1, "checkListControl1");
-            this.checkListControl1.Name = "checkListControl1";
             // 
             // tabGauges
             // 
@@ -1846,114 +1756,6 @@ namespace MissionPlanner.GCSViews
             this.flowLayoutPanelServos.Controls.Add(this.relayOptions6);
             this.flowLayoutPanelServos.Name = "flowLayoutPanelServos";
             // 
-            // servoOptions1
-            // 
-            resources.ApplyResources(this.servoOptions1, "servoOptions1");
-            this.servoOptions1.Name = "servoOptions1";
-            this.servoOptions1.thisservo = 5;
-            // 
-            // servoOptions2
-            // 
-            resources.ApplyResources(this.servoOptions2, "servoOptions2");
-            this.servoOptions2.Name = "servoOptions2";
-            this.servoOptions2.thisservo = 6;
-            // 
-            // servoOptions3
-            // 
-            resources.ApplyResources(this.servoOptions3, "servoOptions3");
-            this.servoOptions3.Name = "servoOptions3";
-            this.servoOptions3.thisservo = 7;
-            // 
-            // servoOptions4
-            // 
-            resources.ApplyResources(this.servoOptions4, "servoOptions4");
-            this.servoOptions4.Name = "servoOptions4";
-            this.servoOptions4.thisservo = 8;
-            // 
-            // servoOptions5
-            // 
-            resources.ApplyResources(this.servoOptions5, "servoOptions5");
-            this.servoOptions5.Name = "servoOptions5";
-            this.servoOptions5.thisservo = 9;
-            // 
-            // servoOptions6
-            // 
-            resources.ApplyResources(this.servoOptions6, "servoOptions6");
-            this.servoOptions6.Name = "servoOptions6";
-            this.servoOptions6.thisservo = 10;
-            // 
-            // servoOptions7
-            // 
-            resources.ApplyResources(this.servoOptions7, "servoOptions7");
-            this.servoOptions7.Name = "servoOptions7";
-            this.servoOptions7.thisservo = 11;
-            // 
-            // servoOptions8
-            // 
-            resources.ApplyResources(this.servoOptions8, "servoOptions8");
-            this.servoOptions8.Name = "servoOptions8";
-            this.servoOptions8.thisservo = 12;
-            // 
-            // servoOptions9
-            // 
-            resources.ApplyResources(this.servoOptions9, "servoOptions9");
-            this.servoOptions9.Name = "servoOptions9";
-            this.servoOptions9.thisservo = 13;
-            // 
-            // servoOptions10
-            // 
-            resources.ApplyResources(this.servoOptions10, "servoOptions10");
-            this.servoOptions10.Name = "servoOptions10";
-            this.servoOptions10.thisservo = 14;
-            // 
-            // servoOptions11
-            // 
-            resources.ApplyResources(this.servoOptions11, "servoOptions11");
-            this.servoOptions11.Name = "servoOptions11";
-            this.servoOptions11.thisservo = 15;
-            // 
-            // servoOptions12
-            // 
-            resources.ApplyResources(this.servoOptions12, "servoOptions12");
-            this.servoOptions12.Name = "servoOptions12";
-            this.servoOptions12.thisservo = 16;
-            // 
-            // relayOptions1
-            // 
-            resources.ApplyResources(this.relayOptions1, "relayOptions1");
-            this.relayOptions1.Name = "relayOptions1";
-            this.relayOptions1.thisrelay = 0;
-            // 
-            // relayOptions2
-            // 
-            resources.ApplyResources(this.relayOptions2, "relayOptions2");
-            this.relayOptions2.Name = "relayOptions2";
-            this.relayOptions2.thisrelay = 1;
-            // 
-            // relayOptions3
-            // 
-            resources.ApplyResources(this.relayOptions3, "relayOptions3");
-            this.relayOptions3.Name = "relayOptions3";
-            this.relayOptions3.thisrelay = 2;
-            // 
-            // relayOptions4
-            // 
-            resources.ApplyResources(this.relayOptions4, "relayOptions4");
-            this.relayOptions4.Name = "relayOptions4";
-            this.relayOptions4.thisrelay = 3;
-            // 
-            // relayOptions5
-            // 
-            resources.ApplyResources(this.relayOptions5, "relayOptions5");
-            this.relayOptions5.Name = "relayOptions5";
-            this.relayOptions5.thisrelay = 4;
-            // 
-            // relayOptions6
-            // 
-            resources.ApplyResources(this.relayOptions6, "relayOptions6");
-            this.relayOptions6.Name = "relayOptions6";
-            this.relayOptions6.thisrelay = 5;
-            // 
             // tabAuxFunction
             // 
             this.tabAuxFunction.Controls.Add(this.flowLayoutPanel1);
@@ -1972,41 +1774,6 @@ namespace MissionPlanner.GCSViews
             this.flowLayoutPanel1.Controls.Add(this.auxOptions7);
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            // 
-            // auxOptions1
-            // 
-            resources.ApplyResources(this.auxOptions1, "auxOptions1");
-            this.auxOptions1.Name = "auxOptions1";
-            // 
-            // auxOptions2
-            // 
-            resources.ApplyResources(this.auxOptions2, "auxOptions2");
-            this.auxOptions2.Name = "auxOptions2";
-            // 
-            // auxOptions3
-            // 
-            resources.ApplyResources(this.auxOptions3, "auxOptions3");
-            this.auxOptions3.Name = "auxOptions3";
-            // 
-            // auxOptions4
-            // 
-            resources.ApplyResources(this.auxOptions4, "auxOptions4");
-            this.auxOptions4.Name = "auxOptions4";
-            // 
-            // auxOptions5
-            // 
-            resources.ApplyResources(this.auxOptions5, "auxOptions5");
-            this.auxOptions5.Name = "auxOptions5";
-            // 
-            // auxOptions6
-            // 
-            resources.ApplyResources(this.auxOptions6, "auxOptions6");
-            this.auxOptions6.Name = "auxOptions6";
-            // 
-            // auxOptions7
-            // 
-            resources.ApplyResources(this.auxOptions7, "auxOptions7");
-            this.auxOptions7.Name = "auxOptions7";
             // 
             // tabScripts
             // 
@@ -2651,20 +2418,12 @@ namespace MissionPlanner.GCSViews
             this.but_disablejoystick.UseVisualStyleBackColor = true;
             this.but_disablejoystick.Click += new System.EventHandler(this.but_disablejoystick_Click);
             // 
-            // distanceBar1
-            // 
-            resources.ApplyResources(this.distanceBar1, "distanceBar1");
-            this.distanceBar1.BackColor = System.Drawing.Color.Transparent;
-            this.distanceBar1.Name = "distanceBar1";
-            this.distanceBar1.totaldist = 100F;
-            this.distanceBar1.traveleddist = 0F;
-            // 
             // windDir1
             // 
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 3600D;
+            this.windDir1.Direction = 9180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2882,12 +2641,12 @@ namespace MissionPlanner.GCSViews
             // restartroutebutton
             // 
             resources.ApplyResources(this.restartroutebutton, "restartroutebutton");
-            this.restartroutebutton.BackColor = System.Drawing.Color.Transparent;
-            this.restartroutebutton.BGGradBot = System.Drawing.Color.DarkGray;
-            this.restartroutebutton.BGGradTop = System.Drawing.Color.DimGray;
+            this.restartroutebutton.BackColor = System.Drawing.Color.DimGray;
+            this.restartroutebutton.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.restartroutebutton.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.restartroutebutton.Name = "restartroutebutton";
             this.restartroutebutton.Outline = System.Drawing.Color.Black;
-            this.restartroutebutton.TextColor = System.Drawing.Color.Black;
+            this.restartroutebutton.TextColor = System.Drawing.Color.White;
             this.restartroutebutton.TextColorNotEnabled = System.Drawing.Color.Black;
             this.restartroutebutton.UseVisualStyleBackColor = false;
             this.restartroutebutton.Click += new System.EventHandler(this.restartroutebutton_Click);
@@ -2895,12 +2654,12 @@ namespace MissionPlanner.GCSViews
             // myButton6
             // 
             resources.ApplyResources(this.myButton6, "myButton6");
-            this.myButton6.BackColor = System.Drawing.Color.Transparent;
-            this.myButton6.BGGradBot = System.Drawing.Color.DarkGray;
-            this.myButton6.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton6.BackColor = System.Drawing.Color.DimGray;
+            this.myButton6.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton6.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton6.Name = "myButton6";
             this.myButton6.Outline = System.Drawing.Color.Black;
-            this.myButton6.TextColor = System.Drawing.Color.Black;
+            this.myButton6.TextColor = System.Drawing.Color.White;
             this.myButton6.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton6.UseVisualStyleBackColor = false;
             this.myButton6.Click += new System.EventHandler(this.myButton6_Click);
@@ -2916,7 +2675,7 @@ namespace MissionPlanner.GCSViews
             // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.Color.DarkGray;
+            this.label7.BackColor = System.Drawing.Color.White;
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("", this.bindingSource1, "mode", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "mode", true));
             resources.ApplyResources(this.label7, "label7");
@@ -2927,25 +2686,27 @@ namespace MissionPlanner.GCSViews
             // myButton5
             // 
             resources.ApplyResources(this.myButton5, "myButton5");
-            this.myButton5.BGGradBot = System.Drawing.Color.DarkGray;
-            this.myButton5.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton5.BackColor = System.Drawing.Color.DimGray;
+            this.myButton5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton5.Name = "myButton5";
             this.myButton5.Outline = System.Drawing.Color.Black;
-            this.myButton5.TextColor = System.Drawing.Color.Black;
+            this.myButton5.TextColor = System.Drawing.Color.White;
             this.myButton5.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.myButton5.UseVisualStyleBackColor = true;
+            this.myButton5.UseVisualStyleBackColor = false;
             this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
             // 
             // MeasureBTN
             // 
             resources.ApplyResources(this.MeasureBTN, "MeasureBTN");
-            this.MeasureBTN.BGGradBot = System.Drawing.Color.DarkGray;
-            this.MeasureBTN.BGGradTop = System.Drawing.Color.DimGray;
+            this.MeasureBTN.BackColor = System.Drawing.Color.DimGray;
+            this.MeasureBTN.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.MeasureBTN.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.MeasureBTN.Name = "MeasureBTN";
             this.MeasureBTN.Outline = System.Drawing.Color.Black;
-            this.MeasureBTN.TextColor = System.Drawing.Color.Black;
+            this.MeasureBTN.TextColor = System.Drawing.Color.White;
             this.MeasureBTN.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.MeasureBTN.UseVisualStyleBackColor = true;
+            this.MeasureBTN.UseVisualStyleBackColor = false;
             this.MeasureBTN.Click += new System.EventHandler(this.MeasureBTN_Click);
             // 
             // measurePanel
@@ -2986,37 +2747,40 @@ namespace MissionPlanner.GCSViews
             // myButton10
             // 
             resources.ApplyResources(this.myButton10, "myButton10");
-            this.myButton10.BGGradBot = System.Drawing.Color.DarkGray;
-            this.myButton10.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton10.BackColor = System.Drawing.Color.Black;
+            this.myButton10.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton10.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton10.Name = "myButton10";
             this.myButton10.Outline = System.Drawing.Color.Black;
-            this.myButton10.TextColor = System.Drawing.Color.Black;
-            this.myButton10.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.myButton10.UseVisualStyleBackColor = true;
+            this.myButton10.TextColor = System.Drawing.Color.White;
+            this.myButton10.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton10.UseVisualStyleBackColor = false;
             this.myButton10.Click += new System.EventHandler(this.myButton10_Click);
             // 
             // myButton9
             // 
             resources.ApplyResources(this.myButton9, "myButton9");
-            this.myButton9.BGGradBot = System.Drawing.Color.DarkGray;
-            this.myButton9.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton9.BackColor = System.Drawing.Color.Black;
+            this.myButton9.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton9.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton9.Name = "myButton9";
             this.myButton9.Outline = System.Drawing.Color.Black;
-            this.myButton9.TextColor = System.Drawing.Color.Black;
-            this.myButton9.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.myButton9.UseVisualStyleBackColor = true;
+            this.myButton9.TextColor = System.Drawing.Color.White;
+            this.myButton9.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton9.UseVisualStyleBackColor = false;
             this.myButton9.Click += new System.EventHandler(this.myButton9_Click);
             // 
             // myButton8
             // 
             resources.ApplyResources(this.myButton8, "myButton8");
-            this.myButton8.BGGradBot = System.Drawing.Color.DarkGray;
-            this.myButton8.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton8.BackColor = System.Drawing.Color.Black;
+            this.myButton8.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton8.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton8.Name = "myButton8";
             this.myButton8.Outline = System.Drawing.Color.Black;
-            this.myButton8.TextColor = System.Drawing.Color.Black;
-            this.myButton8.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.myButton8.UseVisualStyleBackColor = true;
+            this.myButton8.TextColor = System.Drawing.Color.White;
+            this.myButton8.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton8.UseVisualStyleBackColor = false;
             this.myButton8.Click += new System.EventHandler(this.myButton8_Click);
             // 
             // myButton11
@@ -3053,8 +2817,8 @@ namespace MissionPlanner.GCSViews
             this.myButton4.BGGradTop = System.Drawing.Color.LightCoral;
             this.myButton4.Name = "myButton4";
             this.myButton4.Outline = System.Drawing.Color.Black;
-            this.myButton4.TextColor = System.Drawing.Color.Black;
-            this.myButton4.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton4.TextColor = System.Drawing.Color.White;
+            this.myButton4.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton4.UseVisualStyleBackColor = false;
             this.myButton4.Click += new System.EventHandler(this.myButton4_Click);
             // 
@@ -3062,12 +2826,12 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.myButton12, "myButton12");
             this.myButton12.BackColor = System.Drawing.Color.Transparent;
-            this.myButton12.BGGradBot = System.Drawing.Color.Gray;
-            this.myButton12.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton12.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton12.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton12.Name = "myButton12";
             this.myButton12.Outline = System.Drawing.Color.Black;
-            this.myButton12.TextColor = System.Drawing.Color.Black;
-            this.myButton12.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton12.TextColor = System.Drawing.Color.White;
+            this.myButton12.TextColorNotEnabled = System.Drawing.Color.White;
             this.myButton12.UseVisualStyleBackColor = false;
             this.myButton12.Click += new System.EventHandler(this.myButton12_Click);
             // 
@@ -3141,12 +2905,12 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.GOTOButt, "GOTOButt");
             this.GOTOButt.BackColor = System.Drawing.Color.Transparent;
-            this.GOTOButt.BGGradBot = System.Drawing.Color.DarkGray;
-            this.GOTOButt.BGGradTop = System.Drawing.Color.DimGray;
+            this.GOTOButt.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.GOTOButt.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.GOTOButt.Name = "GOTOButt";
             this.GOTOButt.Outline = System.Drawing.Color.Black;
-            this.GOTOButt.TextColor = System.Drawing.Color.Black;
-            this.GOTOButt.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.GOTOButt.TextColor = System.Drawing.Color.White;
+            this.GOTOButt.TextColorNotEnabled = System.Drawing.Color.White;
             this.GOTOButt.UseVisualStyleBackColor = false;
             this.GOTOButt.Click += new System.EventHandler(this.GOTOButt_Click);
             // 
@@ -3164,7 +2928,7 @@ namespace MissionPlanner.GCSViews
             // 
             // NextWP
             // 
-            this.NextWP.BackColor = System.Drawing.Color.DarkGray;
+            this.NextWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             resources.ApplyResources(this.NextWP, "NextWP");
             this.NextWP.Name = "NextWP";
             this.NextWP.UseVisualStyleBackColor = false;
@@ -3172,7 +2936,7 @@ namespace MissionPlanner.GCSViews
             // 
             // BackWP
             // 
-            this.BackWP.BackColor = System.Drawing.Color.DarkGray;
+            this.BackWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             resources.ApplyResources(this.BackWP, "BackWP");
             this.BackWP.Name = "BackWP";
             this.BackWP.UseVisualStyleBackColor = false;
@@ -3205,6 +2969,7 @@ namespace MissionPlanner.GCSViews
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.Controls.Add(this.label32, 0, 9);
             this.tableLayoutPanel3.Controls.Add(this.label31, 0, 9);
@@ -3226,6 +2991,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel3.Controls.Add(this.label28, 1, 8);
             this.tableLayoutPanel3.Controls.Add(this.label29, 0, 7);
             this.tableLayoutPanel3.Controls.Add(this.label30, 1, 7);
+            this.tableLayoutPanel3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
             // label32
@@ -3373,6 +3139,7 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel6
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.Black;
             this.tableLayoutPanel6.Controls.Add(this.label12, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.label15, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label14, 0, 1);
@@ -3382,7 +3149,7 @@ namespace MissionPlanner.GCSViews
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
-            this.label12.BackColor = System.Drawing.Color.DarkGray;
+            this.label12.BackColor = System.Drawing.Color.Black;
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Name = "label12";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -3390,7 +3157,7 @@ namespace MissionPlanner.GCSViews
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
-            this.label15.BackColor = System.Drawing.Color.DarkGray;
+            this.label15.BackColor = System.Drawing.Color.Black;
             this.label15.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "wp_dist", true));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Name = "label15";
@@ -3399,7 +3166,7 @@ namespace MissionPlanner.GCSViews
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
-            this.label14.BackColor = System.Drawing.Color.DarkGray;
+            this.label14.BackColor = System.Drawing.Color.Black;
             this.label14.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "wpno", true));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Name = "label14";
@@ -3408,7 +3175,7 @@ namespace MissionPlanner.GCSViews
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
-            this.label11.BackColor = System.Drawing.Color.DarkGray;
+            this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Name = "label11";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -3426,37 +3193,17 @@ namespace MissionPlanner.GCSViews
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // switchview
             // 
             resources.ApplyResources(this.switchview, "switchview");
-            this.switchview.BGGradBot = System.Drawing.Color.DarkGray;
-            this.switchview.BGGradTop = System.Drawing.Color.DimGray;
+            this.switchview.BackColor = System.Drawing.Color.DimGray;
+            this.switchview.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.switchview.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.switchview.Name = "switchview";
             this.switchview.Outline = System.Drawing.Color.Black;
-            this.switchview.TextColor = System.Drawing.Color.Black;
+            this.switchview.TextColor = System.Drawing.Color.White;
             this.switchview.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.switchview.UseVisualStyleBackColor = true;
+            this.switchview.UseVisualStyleBackColor = false;
             this.switchview.Click += new System.EventHandler(this.switchview_Click);
             // 
             // tableLayoutPanel7
@@ -3475,12 +3222,12 @@ namespace MissionPlanner.GCSViews
             // myButton14
             // 
             resources.ApplyResources(this.myButton14, "myButton14");
-            this.myButton14.BackColor = System.Drawing.Color.Transparent;
-            this.myButton14.BGGradBot = System.Drawing.Color.DarkGray;
-            this.myButton14.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton14.BackColor = System.Drawing.Color.DimGray;
+            this.myButton14.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton14.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton14.Name = "myButton14";
             this.myButton14.Outline = System.Drawing.Color.Black;
-            this.myButton14.TextColor = System.Drawing.Color.Black;
+            this.myButton14.TextColor = System.Drawing.Color.White;
             this.myButton14.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton14.UseVisualStyleBackColor = false;
             this.myButton14.Click += new System.EventHandler(this.myButton14_Click);
@@ -3488,12 +3235,12 @@ namespace MissionPlanner.GCSViews
             // myButton13
             // 
             resources.ApplyResources(this.myButton13, "myButton13");
-            this.myButton13.BackColor = System.Drawing.Color.Transparent;
-            this.myButton13.BGGradBot = System.Drawing.Color.DarkGray;
-            this.myButton13.BGGradTop = System.Drawing.Color.DimGray;
+            this.myButton13.BackColor = System.Drawing.Color.DimGray;
+            this.myButton13.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton13.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton13.Name = "myButton13";
             this.myButton13.Outline = System.Drawing.Color.Black;
-            this.myButton13.TextColor = System.Drawing.Color.Black;
+            this.myButton13.TextColor = System.Drawing.Color.White;
             this.myButton13.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton13.UseVisualStyleBackColor = false;
             this.myButton13.Click += new System.EventHandler(this.myButton13_Click);
@@ -3501,10 +3248,293 @@ namespace MissionPlanner.GCSViews
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.myButton17);
+            this.panel3.Controls.Add(this.myButton16);
+            this.panel3.Controls.Add(this.myButton15);
             this.panel3.Name = "panel3";
+            // 
+            // myButton17
+            // 
+            this.myButton17.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.myButton17, "myButton17");
+            this.myButton17.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton17.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton17.ForeColor = System.Drawing.Color.White;
+            this.myButton17.Name = "myButton17";
+            this.myButton17.Outline = System.Drawing.Color.Black;
+            this.myButton17.TextColor = System.Drawing.Color.White;
+            this.myButton17.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton17.UseVisualStyleBackColor = false;
+            this.myButton17.Click += new System.EventHandler(this.myButton17_Click);
+            // 
+            // myButton16
+            // 
+            this.myButton16.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.myButton16, "myButton16");
+            this.myButton16.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton16.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton16.ForeColor = System.Drawing.Color.White;
+            this.myButton16.Name = "myButton16";
+            this.myButton16.Outline = System.Drawing.Color.Black;
+            this.myButton16.TextColor = System.Drawing.Color.White;
+            this.myButton16.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton16.UseVisualStyleBackColor = false;
+            this.myButton16.Click += new System.EventHandler(this.myButton16_Click);
+            // 
+            // myButton15
+            // 
+            this.myButton15.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.myButton15, "myButton15");
+            this.myButton15.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton15.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton15.ForeColor = System.Drawing.Color.White;
+            this.myButton15.Name = "myButton15";
+            this.myButton15.Outline = System.Drawing.Color.Black;
+            this.myButton15.TextColor = System.Drawing.Color.White;
+            this.myButton15.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton15.UseVisualStyleBackColor = false;
+            this.myButton15.Click += new System.EventHandler(this.myButton15_Click);
+            // 
+            // modifyandSetLoiterRad
+            // 
+            resources.ApplyResources(this.modifyandSetLoiterRad, "modifyandSetLoiterRad");
+            this.modifyandSetLoiterRad.ButtonText = "Set Loiter Rad";
+            this.modifyandSetLoiterRad.DecimalPlaces = 0;
+            this.modifyandSetLoiterRad.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Minimum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            -2147483648});
+            this.modifyandSetLoiterRad.Name = "modifyandSetLoiterRad";
+            this.modifyandSetLoiterRad.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetLoiterRad.Click += new System.EventHandler(this.modifyandSetLoiterRad_Click);
+            // 
+            // modifyandSetAlt
+            // 
+            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
+            this.modifyandSetAlt.ButtonText = "Change Alt";
+            this.modifyandSetAlt.DecimalPlaces = 1;
+            this.modifyandSetAlt.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Name = "modifyandSetAlt";
+            this.modifyandSetAlt.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
+            // 
+            // modifyandSetSpeed
+            // 
+            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
+            this.modifyandSetSpeed.ButtonText = "Change Speed";
+            this.modifyandSetSpeed.DecimalPlaces = 1;
+            this.modifyandSetSpeed.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
+            this.modifyandSetSpeed.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
+            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
+            // 
+            // checkListControl1
+            // 
+            resources.ApplyResources(this.checkListControl1, "checkListControl1");
+            this.checkListControl1.Name = "checkListControl1";
+            // 
+            // servoOptions1
+            // 
+            resources.ApplyResources(this.servoOptions1, "servoOptions1");
+            this.servoOptions1.Name = "servoOptions1";
+            this.servoOptions1.thisservo = 5;
+            // 
+            // servoOptions2
+            // 
+            resources.ApplyResources(this.servoOptions2, "servoOptions2");
+            this.servoOptions2.Name = "servoOptions2";
+            this.servoOptions2.thisservo = 6;
+            // 
+            // servoOptions3
+            // 
+            resources.ApplyResources(this.servoOptions3, "servoOptions3");
+            this.servoOptions3.Name = "servoOptions3";
+            this.servoOptions3.thisservo = 7;
+            // 
+            // servoOptions4
+            // 
+            resources.ApplyResources(this.servoOptions4, "servoOptions4");
+            this.servoOptions4.Name = "servoOptions4";
+            this.servoOptions4.thisservo = 8;
+            // 
+            // servoOptions5
+            // 
+            resources.ApplyResources(this.servoOptions5, "servoOptions5");
+            this.servoOptions5.Name = "servoOptions5";
+            this.servoOptions5.thisservo = 9;
+            // 
+            // servoOptions6
+            // 
+            resources.ApplyResources(this.servoOptions6, "servoOptions6");
+            this.servoOptions6.Name = "servoOptions6";
+            this.servoOptions6.thisservo = 10;
+            // 
+            // servoOptions7
+            // 
+            resources.ApplyResources(this.servoOptions7, "servoOptions7");
+            this.servoOptions7.Name = "servoOptions7";
+            this.servoOptions7.thisservo = 11;
+            // 
+            // servoOptions8
+            // 
+            resources.ApplyResources(this.servoOptions8, "servoOptions8");
+            this.servoOptions8.Name = "servoOptions8";
+            this.servoOptions8.thisservo = 12;
+            // 
+            // servoOptions9
+            // 
+            resources.ApplyResources(this.servoOptions9, "servoOptions9");
+            this.servoOptions9.Name = "servoOptions9";
+            this.servoOptions9.thisservo = 13;
+            // 
+            // servoOptions10
+            // 
+            resources.ApplyResources(this.servoOptions10, "servoOptions10");
+            this.servoOptions10.Name = "servoOptions10";
+            this.servoOptions10.thisservo = 14;
+            // 
+            // servoOptions11
+            // 
+            resources.ApplyResources(this.servoOptions11, "servoOptions11");
+            this.servoOptions11.Name = "servoOptions11";
+            this.servoOptions11.thisservo = 15;
+            // 
+            // servoOptions12
+            // 
+            resources.ApplyResources(this.servoOptions12, "servoOptions12");
+            this.servoOptions12.Name = "servoOptions12";
+            this.servoOptions12.thisservo = 16;
+            // 
+            // relayOptions1
+            // 
+            resources.ApplyResources(this.relayOptions1, "relayOptions1");
+            this.relayOptions1.Name = "relayOptions1";
+            this.relayOptions1.thisrelay = 0;
+            // 
+            // relayOptions2
+            // 
+            resources.ApplyResources(this.relayOptions2, "relayOptions2");
+            this.relayOptions2.Name = "relayOptions2";
+            this.relayOptions2.thisrelay = 1;
+            // 
+            // relayOptions3
+            // 
+            resources.ApplyResources(this.relayOptions3, "relayOptions3");
+            this.relayOptions3.Name = "relayOptions3";
+            this.relayOptions3.thisrelay = 2;
+            // 
+            // relayOptions4
+            // 
+            resources.ApplyResources(this.relayOptions4, "relayOptions4");
+            this.relayOptions4.Name = "relayOptions4";
+            this.relayOptions4.thisrelay = 3;
+            // 
+            // relayOptions5
+            // 
+            resources.ApplyResources(this.relayOptions5, "relayOptions5");
+            this.relayOptions5.Name = "relayOptions5";
+            this.relayOptions5.thisrelay = 4;
+            // 
+            // relayOptions6
+            // 
+            resources.ApplyResources(this.relayOptions6, "relayOptions6");
+            this.relayOptions6.Name = "relayOptions6";
+            this.relayOptions6.thisrelay = 5;
+            // 
+            // auxOptions1
+            // 
+            resources.ApplyResources(this.auxOptions1, "auxOptions1");
+            this.auxOptions1.Name = "auxOptions1";
+            // 
+            // auxOptions2
+            // 
+            resources.ApplyResources(this.auxOptions2, "auxOptions2");
+            this.auxOptions2.Name = "auxOptions2";
+            // 
+            // auxOptions3
+            // 
+            resources.ApplyResources(this.auxOptions3, "auxOptions3");
+            this.auxOptions3.Name = "auxOptions3";
+            // 
+            // auxOptions4
+            // 
+            resources.ApplyResources(this.auxOptions4, "auxOptions4");
+            this.auxOptions4.Name = "auxOptions4";
+            // 
+            // auxOptions5
+            // 
+            resources.ApplyResources(this.auxOptions5, "auxOptions5");
+            this.auxOptions5.Name = "auxOptions5";
+            // 
+            // auxOptions6
+            // 
+            resources.ApplyResources(this.auxOptions6, "auxOptions6");
+            this.auxOptions6.Name = "auxOptions6";
+            // 
+            // auxOptions7
+            // 
+            resources.ApplyResources(this.auxOptions7, "auxOptions7");
+            this.auxOptions7.Name = "auxOptions7";
+            // 
+            // distanceBar1
+            // 
+            resources.ApplyResources(this.distanceBar1, "distanceBar1");
+            this.distanceBar1.BackColor = System.Drawing.Color.Transparent;
+            this.distanceBar1.Name = "distanceBar1";
+            this.distanceBar1.totaldist = 100F;
+            this.distanceBar1.traveleddist = 0F;
             // 
             // FlightData
             // 
@@ -3903,13 +3933,13 @@ namespace MissionPlanner.GCSViews
         private Label label11;
         private Label MouseLabel;
         private Button button1;
-        private Button button6;
-        private Button button5;
-        private Button button4;
         private Controls.MyButton switchview;
         private TableLayoutPanel tableLayoutPanel7;
         private Controls.MyButton myButton14;
         private Controls.MyButton myButton13;
         private Panel panel3;
+        private Controls.MyButton myButton15;
+        private Controls.MyButton myButton17;
+        private Controls.MyButton myButton16;
     }
 }

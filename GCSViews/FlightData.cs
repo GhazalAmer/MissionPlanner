@@ -35,6 +35,7 @@ using UnauthorizedAccessException = System.UnauthorizedAccessException;
 using Accord.Statistics;
 using DotSpatial.Data;
 using System.Net.Sockets;
+using GMap.NET.MapProviders;
 
 // written by michael oborne
 
@@ -6811,7 +6812,7 @@ namespace MissionPlanner.GCSViews
 
         private void gMapControl1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void myButton4_Click(object sender, EventArgs e)
@@ -6850,6 +6851,54 @@ namespace MissionPlanner.GCSViews
         private void label15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void myButton15_Click(object sender, EventArgs e)
+        {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+
+            MainV2.MyView.ShowScreen("HWConfig");
+        }
+
+        private void myButton16_Click(object sender, EventArgs e)
+        {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+
+            MainV2.MyView.ShowScreen("SWConfig");
+        }
+
+        private void myButton17_Click(object sender, EventArgs e)
+        {
+            if (panel3.Visible == true)
+            {
+                panel3.Visible = false;
+
+            }
+            else
+            {
+                panel3.Visible = true;
+
+            }
+
+            MainV2.MyView.ShowScreen("FlightPlanner");
         }
     }
 }

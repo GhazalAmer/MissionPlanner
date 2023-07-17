@@ -4411,19 +4411,6 @@ namespace MissionPlanner
             Console.WriteLine("MainV2_KeyDown " + e.ToString());
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start(
-                    "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mich146%40hotmail%2ecom&lc=AU&item_name=Michael%20Oborne&no_note=0&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest");
-            }
-            catch
-            {
-                CustomMessageBox.Show("Link open failed. check your default webpage association");
-            }
-        }
-
         [StructLayout(LayoutKind.Sequential)]
         public class DEV_BROADCAST_HDR
         {
@@ -4822,6 +4809,19 @@ namespace MissionPlanner
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        //private void label7_Click(object sender, EventArgs e)
+        //{
+        //    Connect();
+
+        //    // save config
+        //    SaveConfig();
+        //}
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+           
         }
     }
 }
