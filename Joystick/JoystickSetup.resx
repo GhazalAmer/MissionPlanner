@@ -118,37 +118,448 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chk_manualcontrol.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 18pt, style=Bold</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chk_manualcontrol.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="chk_manualcontrol.Location" type="System.Drawing.Point, System.Drawing">
-    <value>464, 47</value>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 126</value>
   </data>
-  <data name="chk_manualcontrol.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 29</value>
   </data>
-  <data name="chk_manualcontrol.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
   </data>
-  <data name="chk_manualcontrol.Text" xml:space="preserve">
-    <value>Manual Control</value>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Switches</value>
   </data>
-  <data name="&gt;&gt;chk_manualcontrol.Name" xml:space="preserve">
-    <value>chk_manualcontrol</value>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
   </data>
-  <data name="&gt;&gt;chk_manualcontrol.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chk_manualcontrol.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;chk_manualcontrol.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="AUX_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="AUX_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AUX_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="AUX_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AUX_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 229</value>
+  </data>
+  <data name="AUX_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 24</value>
+  </data>
+  <data name="AUX_label.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="AUX_label.Text" xml:space="preserve">
+    <value>AUX</value>
+  </data>
+  <data name="AUX_label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;AUX_label.Name" xml:space="preserve">
+    <value>AUX_label</value>
+  </data>
+  <data name="&gt;&gt;AUX_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AUX_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AUX_label.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ANCH_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="ANCH_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ANCH_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="ANCH_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ANCH_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 198</value>
+  </data>
+  <data name="ANCH_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="ANCH_label.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="ANCH_label.Text" xml:space="preserve">
+    <value>ANCH --</value>
+  </data>
+  <data name="ANCH_label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;ANCH_label.Name" xml:space="preserve">
+    <value>ANCH_label</value>
+  </data>
+  <data name="&gt;&gt;ANCH_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ANCH_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ANCH_label.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ENG_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ENG_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13.8pt, style=Bold</value>
+  </data>
+  <data name="ENG_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ENG_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 164</value>
+  </data>
+  <data name="ENG_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 24</value>
+  </data>
+  <data name="ENG_label.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="ENG_label.Text" xml:space="preserve">
+    <value>ENG ------</value>
+  </data>
+  <data name="ENG_label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;ENG_label.Name" xml:space="preserve">
+    <value>ENG_label</value>
+  </data>
+  <data name="&gt;&gt;ENG_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ENG_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ENG_label.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="AuxBtn.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="AuxBtn.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="AuxBtn.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="AuxBtn.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="AuxBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1366, 477</value>
+  </data>
+  <data name="AuxBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="AuxBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;AuxBtn.Name" xml:space="preserve">
+    <value>AuxBtn</value>
+  </data>
+  <data name="&gt;&gt;AuxBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AnchUpBtn.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="AnchUpBtn.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="AnchUpBtn.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="AnchUpBtn.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="AnchUpBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1210, 437</value>
+  </data>
+  <data name="AnchUpBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="AnchUpBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;AnchUpBtn.Name" xml:space="preserve">
+    <value>AnchUpBtn</value>
+  </data>
+  <data name="&gt;&gt;AnchUpBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AnchDown.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="AnchDown.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="AnchDown.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="AnchDown.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="AnchDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1210, 477</value>
+  </data>
+  <data name="AnchDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="AnchDown.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;AnchDown.Name" xml:space="preserve">
+    <value>AnchDown</value>
+  </data>
+  <data name="&gt;&gt;AnchDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EngStBtn.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="EngStBtn.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="EngStBtn.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="EngStBtn.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="EngStBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1077, 477</value>
+  </data>
+  <data name="EngStBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="EngStBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;EngStBtn.Name" xml:space="preserve">
+    <value>EngStBtn</value>
+  </data>
+  <data name="&gt;&gt;EngStBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EngStpBtn.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="EngStpBtn.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="EngStpBtn.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="EngStpBtn.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="EngStpBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1000, 477</value>
+  </data>
+  <data name="EngStpBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="EngStpBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;EngStpBtn.Name" xml:space="preserve">
+    <value>EngStpBtn</value>
+  </data>
+  <data name="&gt;&gt;EngStpBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GearState.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GearState.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt, style=Bold</value>
+  </data>
+  <data name="GearState.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GearState.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 97</value>
+  </data>
+  <data name="GearState.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 46</value>
+  </data>
+  <data name="GearState.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="GearState.Text" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="&gt;&gt;GearState.Name" xml:space="preserve">
+    <value>GearState</value>
+  </data>
+  <data name="&gt;&gt;GearState.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GearState.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GearState.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 118</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 29</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>STBD</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SteerCircBar.AnimationFunction" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEdXaW5Gb3JtQW5pbWF0aW9uLCBWZXJzaW9uPTEuMy4wLjAsIEN1
+        bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlh
+        bGl6YXRpb25Ib2xkZXICAAAACERlbGVnYXRlB21ldGhvZDADAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxp
+        emF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1Nlcmlh
+        bGl6YXRpb25Ib2xkZXICAAAACQMAAAAJBAAAAAQDAAAAMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRp
+        b25Ib2xkZXIrRGVsZWdhdGVFbnRyeQcAAAAEdHlwZQhhc3NlbWJseQZ0YXJnZXQSdGFyZ2V0VHlwZUFz
+        c2VtYmx5DnRhcmdldFR5cGVOYW1lCm1ldGhvZE5hbWUNZGVsZWdhdGVFbnRyeQEBAgEBAQMwU3lzdGVt
+        LkRlbGVnYXRlU2VyaWFsaXphdGlvbkhvbGRlcitEZWxlZ2F0ZUVudHJ5BgUAAAAsV2luRm9ybUFuaW1h
+        dGlvbi5BbmltYXRpb25GdW5jdGlvbnMrRnVuY3Rpb24GBgAAAEdXaW5Gb3JtQW5pbWF0aW9uLCBWZXJz
+        aW9uPTEuMy4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAoJBgAAAAYHAAAA
+        I1dpbkZvcm1BbmltYXRpb24uQW5pbWF0aW9uRnVuY3Rpb25zBggAAAALQ3ViaWNFYXNlSW4KBAQAAAAv
+        U3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIHAAAABE5hbWUMQXNz
+        ZW1ibHlOYW1lCUNsYXNzTmFtZQlTaWduYXR1cmUKU2lnbmF0dXJlMgpNZW1iZXJUeXBlEEdlbmVyaWNB
+        cmd1bWVudHMBAQEBAQADCA1TeXN0ZW0uVHlwZVtdCQgAAAAJBgAAAAkHAAAABgsAAAAyU2luZ2xlIEN1
+        YmljRWFzZUluKFNpbmdsZSwgU2luZ2xlLCBTaW5nbGUsIFNpbmdsZSkGDAAAAFVTeXN0ZW0uU2luZ2xl
+        IEN1YmljRWFzZUluKFN5c3RlbS5TaW5nbGUsIFN5c3RlbS5TaW5nbGUsIFN5c3RlbS5TaW5nbGUsIFN5
+        c3RlbS5TaW5nbGUpCAAAAAoL
+</value>
+  </data>
+  <data name="SteerCircBar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 72pt, style=Bold</value>
+  </data>
+  <data name="SteerCircBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SteerCircBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 60</value>
+  </data>
+  <data name="SteerCircBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 131</value>
+  </data>
+  <data name="SteerCircBar.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;SteerCircBar.Name" xml:space="preserve">
+    <value>SteerCircBar</value>
+  </data>
+  <data name="&gt;&gt;SteerCircBar.Type" xml:space="preserve">
+    <value>CircularProgressBar.CircularProgressBar, CircularProgressBar, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SteerCircBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SteerCircBar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ThrottleCircBar.AnimationFunction" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEdXaW5Gb3JtQW5pbWF0aW9uLCBWZXJzaW9uPTEuMy4wLjAsIEN1
+        bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAIlN5c3RlbS5EZWxlZ2F0ZVNlcmlh
+        bGl6YXRpb25Ib2xkZXICAAAACERlbGVnYXRlB21ldGhvZDADAzBTeXN0ZW0uRGVsZWdhdGVTZXJpYWxp
+        emF0aW9uSG9sZGVyK0RlbGVnYXRlRW50cnkvU3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1Nlcmlh
+        bGl6YXRpb25Ib2xkZXICAAAACQMAAAAJBAAAAAQDAAAAMFN5c3RlbS5EZWxlZ2F0ZVNlcmlhbGl6YXRp
+        b25Ib2xkZXIrRGVsZWdhdGVFbnRyeQcAAAAEdHlwZQhhc3NlbWJseQZ0YXJnZXQSdGFyZ2V0VHlwZUFz
+        c2VtYmx5DnRhcmdldFR5cGVOYW1lCm1ldGhvZE5hbWUNZGVsZWdhdGVFbnRyeQEBAgEBAQMwU3lzdGVt
+        LkRlbGVnYXRlU2VyaWFsaXphdGlvbkhvbGRlcitEZWxlZ2F0ZUVudHJ5BgUAAAAsV2luRm9ybUFuaW1h
+        dGlvbi5BbmltYXRpb25GdW5jdGlvbnMrRnVuY3Rpb24GBgAAAEdXaW5Gb3JtQW5pbWF0aW9uLCBWZXJz
+        aW9uPTEuMy4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAoJBgAAAAYHAAAA
+        I1dpbkZvcm1BbmltYXRpb24uQW5pbWF0aW9uRnVuY3Rpb25zBggAAAALQ3ViaWNFYXNlSW4KBAQAAAAv
+        U3lzdGVtLlJlZmxlY3Rpb24uTWVtYmVySW5mb1NlcmlhbGl6YXRpb25Ib2xkZXIHAAAABE5hbWUMQXNz
+        ZW1ibHlOYW1lCUNsYXNzTmFtZQlTaWduYXR1cmUKU2lnbmF0dXJlMgpNZW1iZXJUeXBlEEdlbmVyaWNB
+        cmd1bWVudHMBAQEBAQADCA1TeXN0ZW0uVHlwZVtdCQgAAAAJBgAAAAkHAAAABgsAAAAyU2luZ2xlIEN1
+        YmljRWFzZUluKFNpbmdsZSwgU2luZ2xlLCBTaW5nbGUsIFNpbmdsZSkGDAAAAFVTeXN0ZW0uU2luZ2xl
+        IEN1YmljRWFzZUluKFN5c3RlbS5TaW5nbGUsIFN5c3RlbS5TaW5nbGUsIFN5c3RlbS5TaW5nbGUsIFN5
+        c3RlbS5TaW5nbGUpCAAAAAoL
+</value>
+  </data>
+  <data name="ThrottleCircBar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
+  </data>
+  <data name="ThrottleCircBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 56</value>
+  </data>
+  <data name="ThrottleCircBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 131</value>
+  </data>
+  <data name="ThrottleCircBar.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;ThrottleCircBar.Name" xml:space="preserve">
+    <value>ThrottleCircBar</value>
+  </data>
+  <data name="&gt;&gt;ThrottleCircBar.Type" xml:space="preserve">
+    <value>CircularProgressBar.CircularProgressBar, CircularProgressBar, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ThrottleCircBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ThrottleCircBar.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -157,7 +568,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 17</value>
+    <value>1147, 9</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 13</value>
@@ -168,71 +579,605 @@
   <data name="label14.Text" xml:space="preserve">
     <value>Loaded Config for</value>
   </data>
+  <data name="label14.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
   </data>
   <data name="&gt;&gt;label14.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BUT_detch8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="BUT_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="BUT_detch8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BUT_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 12</value>
+  <data name="BUT_detch8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1115, 260</value>
   </data>
-  <data name="BUT_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="BUT_detch8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 23</value>
   </data>
-  <data name="BUT_save.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="BUT_detch8.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
   </data>
-  <data name="BUT_save.Text" xml:space="preserve">
-    <value>Save</value>
+  <data name="BUT_detch8.Text" xml:space="preserve">
+    <value>Auto Detect</value>
   </data>
-  <data name="&gt;&gt;BUT_save.Name" xml:space="preserve">
-    <value>BUT_save</value>
+  <data name="BUT_detch8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;BUT_save.Type" xml:space="preserve">
+  <data name="&gt;&gt;BUT_detch8.Name" xml:space="preserve">
+    <value>BUT_detch8</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch8.Type" xml:space="preserve">
     <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;BUT_save.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="revCH8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;BUT_save.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="BUT_enable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="revCH8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BUT_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 12</value>
+  <data name="revCH8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1380, 263</value>
   </data>
-  <data name="BUT_enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="revCH8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
   </data>
-  <data name="BUT_enable.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="revCH8.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
   </data>
-  <data name="BUT_enable.Text" xml:space="preserve">
-    <value>Enable</value>
+  <data name="revCH8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;BUT_enable.Name" xml:space="preserve">
-    <value>BUT_enable</value>
+  <data name="&gt;&gt;revCH8.Name" xml:space="preserve">
+    <value>revCH8</value>
   </data>
-  <data name="&gt;&gt;BUT_enable.Type" xml:space="preserve">
+  <data name="&gt;&gt;revCH8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>976, 265</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>CH 8</value>
+  </data>
+  <data name="label13.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="expo_ch8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1274, 264</value>
+  </data>
+  <data name="expo_ch8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch8.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="expo_ch8.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="expo_ch8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;expo_ch8.Name" xml:space="preserve">
+    <value>expo_ch8</value>
+  </data>
+  <data name="&gt;&gt;expo_ch8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBarCH8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ProgressBarCH8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1166, 259</value>
+  </data>
+  <data name="ProgressBarCH8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="ProgressBarCH8.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="ProgressBarCH8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH8.Name" xml:space="preserve">
+    <value>ProgressBarCH8</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH8.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CMB_CH8.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH8.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH8.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH8.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1039, 260</value>
+  </data>
+  <data name="CMB_CH8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH8.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="CMB_CH8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH8.Name" xml:space="preserve">
+    <value>CMB_CH8</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BUT_detch7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BUT_detch7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_detch7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1115, 231</value>
+  </data>
+  <data name="BUT_detch7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 23</value>
+  </data>
+  <data name="BUT_detch7.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="BUT_detch7.Text" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="BUT_detch7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch7.Name" xml:space="preserve">
+    <value>BUT_detch7</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch7.Type" xml:space="preserve">
     <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;BUT_enable.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="revCH7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;BUT_enable.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="revCH7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="revCH7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1380, 234</value>
+  </data>
+  <data name="revCH7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="revCH7.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="revCH7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;revCH7.Name" xml:space="preserve">
+    <value>revCH7</value>
+  </data>
+  <data name="&gt;&gt;revCH7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>976, 236</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>CH 7</value>
+  </data>
+  <data name="label12.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="expo_ch7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1274, 235</value>
+  </data>
+  <data name="expo_ch7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch7.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="expo_ch7.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="expo_ch7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;expo_ch7.Name" xml:space="preserve">
+    <value>expo_ch7</value>
+  </data>
+  <data name="&gt;&gt;expo_ch7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBarCH7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ProgressBarCH7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1166, 230</value>
+  </data>
+  <data name="ProgressBarCH7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="ProgressBarCH7.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="ProgressBarCH7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH7.Name" xml:space="preserve">
+    <value>ProgressBarCH7</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH7.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CMB_CH7.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH7.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH7.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH7.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1039, 231</value>
+  </data>
+  <data name="CMB_CH7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH7.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="CMB_CH7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH7.Name" xml:space="preserve">
+    <value>CMB_CH7</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BUT_detch6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BUT_detch6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_detch6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1115, 202</value>
+  </data>
+  <data name="BUT_detch6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 23</value>
+  </data>
+  <data name="BUT_detch6.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="BUT_detch6.Text" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="BUT_detch6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch6.Name" xml:space="preserve">
+    <value>BUT_detch6</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch6.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="revCH6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="revCH6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="revCH6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1380, 205</value>
+  </data>
+  <data name="revCH6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="revCH6.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="revCH6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;revCH6.Name" xml:space="preserve">
+    <value>revCH6</value>
+  </data>
+  <data name="&gt;&gt;revCH6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>976, 207</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>CH 6</value>
+  </data>
+  <data name="label11.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="expo_ch6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1274, 206</value>
+  </data>
+  <data name="expo_ch6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch6.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="expo_ch6.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="expo_ch6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;expo_ch6.Name" xml:space="preserve">
+    <value>expo_ch6</value>
+  </data>
+  <data name="&gt;&gt;expo_ch6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBarCH6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ProgressBarCH6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1166, 201</value>
+  </data>
+  <data name="ProgressBarCH6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="ProgressBarCH6.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="ProgressBarCH6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH6.Name" xml:space="preserve">
+    <value>ProgressBarCH6</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH6.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CMB_CH6.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH6.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH6.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH6.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1039, 202</value>
+  </data>
+  <data name="CMB_CH6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH6.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="CMB_CH6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH6.Name" xml:space="preserve">
+    <value>CMB_CH6</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BUT_detch5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BUT_detch5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_detch5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1115, 173</value>
+  </data>
+  <data name="BUT_detch5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 23</value>
+  </data>
+  <data name="BUT_detch5.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="BUT_detch5.Text" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch5.Name" xml:space="preserve">
+    <value>BUT_detch5</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch5.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="revCH5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="revCH5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="revCH5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1380, 176</value>
+  </data>
+  <data name="revCH5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="revCH5.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="revCH5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;revCH5.Name" xml:space="preserve">
+    <value>revCH5</value>
+  </data>
+  <data name="&gt;&gt;revCH5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>977, 297</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>ch 2</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="expo_ch5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1274, 177</value>
+  </data>
+  <data name="expo_ch5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch5.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="expo_ch5.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="expo_ch5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;expo_ch5.Name" xml:space="preserve">
+    <value>expo_ch5</value>
+  </data>
+  <data name="&gt;&gt;expo_ch5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBarCH5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ProgressBarCH5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1166, 89</value>
+  </data>
+  <data name="ProgressBarCH5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="ProgressBarCH5.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="ProgressBarCH5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH5.Name" xml:space="preserve">
+    <value>ProgressBarCH5</value>
+  </data>
+  <data name="&gt;&gt;ProgressBarCH5.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CMB_CH5.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH5.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH5.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH5.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1039, 173</value>
+  </data>
+  <data name="CMB_CH5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH5.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH5.Name" xml:space="preserve">
+    <value>CMB_CH5</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CHK_elevons.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -241,7 +1186,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_elevons.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 81</value>
+    <value>1401, 78</value>
   </data>
   <data name="CHK_elevons.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
@@ -252,21 +1197,129 @@
   <data name="CHK_elevons.Text" xml:space="preserve">
     <value>Elevons</value>
   </data>
+  <data name="CHK_elevons.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;CHK_elevons.Name" xml:space="preserve">
     <value>CHK_elevons</value>
   </data>
   <data name="&gt;&gt;CHK_elevons.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CHK_elevons.Parent" xml:space="preserve">
+  <data name="BUT_detch4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BUT_detch4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_detch4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1115, 144</value>
+  </data>
+  <data name="BUT_detch4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 23</value>
+  </data>
+  <data name="BUT_detch4.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="BUT_detch4.Text" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="BUT_detch4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch4.Name" xml:space="preserve">
+    <value>BUT_detch4</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch4.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BUT_detch3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="BUT_detch3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_detch3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 262</value>
+  </data>
+  <data name="BUT_detch3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 23</value>
+  </data>
+  <data name="BUT_detch3.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="BUT_detch3.Text" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch3.Name" xml:space="preserve">
+    <value>BUT_detch3</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch3.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;CHK_elevons.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;BUT_detch3.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="BUT_detch2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BUT_detch2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_detch2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1113, 292</value>
+  </data>
+  <data name="BUT_detch2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 23</value>
+  </data>
+  <data name="BUT_detch2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="BUT_detch2.Text" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="BUT_detch2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch2.Name" xml:space="preserve">
+    <value>BUT_detch2</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch2.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BUT_detch1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="BUT_detch1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_detch1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 262</value>
+  </data>
+  <data name="BUT_detch1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 23</value>
+  </data>
+  <data name="BUT_detch1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="BUT_detch1.Text" xml:space="preserve">
+    <value>Auto Detect</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch1.Name" xml:space="preserve">
+    <value>BUT_detch1</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BUT_detch1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -274,7 +1327,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 47</value>
+    <value>1378, 44</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 13</value>
@@ -291,12 +1344,6 @@
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -304,7 +1351,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 47</value>
+    <value>1036, 44</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 13</value>
@@ -321,12 +1368,6 @@
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -334,7 +1375,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 47</value>
+    <value>1164, 44</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 13</value>
@@ -351,12 +1392,6 @@
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -364,7 +1399,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 47</value>
+    <value>1274, 44</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
@@ -380,12 +1415,6 @@
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -415,13 +1444,610 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="BUT_enable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BUT_enable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_enable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 9</value>
+  </data>
+  <data name="BUT_enable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BUT_enable.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="BUT_enable.Text" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="&gt;&gt;BUT_enable.Name" xml:space="preserve">
+    <value>BUT_enable</value>
+  </data>
+  <data name="&gt;&gt;BUT_enable.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_enable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BUT_enable.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="BUT_save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BUT_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 9</value>
+  </data>
+  <data name="BUT_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BUT_save.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="BUT_save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.Name" xml:space="preserve">
+    <value>BUT_save</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BUT_save.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="revCH4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="revCH4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="revCH4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1380, 147</value>
+  </data>
+  <data name="revCH4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="revCH4.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="revCH4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;revCH4.Name" xml:space="preserve">
+    <value>revCH4</value>
+  </data>
+  <data name="&gt;&gt;revCH4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="revCH3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="revCH3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="revCH3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 292</value>
+  </data>
+  <data name="revCH3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="revCH3.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;revCH3.Name" xml:space="preserve">
+    <value>revCH3</value>
+  </data>
+  <data name="&gt;&gt;revCH3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;revCH3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;revCH3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="revCH2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="revCH2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="revCH2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1378, 295</value>
+  </data>
+  <data name="revCH2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="revCH2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="revCH2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;revCH2.Name" xml:space="preserve">
+    <value>revCH2</value>
+  </data>
+  <data name="&gt;&gt;revCH2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="revCH1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="revCH1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="revCH1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 292</value>
+  </data>
+  <data name="revCH1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="revCH1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;revCH1.Name" xml:space="preserve">
+    <value>revCH1</value>
+  </data>
+  <data name="&gt;&gt;revCH1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;revCH1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;revCH1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>976, 149</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Rudder</value>
+  </data>
+  <data name="label4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 192</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 29</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Throttle</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>975, 92</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Engine On/Off</value>
+  </data>
+  <data name="label2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 118</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 29</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 193</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 29</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Steering</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="expo_ch4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1274, 148</value>
+  </data>
+  <data name="expo_ch4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="expo_ch4.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="expo_ch4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;expo_ch4.Name" xml:space="preserve">
+    <value>expo_ch4</value>
+  </data>
+  <data name="&gt;&gt;expo_ch4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="expo_ch3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="expo_ch3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1274, 121</value>
+  </data>
+  <data name="expo_ch3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="expo_ch3.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;expo_ch3.Name" xml:space="preserve">
+    <value>expo_ch3</value>
+  </data>
+  <data name="&gt;&gt;expo_ch3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="expo_ch2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1272, 296</value>
+  </data>
+  <data name="expo_ch2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="expo_ch2.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="expo_ch2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;expo_ch2.Name" xml:space="preserve">
+    <value>expo_ch2</value>
+  </data>
+  <data name="&gt;&gt;expo_ch2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="expo_ch1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1274, 67</value>
+  </data>
+  <data name="expo_ch1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="expo_ch1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="expo_ch1.Text" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;expo_ch1.Name" xml:space="preserve">
+    <value>expo_ch1</value>
+  </data>
+  <data name="&gt;&gt;expo_ch1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="progressBarRudder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarRudder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1166, 143</value>
+  </data>
+  <data name="progressBarRudder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="progressBarRudder.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="progressBarRudder.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;progressBarRudder.Name" xml:space="preserve">
+    <value>progressBarRudder</value>
+  </data>
+  <data name="&gt;&gt;progressBarRudder.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="progressBarThrottle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarThrottle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1166, 118</value>
+  </data>
+  <data name="progressBarThrottle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="progressBarThrottle.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;progressBarThrottle.Name" xml:space="preserve">
+    <value>progressBarThrottle</value>
+  </data>
+  <data name="&gt;&gt;progressBarThrottle.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="progressBarPith.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarPith.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1164, 291</value>
+  </data>
+  <data name="progressBarPith.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="progressBarPith.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;progressBarPith.Name" xml:space="preserve">
+    <value>progressBarPith</value>
+  </data>
+  <data name="&gt;&gt;progressBarPith.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="progressBarRoll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarRoll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1166, 62</value>
+  </data>
+  <data name="progressBarRoll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="progressBarRoll.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;progressBarRoll.Name" xml:space="preserve">
+    <value>progressBarRoll</value>
+  </data>
+  <data name="&gt;&gt;progressBarRoll.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.HorizontalProgressBar, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CMB_CH4.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH4.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH4.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH4.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1039, 144</value>
+  </data>
+  <data name="CMB_CH4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="CMB_CH4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH4.Name" xml:space="preserve">
+    <value>CMB_CH4</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CMB_CH3.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH3.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH3.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH3.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 240</value>
+  </data>
+  <data name="CMB_CH3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH3.Name" xml:space="preserve">
+    <value>CMB_CH3</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH3.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="CMB_CH2.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH2.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH2.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH2.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1037, 292</value>
+  </data>
+  <data name="CMB_CH2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CMB_CH2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH2.Name" xml:space="preserve">
+    <value>CMB_CH2</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CMB_CH1.Items" xml:space="preserve">
+    <value>RZ</value>
+  </data>
+  <data name="CMB_CH1.Items1" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="CMB_CH1.Items2" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="CMB_CH1.Items3" xml:space="preserve">
+    <value>SL1</value>
+  </data>
+  <data name="CMB_CH1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 239</value>
+  </data>
+  <data name="CMB_CH1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 21</value>
+  </data>
+  <data name="CMB_CH1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH1.Name" xml:space="preserve">
+    <value>CMB_CH1</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CMB_CH1.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
   <data name="CMB_joysticks.Location" type="System.Drawing.Point, System.Drawing">
     <value>72, 12</value>
   </data>
   <data name="CMB_joysticks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 21</value>
+    <value>137, 21</value>
   </data>
   <data name="CMB_joysticks.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -436,16 +2062,25 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CMB_joysticks.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>20</value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>566, 452</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>495, 246</value>
+    <value>566, 331</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>702, 331</value>
+    <value>566, 336</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>

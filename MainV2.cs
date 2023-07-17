@@ -1016,7 +1016,7 @@ namespace MissionPlanner
                     }
 
                 }
-
+                this.WindowState = FormWindowState.Maximized;
                 if (Settings.Instance["MainMaximised"] != null)
                 {
                     this.WindowState =

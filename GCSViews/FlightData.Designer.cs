@@ -153,7 +153,6 @@ namespace MissionPlanner.GCSViews
             this.panel_persistent = new System.Windows.Forms.Panel();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.zg1 = new ZedGraph.ZedGraphControl();
             this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.goHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flyToHereAltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -260,6 +259,9 @@ namespace MissionPlanner.GCSViews
             this.myButton14 = new MissionPlanner.Controls.MyButton();
             this.myButton13 = new MissionPlanner.Controls.MyButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.barRenderer1 = new BrightIdeasSoftware.BarRenderer();
+            this.zg1 = new ZedGraph.ZedGraphControl();
+            this.boatStatusPanel = new System.Windows.Forms.Panel();
             this.myButton17 = new MissionPlanner.Controls.MyButton();
             this.myButton16 = new MissionPlanner.Controls.MyButton();
             this.myButton15 = new MissionPlanner.Controls.MyButton();
@@ -339,7 +341,6 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel2.SuspendLayout();
             this.tableMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripMap.SuspendLayout();
@@ -2241,10 +2242,6 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
             this.splitContainer1.Name = "splitContainer1";
             // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.zg1);
-            // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
@@ -2258,19 +2255,6 @@ namespace MissionPlanner.GCSViews
             this.splitContainer1.Panel2.Controls.Add(this.lbl_hdop);
             this.splitContainer1.Panel2.Controls.Add(this.lbl_sats);
             this.splitContainer1.Panel2.Controls.Add(this.TRK_zoom);
-            // 
-            // zg1
-            // 
-            resources.ApplyResources(this.zg1, "zg1");
-            this.zg1.Name = "zg1";
-            this.zg1.ScrollGrace = 0D;
-            this.zg1.ScrollMaxX = 0D;
-            this.zg1.ScrollMaxY = 0D;
-            this.zg1.ScrollMaxY2 = 0D;
-            this.zg1.ScrollMinX = 0D;
-            this.zg1.ScrollMinY = 0D;
-            this.zg1.ScrollMinY2 = 0D;
-            this.zg1.DoubleClick += new System.EventHandler(this.zg1_DoubleClick);
             // 
             // contextMenuStripMap
             // 
@@ -2587,7 +2571,7 @@ namespace MissionPlanner.GCSViews
             this.gMapControl1.PolygonsEnabled = true;
             this.gMapControl1.RetryLoadTile = 0;
             this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
+            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
             this.gMapControl1.Zoom = 3D;
@@ -3253,6 +3237,26 @@ namespace MissionPlanner.GCSViews
             this.panel3.Controls.Add(this.myButton15);
             this.panel3.Name = "panel3";
             // 
+            // zg1
+            // 
+            resources.ApplyResources(this.zg1, "zg1");
+            this.zg1.Name = "zg1";
+            this.zg1.ScrollGrace = 0D;
+            this.zg1.ScrollMaxX = 0D;
+            this.zg1.ScrollMaxY = 0D;
+            this.zg1.ScrollMaxY2 = 0D;
+            this.zg1.ScrollMinX = 0D;
+            this.zg1.ScrollMinY = 0D;
+            this.zg1.ScrollMinY2 = 0D;
+            this.zg1.DoubleClick += new System.EventHandler(this.zg1_DoubleClick);
+            // 
+            // boatStatusPanel
+            // 
+            resources.ApplyResources(this.boatStatusPanel, "boatStatusPanel");
+            this.boatStatusPanel.BackColor = System.Drawing.Color.Transparent;
+            this.boatStatusPanel.ForeColor = System.Drawing.Color.Transparent;
+            this.boatStatusPanel.Name = "boatStatusPanel";
+            // 
             // myButton17
             // 
             this.myButton17.BackColor = System.Drawing.Color.DimGray;
@@ -3538,6 +3542,9 @@ namespace MissionPlanner.GCSViews
             // 
             // FlightData
             // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.boatStatusPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.tableLayoutPanel7);
             this.Controls.Add(this.button1);
@@ -3555,7 +3562,6 @@ namespace MissionPlanner.GCSViews
             this.Controls.Add(this.LightCTRLBtn);
             this.Controls.Add(this.AutoPan);
             this.Controls.Add(this.myButton11);
-            resources.ApplyResources(this, "$this");
             this.Name = "FlightData";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightData_FormClosing);
             this.Load += new System.EventHandler(this.FlightData_Load);
@@ -3617,7 +3623,6 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableMap.ResumeLayout(false);
             this.tableMap.PerformLayout();
-            this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -3938,6 +3943,8 @@ namespace MissionPlanner.GCSViews
         private Controls.MyButton myButton14;
         private Controls.MyButton myButton13;
         private Panel panel3;
+        private BrightIdeasSoftware.BarRenderer barRenderer1;
+        private Panel boatStatusPanel;
         private Controls.MyButton myButton15;
         private Controls.MyButton myButton17;
         private Controls.MyButton myButton16;

@@ -243,6 +243,7 @@ namespace MissionPlanner
             this.Controls.Add(this.ConnectButtt);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menu);
+            this.ForeColor = System.Drawing.Color.White;
             this.KeyPreview = true;
             this.MainMenuStrip = this.MainMenu;
             this.Name = "MainV2";

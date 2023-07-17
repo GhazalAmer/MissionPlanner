@@ -27,6 +27,25 @@ namespace MissionPlanner
         void setup()
         {
 
+            n2k_client = new UdpClient(N2K_PORT);
+            n2k_client.Client.ReceiveTimeout = 2000;
+            RemoteIpEndPoint = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
+
+
+            connect_msg = Encoding.ASCII.GetBytes("Can i get a cake");
+
+            try
+            {
+                n2k_client.Connect(N2K_IP, N2K_PORT);
+                n2k_client.Send(connect_msg, connect_msg.Length);
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+
+            }
+
             tBoatView = new System.Threading.Thread(new System.Threading.ThreadStart(mainLoop))
             {
                 IsBackground = true,
@@ -36,12 +55,16 @@ namespace MissionPlanner
 
         }
 
+        int N2K_PORT = 8080;                     // Will be Overridden by Text File
+        string N2K_IP = "192.168.1.10";     // Will be Overridden by Text File
+        UdpClient n2k_client;
+        System.Net.IPEndPoint RemoteIpEndPoint;
+        Byte[] connect_msg;
+        
+
 
         void mainLoop()
         {
-            int N2K_PORT = 8080;                     // Will be Overridden by Text File
-            string N2K_IP = "192.168.1.10";     // Will be Overridden by Text File
-
             //char[] delimiterChars = { '=', '{', '}', ',', ':' };
 
             //StreamReader reader = File.OpenText("SETTINGS.txt");
@@ -59,26 +82,7 @@ namespace MissionPlanner
             //    }
             //}
 
-            UdpClient n2k_client = new UdpClient(N2K_PORT);
-            n2k_client.Client.ReceiveTimeout = 2000;
-            System.Net.IPEndPoint RemoteIpEndPoint = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
-
             bool oklol = false;
-
-            Byte[] connect_msg = Encoding.ASCII.GetBytes("Can i get a cake");
-
-            try
-            {
-                n2k_client.Connect(N2K_IP, N2K_PORT);
-                n2k_client.Send(connect_msg, connect_msg.Length);
-            }
-
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-
-            }
-
             while (true)
             {
 

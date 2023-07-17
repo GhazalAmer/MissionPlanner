@@ -1,5 +1,7 @@
 ﻿using System.Windows.Forms;
+using GMap.NET.MapProviders;
 using MissionPlanner.Controls;
+using MissionPlanner.Joystick;
 
 namespace MissionPlanner.GCSViews
 {
@@ -134,6 +136,7 @@ namespace MissionPlanner.GCSViews
             this.DrawBTN = new MissionPlanner.Controls.MyButton();
             this.MeasureBTN = new MissionPlanner.Controls.MyButton();
             this.Joystick_Panel = new System.Windows.Forms.Panel();
+            this.joy = new MissionPlanner.Joystick.JoystickSetup();
             this.FormatPanel = new System.Windows.Forms.Panel();
             this.myButton17 = new MissionPlanner.Controls.MyButton();
             this.myButton16 = new MissionPlanner.Controls.MyButton();
@@ -262,6 +265,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel8.SuspendLayout();
             this.measurePanel.SuspendLayout();
             this.ToolsTable.SuspendLayout();
+            this.Joystick_Panel.SuspendLayout();
             this.FormatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.PlaceAfterPanel.SuspendLayout();
@@ -1136,9 +1140,16 @@ namespace MissionPlanner.GCSViews
             // 
             // Joystick_Panel
             // 
+            this.Joystick_Panel.Controls.Add(this.joy);
             resources.ApplyResources(this.Joystick_Panel, "Joystick_Panel");
             this.Joystick_Panel.Name = "Joystick_Panel";
             this.Joystick_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Joystick_Panel_Paint);
+            // 
+            // joy
+            // 
+            resources.ApplyResources(this.joy, "joy");
+            this.joy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.joy.Name = "joy";
             // 
             // FormatPanel
             // 
@@ -1685,6 +1696,8 @@ namespace MissionPlanner.GCSViews
             this.MainMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MainMap.ShowTileGridLines = false;
             this.MainMap.Zoom = 0D;
+            this.MainMap.Load += new System.EventHandler(this.MainMap_Load);
+            this.MainMap.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMap_Paint_1);
             // 
             // tableLayoutPanel1
             // 
@@ -2188,6 +2201,7 @@ namespace MissionPlanner.GCSViews
             this.measurePanel.PerformLayout();
             this.ToolsTable.ResumeLayout(false);
             this.ToolsTable.PerformLayout();
+            this.Joystick_Panel.ResumeLayout(false);
             this.FormatPanel.ResumeLayout(false);
             this.FormatPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -2431,5 +2445,6 @@ namespace MissionPlanner.GCSViews
         private ContextMenuStrip contextMenuStripZoom;
         public ContextMenuStrip contextMenuStripPoly;
         private ToolStripMenuItem gDALOpacityToolStripMenuItem;
+        private JoystickSetup joy;
     }
 }

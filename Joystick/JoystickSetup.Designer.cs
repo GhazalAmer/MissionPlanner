@@ -33,59 +33,464 @@ namespace MissionPlanner.Joystick
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JoystickSetup));
-            this.chk_manualcontrol = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.AUX_label = new System.Windows.Forms.Label();
+            this.ANCH_label = new System.Windows.Forms.Label();
+            this.ENG_label = new System.Windows.Forms.Label();
+            this.AuxBtn = new System.Windows.Forms.ComboBox();
+            this.AnchUpBtn = new System.Windows.Forms.ComboBox();
+            this.AnchDown = new System.Windows.Forms.ComboBox();
+            this.EngStBtn = new System.Windows.Forms.ComboBox();
+            this.EngStpBtn = new System.Windows.Forms.ComboBox();
+            this.GearState = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.SteerCircBar = new CircularProgressBar.CircularProgressBar();
+            this.ThrottleCircBar = new CircularProgressBar.CircularProgressBar();
             this.label14 = new System.Windows.Forms.Label();
-            this.BUT_save = new MissionPlanner.Controls.MyButton();
-            this.BUT_enable = new MissionPlanner.Controls.MyButton();
+            this.BUT_detch8 = new MissionPlanner.Controls.MyButton();
+            this.revCH8 = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.expo_ch8 = new System.Windows.Forms.TextBox();
+            this.ProgressBarCH8 = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.CMB_CH8 = new System.Windows.Forms.ComboBox();
+            this.BUT_detch7 = new MissionPlanner.Controls.MyButton();
+            this.revCH7 = new System.Windows.Forms.CheckBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.expo_ch7 = new System.Windows.Forms.TextBox();
+            this.ProgressBarCH7 = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.CMB_CH7 = new System.Windows.Forms.ComboBox();
+            this.BUT_detch6 = new MissionPlanner.Controls.MyButton();
+            this.revCH6 = new System.Windows.Forms.CheckBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.expo_ch6 = new System.Windows.Forms.TextBox();
+            this.ProgressBarCH6 = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.CMB_CH6 = new System.Windows.Forms.ComboBox();
+            this.BUT_detch5 = new MissionPlanner.Controls.MyButton();
+            this.revCH5 = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.expo_ch5 = new System.Windows.Forms.TextBox();
+            this.ProgressBarCH5 = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.CMB_CH5 = new System.Windows.Forms.ComboBox();
             this.CHK_elevons = new System.Windows.Forms.CheckBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.BUT_detch4 = new MissionPlanner.Controls.MyButton();
+            this.BUT_detch3 = new MissionPlanner.Controls.MyButton();
+            this.BUT_detch2 = new MissionPlanner.Controls.MyButton();
+            this.BUT_detch1 = new MissionPlanner.Controls.MyButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.BUT_enable = new MissionPlanner.Controls.MyButton();
+            this.BUT_save = new MissionPlanner.Controls.MyButton();
+            this.revCH4 = new System.Windows.Forms.CheckBox();
+            this.revCH3 = new System.Windows.Forms.CheckBox();
+            this.revCH2 = new System.Windows.Forms.CheckBox();
+            this.revCH1 = new System.Windows.Forms.CheckBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.expo_ch4 = new System.Windows.Forms.TextBox();
+            this.expo_ch3 = new System.Windows.Forms.TextBox();
+            this.expo_ch2 = new System.Windows.Forms.TextBox();
+            this.expo_ch1 = new System.Windows.Forms.TextBox();
+            this.progressBarRudder = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.progressBarThrottle = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.progressBarPith = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.progressBarRoll = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.CMB_CH4 = new System.Windows.Forms.ComboBox();
+            this.CMB_CH3 = new System.Windows.Forms.ComboBox();
+            this.CMB_CH2 = new System.Windows.Forms.ComboBox();
+            this.CMB_CH1 = new System.Windows.Forms.ComboBox();
             this.CMB_joysticks = new System.Windows.Forms.ComboBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // chk_manualcontrol
+            // label17
             // 
-            resources.ApplyResources(this.chk_manualcontrol, "chk_manualcontrol");
-            this.chk_manualcontrol.Name = "chk_manualcontrol";
-            this.chk_manualcontrol.UseVisualStyleBackColor = true;
-            this.chk_manualcontrol.CheckedChanged += new System.EventHandler(this.chk_manualcontrol_CheckedChanged);
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Name = "label17";
+            // 
+            // AUX_label
+            // 
+            resources.ApplyResources(this.AUX_label, "AUX_label");
+            this.AUX_label.ForeColor = System.Drawing.Color.White;
+            this.AUX_label.Name = "AUX_label";
+            // 
+            // ANCH_label
+            // 
+            resources.ApplyResources(this.ANCH_label, "ANCH_label");
+            this.ANCH_label.Name = "ANCH_label";
+            // 
+            // ENG_label
+            // 
+            resources.ApplyResources(this.ENG_label, "ENG_label");
+            this.ENG_label.Name = "ENG_label";
+            // 
+            // AuxBtn
+            // 
+            this.AuxBtn.FormattingEnabled = true;
+            this.AuxBtn.Items.AddRange(new object[] {
+            resources.GetString("AuxBtn.Items"),
+            resources.GetString("AuxBtn.Items1"),
+            resources.GetString("AuxBtn.Items2"),
+            resources.GetString("AuxBtn.Items3")});
+            resources.ApplyResources(this.AuxBtn, "AuxBtn");
+            this.AuxBtn.Name = "AuxBtn";
+            // 
+            // AnchUpBtn
+            // 
+            this.AnchUpBtn.FormattingEnabled = true;
+            this.AnchUpBtn.Items.AddRange(new object[] {
+            resources.GetString("AnchUpBtn.Items"),
+            resources.GetString("AnchUpBtn.Items1"),
+            resources.GetString("AnchUpBtn.Items2"),
+            resources.GetString("AnchUpBtn.Items3")});
+            resources.ApplyResources(this.AnchUpBtn, "AnchUpBtn");
+            this.AnchUpBtn.Name = "AnchUpBtn";
+            // 
+            // AnchDown
+            // 
+            this.AnchDown.FormattingEnabled = true;
+            this.AnchDown.Items.AddRange(new object[] {
+            resources.GetString("AnchDown.Items"),
+            resources.GetString("AnchDown.Items1"),
+            resources.GetString("AnchDown.Items2"),
+            resources.GetString("AnchDown.Items3")});
+            resources.ApplyResources(this.AnchDown, "AnchDown");
+            this.AnchDown.Name = "AnchDown";
+            // 
+            // EngStBtn
+            // 
+            this.EngStBtn.FormattingEnabled = true;
+            this.EngStBtn.Items.AddRange(new object[] {
+            resources.GetString("EngStBtn.Items"),
+            resources.GetString("EngStBtn.Items1"),
+            resources.GetString("EngStBtn.Items2"),
+            resources.GetString("EngStBtn.Items3")});
+            resources.ApplyResources(this.EngStBtn, "EngStBtn");
+            this.EngStBtn.Name = "EngStBtn";
+            // 
+            // EngStpBtn
+            // 
+            this.EngStpBtn.FormattingEnabled = true;
+            this.EngStpBtn.Items.AddRange(new object[] {
+            resources.GetString("EngStpBtn.Items"),
+            resources.GetString("EngStpBtn.Items1"),
+            resources.GetString("EngStpBtn.Items2"),
+            resources.GetString("EngStpBtn.Items3")});
+            resources.ApplyResources(this.EngStpBtn, "EngStpBtn");
+            this.EngStpBtn.Name = "EngStpBtn";
+            // 
+            // GearState
+            // 
+            resources.ApplyResources(this.GearState, "GearState");
+            this.GearState.BackColor = System.Drawing.Color.Gray;
+            this.GearState.ForeColor = System.Drawing.Color.Black;
+            this.GearState.Name = "GearState";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Name = "label16";
+            // 
+            // SteerCircBar
+            // 
+            this.SteerCircBar.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("SteerCircBar.AnimationFunction")));
+            this.SteerCircBar.AnimationSpeed = 500;
+            this.SteerCircBar.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.SteerCircBar, "SteerCircBar");
+            this.SteerCircBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SteerCircBar.InnerColor = System.Drawing.Color.Gray;
+            this.SteerCircBar.InnerMargin = 2;
+            this.SteerCircBar.InnerWidth = -1;
+            this.SteerCircBar.MarqueeAnimationSpeed = 2000;
+            this.SteerCircBar.Maximum = 180;
+            this.SteerCircBar.Name = "SteerCircBar";
+            this.SteerCircBar.OuterColor = System.Drawing.Color.DimGray;
+            this.SteerCircBar.OuterMargin = -25;
+            this.SteerCircBar.OuterWidth = 26;
+            this.SteerCircBar.ProgressColor = System.Drawing.Color.Black;
+            this.SteerCircBar.ProgressWidth = 25;
+            this.SteerCircBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SteerCircBar.StartAngle = 80;
+            this.SteerCircBar.Step = 100;
+            this.SteerCircBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.SteerCircBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.SteerCircBar.SubscriptText = ".23";
+            this.SteerCircBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.SteerCircBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.SteerCircBar.SuperscriptText = "°C";
+            this.SteerCircBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.SteerCircBar.Value = 10;
+            // 
+            // ThrottleCircBar
+            // 
+            this.ThrottleCircBar.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("ThrottleCircBar.AnimationFunction")));
+            this.ThrottleCircBar.AnimationSpeed = 500;
+            this.ThrottleCircBar.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.ThrottleCircBar, "ThrottleCircBar");
+            this.ThrottleCircBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ThrottleCircBar.InnerColor = System.Drawing.Color.Gray;
+            this.ThrottleCircBar.InnerMargin = 2;
+            this.ThrottleCircBar.InnerWidth = -1;
+            this.ThrottleCircBar.MarqueeAnimationSpeed = 2000;
+            this.ThrottleCircBar.Maximum = 180;
+            this.ThrottleCircBar.Name = "ThrottleCircBar";
+            this.ThrottleCircBar.OuterColor = System.Drawing.Color.DimGray;
+            this.ThrottleCircBar.OuterMargin = -25;
+            this.ThrottleCircBar.OuterWidth = 26;
+            this.ThrottleCircBar.ProgressColor = System.Drawing.Color.Red;
+            this.ThrottleCircBar.ProgressWidth = 25;
+            this.ThrottleCircBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThrottleCircBar.StartAngle = 260;
+            this.ThrottleCircBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.ThrottleCircBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.ThrottleCircBar.SubscriptText = "";
+            this.ThrottleCircBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.ThrottleCircBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.ThrottleCircBar.SuperscriptText = "";
+            this.ThrottleCircBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.ThrottleCircBar.Value = 10;
             // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
             // 
-            // BUT_save
+            // BUT_detch8
             // 
-            resources.ApplyResources(this.BUT_save, "BUT_save");
-            this.BUT_save.Name = "BUT_save";
-            this.BUT_save.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.BUT_save.UseVisualStyleBackColor = true;
-            this.BUT_save.Click += new System.EventHandler(this.BUT_save_Click);
+            resources.ApplyResources(this.BUT_detch8, "BUT_detch8");
+            this.BUT_detch8.Name = "BUT_detch8";
+            this.BUT_detch8.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_detch8.UseVisualStyleBackColor = true;
             // 
-            // BUT_enable
+            // revCH8
             // 
-            resources.ApplyResources(this.BUT_enable, "BUT_enable");
-            this.BUT_enable.Name = "BUT_enable";
-            this.BUT_enable.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
-            this.BUT_enable.UseVisualStyleBackColor = true;
-            this.BUT_enable.Click += new System.EventHandler(this.BUT_enable_Click);
+            resources.ApplyResources(this.revCH8, "revCH8");
+            this.revCH8.Name = "revCH8";
+            this.revCH8.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // expo_ch8
+            // 
+            this.expo_ch8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch8, "expo_ch8");
+            this.expo_ch8.Name = "expo_ch8";
+            // 
+            // ProgressBarCH8
+            // 
+            this.ProgressBarCH8.DrawLabel = true;
+            resources.ApplyResources(this.ProgressBarCH8, "ProgressBarCH8");
+            this.ProgressBarCH8.Label = null;
+            this.ProgressBarCH8.Maximum = 2200;
+            this.ProgressBarCH8.maxline = 0;
+            this.ProgressBarCH8.Minimum = 800;
+            this.ProgressBarCH8.minline = 0;
+            this.ProgressBarCH8.Name = "ProgressBarCH8";
+            this.ProgressBarCH8.Value = 800;
+            // 
+            // CMB_CH8
+            // 
+            this.CMB_CH8.FormattingEnabled = true;
+            this.CMB_CH8.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH8.Items"),
+            resources.GetString("CMB_CH8.Items1"),
+            resources.GetString("CMB_CH8.Items2"),
+            resources.GetString("CMB_CH8.Items3")});
+            resources.ApplyResources(this.CMB_CH8, "CMB_CH8");
+            this.CMB_CH8.Name = "CMB_CH8";
+            // 
+            // BUT_detch7
+            // 
+            resources.ApplyResources(this.BUT_detch7, "BUT_detch7");
+            this.BUT_detch7.Name = "BUT_detch7";
+            this.BUT_detch7.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_detch7.UseVisualStyleBackColor = true;
+            // 
+            // revCH7
+            // 
+            resources.ApplyResources(this.revCH7, "revCH7");
+            this.revCH7.Name = "revCH7";
+            this.revCH7.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // expo_ch7
+            // 
+            this.expo_ch7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch7, "expo_ch7");
+            this.expo_ch7.Name = "expo_ch7";
+            // 
+            // ProgressBarCH7
+            // 
+            this.ProgressBarCH7.DrawLabel = true;
+            resources.ApplyResources(this.ProgressBarCH7, "ProgressBarCH7");
+            this.ProgressBarCH7.Label = null;
+            this.ProgressBarCH7.Maximum = 2200;
+            this.ProgressBarCH7.maxline = 0;
+            this.ProgressBarCH7.Minimum = 800;
+            this.ProgressBarCH7.minline = 0;
+            this.ProgressBarCH7.Name = "ProgressBarCH7";
+            this.ProgressBarCH7.Value = 800;
+            // 
+            // CMB_CH7
+            // 
+            this.CMB_CH7.FormattingEnabled = true;
+            this.CMB_CH7.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH7.Items"),
+            resources.GetString("CMB_CH7.Items1"),
+            resources.GetString("CMB_CH7.Items2"),
+            resources.GetString("CMB_CH7.Items3")});
+            resources.ApplyResources(this.CMB_CH7, "CMB_CH7");
+            this.CMB_CH7.Name = "CMB_CH7";
+            // 
+            // BUT_detch6
+            // 
+            resources.ApplyResources(this.BUT_detch6, "BUT_detch6");
+            this.BUT_detch6.Name = "BUT_detch6";
+            this.BUT_detch6.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_detch6.UseVisualStyleBackColor = true;
+            // 
+            // revCH6
+            // 
+            resources.ApplyResources(this.revCH6, "revCH6");
+            this.revCH6.Name = "revCH6";
+            this.revCH6.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // expo_ch6
+            // 
+            this.expo_ch6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch6, "expo_ch6");
+            this.expo_ch6.Name = "expo_ch6";
+            // 
+            // ProgressBarCH6
+            // 
+            this.ProgressBarCH6.DrawLabel = true;
+            resources.ApplyResources(this.ProgressBarCH6, "ProgressBarCH6");
+            this.ProgressBarCH6.Label = null;
+            this.ProgressBarCH6.Maximum = 2200;
+            this.ProgressBarCH6.maxline = 0;
+            this.ProgressBarCH6.Minimum = 800;
+            this.ProgressBarCH6.minline = 0;
+            this.ProgressBarCH6.Name = "ProgressBarCH6";
+            this.ProgressBarCH6.Value = 800;
+            // 
+            // CMB_CH6
+            // 
+            this.CMB_CH6.FormattingEnabled = true;
+            this.CMB_CH6.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH6.Items"),
+            resources.GetString("CMB_CH6.Items1"),
+            resources.GetString("CMB_CH6.Items2"),
+            resources.GetString("CMB_CH6.Items3")});
+            resources.ApplyResources(this.CMB_CH6, "CMB_CH6");
+            this.CMB_CH6.Name = "CMB_CH6";
+            // 
+            // BUT_detch5
+            // 
+            resources.ApplyResources(this.BUT_detch5, "BUT_detch5");
+            this.BUT_detch5.Name = "BUT_detch5";
+            this.BUT_detch5.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_detch5.UseVisualStyleBackColor = true;
+            // 
+            // revCH5
+            // 
+            resources.ApplyResources(this.revCH5, "revCH5");
+            this.revCH5.Name = "revCH5";
+            this.revCH5.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // expo_ch5
+            // 
+            this.expo_ch5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch5, "expo_ch5");
+            this.expo_ch5.Name = "expo_ch5";
+            // 
+            // ProgressBarCH5
+            // 
+            this.ProgressBarCH5.DrawLabel = true;
+            resources.ApplyResources(this.ProgressBarCH5, "ProgressBarCH5");
+            this.ProgressBarCH5.Label = null;
+            this.ProgressBarCH5.Maximum = 2200;
+            this.ProgressBarCH5.maxline = 0;
+            this.ProgressBarCH5.Minimum = 800;
+            this.ProgressBarCH5.minline = 0;
+            this.ProgressBarCH5.Name = "ProgressBarCH5";
+            this.ProgressBarCH5.Value = 800;
+            // 
+            // CMB_CH5
+            // 
+            this.CMB_CH5.FormattingEnabled = true;
+            this.CMB_CH5.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH5.Items"),
+            resources.GetString("CMB_CH5.Items1"),
+            resources.GetString("CMB_CH5.Items2"),
+            resources.GetString("CMB_CH5.Items3")});
+            resources.ApplyResources(this.CMB_CH5, "CMB_CH5");
+            this.CMB_CH5.Name = "CMB_CH5";
             // 
             // CHK_elevons
             // 
             resources.ApplyResources(this.CHK_elevons, "CHK_elevons");
             this.CHK_elevons.Name = "CHK_elevons";
             this.CHK_elevons.UseVisualStyleBackColor = true;
-            this.CHK_elevons.CheckedChanged += new System.EventHandler(this.CHK_elevons_CheckedChanged);
             // 
-            // timer1
+            // BUT_detch4
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            resources.ApplyResources(this.BUT_detch4, "BUT_detch4");
+            this.BUT_detch4.Name = "BUT_detch4";
+            this.BUT_detch4.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_detch4.UseVisualStyleBackColor = true;
+            // 
+            // BUT_detch3
+            // 
+            this.BUT_detch3.BGGradBot = System.Drawing.Color.DimGray;
+            this.BUT_detch3.BGGradTop = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.BUT_detch3, "BUT_detch3");
+            this.BUT_detch3.Name = "BUT_detch3";
+            this.BUT_detch3.Outline = System.Drawing.Color.Black;
+            this.BUT_detch3.TextColor = System.Drawing.Color.Black;
+            this.BUT_detch3.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.BUT_detch3.UseVisualStyleBackColor = true;
+            // 
+            // BUT_detch2
+            // 
+            resources.ApplyResources(this.BUT_detch2, "BUT_detch2");
+            this.BUT_detch2.Name = "BUT_detch2";
+            this.BUT_detch2.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
+            this.BUT_detch2.UseVisualStyleBackColor = true;
+            // 
+            // BUT_detch1
+            // 
+            this.BUT_detch1.BGGradBot = System.Drawing.Color.DimGray;
+            this.BUT_detch1.BGGradTop = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.BUT_detch1, "BUT_detch1");
+            this.BUT_detch1.Name = "BUT_detch1";
+            this.BUT_detch1.Outline = System.Drawing.Color.Black;
+            this.BUT_detch1.TextColor = System.Drawing.Color.Black;
+            this.BUT_detch1.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.BUT_detch1.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -110,30 +515,237 @@ namespace MissionPlanner.Joystick
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
+            // 
+            // BUT_enable
+            // 
+            this.BUT_enable.BGGradBot = System.Drawing.Color.DimGray;
+            this.BUT_enable.BGGradTop = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.BUT_enable, "BUT_enable");
+            this.BUT_enable.Name = "BUT_enable";
+            this.BUT_enable.Outline = System.Drawing.Color.Black;
+            this.BUT_enable.TextColor = System.Drawing.Color.Black;
+            this.BUT_enable.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.BUT_enable.UseVisualStyleBackColor = true;
+            // 
+            // BUT_save
+            // 
+            this.BUT_save.BGGradBot = System.Drawing.Color.DimGray;
+            this.BUT_save.BGGradTop = System.Drawing.Color.DarkGray;
+            resources.ApplyResources(this.BUT_save, "BUT_save");
+            this.BUT_save.Name = "BUT_save";
+            this.BUT_save.Outline = System.Drawing.Color.Black;
+            this.BUT_save.TextColor = System.Drawing.Color.Black;
+            this.BUT_save.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.BUT_save.UseVisualStyleBackColor = true;
+            // 
+            // revCH4
+            // 
+            resources.ApplyResources(this.revCH4, "revCH4");
+            this.revCH4.Name = "revCH4";
+            this.revCH4.UseVisualStyleBackColor = true;
+            // 
+            // revCH3
+            // 
+            resources.ApplyResources(this.revCH3, "revCH3");
+            this.revCH3.Name = "revCH3";
+            this.revCH3.UseVisualStyleBackColor = true;
+            // 
+            // revCH2
+            // 
+            resources.ApplyResources(this.revCH2, "revCH2");
+            this.revCH2.Name = "revCH2";
+            this.revCH2.UseVisualStyleBackColor = true;
+            // 
+            // revCH1
+            // 
+            resources.ApplyResources(this.revCH1, "revCH1");
+            this.revCH1.Name = "revCH1";
+            this.revCH1.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Name = "label15";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // expo_ch4
+            // 
+            this.expo_ch4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch4, "expo_ch4");
+            this.expo_ch4.Name = "expo_ch4";
+            // 
+            // expo_ch3
+            // 
+            this.expo_ch3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch3, "expo_ch3");
+            this.expo_ch3.Name = "expo_ch3";
+            // 
+            // expo_ch2
+            // 
+            this.expo_ch2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch2, "expo_ch2");
+            this.expo_ch2.Name = "expo_ch2";
+            // 
+            // expo_ch1
+            // 
+            this.expo_ch1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.expo_ch1, "expo_ch1");
+            this.expo_ch1.Name = "expo_ch1";
+            // 
+            // progressBarRudder
+            // 
+            this.progressBarRudder.DrawLabel = true;
+            resources.ApplyResources(this.progressBarRudder, "progressBarRudder");
+            this.progressBarRudder.Label = null;
+            this.progressBarRudder.Maximum = 2200;
+            this.progressBarRudder.maxline = 0;
+            this.progressBarRudder.Minimum = 800;
+            this.progressBarRudder.minline = 0;
+            this.progressBarRudder.Name = "progressBarRudder";
+            this.progressBarRudder.Value = 800;
+            // 
+            // progressBarThrottle
+            // 
+            this.progressBarThrottle.DrawLabel = true;
+            resources.ApplyResources(this.progressBarThrottle, "progressBarThrottle");
+            this.progressBarThrottle.Label = null;
+            this.progressBarThrottle.Maximum = 2200;
+            this.progressBarThrottle.maxline = 0;
+            this.progressBarThrottle.Minimum = 800;
+            this.progressBarThrottle.minline = 0;
+            this.progressBarThrottle.Name = "progressBarThrottle";
+            this.progressBarThrottle.Value = 800;
+            // 
+            // progressBarPith
+            // 
+            this.progressBarPith.DrawLabel = true;
+            resources.ApplyResources(this.progressBarPith, "progressBarPith");
+            this.progressBarPith.Label = null;
+            this.progressBarPith.Maximum = 2200;
+            this.progressBarPith.maxline = 0;
+            this.progressBarPith.Minimum = 800;
+            this.progressBarPith.minline = 0;
+            this.progressBarPith.Name = "progressBarPith";
+            this.progressBarPith.Value = 800;
+            // 
+            // progressBarRoll
+            // 
+            this.progressBarRoll.DrawLabel = true;
+            resources.ApplyResources(this.progressBarRoll, "progressBarRoll");
+            this.progressBarRoll.Label = null;
+            this.progressBarRoll.Maximum = 2200;
+            this.progressBarRoll.maxline = 0;
+            this.progressBarRoll.Minimum = 800;
+            this.progressBarRoll.minline = 0;
+            this.progressBarRoll.Name = "progressBarRoll";
+            this.progressBarRoll.Value = 800;
+            // 
+            // CMB_CH4
+            // 
+            this.CMB_CH4.FormattingEnabled = true;
+            this.CMB_CH4.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH4.Items"),
+            resources.GetString("CMB_CH4.Items1"),
+            resources.GetString("CMB_CH4.Items2"),
+            resources.GetString("CMB_CH4.Items3")});
+            resources.ApplyResources(this.CMB_CH4, "CMB_CH4");
+            this.CMB_CH4.Name = "CMB_CH4";
+            // 
+            // CMB_CH3
+            // 
+            this.CMB_CH3.FormattingEnabled = true;
+            this.CMB_CH3.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH3.Items"),
+            resources.GetString("CMB_CH3.Items1"),
+            resources.GetString("CMB_CH3.Items2"),
+            resources.GetString("CMB_CH3.Items3")});
+            resources.ApplyResources(this.CMB_CH3, "CMB_CH3");
+            this.CMB_CH3.Name = "CMB_CH3";
+            // 
+            // CMB_CH2
+            // 
+            this.CMB_CH2.FormattingEnabled = true;
+            this.CMB_CH2.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH2.Items"),
+            resources.GetString("CMB_CH2.Items1"),
+            resources.GetString("CMB_CH2.Items2"),
+            resources.GetString("CMB_CH2.Items3")});
+            resources.ApplyResources(this.CMB_CH2, "CMB_CH2");
+            this.CMB_CH2.Name = "CMB_CH2";
+            // 
+            // CMB_CH1
+            // 
+            this.CMB_CH1.FormattingEnabled = true;
+            this.CMB_CH1.Items.AddRange(new object[] {
+            resources.GetString("CMB_CH1.Items"),
+            resources.GetString("CMB_CH1.Items1"),
+            resources.GetString("CMB_CH1.Items2"),
+            resources.GetString("CMB_CH1.Items3")});
+            resources.ApplyResources(this.CMB_CH1, "CMB_CH1");
+            this.CMB_CH1.Name = "CMB_CH1";
             // 
             // CMB_joysticks
             // 
             this.CMB_joysticks.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_joysticks, "CMB_joysticks");
             this.CMB_joysticks.Name = "CMB_joysticks";
-            this.CMB_joysticks.SelectedIndexChanged += new System.EventHandler(this.CMB_joysticks_SelectedIndexChanged);
-            this.CMB_joysticks.Click += new System.EventHandler(this.CMB_joysticks_Click);
+            this.CMB_joysticks.SelectedIndexChanged += new System.EventHandler(this.CMB_joysticks_SelectedIndexChanged_1);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // JoystickSetup
             // 
-            this.Controls.Add(this.chk_manualcontrol);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.CHK_elevons);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.AUX_label);
+            this.Controls.Add(this.ANCH_label);
+            this.Controls.Add(this.ENG_label);
+            this.Controls.Add(this.GearState);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.SteerCircBar);
+            this.Controls.Add(this.ThrottleCircBar);
+            this.Controls.Add(this.BUT_detch3);
+            this.Controls.Add(this.BUT_detch1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.BUT_enable);
             this.Controls.Add(this.BUT_save);
+            this.Controls.Add(this.revCH3);
+            this.Controls.Add(this.revCH1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CMB_CH3);
+            this.Controls.Add(this.CMB_CH1);
             this.Controls.Add(this.CMB_joysticks);
-            resources.ApplyResources(this, "$this");
             this.Name = "JoystickSetup";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.JoystickSetup_FormClosed);
             this.Load += new System.EventHandler(this.Joystick_Load);
@@ -145,17 +757,78 @@ namespace MissionPlanner.Joystick
 
         #endregion
 
-        private CheckBox chk_manualcontrol;
+        private Label label17;
+        private Label AUX_label;
+        private Label ANCH_label;
+        private Label ENG_label;
+        private ComboBox AuxBtn;
+        private ComboBox AnchUpBtn;
+        private ComboBox AnchDown;
+        private ComboBox EngStBtn;
+        private ComboBox EngStpBtn;
+        private Label GearState;
+        private Label label16;
+        private CircularProgressBar.CircularProgressBar SteerCircBar;
+        private CircularProgressBar.CircularProgressBar ThrottleCircBar;
         private Label label14;
-        private MyButton BUT_save;
-        private MyButton BUT_enable;
+        private MyButton BUT_detch8;
+        private CheckBox revCH8;
+        private Label label13;
+        private TextBox expo_ch8;
+        private HorizontalProgressBar ProgressBarCH8;
+        private ComboBox CMB_CH8;
+        private MyButton BUT_detch7;
+        private CheckBox revCH7;
+        private Label label12;
+        private TextBox expo_ch7;
+        private HorizontalProgressBar ProgressBarCH7;
+        private ComboBox CMB_CH7;
+        private MyButton BUT_detch6;
+        private CheckBox revCH6;
+        private Label label11;
+        private TextBox expo_ch6;
+        private HorizontalProgressBar ProgressBarCH6;
+        private ComboBox CMB_CH6;
+        private MyButton BUT_detch5;
+        private CheckBox revCH5;
+        private Label label10;
+        private TextBox expo_ch5;
+        private HorizontalProgressBar ProgressBarCH5;
+        private ComboBox CMB_CH5;
         private CheckBox CHK_elevons;
-        private Timer timer1;
+        private MyButton BUT_detch4;
+        private MyButton BUT_detch3;
+        private MyButton BUT_detch2;
+        private MyButton BUT_detch1;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
         private Label label5;
+        private MyButton BUT_enable;
+        private MyButton BUT_save;
+        private CheckBox revCH4;
+        private CheckBox revCH3;
+        private CheckBox revCH2;
+        private CheckBox revCH1;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label15;
+        private Label label1;
+        private TextBox expo_ch4;
+        private TextBox expo_ch3;
+        private TextBox expo_ch2;
+        private TextBox expo_ch1;
+        private HorizontalProgressBar progressBarRudder;
+        private HorizontalProgressBar progressBarThrottle;
+        private HorizontalProgressBar progressBarPith;
+        private HorizontalProgressBar progressBarRoll;
+        private ComboBox CMB_CH4;
+        private ComboBox CMB_CH3;
+        private ComboBox CMB_CH2;
+        private ComboBox CMB_CH1;
         private ComboBox CMB_joysticks;
+        private Timer timer1;
     }
 }

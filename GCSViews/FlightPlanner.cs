@@ -2252,7 +2252,7 @@ namespace MissionPlanner.GCSViews
                     }
                 }
 
-                MainMap.MapProvider = (GMapProvider)comboBoxMapType.SelectedItem;
+                MainMap.MapProvider = (GMapProvider)comboBoxMapType.SelectedItem;                
                 if (FlightData.mymap != null)
                     FlightData.mymap.MapProvider = (GMapProvider)comboBoxMapType.SelectedItem;
                 Settings.Instance["MapType"] = comboBoxMapType.Text;
@@ -3499,14 +3499,14 @@ namespace MissionPlanner.GCSViews
             objForm.Show();
             //////////////////////////////////////////////////
             /////////////////////////////////////////////////
-            MyUserControl joy = new JoystickSetup();
-            ThemeManager.ApplyThemeTo(joy);
-            joy.Show();
+            /*MyUserControl joy = new JoystickSetup();
+            ThemeManager.ApplyThemeTo(joy);*/
+            /*joy.Show();*/
             /*joy.TopLevel = false;*/
-            Joystick_Panel.Controls.Add(joy);
+            /*Joystick_Panel.Controls.Add(joy);*/
             /*joy.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;*/
-            joy.Dock = DockStyle.Fill;
-            joy.Show();
+            /*joy.Dock = DockStyle.Fill;
+            joy.Show();*/
             //////////////////////////////////////////////////
             ////////////////////////////////////////////////////
             Form fllowmeform = new FollowMe();
@@ -8776,11 +8776,11 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
                      drawnpolygonsoverlay.Polygons.Add(drawnpolygon);
 
-                     Joysticknutton.UpdatePolygonLocalPosition(drawnpolygon);
+                     MainMap.UpdatePolygonLocalPosition(drawnpolygon);
 
-                     Joysticknutton.Invalidate();
+                     MainMap.Invalidate();
 
-                     Joysticknutton.ZoomAndCenterMarkers(drawnpolygonsoverlay.Id);*/
+                     MainMap.ZoomAndCenterMarkers(drawnpolygonsoverlay.Id);*/
                 }
             }
         }
@@ -9368,6 +9368,88 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
             PlaceAfterPanel.Visible = false;
             Show_BTNs();
+        }
+
+        private void MainMap_Paint_1(object sender, PaintEventArgs e)
+        {
+            // draw utm grid
+            {
+                if (!grid)
+                    return;
+
+                if (MainMap.Zoom < 10)
+                    return;
+
+                var rect = MainMap.ViewArea;
+
+                var plla1 = new PointLatLngAlt(rect.LocationTopLeft);
+                var plla2 = new PointLatLngAlt(rect.LocationRightBottom);
+
+                var zone = plla1.GetUTMZone();
+
+                var utm1 = plla1.ToUTM(zone);
+                var utm2 = plla2.ToUTM(zone);
+
+                var deltax = utm1[0] - utm2[0];
+                var deltay = utm1[1] - utm2[1];
+
+                //if (deltax)
+
+                var gridsize = 1000.0;
+
+
+                if (Math.Abs(deltax) / 100000 < 40)
+                    gridsize = 100000;
+
+                if (Math.Abs(deltax) / 10000 < 40)
+                    gridsize = 10000;
+
+                if (Math.Abs(deltax) / 1000 < 40)
+                    gridsize = 1000;
+
+                if (Math.Abs(deltax) / 100 < 40)
+                    gridsize = 100;
+
+
+
+                // round it - x
+                utm1[0] = utm1[0] - (utm1[0] % gridsize);
+                // y
+                utm2[1] = utm2[1] - (utm2[1] % gridsize);
+
+                // x's
+                for (double x = utm1[0]; x < utm2[0]; x += gridsize)
+                {
+                    var p1 = MainMap.FromLatLngToLocal(PointLatLngAlt.FromUTM(zone, x, utm1[1]));
+                    var p2 = MainMap.FromLatLngToLocal(PointLatLngAlt.FromUTM(zone, x, utm2[1]));
+
+                    int x1 = (int)p1.X;
+                    int y1 = (int)p1.Y;
+                    int x2 = (int)p2.X;
+                    int y2 = (int)p2.Y;
+
+                    e.Graphics.DrawLine(new Pen(MainMap.SelectionPen.Color, 1), x1, y1, x2, y2);
+                }
+
+                // y's
+                for (double y = utm2[1]; y < utm1[1]; y += gridsize)
+                {
+                    var p1 = MainMap.FromLatLngToLocal(PointLatLngAlt.FromUTM(zone, utm1[0], y));
+                    var p2 = MainMap.FromLatLngToLocal(PointLatLngAlt.FromUTM(zone, utm2[0], y));
+
+                    int x1 = (int)p1.X;
+                    int y1 = (int)p1.Y;
+                    int x2 = (int)p2.X;
+                    int y2 = (int)p2.Y;
+
+                    e.Graphics.DrawLine(new Pen(MainMap.SelectionPen.Color, 1), x1, y1, x2, y2);
+                }
+            }
+        }
+
+        private void MainMap_Load(object sender, EventArgs e)
+        {
+            MainMap.MapProvider = GoogleMapProvider.Instance;
         }
     }
 }
