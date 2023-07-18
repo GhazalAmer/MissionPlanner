@@ -3499,14 +3499,13 @@ namespace MissionPlanner.GCSViews
             objForm.Show();
             //////////////////////////////////////////////////
             /////////////////////////////////////////////////
-            /*MyUserControl joy = new JoystickSetup();
-            ThemeManager.ApplyThemeTo(joy);*/
-            /*joy.Show();*/
+            MyUserControl joy = new JoystickSetup();
+            ThemeManager.ApplyThemeTo(joy);
             /*joy.TopLevel = false;*/
-            /*Joystick_Panel.Controls.Add(joy);*/
+            Joystick_Panel.Controls.Add(joy);
             /*joy.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;*/
-            /*joy.Dock = DockStyle.Fill;
-            joy.Show();*/
+            joy.Dock = DockStyle.Fill;
+            joy.Show();
             //////////////////////////////////////////////////
             ////////////////////////////////////////////////////
             Form fllowmeform = new FollowMe();
@@ -8228,12 +8227,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void BUT_write_Click_1(object sender, EventArgs e)
         {
-            uploadwps();
+            BUT_write_Click(this, EventArgs.Empty);
         }
 
         private void myButton21_Click(object sender, EventArgs e)
         {
-            uploadwps();
+            BUT_write_Click(this, EventArgs.Empty);
 
 
             update_main_list_of_polys();
@@ -9450,6 +9449,20 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void MainMap_Load(object sender, EventArgs e)
         {
             MainMap.MapProvider = GoogleMapProvider.Instance;
+        }
+
+        private void HOMECLICK_Click(object sender, EventArgs e)
+        {
+            if (MainV2.comPort.MAV.cs.lat != 0)
+            {
+                TXT_homealt.Text = (MainV2.comPort.MAV.cs.altasl).ToString("0");
+                TXT_homelat.Text = MainV2.comPort.MAV.cs.lat.ToString();
+                TXT_homelng.Text = MainV2.comPort.MAV.cs.lng.ToString();
+            }
+            else
+            {
+                CustomMessageBox.Show("If you're at the field, connect to your APM and wait for GPS lock. Then click 'Home Location' link to set home to your location");
+            }
         }
     }
 }
