@@ -6400,19 +6400,11 @@ namespace MissionPlanner.GCSViews
         private void myButton10_Click(object sender, EventArgs e)
         {
 
-            if (panel9.Visible == true)
-            {
-                panel9.Visible = false;
-            }
-            else
-            {
-                panel9.Visible = true;
-            }
-
+            panel9.Visible = !panel9.Visible;
             try
             {
                 ((Button)sender).Enabled = false;
-                MainV2.comPort.setMode("ANCHOR");
+                MainV2.comPort.setMode("RTL");
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
@@ -6831,7 +6823,7 @@ namespace MissionPlanner.GCSViews
 
         private void gMapControl1_Load(object sender, EventArgs e)
         {
-            gMapControl1.MapProvider = GoogleMapProvider.Instance;
+            gMapControl1.MapProvider = GoogleSatelliteMapProvider.Instance;
             gMapControl1.Zoom = 0D;
         }
 

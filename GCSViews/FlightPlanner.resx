@@ -420,9 +420,6 @@
   <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <metadata name="currentStateBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>906, 17</value>
-  </metadata>
   <data name="myButton11.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
@@ -462,9 +459,6 @@
   <data name="&gt;&gt;myButton11.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="currentStateBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>906, 17</value>
-  </metadata>
   <data name="myButton10.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
@@ -490,7 +484,7 @@
     <value>55</value>
   </data>
   <data name="myButton10.Text" xml:space="preserve">
-    <value>Anchor</value>
+    <value>RTL</value>
   </data>
   <data name="&gt;&gt;myButton10.Name" xml:space="preserve">
     <value>myButton10</value>
@@ -582,6 +576,9 @@
   <data name="&gt;&gt;myButton8.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="currentStateBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>906, 17</value>
+  </metadata>
   <data name="BUT_read.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>

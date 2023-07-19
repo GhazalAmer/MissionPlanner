@@ -2409,7 +2409,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 11340D;
+            this.windDir1.Direction = 12420D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2661,10 +2661,10 @@ namespace MissionPlanner.GCSViews
             // 
             // label7
             // 
+            resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("", this.bindingSource1, "mode", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "mode", true));
-            resources.ApplyResources(this.label7, "label7");
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Name = "label7";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -3196,13 +3196,14 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.Controls.Add(this.myButton14, 7, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label7, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton13, 6, 0);
             this.tableLayoutPanel7.Controls.Add(this.switchview, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.restartroutebutton, 5, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton6, 4, 0);
             this.tableLayoutPanel7.Controls.Add(this.MeasureBTN, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton5, 2, 0);
+            this.tableLayoutPanel7.Controls.Add(this.label7, 3, 0);
+            this.tableLayoutPanel7.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             // 
             // myButton14

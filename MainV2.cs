@@ -1885,6 +1885,7 @@ namespace MissionPlanner
 
                     // set connected icon
                     this.MenuConnect.Image = displayicons.disconnect;
+                    this.ConnectButtt.Text = Strings.DISCONNECTc;
                 });
             }
             catch (Exception ex)
@@ -2535,6 +2536,7 @@ namespace MissionPlanner
                             this.MenuConnect.Image = displayicons.disconnect;
                             this.MenuConnect.Image.Tag = "Disconnect";
                             this.MenuConnect.Text = Strings.DISCONNECTc;
+                            this.ConnectButtt.Text = Strings.DISCONNECTc;
                             _connectionControl.IsConnected(true);
                         });
                     }
@@ -2548,6 +2550,7 @@ namespace MissionPlanner
                             this.MenuConnect.Image = displayicons.connect;
                             this.MenuConnect.Image.Tag = "Connect";
                             this.MenuConnect.Text = Strings.CONNECTc;
+                            this.ConnectButtt.Text = Strings.CONNECTc;
                             _connectionControl.IsConnected(false);
                             if (_connectionStats != null)
                             {

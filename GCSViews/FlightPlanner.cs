@@ -8408,6 +8408,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
+            panel9.Visible = false;
         }
 
         private void myButton9_Click(object sender, EventArgs e)
@@ -8419,6 +8420,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
+            panel9.Visible = false;
         }
 
         private void myButton10_Click(object sender, EventArgs e)
@@ -8426,10 +8428,11 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             try
             {
                 ((Button)sender).Enabled = false;
-                MainV2.comPort.setMode("ANCHOR");
+                MainV2.comPort.setMode("RTL");
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
+
         }
 
         private void EditButton_Click(object sender, EventArgs e)
@@ -9448,7 +9451,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void MainMap_Load(object sender, EventArgs e)
         {
-            MainMap.MapProvider = GoogleMapProvider.Instance;
+            MainMap.MapProvider = GoogleSatelliteMapProvider.Instance;
         }
 
         private void HOMECLICK_Click(object sender, EventArgs e)
