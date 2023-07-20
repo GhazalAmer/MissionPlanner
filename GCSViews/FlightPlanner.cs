@@ -9467,5 +9467,50 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 CustomMessageBox.Show("If you're at the field, connect to your APM and wait for GPS lock. Then click 'Home Location' link to set home to your location");
             }
         }
+
+        private void Deletebu_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+            try
+            {
+                change_wp_key = true;
+                CurentRectMarker = null;
+                GMapMarkerRect rc = markerjustleft;
+                //int answer = int.Parse(rc.InnerMarker.Tag.ToString());
+
+                rc.ResetColor();
+
+                MainMap.Invalidate(false);
+
+                int no = clickedmarker;
+                no = (int)WPNumber.Value;
+                if (no > 0 && no <= Commands.Rows.Count)
+                {
+                    quickadd = true;
+                    Commands.Rows.RemoveAt(no - 1); // home is 0
+                    quickadd = false;
+                    writeKML();
+                    setgradanddistandaz();
+                    if (no > Commands.Rows.Count)
+                    {
+                        no = Commands.Rows.Count;
+                        WPNumber.Value = no;
+                    }
+                    WPNumberUpdate();
+
+                }
+            }
+            catch { CustomMessageBox.Show("error selecting wp, please try again."); }
+            Deletebu.Text = "Delete WP";
+
+            //Refresh_my_PTs();
+
+        }
     }
 }
