@@ -3415,8 +3415,10 @@ namespace MissionPlanner.GCSViews
         public void FlightPlanner_FormClosing(object sender, FormClosingEventArgs e)
         {
             timer1.Stop();
+            threadrun = false;
         }
 
+        Thread thisthread;
         public void FlightPlanner_Load(object sender, EventArgs e)
         {
             quickadd = true;
@@ -3517,15 +3519,84 @@ namespace MissionPlanner.GCSViews
             fllowmeform.Dock = DockStyle.Fill;
             fllowmeform.Show();
             //////////////////////////////////////////////////
-            /*thisthread = new Thread(this.mainloop);
-            thisthread.Name = "FP Mainloop";
-            thisthread.IsBackground = true;
-            this.threadrun = true;
-            thisthread.Start();
-            thisthread.Priority = ThreadPriority.Normal;*/
+            
+            try
+            {
+                thisthread = new Thread(mainloop);
+                thisthread.Name = "FP Mainloop";
+                thisthread.IsBackground = true;
+                thisthread.Start();
+            }
+            catch (NotSupportedException)
+            {
+                mainloop();
+            }
             ////////////
             ///
             MainV2.PolygonsOverlay = new GMapOverlay("MainMapPolys");
+        }
+        public bool threadrun;
+        private void mainloop()
+        {
+            threadrun = true;
+            Thread.Sleep(40);
+            while (this.threadrun)
+            {
+                if (this.IsDisposed)
+                {
+                    threadrun = false;
+                    break;
+                }
+
+                try
+                {
+                    updateBindingSource();
+
+                    /* if (MainV2.comPort.MAV.cs.mode.ToLower() == "manual")
+                      { CustomMessageBox.Show("Hi"); }
+                      if (MainV2.comPort.MAV.cs.mode.ToLower() == "hold")
+                      { CustomMessageBox.Show("No"); }*/
+                }
+                catch { }
+            }
+        }
+        DateTime lastscreenupdate = DateTime.Now;
+        object updateBindingSourcelock = new object();
+        volatile int updateBindingSourcecount;
+
+        public void updateBindingSource()
+        {
+            //  run at 25 hz.
+            if (lastscreenupdate.AddMilliseconds(40) < DateTime.Now)
+            {
+                // this is an attempt to prevent an invoke queue on the binding update on slow machines
+                if (updateBindingSourcecount > 0)
+                    return;
+
+                lock (updateBindingSourcelock)
+                {
+                    updateBindingSourcecount++;
+                }
+
+                // async
+                BeginInvoke((MethodInvoker)delegate
+                {
+                    try
+                    {
+                        if (this.Visible)
+                        {
+                            MainV2.comPort.MAV.cs.UpdateCurrentSettings(currentStateBindingSource.UpdateDataSource(MainV2.comPort.MAV.cs));
+                        }
+                        lastscreenupdate = DateTime.Now;
+
+                    }
+                    catch { }
+                    lock (updateBindingSourcelock)
+                    {
+                        updateBindingSourcecount--;
+                    }
+                });
+            }
         }
 
         /// <summary>
@@ -9512,5 +9583,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             //Refresh_my_PTs();
 
         }
+
+
     }
+
 }
