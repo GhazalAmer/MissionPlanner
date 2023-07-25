@@ -4885,6 +4885,7 @@
     </Content>
     <None Include="Resources\MAP-logo-web.jpg" />
     <None Include="Resources\milkor_boat_3.png" />
+    <None Include="Resources\icon.ico" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
