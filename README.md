@@ -1,5 +1,7 @@
 # MAP Planner
-
+## After you clone this repo you should update submoules to clone ExtLibs included repos
+    cd MissionPlanner
+    git submodule update --init --recursive
 ## (!) This will be the only LOCAL PRIVATE version of the repo and the public one on github will be deleted.
 ## (!) DON"T EVER DO COMMITS ON THE MASTER BRANCH (easier to keep up to date)
 
