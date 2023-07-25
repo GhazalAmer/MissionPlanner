@@ -267,14 +267,14 @@ namespace MissionPlanner
                 Splash.pictureBox1.Visible = false;
             }
 
-            Console.WriteLine("IconFile");
-            if (IconFile != null)
-                Splash.Icon = Icon.FromHandle(((Bitmap) IconFile).GetHicon());
+           // Console.WriteLine("IconFile");
+            //if (IconFile != null)
+                // Splash.Icon = Icon.FromHandle(((Bitmap) IconFile).GetHicon());
 
             string strVersion = File.Exists("version.txt")
                 ? File.ReadAllText("version.txt")
                 : System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            Splash.Text = name + " " + Application.ProductVersion + " build " + strVersion;
+            Splash.Text = "MAP PLANNER ";
             Console.WriteLine("Splash.Show()");
             Splash.Show();
 
