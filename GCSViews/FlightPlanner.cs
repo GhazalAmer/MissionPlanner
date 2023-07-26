@@ -3536,6 +3536,7 @@ namespace MissionPlanner.GCSViews
             MainV2.PolygonsOverlay = new GMapOverlay("MainMapPolys");
         }
         public bool threadrun;
+        DateTime tracklast = DateTime.Now.AddSeconds(0);
         private void mainloop()
         {
             threadrun = true;
@@ -3558,8 +3559,96 @@ namespace MissionPlanner.GCSViews
                       { CustomMessageBox.Show("No"); }*/
                 }
                 catch { }
+
+                // update map - 0.3sec if connected , 2 sec if not connected
+                if (((MainV2.comPort.BaseStream.IsOpen || MainV2.comPort.logreadmode) &&
+                     tracklast.AddSeconds(Settings.Instance.GetDouble("FD_MapUpdateDelay", 0.3)) < DateTime.Now) ||
+                    tracklast.AddSeconds(2) < DateTime.Now)
+                {
+
+                    PointLatLng currentloc = new PointLatLng(MainV2.comPort.MAV.cs.lat, MainV2.comPort.MAV.cs.lng);
+                    MainMap.HoldInvalidation = true;
+
+                    if (MainV2.comPort.MAV.cs.MovingBase != null &&
+                                MainV2.comPort.MAV.cs.MovingBase != PointLatLngAlt.Zero)
+                    {
+                        addMissionRouteMarker(new GMarkerGoogle(currentloc, GMarkerGoogleType.blue_dot)
+                        {
+                            Position = MainV2.comPort.MAV.cs.MovingBase,
+                            ToolTipText = "Moving Base",
+                            ToolTipMode = MarkerTooltipMode.OnMouseOver
+                        });
+                    }
+
+                    // draw all icons for all connected mavs
+                    foreach (var port in MainV2.Comports.ToArray())
+                    {
+                        // draw the mavs seen on this port
+                        foreach (var MAV in port.MAVlist)
+                        {
+                            this.BeginInvokeIfRequired(() =>
+                            {
+                                var marker = Common.getMAVMarker(MAV, routesoverlay);
+
+                                if (marker == null || marker.Position.Lat == 0 && marker.Position.Lng == 0)
+                                    return;
+
+                                addMissionRouteMarker(marker);
+                            });
+                        }
+                    }
+                    prop.Update(MainV2.comPort.MAV.cs.HomeLocation, MainV2.comPort.MAV.cs.Location,
+                                MainV2.comPort.MAV.cs.battery_kmleft);
+                    prop.alt = MainV2.comPort.MAV.cs.alt;
+                    prop.altasl = MainV2.comPort.MAV.cs.altasl;
+                    prop.center = MainMap.Position;
+
+                    MainMap.HoldInvalidation = false;
+
+                    if (MainMap.Visible)
+                    {
+                        this.BeginInvokeIfRequired(() =>
+                        {
+                            MainMap.Invalidate();
+                        });
+                    }
+                    tracklast = DateTime.Now;
+                }
             }
         }
+
+        private void addMissionRouteMarker(GMapMarker marker)
+        {
+            if (marker == null) return;
+
+            this.BeginInvokeIfRequired((Action)delegate
+            {
+                routesoverlay.Markers.InsertSorted(marker, Comparer<GMapMarker>.Create((a, b) =>
+                {
+                    var bvalue = 0;
+                    if (b is GMapMarkerBoat)
+                        bvalue = 0;
+                    else if (b is GMapMarkerRover)
+                        bvalue = 1;
+                    else if (b is GMapMarkerPlane)
+                        bvalue = 2;
+                    else if (b is GMapMarkerQuad)
+                        bvalue = 3;
+
+                    if (a is GMapMarkerBoat)
+                        return 0.CompareTo(bvalue);
+                    else if (a is GMapMarkerRover)
+                        return 1.CompareTo(bvalue);
+                    else if (a is GMapMarkerPlane)
+                        return 2.CompareTo(bvalue);
+                    else if (a is GMapMarkerQuad)
+                        return 3.CompareTo(bvalue);
+
+                    return a.GetType().Name.CompareTo(b.GetType().Name);
+                }));
+            });
+        }
+
         DateTime lastscreenupdate = DateTime.Now;
         object updateBindingSourcelock = new object();
         volatile int updateBindingSourcecount;
