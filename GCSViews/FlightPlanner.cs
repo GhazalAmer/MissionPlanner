@@ -8369,13 +8369,14 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             BUT_saveWPFile.Enabled = true;
             BUT_loadwpfile.Enabled = true;
             ClearClick.Enabled = true;
-            myButton12.Enabled = false;
+           // myButton12.Enabled = false;
             Reversewpbutton.Enabled = true;
         }
 
         private void myButton11_Click(object sender, EventArgs e)
         {
-            panel9.Visible = false;
+            NextWpPanel.Visible = true;
+            panel9.Enabled = false;
         }
 
         private void ToolsBTN_Click(object sender, EventArgs e)
@@ -9673,7 +9674,102 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         }
 
+        private void myButton24_Click(object sender, EventArgs e)
+        {
+            NextWpPanel.Visible = false;
+            panel9.Enabled = true;
+            try
+            {
+                ((Button)sender).Enabled = false;
+                ushort no = (ushort)EngageAutoNumeris.Value;
+                // no = (ushort)((int)no - 1);
+                MainV2.comPort.setWPCurrent(MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid, no); // set nav to
+                panel9.Enabled = true;
+                tableLayoutPanel1.Enabled = true;
+            }
+            catch { CustomMessageBox.Show("Invalid WP number"); }
+            ((Button)sender).Enabled = true;
+            EngageAutoMode();
 
+
+        }
+
+        private void EngageAutoMode()
+        {
+            try
+            {
+                ///////////////
+                MAVLink.mavlink_rc_channels_override_t rc = new MAVLink.mavlink_rc_channels_override_t();
+
+                rc.target_component = MainV2.comPort.MAV.compid;
+                rc.target_system = MainV2.comPort.MAV.sysid;
+                rc.chan1_raw = 1500;
+                rc.chan3_raw = 1500;
+                MainV2.comPort.sendPacket(rc, rc.target_system, rc.target_component);
+                MainV2.comPort.sendPacket(rc, rc.target_system, rc.target_component);
+                ///////////////////
+                MainV2.comPort.setMode("AUTO");
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+
+        }
+
+
+
+
+        private void myButton23_Click(object sender, EventArgs e)
+        {
+            if (NextWpPanel.Visible == true)
+            {
+                NextWpPanel.Visible = false;
+                panel9.Enabled = true;
+
+            }
+            else
+            {
+                NextWpPanel.Visible = true;
+
+
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int num_wps;
+            if (MainV2.comPort.MAV.param["MIS_TOTAL"] != null)
+            {
+                num_wps = int.Parse(MainV2.comPort.MAV.param["MIS_TOTAL"].ToString());
+            }
+            else
+            {
+                num_wps = 0;
+            }
+            if (EngageAutoNumeris.Value > 1) { EngageAutoNumeris.Value = EngageAutoNumeris.Value - 1; }
+            else
+            {
+                EngageAutoNumeris.Value = num_wps - 1;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EngageAutoNumeris.Value = EngageAutoNumeris.Value + 1;
+            int num_wps;
+            if (MainV2.comPort.MAV.param["MIS_TOTAL"] != null)
+            {
+                num_wps = int.Parse(MainV2.comPort.MAV.param["MIS_TOTAL"].ToString());
+            }
+            else
+            {
+                num_wps = 0;
+            }
+            if (EngageAutoNumeris.Value > num_wps - 1)
+            {
+                EngageAutoNumeris.Value = 1;
+            }
+            int no = (int)EngageAutoNumeris.Value;
+        }
     }
 
 }

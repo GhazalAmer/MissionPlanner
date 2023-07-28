@@ -251,10 +251,11 @@ namespace MissionPlanner.GCSViews
             this.EngageAutoNumeris = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.WPNumber = new System.Windows.Forms.NumericUpDown();
             this.GOTOButt = new MissionPlanner.Controls.MyButton();
-            this.WPNumber1 = new System.Windows.Forms.NumericUpDown();
             this.NextWP = new System.Windows.Forms.Button();
             this.BackWP = new System.Windows.Forms.Button();
+            this.WPNumber1 = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.myTrackBar1 = new MissionPlanner.Controls.MyTrackBar();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -297,7 +298,7 @@ namespace MissionPlanner.GCSViews
             this.barRenderer1 = new BrightIdeasSoftware.BarRenderer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.boatStatusPanel = new System.Windows.Forms.Panel();
-            this.WPNumber = new System.Windows.Forms.NumericUpDown();
+            this.myButton19 = new MissionPlanner.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -359,6 +360,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EngageAutoNumeris)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WPNumber1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTrackBar1)).BeginInit();
@@ -366,7 +368,6 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // MainH
@@ -2652,7 +2653,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 12780D;
+            this.windDir1.Direction = 12960D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2906,10 +2907,10 @@ namespace MissionPlanner.GCSViews
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("", this.bindingSource1, "mode", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "mode", true));
+            resources.ApplyResources(this.label7, "label7");
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -3142,6 +3143,18 @@ namespace MissionPlanner.GCSViews
             this.panel4.Controls.Add(this.BackWP);
             this.panel4.Name = "panel4";
             // 
+            // WPNumber
+            // 
+            this.WPNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.WPNumber, "WPNumber");
+            this.WPNumber.ForeColor = System.Drawing.Color.Black;
+            this.WPNumber.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.WPNumber.Name = "WPNumber";
+            // 
             // GOTOButt
             // 
             resources.ApplyResources(this.GOTOButt, "GOTOButt");
@@ -3155,18 +3168,6 @@ namespace MissionPlanner.GCSViews
             this.GOTOButt.TextColorNotEnabled = System.Drawing.Color.White;
             this.GOTOButt.UseVisualStyleBackColor = false;
             this.GOTOButt.Click += new System.EventHandler(this.GOTOButt_Click);
-            // 
-            // WPNumber1
-            // 
-            this.WPNumber1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.WPNumber1, "WPNumber1");
-            this.WPNumber1.ForeColor = System.Drawing.Color.Black;
-            this.WPNumber1.Maximum = new decimal(new int[] {
-            1874919424,
-            2328306,
-            0,
-            0});
-            this.WPNumber1.Name = "WPNumber1";
             // 
             // NextWP
             // 
@@ -3185,6 +3186,18 @@ namespace MissionPlanner.GCSViews
             this.BackWP.Name = "BackWP";
             this.BackWP.UseVisualStyleBackColor = false;
             this.BackWP.Click += new System.EventHandler(this.BackWP_Click);
+            // 
+            // WPNumber1
+            // 
+            this.WPNumber1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.WPNumber1, "WPNumber1");
+            this.WPNumber1.ForeColor = System.Drawing.Color.Black;
+            this.WPNumber1.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.WPNumber1.Name = "WPNumber1";
             // 
             // pictureBox1
             // 
@@ -3459,10 +3472,10 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel7.Controls.Add(this.myButton13, 6, 0);
             this.tableLayoutPanel7.Controls.Add(this.switchview, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.restartroutebutton, 5, 0);
+            this.tableLayoutPanel7.Controls.Add(this.myButton19, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton6, 4, 0);
             this.tableLayoutPanel7.Controls.Add(this.MeasureBTN, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton5, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label7, 3, 0);
             this.tableLayoutPanel7.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             // 
@@ -3583,17 +3596,23 @@ namespace MissionPlanner.GCSViews
             this.boatStatusPanel.ForeColor = System.Drawing.Color.Transparent;
             this.boatStatusPanel.Name = "boatStatusPanel";
             // 
-            // WPNumber
+            // myButton19
             // 
-            this.WPNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.WPNumber, "WPNumber");
-            this.WPNumber.ForeColor = System.Drawing.Color.Black;
-            this.WPNumber.Maximum = new decimal(new int[] {
-            1874919424,
-            2328306,
-            0,
-            0});
-            this.WPNumber.Name = "WPNumber";
+            resources.ApplyResources(this.myButton19, "myButton19");
+            this.myButton19.BackColor = System.Drawing.Color.White;
+            this.myButton19.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton19.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton19.ColorMouseOver = System.Drawing.Color.DimGray;
+            this.myButton19.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "mode", true));
+            this.myButton19.FlatAppearance.BorderSize = 0;
+            this.myButton19.ForeColor = System.Drawing.Color.SteelBlue;
+            this.myButton19.Name = "myButton19";
+            this.myButton19.Outline = System.Drawing.Color.Black;
+            this.myButton19.TabStop = false;
+            this.myButton19.Tag = "";
+            this.myButton19.TextColor = System.Drawing.Color.White;
+            this.myButton19.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton19.UseVisualStyleBackColor = false;
             // 
             // FlightData
             // 
@@ -3601,6 +3620,7 @@ namespace MissionPlanner.GCSViews
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.WPNumber1);
             this.Controls.Add(this.boatStatusPanel);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.tableLayoutPanel7);
             this.Controls.Add(this.button1);
@@ -3701,6 +3721,7 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.EngageAutoNumeris)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WPNumber1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTrackBar1)).EndInit();
@@ -3711,7 +3732,6 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4007,5 +4027,6 @@ namespace MissionPlanner.GCSViews
         private Controls.MyButton myButton16;
         private Controls.MyButton myButton18;
         private NumericUpDown WPNumber;
+        public Controls.MyButton myButton19;
     }
 }
