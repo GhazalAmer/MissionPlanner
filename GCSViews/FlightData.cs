@@ -6335,7 +6335,6 @@ namespace MissionPlanner.GCSViews
         {
             NextWpPanel.Visible = true;
             panel9.Enabled = false;
-          //  panel3.Enabled = false;
         }
 
         private void myButton12_Click(object sender, EventArgs e)
@@ -6400,7 +6399,7 @@ namespace MissionPlanner.GCSViews
         private void myButton10_Click(object sender, EventArgs e)
         {
 
-            panel9.Visible = !panel9.Visible;
+            panel9.Visible =false;
             try
             {
                 ((Button)sender).Enabled = false;
@@ -6948,6 +6947,18 @@ namespace MissionPlanner.GCSViews
             }
 
             MainV2.MyView.ShowScreen("Simulation");
+        }
+
+        private void myButton19_Click(object sender, EventArgs e)
+        {
+            if (panel9.Visible == true)
+            {
+                panel9.Visible = false;
+            }
+            else
+            {
+                panel9.Visible = true;
+            }
         }
     }
 }

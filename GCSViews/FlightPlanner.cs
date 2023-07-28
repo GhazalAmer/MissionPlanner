@@ -8552,6 +8552,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton8_Click(object sender, EventArgs e)
         {
+            panel9.Visible = false;
             try
             {
                 ///////////////
@@ -8574,6 +8575,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton9_Click(object sender, EventArgs e)
         {
+            panel9.Visible = false;
+
             try
             {
                 ((Button)sender).Enabled = false;
@@ -8586,6 +8589,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton10_Click(object sender, EventArgs e)
         {
+            panel9.Visible = false;
+
             try
             {
                 ((Button)sender).Enabled = false;
@@ -9678,6 +9683,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
             NextWpPanel.Visible = false;
             panel9.Enabled = true;
+            panel9.Visible = false;
             try
             {
                 ((Button)sender).Enabled = false;

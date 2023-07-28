@@ -3035,6 +3035,7 @@ namespace MissionPlanner.GCSViews
             // NextWpPanel
             // 
             resources.ApplyResources(this.NextWpPanel, "NextWpPanel");
+            this.NextWpPanel.BackColor = System.Drawing.Color.Black;
             this.NextWpPanel.Controls.Add(this.tableLayoutPanel4);
             this.NextWpPanel.Controls.Add(this.tableLayoutPanel5);
             this.NextWpPanel.Name = "NextWpPanel";
@@ -3042,14 +3043,14 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel4
             // 
             resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
-            this.tableLayoutPanel4.Controls.Add(this.myButton4, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.myButton4, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.myButton12, 0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             // 
             // myButton4
             // 
-            resources.ApplyResources(this.myButton4, "myButton4");
             this.myButton4.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.myButton4, "myButton4");
             this.myButton4.BGGradBot = System.Drawing.Color.Tomato;
             this.myButton4.BGGradTop = System.Drawing.Color.LightCoral;
             this.myButton4.Name = "myButton4";
@@ -3061,8 +3062,8 @@ namespace MissionPlanner.GCSViews
             // 
             // myButton12
             // 
-            resources.ApplyResources(this.myButton12, "myButton12");
             this.myButton12.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.myButton12, "myButton12");
             this.myButton12.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton12.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.myButton12.ColorMouseOver = System.Drawing.Color.DimGray;
@@ -3103,7 +3104,7 @@ namespace MissionPlanner.GCSViews
             // EngageAutoNumeris
             // 
             this.EngageAutoNumeris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.EngageAutoNumeris.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EngageAutoNumeris.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.EngageAutoNumeris, "EngageAutoNumeris");
             this.EngageAutoNumeris.ForeColor = System.Drawing.Color.White;
             this.EngageAutoNumeris.Maximum = new decimal(new int[] {
@@ -3613,6 +3614,7 @@ namespace MissionPlanner.GCSViews
             this.myButton19.TextColor = System.Drawing.Color.White;
             this.myButton19.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton19.UseVisualStyleBackColor = false;
+            this.myButton19.Click += new System.EventHandler(this.myButton19_Click);
             // 
             // FlightData
             // 
@@ -3715,7 +3717,6 @@ namespace MissionPlanner.GCSViews
             this.panel9.ResumeLayout(false);
             this.NextWpPanel.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EngageAutoNumeris)).EndInit();

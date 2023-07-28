@@ -2537,6 +2537,8 @@ namespace MissionPlanner
                             this.MenuConnect.Image.Tag = "Disconnect";
                             this.MenuConnect.Text = Strings.DISCONNECTc;
                             this.ConnectButtt.Text = Strings.DISCONNECTc;
+                            this.ConnectButtt.BGGradBot = Color.Red;
+                            this.ConnectButtt.BGGradTop = Color.Red;
                             _connectionControl.IsConnected(true);
                         });
                     }
@@ -4825,6 +4827,11 @@ namespace MissionPlanner
         private void label7_Click_1(object sender, EventArgs e)
         {
            
+        }
+
+        private void ConnectButtt_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
