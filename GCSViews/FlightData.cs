@@ -6508,7 +6508,7 @@ namespace MissionPlanner.GCSViews
             try
             {
                 ((Button)sender).Enabled = false;
-                ushort no = (ushort)WPNumber.Value;
+                ushort no = (ushort)WPNumber1.Value;
                 // no = (ushort)((int)no - 1);
                 MainV2.comPort.setWPCurrent(MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid, no); // set nav to
 
@@ -6546,7 +6546,7 @@ namespace MissionPlanner.GCSViews
 
         private void NextWP_Click(object sender, EventArgs e)
         {
-            WPNumber.Value = WPNumber.Value + 1;
+            WPNumber1.Value = WPNumber1.Value + 1;
             int num_wps;
             if (MainV2.comPort.MAV.param["MIS_TOTAL"] != null)
             {
@@ -6556,11 +6556,11 @@ namespace MissionPlanner.GCSViews
             {
                 num_wps = 0;
             }
-            if (WPNumber.Value > num_wps - 1)
+            if (WPNumber1.Value > num_wps - 1)
             {
-                WPNumber.Value = 1;
+                WPNumber1.Value = 1;
             }
-            int no = (int)WPNumber.Value;
+            int no = (int)WPNumber1.Value;
         }
 
         private void BackWP_Click(object sender, EventArgs e)
@@ -6574,10 +6574,10 @@ namespace MissionPlanner.GCSViews
             {
                 num_wps = 0;
             }
-            if (WPNumber.Value > 1) { WPNumber.Value = WPNumber.Value - 1; }
+            if (WPNumber1.Value > 1) { WPNumber1.Value = WPNumber1.Value - 1; }
             else
             {
-                WPNumber.Value = num_wps - 1;
+                WPNumber1.Value = num_wps - 1;
             }
         }
 

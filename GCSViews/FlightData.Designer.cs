@@ -252,7 +252,7 @@ namespace MissionPlanner.GCSViews
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.GOTOButt = new MissionPlanner.Controls.MyButton();
-            this.WPNumber = new System.Windows.Forms.NumericUpDown();
+            this.WPNumber1 = new System.Windows.Forms.NumericUpDown();
             this.NextWP = new System.Windows.Forms.Button();
             this.BackWP = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -297,6 +297,7 @@ namespace MissionPlanner.GCSViews
             this.barRenderer1 = new BrightIdeasSoftware.BarRenderer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.boatStatusPanel = new System.Windows.Forms.Panel();
+            this.WPNumber = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -358,13 +359,14 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EngageAutoNumeris)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTrackBar1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // MainH
@@ -2650,7 +2652,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 12600D;
+            this.windDir1.Direction = 12780D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2871,6 +2873,7 @@ namespace MissionPlanner.GCSViews
             this.restartroutebutton.BackColor = System.Drawing.Color.DimGray;
             this.restartroutebutton.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.restartroutebutton.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.restartroutebutton.ColorMouseOver = System.Drawing.Color.DimGray;
             this.restartroutebutton.Name = "restartroutebutton";
             this.restartroutebutton.Outline = System.Drawing.Color.Black;
             this.restartroutebutton.TextColor = System.Drawing.Color.White;
@@ -2884,6 +2887,7 @@ namespace MissionPlanner.GCSViews
             this.myButton6.BackColor = System.Drawing.Color.DimGray;
             this.myButton6.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton6.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton6.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton6.Name = "myButton6";
             this.myButton6.Outline = System.Drawing.Color.Black;
             this.myButton6.TextColor = System.Drawing.Color.White;
@@ -2903,10 +2907,10 @@ namespace MissionPlanner.GCSViews
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
-            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("", this.bindingSource1, "mode", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.label7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "mode", true));
-            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
@@ -2916,6 +2920,7 @@ namespace MissionPlanner.GCSViews
             this.myButton5.BackColor = System.Drawing.Color.DimGray;
             this.myButton5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton5.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton5.Name = "myButton5";
             this.myButton5.Outline = System.Drawing.Color.Black;
             this.myButton5.TextColor = System.Drawing.Color.White;
@@ -2929,6 +2934,7 @@ namespace MissionPlanner.GCSViews
             this.MeasureBTN.BackColor = System.Drawing.Color.DimGray;
             this.MeasureBTN.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.MeasureBTN.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.MeasureBTN.ColorMouseOver = System.Drawing.Color.DimGray;
             this.MeasureBTN.Name = "MeasureBTN";
             this.MeasureBTN.Outline = System.Drawing.Color.Black;
             this.MeasureBTN.TextColor = System.Drawing.Color.White;
@@ -2977,6 +2983,7 @@ namespace MissionPlanner.GCSViews
             this.myButton10.BackColor = System.Drawing.Color.Black;
             this.myButton10.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton10.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton10.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton10.Name = "myButton10";
             this.myButton10.Outline = System.Drawing.Color.Black;
             this.myButton10.TextColor = System.Drawing.Color.White;
@@ -2990,6 +2997,7 @@ namespace MissionPlanner.GCSViews
             this.myButton9.BackColor = System.Drawing.Color.Black;
             this.myButton9.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton9.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton9.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton9.Name = "myButton9";
             this.myButton9.Outline = System.Drawing.Color.Black;
             this.myButton9.TextColor = System.Drawing.Color.White;
@@ -3003,6 +3011,7 @@ namespace MissionPlanner.GCSViews
             this.myButton8.BackColor = System.Drawing.Color.Black;
             this.myButton8.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton8.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton8.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton8.Name = "myButton8";
             this.myButton8.Outline = System.Drawing.Color.Black;
             this.myButton8.TextColor = System.Drawing.Color.White;
@@ -3055,6 +3064,7 @@ namespace MissionPlanner.GCSViews
             this.myButton12.BackColor = System.Drawing.Color.Transparent;
             this.myButton12.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton12.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton12.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton12.Name = "myButton12";
             this.myButton12.Outline = System.Drawing.Color.Black;
             this.myButton12.TextColor = System.Drawing.Color.White;
@@ -3064,7 +3074,7 @@ namespace MissionPlanner.GCSViews
             // 
             // tableLayoutPanel5
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.Gainsboro;
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
             this.tableLayoutPanel5.Controls.Add(this.label16, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.button3, 0, 1);
@@ -3075,24 +3085,26 @@ namespace MissionPlanner.GCSViews
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
-            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.tableLayoutPanel5.SetColumnSpan(this.label16, 3);
-            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Name = "label16";
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.button3, "button3");
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // EngageAutoNumeris
             // 
+            this.EngageAutoNumeris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.EngageAutoNumeris.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.EngageAutoNumeris, "EngageAutoNumeris");
-            this.EngageAutoNumeris.ForeColor = System.Drawing.Color.Black;
+            this.EngageAutoNumeris.ForeColor = System.Drawing.Color.White;
             this.EngageAutoNumeris.Maximum = new decimal(new int[] {
             1874919424,
             2328306,
@@ -3113,8 +3125,9 @@ namespace MissionPlanner.GCSViews
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -3122,8 +3135,9 @@ namespace MissionPlanner.GCSViews
             // panel4
             // 
             resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Controls.Add(this.GOTOButt);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel4.Controls.Add(this.WPNumber);
+            this.panel4.Controls.Add(this.GOTOButt);
             this.panel4.Controls.Add(this.NextWP);
             this.panel4.Controls.Add(this.BackWP);
             this.panel4.Name = "panel4";
@@ -3134,6 +3148,7 @@ namespace MissionPlanner.GCSViews
             this.GOTOButt.BackColor = System.Drawing.Color.Transparent;
             this.GOTOButt.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.GOTOButt.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.GOTOButt.ColorMouseOver = System.Drawing.Color.DimGray;
             this.GOTOButt.Name = "GOTOButt";
             this.GOTOButt.Outline = System.Drawing.Color.Black;
             this.GOTOButt.TextColor = System.Drawing.Color.White;
@@ -3141,30 +3156,32 @@ namespace MissionPlanner.GCSViews
             this.GOTOButt.UseVisualStyleBackColor = false;
             this.GOTOButt.Click += new System.EventHandler(this.GOTOButt_Click);
             // 
-            // WPNumber
+            // WPNumber1
             // 
-            this.WPNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.WPNumber, "WPNumber");
-            this.WPNumber.ForeColor = System.Drawing.Color.Black;
-            this.WPNumber.Maximum = new decimal(new int[] {
+            this.WPNumber1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.WPNumber1, "WPNumber1");
+            this.WPNumber1.ForeColor = System.Drawing.Color.Black;
+            this.WPNumber1.Maximum = new decimal(new int[] {
             1874919424,
             2328306,
             0,
             0});
-            this.WPNumber.Name = "WPNumber";
+            this.WPNumber1.Name = "WPNumber1";
             // 
             // NextWP
             // 
-            this.NextWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.NextWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.NextWP, "NextWP");
+            this.NextWP.ForeColor = System.Drawing.Color.White;
             this.NextWP.Name = "NextWP";
             this.NextWP.UseVisualStyleBackColor = false;
             this.NextWP.Click += new System.EventHandler(this.NextWP_Click);
             // 
             // BackWP
             // 
-            this.BackWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackWP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.BackWP, "BackWP");
+            this.BackWP.ForeColor = System.Drawing.Color.White;
             this.BackWP.Name = "BackWP";
             this.BackWP.UseVisualStyleBackColor = false;
             this.BackWP.Click += new System.EventHandler(this.BackWP_Click);
@@ -3376,7 +3393,7 @@ namespace MissionPlanner.GCSViews
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
-            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Name = "label12";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -3384,7 +3401,7 @@ namespace MissionPlanner.GCSViews
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
-            this.label15.BackColor = System.Drawing.Color.Black;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.label15.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "wp_dist", true));
             this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Name = "label15";
@@ -3393,7 +3410,7 @@ namespace MissionPlanner.GCSViews
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
-            this.label14.BackColor = System.Drawing.Color.Black;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.label14.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "wpno", true));
             this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Name = "label14";
@@ -3402,7 +3419,7 @@ namespace MissionPlanner.GCSViews
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
-            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Name = "label11";
             this.label11.Click += new System.EventHandler(this.label11_Click);
@@ -3426,6 +3443,7 @@ namespace MissionPlanner.GCSViews
             this.switchview.BackColor = System.Drawing.Color.DimGray;
             this.switchview.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.switchview.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.switchview.ColorMouseOver = System.Drawing.Color.DimGray;
             this.switchview.Name = "switchview";
             this.switchview.Outline = System.Drawing.Color.Black;
             this.switchview.TextColor = System.Drawing.Color.White;
@@ -3436,6 +3454,7 @@ namespace MissionPlanner.GCSViews
             // tableLayoutPanel7
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
+            this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.tableLayoutPanel7.Controls.Add(this.myButton14, 7, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton13, 6, 0);
             this.tableLayoutPanel7.Controls.Add(this.switchview, 0, 0);
@@ -3453,6 +3472,7 @@ namespace MissionPlanner.GCSViews
             this.myButton14.BackColor = System.Drawing.Color.DimGray;
             this.myButton14.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton14.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton14.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton14.Name = "myButton14";
             this.myButton14.Outline = System.Drawing.Color.Black;
             this.myButton14.TextColor = System.Drawing.Color.White;
@@ -3466,6 +3486,7 @@ namespace MissionPlanner.GCSViews
             this.myButton13.BackColor = System.Drawing.Color.DimGray;
             this.myButton13.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton13.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton13.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton13.Name = "myButton13";
             this.myButton13.Outline = System.Drawing.Color.Black;
             this.myButton13.TextColor = System.Drawing.Color.White;
@@ -3488,6 +3509,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.myButton18, "myButton18");
             this.myButton18.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton18.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton18.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton18.ForeColor = System.Drawing.Color.White;
             this.myButton18.Name = "myButton18";
             this.myButton18.Outline = System.Drawing.Color.Black;
@@ -3502,6 +3524,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.myButton17, "myButton17");
             this.myButton17.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton17.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton17.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton17.ForeColor = System.Drawing.Color.White;
             this.myButton17.Name = "myButton17";
             this.myButton17.Outline = System.Drawing.Color.Black;
@@ -3516,6 +3539,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.myButton16, "myButton16");
             this.myButton16.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton16.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton16.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton16.ForeColor = System.Drawing.Color.White;
             this.myButton16.Name = "myButton16";
             this.myButton16.Outline = System.Drawing.Color.Black;
@@ -3530,6 +3554,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.myButton15, "myButton15");
             this.myButton15.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.myButton15.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton15.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton15.ForeColor = System.Drawing.Color.White;
             this.myButton15.Name = "myButton15";
             this.myButton15.Outline = System.Drawing.Color.Black;
@@ -3558,10 +3583,23 @@ namespace MissionPlanner.GCSViews
             this.boatStatusPanel.ForeColor = System.Drawing.Color.Transparent;
             this.boatStatusPanel.Name = "boatStatusPanel";
             // 
+            // WPNumber
+            // 
+            this.WPNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.WPNumber, "WPNumber");
+            this.WPNumber.ForeColor = System.Drawing.Color.Black;
+            this.WPNumber.Maximum = new decimal(new int[] {
+            1874919424,
+            2328306,
+            0,
+            0});
+            this.WPNumber.Name = "WPNumber";
+            // 
             // FlightData
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.WPNumber1);
             this.Controls.Add(this.boatStatusPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.tableLayoutPanel7);
@@ -3663,7 +3701,7 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.EngageAutoNumeris)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myTrackBar1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -3673,6 +3711,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3924,7 +3963,7 @@ namespace MissionPlanner.GCSViews
         private Panel panel4;
         private Controls.MyButton GOTOButt;
         private Button NextWP;
-        private NumericUpDown WPNumber;
+        private NumericUpDown WPNumber1;
         private Button BackWP;
         private PictureBox pictureBox1;
         private Controls.MyTrackBar myTrackBar1;
@@ -3967,5 +4006,6 @@ namespace MissionPlanner.GCSViews
         private Controls.MyButton myButton17;
         private Controls.MyButton myButton16;
         private Controls.MyButton myButton18;
+        private NumericUpDown WPNumber;
     }
 }
