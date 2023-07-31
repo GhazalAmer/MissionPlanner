@@ -6351,7 +6351,7 @@ namespace MissionPlanner.GCSViews
                 panel9.Enabled = true;
                 tableLayoutPanel1.Enabled = true;
             }
-            catch { CustomMessageBox.Show("Error engaging Auto"); }
+            catch { CustomMessageBox.Show("Error while engaging Auto"); }
             ((Button)sender).Enabled = true;
             EngageAutoMode();
         }
@@ -6512,7 +6512,7 @@ namespace MissionPlanner.GCSViews
                 MainV2.comPort.setWPCurrent(MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid, no); // set nav to
 
             }
-            catch { CustomMessageBox.Show("Error changing waypoint: " +WPNumber1.Value); }
+            catch { CustomMessageBox.Show("Error going to waypoint: " +WPNumber1.Value); }
             ((Button)sender).Enabled = true;
         }
         private void send_light_cmd(int updown, int leftright)

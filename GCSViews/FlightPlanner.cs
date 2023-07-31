@@ -9693,7 +9693,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 panel9.Enabled = true;
                 tableLayoutPanel1.Enabled = true;
             }
-            catch { CustomMessageBox.Show("Invalid WP number"); }
+            catch { CustomMessageBox.Show("Error while engaging Auto"); }
             ((Button)sender).Enabled = true;
             EngageAutoMode();
 
