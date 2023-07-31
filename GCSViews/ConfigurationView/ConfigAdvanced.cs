@@ -125,5 +125,10 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         {
             new SerialSupportProxy().Show();
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

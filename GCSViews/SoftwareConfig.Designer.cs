@@ -39,6 +39,9 @@
             // 
             // backstageView
             // 
+            this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.backstageView.ButtonsAreaPencilColor = System.Drawing.Color.White;
             resources.ApplyResources(this.backstageView, "backstageView");
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
@@ -57,8 +60,9 @@
             // 
             this.myButton1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.myButton1, "myButton1");
-            this.myButton1.BGGradBot = System.Drawing.Color.Black;
-            this.myButton1.BGGradTop = System.Drawing.Color.Black;
+            this.myButton1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton1.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton1.ForeColor = System.Drawing.Color.Black;
             this.myButton1.Name = "myButton1";
             this.myButton1.Outline = System.Drawing.Color.Black;
@@ -71,8 +75,9 @@
             // 
             this.myButton15.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.myButton15, "myButton15");
-            this.myButton15.BGGradBot = System.Drawing.Color.Black;
-            this.myButton15.BGGradTop = System.Drawing.Color.Black;
+            this.myButton15.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton15.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton15.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton15.ForeColor = System.Drawing.Color.White;
             this.myButton15.Name = "myButton15";
             this.myButton15.Outline = System.Drawing.Color.Black;
@@ -85,8 +90,9 @@
             // 
             resources.ApplyResources(this.myButton2, "myButton2");
             this.myButton2.BackColor = System.Drawing.Color.Transparent;
-            this.myButton2.BGGradBot = System.Drawing.Color.Black;
-            this.myButton2.BGGradTop = System.Drawing.Color.Black;
+            this.myButton2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton2.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton2.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton2.ForeColor = System.Drawing.Color.Black;
             this.myButton2.Name = "myButton2";
             this.myButton2.Outline = System.Drawing.Color.Black;

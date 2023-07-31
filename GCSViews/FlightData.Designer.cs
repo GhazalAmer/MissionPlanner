@@ -290,6 +290,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.myButton14 = new MissionPlanner.Controls.MyButton();
             this.myButton13 = new MissionPlanner.Controls.MyButton();
+            this.myButton19 = new MissionPlanner.Controls.MyButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.myButton18 = new MissionPlanner.Controls.MyButton();
             this.myButton17 = new MissionPlanner.Controls.MyButton();
@@ -298,7 +299,6 @@ namespace MissionPlanner.GCSViews
             this.barRenderer1 = new BrightIdeasSoftware.BarRenderer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.boatStatusPanel = new System.Windows.Forms.Panel();
-            this.myButton19 = new MissionPlanner.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -2653,7 +2653,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 12960D;
+            this.windDir1.Direction = 13320D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3508,6 +3508,25 @@ namespace MissionPlanner.GCSViews
             this.myButton13.UseVisualStyleBackColor = false;
             this.myButton13.Click += new System.EventHandler(this.myButton13_Click);
             // 
+            // myButton19
+            // 
+            resources.ApplyResources(this.myButton19, "myButton19");
+            this.myButton19.BackColor = System.Drawing.Color.White;
+            this.myButton19.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton19.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton19.ColorMouseOver = System.Drawing.Color.DimGray;
+            this.myButton19.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "mode", true));
+            this.myButton19.FlatAppearance.BorderSize = 0;
+            this.myButton19.ForeColor = System.Drawing.Color.SteelBlue;
+            this.myButton19.Name = "myButton19";
+            this.myButton19.Outline = System.Drawing.Color.Black;
+            this.myButton19.TabStop = false;
+            this.myButton19.Tag = "";
+            this.myButton19.TextColor = System.Drawing.Color.White;
+            this.myButton19.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton19.UseVisualStyleBackColor = false;
+            this.myButton19.Click += new System.EventHandler(this.myButton19_Click);
+            // 
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
@@ -3596,25 +3615,6 @@ namespace MissionPlanner.GCSViews
             this.boatStatusPanel.BackColor = System.Drawing.Color.Transparent;
             this.boatStatusPanel.ForeColor = System.Drawing.Color.Transparent;
             this.boatStatusPanel.Name = "boatStatusPanel";
-            // 
-            // myButton19
-            // 
-            resources.ApplyResources(this.myButton19, "myButton19");
-            this.myButton19.BackColor = System.Drawing.Color.White;
-            this.myButton19.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.myButton19.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.myButton19.ColorMouseOver = System.Drawing.Color.DimGray;
-            this.myButton19.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceHud, "mode", true));
-            this.myButton19.FlatAppearance.BorderSize = 0;
-            this.myButton19.ForeColor = System.Drawing.Color.SteelBlue;
-            this.myButton19.Name = "myButton19";
-            this.myButton19.Outline = System.Drawing.Color.Black;
-            this.myButton19.TabStop = false;
-            this.myButton19.Tag = "";
-            this.myButton19.TextColor = System.Drawing.Color.White;
-            this.myButton19.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.myButton19.UseVisualStyleBackColor = false;
-            this.myButton19.Click += new System.EventHandler(this.myButton19_Click);
             // 
             // FlightData
             // 

@@ -70,6 +70,9 @@ namespace MissionPlanner.GCSViews
             // 
             // backstageView
             // 
+            this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.backstageView.ButtonsAreaPencilColor = System.Drawing.Color.White;
             resources.ApplyResources(this.backstageView, "backstageView");
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
@@ -79,148 +82,206 @@ namespace MissionPlanner.GCSViews
             // 
             // backstageViewPageaccel
             // 
+            this.backstageViewPageaccel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageaccel, "backstageViewPageaccel");
+            this.backstageViewPageaccel.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageaccel.Name = "backstageViewPageaccel";
             // 
             // backstageViewPageairspeed
             // 
+            this.backstageViewPageairspeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageairspeed, "backstageViewPageairspeed");
+            this.backstageViewPageairspeed.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageairspeed.Name = "backstageViewPageairspeed";
             // 
             // backstageViewPageAntTrack
             // 
+            this.backstageViewPageAntTrack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageAntTrack, "backstageViewPageAntTrack");
+            this.backstageViewPageAntTrack.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageAntTrack.Name = "backstageViewPageAntTrack";
             // 
             // backstageViewPagebatmon
             // 
+            this.backstageViewPagebatmon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagebatmon, "backstageViewPagebatmon");
+            this.backstageViewPagebatmon.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagebatmon.Name = "backstageViewPagebatmon";
             // 
             // backstageViewPageBatt2
             // 
+            this.backstageViewPageBatt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageBatt2, "backstageViewPageBatt2");
+            this.backstageViewPageBatt2.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageBatt2.Name = "backstageViewPageBatt2";
             // 
             // backstageViewPagecompass
             // 
+            this.backstageViewPagecompass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagecompass, "backstageViewPagecompass");
+            this.backstageViewPagecompass.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagecompass.Name = "backstageViewPagecompass";
             // 
             // backstageViewPagecompassmot
             // 
+            this.backstageViewPagecompassmot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagecompassmot, "backstageViewPagecompassmot");
+            this.backstageViewPagecompassmot.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagecompassmot.Name = "backstageViewPagecompassmot";
             // 
             // backstageViewPageESC
             // 
+            this.backstageViewPageESC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageESC, "backstageViewPageESC");
+            this.backstageViewPageESC.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageESC.Name = "backstageViewPageESC";
             // 
             // backstageViewPageESP
             // 
+            this.backstageViewPageESP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageESP, "backstageViewPageESP");
+            this.backstageViewPageESP.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageESP.Name = "backstageViewPageESP";
             // 
             // backstageViewPageflmode
             // 
+            this.backstageViewPageflmode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageflmode, "backstageViewPageflmode");
+            this.backstageViewPageflmode.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageflmode.Name = "backstageViewPageflmode";
             // 
             // backstageViewPageframetype
             // 
+            this.backstageViewPageframetype.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageframetype, "backstageViewPageframetype");
+            this.backstageViewPageframetype.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageframetype.Name = "backstageViewPageframetype";
             // 
             // backstageViewPagefs
             // 
+            this.backstageViewPagefs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagefs, "backstageViewPagefs");
+            this.backstageViewPagefs.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagefs.Name = "backstageViewPagefs";
             // 
             // backstageViewPagefw
             // 
+            this.backstageViewPagefw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagefw, "backstageViewPagefw");
+            this.backstageViewPagefw.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagefw.Name = "backstageViewPagefw";
             // 
             // backstageViewPagefwdisabled
             // 
+            this.backstageViewPagefwdisabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagefwdisabled, "backstageViewPagefwdisabled");
+            this.backstageViewPagefwdisabled.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagefwdisabled.Name = "backstageViewPagefwdisabled";
             // 
             // backstageViewPagegimbal
             // 
+            this.backstageViewPagegimbal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagegimbal, "backstageViewPagegimbal");
+            this.backstageViewPagegimbal.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagegimbal.Name = "backstageViewPagegimbal";
             // 
             // backstageViewPagehwbt
             // 
+            this.backstageViewPagehwbt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagehwbt, "backstageViewPagehwbt");
+            this.backstageViewPagehwbt.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagehwbt.Name = "backstageViewPagehwbt";
             // 
             // backstageViewPageinstfw
             // 
+            this.backstageViewPageinstfw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageinstfw, "backstageViewPageinstfw");
+            this.backstageViewPageinstfw.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageinstfw.Name = "backstageViewPageinstfw";
             this.backstageViewPageinstfw.Click += new System.EventHandler(this.backstageViewPageinstfw_Click);
             // 
             // backstageViewPagemand
             // 
+            this.backstageViewPagemand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagemand, "backstageViewPagemand");
+            this.backstageViewPagemand.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagemand.Name = "backstageViewPagemand";
             // 
             // backstageViewPageMotorTest
             // 
+            this.backstageViewPageMotorTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageMotorTest, "backstageViewPageMotorTest");
+            this.backstageViewPageMotorTest.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageMotorTest.Name = "backstageViewPageMotorTest";
             // 
             // backstageViewPageopt
             // 
+            this.backstageViewPageopt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageopt, "backstageViewPageopt");
+            this.backstageViewPageopt.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageopt.Name = "backstageViewPageopt";
             // 
             // backstageViewPageoptflow
             // 
+            this.backstageViewPageoptflow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageoptflow, "backstageViewPageoptflow");
+            this.backstageViewPageoptflow.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageoptflow.Name = "backstageViewPageoptflow";
             // 
             // backstageViewPageosd
             // 
+            this.backstageViewPageosd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageosd, "backstageViewPageosd");
+            this.backstageViewPageosd.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageosd.Name = "backstageViewPageosd";
             // 
             // backstageViewPageParachute
             // 
+            this.backstageViewPageParachute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageParachute, "backstageViewPageParachute");
+            this.backstageViewPageParachute.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageParachute.Name = "backstageViewPageParachute";
             // 
             // backstageViewPagePX4Flow
             // 
+            this.backstageViewPagePX4Flow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagePX4Flow, "backstageViewPagePX4Flow");
+            this.backstageViewPagePX4Flow.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagePX4Flow.Name = "backstageViewPagePX4Flow";
             // 
             // backstageViewPageradio
             // 
+            this.backstageViewPageradio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageradio, "backstageViewPageradio");
+            this.backstageViewPageradio.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageradio.Name = "backstageViewPageradio";
             // 
             // backstageViewPageSikradio
             // 
+            this.backstageViewPageSikradio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPageSikradio, "backstageViewPageSikradio");
+            this.backstageViewPageSikradio.ForeColor = System.Drawing.Color.White;
             this.backstageViewPageSikradio.Name = "backstageViewPageSikradio";
             // 
             // backstageViewPagesonar
             // 
+            this.backstageViewPagesonar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagesonar, "backstageViewPagesonar");
+            this.backstageViewPagesonar.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagesonar.Name = "backstageViewPagesonar";
             // 
             // backstageViewPagetradheli
             // 
+            this.backstageViewPagetradheli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagetradheli, "backstageViewPagetradheli");
+            this.backstageViewPagetradheli.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagetradheli.Name = "backstageViewPagetradheli";
             // 
             // backstageViewPagewizard
             // 
+            this.backstageViewPagewizard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             resources.ApplyResources(this.backstageViewPagewizard, "backstageViewPagewizard");
+            this.backstageViewPagewizard.ForeColor = System.Drawing.Color.White;
             this.backstageViewPagewizard.Name = "backstageViewPagewizard";
             // 
             // panel1
@@ -234,8 +295,9 @@ namespace MissionPlanner.GCSViews
             // 
             this.myButton15.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.myButton15, "myButton15");
-            this.myButton15.BGGradBot = System.Drawing.Color.Black;
-            this.myButton15.BGGradTop = System.Drawing.Color.Black;
+            this.myButton15.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton15.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton15.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton15.ForeColor = System.Drawing.Color.White;
             this.myButton15.Name = "myButton15";
             this.myButton15.Outline = System.Drawing.Color.Black;
@@ -248,8 +310,9 @@ namespace MissionPlanner.GCSViews
             // 
             this.myButton1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.myButton1, "myButton1");
-            this.myButton1.BGGradBot = System.Drawing.Color.Black;
-            this.myButton1.BGGradTop = System.Drawing.Color.Black;
+            this.myButton1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton1.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton1.ForeColor = System.Drawing.Color.Black;
             this.myButton1.Name = "myButton1";
             this.myButton1.Outline = System.Drawing.Color.Black;
@@ -262,8 +325,9 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.myButton2, "myButton2");
             this.myButton2.BackColor = System.Drawing.Color.Transparent;
-            this.myButton2.BGGradBot = System.Drawing.Color.Black;
-            this.myButton2.BGGradTop = System.Drawing.Color.Black;
+            this.myButton2.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton2.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton2.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton2.ForeColor = System.Drawing.Color.Black;
             this.myButton2.Name = "myButton2";
             this.myButton2.Outline = System.Drawing.Color.Black;

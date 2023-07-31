@@ -53,50 +53,92 @@
             // 
             // BUTsetupshow
             // 
+            this.BUTsetupshow.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUTsetupshow.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUTsetupshow.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUTsetupshow, "BUTsetupshow");
             this.BUTsetupshow.Name = "BUTsetupshow";
+            this.BUTsetupshow.Outline = System.Drawing.Color.DimGray;
+            this.BUTsetupshow.TextColor = System.Drawing.Color.White;
+            this.BUTsetupshow.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUTsetupshow.UseVisualStyleBackColor = true;
             this.BUTsetupshow.Click += new System.EventHandler(this.BUTsetupshow_Click);
             // 
             // BUTradiosetup
             // 
+            this.BUTradiosetup.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUTradiosetup.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUTradiosetup.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUTradiosetup, "BUTradiosetup");
             this.BUTradiosetup.Name = "BUTradiosetup";
+            this.BUTradiosetup.Outline = System.Drawing.Color.DimGray;
+            this.BUTradiosetup.TextColor = System.Drawing.Color.White;
+            this.BUTradiosetup.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUTradiosetup.UseVisualStyleBackColor = true;
             this.BUTradiosetup.Click += new System.EventHandler(this.BUTradiosetup_Click);
             // 
             // BUTtests
             // 
+            this.BUTtests.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUTtests.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUTtests.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUTtests, "BUTtests");
             this.BUTtests.Name = "BUTtests";
+            this.BUTtests.Outline = System.Drawing.Color.DimGray;
+            this.BUTtests.TextColor = System.Drawing.Color.White;
+            this.BUTtests.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUTtests.UseVisualStyleBackColor = true;
             this.BUTtests.Click += new System.EventHandler(this.BUTtests_Click);
             // 
             // Logs
             // 
+            this.Logs.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Logs.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Logs.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.Logs, "Logs");
             this.Logs.Name = "Logs";
+            this.Logs.Outline = System.Drawing.Color.DimGray;
+            this.Logs.TextColor = System.Drawing.Color.White;
+            this.Logs.TextColorNotEnabled = System.Drawing.Color.White;
             this.Logs.UseVisualStyleBackColor = true;
             this.Logs.Click += new System.EventHandler(this.Logs_Click);
             // 
             // BUT_logbrowse
             // 
+            this.BUT_logbrowse.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_logbrowse.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_logbrowse.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_logbrowse, "BUT_logbrowse");
             this.BUT_logbrowse.Name = "BUT_logbrowse";
+            this.BUT_logbrowse.Outline = System.Drawing.Color.DimGray;
+            this.BUT_logbrowse.TextColor = System.Drawing.Color.White;
+            this.BUT_logbrowse.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_logbrowse.UseVisualStyleBackColor = true;
             this.BUT_logbrowse.Click += new System.EventHandler(this.BUT_logbrowse_Click);
             // 
             // BUT_ConnectAPM
             // 
+            this.BUT_ConnectAPM.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_ConnectAPM.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_ConnectAPM.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_ConnectAPM, "BUT_ConnectAPM");
             this.BUT_ConnectAPM.Name = "BUT_ConnectAPM";
+            this.BUT_ConnectAPM.Outline = System.Drawing.Color.DimGray;
+            this.BUT_ConnectAPM.TextColor = System.Drawing.Color.White;
+            this.BUT_ConnectAPM.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_ConnectAPM.UseVisualStyleBackColor = true;
             this.BUT_ConnectAPM.Click += new System.EventHandler(this.BUT_RebootAPM_Click);
             // 
             // BUT_disconnect
             // 
             resources.ApplyResources(this.BUT_disconnect, "BUT_disconnect");
+            this.BUT_disconnect.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_disconnect.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_disconnect.ColorMouseOver = System.Drawing.Color.DimGray;
             this.BUT_disconnect.Name = "BUT_disconnect";
+            this.BUT_disconnect.Outline = System.Drawing.Color.DimGray;
+            this.BUT_disconnect.TextColor = System.Drawing.Color.White;
+            this.BUT_disconnect.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_disconnect.UseVisualStyleBackColor = true;
             this.BUT_disconnect.Click += new System.EventHandler(this.BUT_disconnect_Click);
             // 
@@ -112,7 +154,7 @@
             resources.ApplyResources(this.CMB_boardtype, "CMB_boardtype");
             this.CMB_boardtype.Name = "CMB_boardtype";
             // 
-            // Terminal
+            // ConfigTerminal
             // 
             this.Controls.Add(this.CMB_boardtype);
             this.Controls.Add(this.BUT_disconnect);
@@ -123,7 +165,7 @@
             this.Controls.Add(this.BUTradiosetup);
             this.Controls.Add(this.BUTsetupshow);
             this.Controls.Add(this.TXT_terminal);
-            this.Name = "Terminal";
+            this.Name = "ConfigTerminal";
             resources.ApplyResources(this, "$this");
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Terminal_FormClosing);
             this.Load += new System.EventHandler(this.Terminal_Load);

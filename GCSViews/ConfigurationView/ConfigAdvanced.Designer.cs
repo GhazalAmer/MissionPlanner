@@ -63,47 +63,84 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
             // but_mavinspector
             // 
+            this.but_mavinspector.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.but_mavinspector.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.but_mavinspector.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.but_mavinspector, "but_mavinspector");
             this.but_mavinspector.Name = "but_mavinspector";
+            this.but_mavinspector.Outline = System.Drawing.Color.DimGray;
+            this.but_mavinspector.TextColor = System.Drawing.Color.White;
+            this.but_mavinspector.TextColorNotEnabled = System.Drawing.Color.White;
             this.but_mavinspector.UseVisualStyleBackColor = true;
             this.but_mavinspector.Click += new System.EventHandler(this.but_mavinspector_Click);
             // 
             // but_warningmanager
             // 
+            this.but_warningmanager.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.but_warningmanager.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.but_warningmanager.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.but_warningmanager, "but_warningmanager");
             this.but_warningmanager.Name = "but_warningmanager";
+            this.but_warningmanager.Outline = System.Drawing.Color.DimGray;
+            this.but_warningmanager.TextColor = System.Drawing.Color.White;
+            this.but_warningmanager.TextColorNotEnabled = System.Drawing.Color.White;
             this.but_warningmanager.UseVisualStyleBackColor = true;
             this.but_warningmanager.Click += new System.EventHandler(this.but_warningmanager_Click);
             // 
             // but_proximity
             // 
+            this.but_proximity.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.but_proximity.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.but_proximity.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.but_proximity, "but_proximity");
             this.but_proximity.Name = "but_proximity";
+            this.but_proximity.Outline = System.Drawing.Color.DimGray;
+            this.but_proximity.TextColor = System.Drawing.Color.White;
+            this.but_proximity.TextColorNotEnabled = System.Drawing.Color.White;
             this.but_proximity.UseVisualStyleBackColor = true;
             this.but_proximity.Click += new System.EventHandler(this.but_proximity_Click);
             // 
             // but_signkey
             // 
+            this.but_signkey.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.but_signkey.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.but_signkey.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.but_signkey, "but_signkey");
             this.but_signkey.Name = "but_signkey";
+            this.but_signkey.Outline = System.Drawing.Color.DimGray;
+            this.but_signkey.TextColor = System.Drawing.Color.White;
+            this.but_signkey.TextColorNotEnabled = System.Drawing.Color.White;
             this.but_signkey.UseVisualStyleBackColor = true;
             this.but_signkey.Click += new System.EventHandler(this.but_signkey_Click);
             // 
             // BUT_outputMavlink
             // 
+            this.BUT_outputMavlink.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_outputMavlink.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_outputMavlink.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_outputMavlink, "BUT_outputMavlink");
             this.BUT_outputMavlink.Name = "BUT_outputMavlink";
+            this.BUT_outputMavlink.Outline = System.Drawing.Color.DimGray;
+            this.BUT_outputMavlink.TextColor = System.Drawing.Color.White;
+            this.BUT_outputMavlink.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_outputMavlink.UseVisualStyleBackColor = true;
             this.BUT_outputMavlink.Click += new System.EventHandler(this.BUT_outputMavlink_Click);
             // 
             // BUT_outputnmea
             // 
+            this.BUT_outputnmea.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_outputnmea.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_outputnmea.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_outputnmea, "BUT_outputnmea");
             this.BUT_outputnmea.Name = "BUT_outputnmea";
+            this.BUT_outputnmea.Outline = System.Drawing.Color.DimGray;
+            this.BUT_outputnmea.TextColor = System.Drawing.Color.White;
+            this.BUT_outputnmea.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_outputnmea.UseVisualStyleBackColor = true;
             this.BUT_outputnmea.Click += new System.EventHandler(this.BUT_outputnmea_Click);
             // 
@@ -141,119 +178,176 @@
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
+            this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Name = "label14";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // BUT_supportproxy
             // 
+            this.BUT_supportproxy.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_supportproxy.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_supportproxy.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_supportproxy, "BUT_supportproxy");
             this.BUT_supportproxy.Name = "BUT_supportproxy";
+            this.BUT_supportproxy.Outline = System.Drawing.Color.DimGray;
+            this.BUT_supportproxy.TextColor = System.Drawing.Color.White;
+            this.BUT_supportproxy.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_supportproxy.UseVisualStyleBackColor = true;
             this.BUT_supportproxy.Click += new System.EventHandler(this.BUT_supportproxy_Click);
             // 
             // BUT_spect
             // 
+            this.BUT_spect.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_spect.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_spect.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_spect, "BUT_spect");
             this.BUT_spect.Name = "BUT_spect";
+            this.BUT_spect.Outline = System.Drawing.Color.DimGray;
+            this.BUT_spect.TextColor = System.Drawing.Color.White;
+            this.BUT_spect.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_spect.UseVisualStyleBackColor = true;
             this.BUT_spect.Click += new System.EventHandler(this.BUT_spect_Click);
             // 
             // but_fft
             // 
+            this.but_fft.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.but_fft.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.but_fft.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.but_fft, "but_fft");
             this.but_fft.Name = "but_fft";
+            this.but_fft.Outline = System.Drawing.Color.DimGray;
+            this.but_fft.TextColor = System.Drawing.Color.White;
+            this.but_fft.TextColorNotEnabled = System.Drawing.Color.White;
             this.but_fft.UseVisualStyleBackColor = true;
             this.but_fft.Click += new System.EventHandler(this.but_fft_Click);
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Name = "label6";
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Name = "label3";
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
+            this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Name = "label11";
             // 
             // BUT_follow_me
             // 
+            this.BUT_follow_me.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_follow_me.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_follow_me.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_follow_me, "BUT_follow_me");
             this.BUT_follow_me.Name = "BUT_follow_me";
+            this.BUT_follow_me.Outline = System.Drawing.Color.DimGray;
+            this.BUT_follow_me.TextColor = System.Drawing.Color.White;
+            this.BUT_follow_me.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_follow_me.UseVisualStyleBackColor = true;
             this.BUT_follow_me.Click += new System.EventHandler(this.BUT_follow_me_Click);
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Name = "label8";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Name = "label9";
             // 
             // BUT_paramgen
             // 
+            this.BUT_paramgen.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_paramgen.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_paramgen.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_paramgen, "BUT_paramgen");
             this.BUT_paramgen.Name = "BUT_paramgen";
+            this.BUT_paramgen.Outline = System.Drawing.Color.DimGray;
+            this.BUT_paramgen.TextColor = System.Drawing.Color.White;
+            this.BUT_paramgen.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_paramgen.UseVisualStyleBackColor = true;
             this.BUT_paramgen.Click += new System.EventHandler(this.BUT_paramgen_Click);
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Name = "label10";
             // 
             // BUT_movingbase
             // 
+            this.BUT_movingbase.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_movingbase.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_movingbase.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_movingbase, "BUT_movingbase");
             this.BUT_movingbase.Name = "BUT_movingbase";
+            this.BUT_movingbase.Outline = System.Drawing.Color.DimGray;
+            this.BUT_movingbase.TextColor = System.Drawing.Color.White;
+            this.BUT_movingbase.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_movingbase.UseVisualStyleBackColor = true;
             this.BUT_movingbase.Click += new System.EventHandler(this.BUT_movingbase_Click);
             // 
             // but_anonlog
             // 
+            this.but_anonlog.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.but_anonlog.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.but_anonlog.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.but_anonlog, "but_anonlog");
             this.but_anonlog.Name = "but_anonlog";
+            this.but_anonlog.Outline = System.Drawing.Color.DimGray;
+            this.but_anonlog.TextColor = System.Drawing.Color.White;
+            this.but_anonlog.TextColorNotEnabled = System.Drawing.Color.White;
             this.but_anonlog.UseVisualStyleBackColor = true;
             this.but_anonlog.Click += new System.EventHandler(this.but_anonlog_Click);
             // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Name = "label12";
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
+            this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Name = "label13";
             // 
             // ConfigAdvanced
             // 
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Name = "ConfigAdvanced";

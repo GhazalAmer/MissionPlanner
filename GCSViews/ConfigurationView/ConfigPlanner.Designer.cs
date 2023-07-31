@@ -114,6 +114,7 @@
             // 
             // label33
             // 
+            this.label33.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
             // 
@@ -144,6 +145,7 @@
             // label26
             // 
             resources.ApplyResources(this.label26, "label26");
+            this.label26.ForeColor = System.Drawing.Color.White;
             this.label26.Name = "label26";
             // 
             // CMB_videoresolutions
@@ -156,10 +158,12 @@
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Name = "label12";
             // 
             // CHK_GDIPlus
             // 
+            this.CHK_GDIPlus.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.CHK_GDIPlus, "CHK_GDIPlus");
             this.CHK_GDIPlus.Name = "CHK_GDIPlus";
             this.CHK_GDIPlus.UseVisualStyleBackColor = true;
@@ -168,10 +172,12 @@
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
+            this.label24.ForeColor = System.Drawing.Color.White;
             this.label24.Name = "label24";
             // 
             // CHK_loadwponconnect
             // 
+            this.CHK_loadwponconnect.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.CHK_loadwponconnect, "CHK_loadwponconnect");
             this.CHK_loadwponconnect.Name = "CHK_loadwponconnect";
             this.CHK_loadwponconnect.UseVisualStyleBackColor = true;
@@ -180,6 +186,7 @@
             // label23
             // 
             resources.ApplyResources(this.label23, "label23");
+            this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Name = "label23";
             // 
             // NUM_tracklength
@@ -211,6 +218,7 @@
             // CHK_speechaltwarning
             // 
             resources.ApplyResources(this.CHK_speechaltwarning, "CHK_speechaltwarning");
+            this.CHK_speechaltwarning.ForeColor = System.Drawing.Color.White;
             this.CHK_speechaltwarning.Name = "CHK_speechaltwarning";
             this.CHK_speechaltwarning.UseVisualStyleBackColor = true;
             this.CHK_speechaltwarning.CheckedChanged += new System.EventHandler(this.CHK_speechaltwarning_CheckedChanged);
@@ -218,10 +226,12 @@
             // label108
             // 
             resources.ApplyResources(this.label108, "label108");
+            this.label108.ForeColor = System.Drawing.Color.White;
             this.label108.Name = "label108";
             // 
             // CHK_resetapmonconnect
             // 
+            this.CHK_resetapmonconnect.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.CHK_resetapmonconnect, "CHK_resetapmonconnect");
             this.CHK_resetapmonconnect.Name = "CHK_resetapmonconnect";
             this.CHK_resetapmonconnect.UseVisualStyleBackColor = true;
@@ -230,12 +240,14 @@
             // CHK_mavdebug
             // 
             resources.ApplyResources(this.CHK_mavdebug, "CHK_mavdebug");
+            this.CHK_mavdebug.ForeColor = System.Drawing.Color.White;
             this.CHK_mavdebug.Name = "CHK_mavdebug";
             this.CHK_mavdebug.UseVisualStyleBackColor = true;
             this.CHK_mavdebug.CheckedChanged += new System.EventHandler(this.CHK_mavdebug_CheckedChanged);
             // 
             // label107
             // 
+            this.label107.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label107, "label107");
             this.label107.Name = "label107";
             // 
@@ -265,22 +277,26 @@
             // 
             // label104
             // 
+            this.label104.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label104, "label104");
             this.label104.Name = "label104";
             // 
             // label103
             // 
+            this.label103.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label103, "label103");
             this.label103.Name = "label103";
             // 
             // label102
             // 
+            this.label102.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label102, "label102");
             this.label102.Name = "label102";
             // 
             // label101
             // 
             resources.ApplyResources(this.label101, "label101");
+            this.label101.ForeColor = System.Drawing.Color.White;
             this.label101.Name = "label101";
             // 
             // CMB_ratestatus
@@ -356,17 +372,20 @@
             // 
             // label99
             // 
+            this.label99.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label99, "label99");
             this.label99.Name = "label99";
             // 
             // label98
             // 
             resources.ApplyResources(this.label98, "label98");
+            this.label98.ForeColor = System.Drawing.Color.White;
             this.label98.Name = "label98";
             // 
             // label97
             // 
             resources.ApplyResources(this.label97, "label97");
+            this.label97.ForeColor = System.Drawing.Color.White;
             this.label97.Name = "label97";
             // 
             // CMB_speedunits
@@ -388,16 +407,19 @@
             // label96
             // 
             resources.ApplyResources(this.label96, "label96");
+            this.label96.ForeColor = System.Drawing.Color.White;
             this.label96.Name = "label96";
             // 
             // label95
             // 
             resources.ApplyResources(this.label95, "label95");
+            this.label95.ForeColor = System.Drawing.Color.White;
             this.label95.Name = "label95";
             // 
             // CHK_speechbattery
             // 
             resources.ApplyResources(this.CHK_speechbattery, "CHK_speechbattery");
+            this.CHK_speechbattery.ForeColor = System.Drawing.Color.White;
             this.CHK_speechbattery.Name = "CHK_speechbattery";
             this.CHK_speechbattery.UseVisualStyleBackColor = true;
             this.CHK_speechbattery.CheckedChanged += new System.EventHandler(this.CHK_speechbattery_CheckedChanged);
@@ -405,6 +427,7 @@
             // CHK_speechcustom
             // 
             resources.ApplyResources(this.CHK_speechcustom, "CHK_speechcustom");
+            this.CHK_speechcustom.ForeColor = System.Drawing.Color.White;
             this.CHK_speechcustom.Name = "CHK_speechcustom";
             this.CHK_speechcustom.UseVisualStyleBackColor = true;
             this.CHK_speechcustom.CheckedChanged += new System.EventHandler(this.CHK_speechcustom_CheckedChanged);
@@ -412,6 +435,7 @@
             // CHK_speechmode
             // 
             resources.ApplyResources(this.CHK_speechmode, "CHK_speechmode");
+            this.CHK_speechmode.ForeColor = System.Drawing.Color.White;
             this.CHK_speechmode.Name = "CHK_speechmode";
             this.CHK_speechmode.UseVisualStyleBackColor = true;
             this.CHK_speechmode.CheckedChanged += new System.EventHandler(this.CHK_speechmode_CheckedChanged);
@@ -419,6 +443,7 @@
             // CHK_speechwaypoint
             // 
             resources.ApplyResources(this.CHK_speechwaypoint, "CHK_speechwaypoint");
+            this.CHK_speechwaypoint.ForeColor = System.Drawing.Color.White;
             this.CHK_speechwaypoint.Name = "CHK_speechwaypoint";
             this.CHK_speechwaypoint.UseVisualStyleBackColor = true;
             this.CHK_speechwaypoint.CheckedChanged += new System.EventHandler(this.CHK_speechwaypoint_CheckedChanged);
@@ -426,6 +451,7 @@
             // label94
             // 
             resources.ApplyResources(this.label94, "label94");
+            this.label94.ForeColor = System.Drawing.Color.White;
             this.label94.Name = "label94";
             // 
             // CMB_osdcolor
@@ -457,11 +483,13 @@
             // label93
             // 
             resources.ApplyResources(this.label93, "label93");
+            this.label93.ForeColor = System.Drawing.Color.White;
             this.label93.Name = "label93";
             // 
             // CHK_enablespeech
             // 
             resources.ApplyResources(this.CHK_enablespeech, "CHK_enablespeech");
+            this.CHK_enablespeech.ForeColor = System.Drawing.Color.White;
             this.CHK_enablespeech.Name = "CHK_enablespeech";
             this.CHK_enablespeech.UseVisualStyleBackColor = true;
             this.CHK_enablespeech.CheckedChanged += new System.EventHandler(this.CHK_enablespeech_CheckedChanged);
@@ -470,6 +498,7 @@
             // 
             this.CHK_hudshow.Checked = true;
             this.CHK_hudshow.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_hudshow.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.CHK_hudshow, "CHK_hudshow");
             this.CHK_hudshow.Name = "CHK_hudshow";
             this.CHK_hudshow.UseVisualStyleBackColor = true;
@@ -478,6 +507,7 @@
             // label92
             // 
             resources.ApplyResources(this.label92, "label92");
+            this.label92.ForeColor = System.Drawing.Color.White;
             this.label92.Name = "label92";
             // 
             // CMB_videosources
@@ -492,10 +522,12 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
             // CHK_maprotation
             // 
+            this.CHK_maprotation.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.CHK_maprotation, "CHK_maprotation");
             this.CHK_maprotation.Name = "CHK_maprotation";
             this.CHK_maprotation.UseVisualStyleBackColor = true;
@@ -503,6 +535,7 @@
             // 
             // label2
             // 
+            this.label2.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
@@ -510,6 +543,7 @@
             // 
             this.CHK_disttohomeflightdata.Checked = true;
             this.CHK_disttohomeflightdata.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_disttohomeflightdata.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.CHK_disttohomeflightdata, "CHK_disttohomeflightdata");
             this.CHK_disttohomeflightdata.Name = "CHK_disttohomeflightdata";
             this.CHK_disttohomeflightdata.UseVisualStyleBackColor = true;
@@ -517,28 +551,47 @@
             // 
             // BUT_Joystick
             // 
+            this.BUT_Joystick.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_Joystick.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_Joystick.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_Joystick, "BUT_Joystick");
             this.BUT_Joystick.Name = "BUT_Joystick";
+            this.BUT_Joystick.Outline = System.Drawing.Color.White;
+            this.BUT_Joystick.TextColor = System.Drawing.Color.White;
+            this.BUT_Joystick.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_Joystick.UseVisualStyleBackColor = true;
             this.BUT_Joystick.Click += new System.EventHandler(this.BUT_Joystick_Click);
             // 
             // BUT_videostop
             // 
+            this.BUT_videostop.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_videostop.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_videostop.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_videostop, "BUT_videostop");
             this.BUT_videostop.Name = "BUT_videostop";
+            this.BUT_videostop.Outline = System.Drawing.Color.White;
+            this.BUT_videostop.TextColor = System.Drawing.Color.White;
+            this.BUT_videostop.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_videostop.UseVisualStyleBackColor = true;
             this.BUT_videostop.Click += new System.EventHandler(this.BUT_videostop_Click);
             // 
             // BUT_videostart
             // 
+            this.BUT_videostart.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_videostart.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_videostart.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_videostart, "BUT_videostart");
             this.BUT_videostart.Name = "BUT_videostart";
+            this.BUT_videostart.Outline = System.Drawing.Color.White;
+            this.BUT_videostart.TextColor = System.Drawing.Color.White;
+            this.BUT_videostart.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_videostart.UseVisualStyleBackColor = true;
             this.BUT_videostart.Click += new System.EventHandler(this.BUT_videostart_Click);
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Name = "label3";
             // 
             // txt_log_dir
@@ -548,14 +601,21 @@
             // 
             // BUT_logdirbrowse
             // 
+            this.BUT_logdirbrowse.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_logdirbrowse.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_logdirbrowse.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_logdirbrowse, "BUT_logdirbrowse");
             this.BUT_logdirbrowse.Name = "BUT_logdirbrowse";
+            this.BUT_logdirbrowse.Outline = System.Drawing.Color.White;
+            this.BUT_logdirbrowse.TextColor = System.Drawing.Color.White;
+            this.BUT_logdirbrowse.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_logdirbrowse.UseVisualStyleBackColor = true;
             this.BUT_logdirbrowse.Click += new System.EventHandler(this.BUT_logdirbrowse_Click);
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
             // 
             // CMB_theme
@@ -568,28 +628,42 @@
             // 
             // BUT_themecustom
             // 
+            this.BUT_themecustom.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_themecustom.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_themecustom.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_themecustom, "BUT_themecustom");
             this.BUT_themecustom.Name = "BUT_themecustom";
+            this.BUT_themecustom.Outline = System.Drawing.Color.White;
+            this.BUT_themecustom.TextColor = System.Drawing.Color.White;
+            this.BUT_themecustom.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_themecustom.UseVisualStyleBackColor = true;
             this.BUT_themecustom.Click += new System.EventHandler(this.BUT_themecustom_Click);
             // 
             // CHK_speecharmdisarm
             // 
             resources.ApplyResources(this.CHK_speecharmdisarm, "CHK_speecharmdisarm");
+            this.CHK_speecharmdisarm.ForeColor = System.Drawing.Color.White;
             this.CHK_speecharmdisarm.Name = "CHK_speecharmdisarm";
             this.CHK_speecharmdisarm.UseVisualStyleBackColor = true;
             this.CHK_speecharmdisarm.CheckedChanged += new System.EventHandler(this.CHK_speecharmdisarm_CheckedChanged);
             // 
             // BUT_Vario
             // 
+            this.BUT_Vario.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_Vario.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_Vario.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_Vario, "BUT_Vario");
             this.BUT_Vario.Name = "BUT_Vario";
+            this.BUT_Vario.Outline = System.Drawing.Color.White;
+            this.BUT_Vario.TextColor = System.Drawing.Color.White;
+            this.BUT_Vario.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_Vario.UseVisualStyleBackColor = true;
             this.BUT_Vario.Click += new System.EventHandler(this.BUT_Vario_Click);
             // 
             // chk_analytics
             // 
             resources.ApplyResources(this.chk_analytics, "chk_analytics");
+            this.chk_analytics.ForeColor = System.Drawing.Color.White;
             this.chk_analytics.Name = "chk_analytics";
             this.chk_analytics.UseVisualStyleBackColor = true;
             this.chk_analytics.CheckedChanged += new System.EventHandler(this.chk_analytics_CheckedChanged);
@@ -597,6 +671,7 @@
             // CHK_beta
             // 
             resources.ApplyResources(this.CHK_beta, "CHK_beta");
+            this.CHK_beta.ForeColor = System.Drawing.Color.White;
             this.CHK_beta.Name = "CHK_beta";
             this.CHK_beta.UseVisualStyleBackColor = true;
             this.CHK_beta.CheckedChanged += new System.EventHandler(this.CHK_beta_CheckedChanged);
@@ -604,6 +679,7 @@
             // CHK_Password
             // 
             resources.ApplyResources(this.CHK_Password, "CHK_Password");
+            this.CHK_Password.ForeColor = System.Drawing.Color.White;
             this.CHK_Password.Name = "CHK_Password";
             this.CHK_Password.UseVisualStyleBackColor = true;
             this.CHK_Password.CheckedChanged += new System.EventHandler(this.CHK_Password_CheckedChanged);
@@ -611,6 +687,7 @@
             // CHK_speechlowspeed
             // 
             resources.ApplyResources(this.CHK_speechlowspeed, "CHK_speechlowspeed");
+            this.CHK_speechlowspeed.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.CHK_speechlowspeed.Name = "CHK_speechlowspeed";
             this.CHK_speechlowspeed.UseVisualStyleBackColor = true;
             this.CHK_speechlowspeed.CheckedChanged += new System.EventHandler(this.CHK_speechlowspeed_CheckedChanged);
@@ -620,6 +697,7 @@
             resources.ApplyResources(this.CHK_showairports, "CHK_showairports");
             this.CHK_showairports.Checked = true;
             this.CHK_showairports.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_showairports.ForeColor = System.Drawing.Color.White;
             this.CHK_showairports.Name = "CHK_showairports";
             this.CHK_showairports.UseVisualStyleBackColor = true;
             this.CHK_showairports.CheckedChanged += new System.EventHandler(this.CHK_showairports_CheckedChanged);
@@ -627,6 +705,7 @@
             // chk_ADSB
             // 
             resources.ApplyResources(this.chk_ADSB, "chk_ADSB");
+            this.chk_ADSB.ForeColor = System.Drawing.Color.White;
             this.chk_ADSB.Name = "chk_ADSB";
             this.chk_ADSB.UseVisualStyleBackColor = true;
             this.chk_ADSB.CheckedChanged += new System.EventHandler(this.chk_ADSB_CheckedChanged);
@@ -636,6 +715,7 @@
             resources.ApplyResources(this.chk_tfr, "chk_tfr");
             this.chk_tfr.Checked = true;
             this.chk_tfr.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chk_tfr.ForeColor = System.Drawing.Color.White;
             this.chk_tfr.Name = "chk_tfr";
             this.chk_tfr.UseVisualStyleBackColor = true;
             this.chk_tfr.CheckedChanged += new System.EventHandler(this.chk_tfr_CheckedChanged);
@@ -643,6 +723,7 @@
             // chk_temp
             // 
             resources.ApplyResources(this.chk_temp, "chk_temp");
+            this.chk_temp.ForeColor = System.Drawing.Color.White;
             this.chk_temp.Name = "chk_temp";
             this.chk_temp.UseVisualStyleBackColor = true;
             this.chk_temp.CheckedChanged += new System.EventHandler(this.chk_temp_CheckedChanged);
@@ -650,6 +731,7 @@
             // chk_norcreceiver
             // 
             resources.ApplyResources(this.chk_norcreceiver, "chk_norcreceiver");
+            this.chk_norcreceiver.ForeColor = System.Drawing.Color.White;
             this.chk_norcreceiver.Name = "chk_norcreceiver";
             this.chk_norcreceiver.UseVisualStyleBackColor = true;
             this.chk_norcreceiver.CheckedChanged += new System.EventHandler(this.chk_norcreceiver_CheckedChanged);
@@ -665,6 +747,7 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
             // 
             // CHK_AutoParamCommit
@@ -672,6 +755,7 @@
             resources.ApplyResources(this.CHK_AutoParamCommit, "CHK_AutoParamCommit");
             this.CHK_AutoParamCommit.Checked = true;
             this.CHK_AutoParamCommit.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_AutoParamCommit.ForeColor = System.Drawing.Color.White;
             this.CHK_AutoParamCommit.Name = "CHK_AutoParamCommit";
             this.CHK_AutoParamCommit.UseVisualStyleBackColor = true;
             this.CHK_AutoParamCommit.CheckedChanged += new System.EventHandler(this.CHK_AutoParamCommit_CheckedChanged);
@@ -681,6 +765,7 @@
             resources.ApplyResources(this.chk_shownofly, "chk_shownofly");
             this.chk_shownofly.Checked = true;
             this.chk_shownofly.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chk_shownofly.ForeColor = System.Drawing.Color.White;
             this.chk_shownofly.Name = "chk_shownofly";
             this.chk_shownofly.UseVisualStyleBackColor = true;
             this.chk_shownofly.CheckedChanged += new System.EventHandler(this.chk_shownofly_CheckedChanged);
@@ -688,6 +773,7 @@
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Name = "label6";
             // 
             // CMB_altunits
@@ -722,11 +808,13 @@
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
             // 
             // CHK_params_bg
             // 
             resources.ApplyResources(this.CHK_params_bg, "CHK_params_bg");
+            this.CHK_params_bg.ForeColor = System.Drawing.Color.White;
             this.CHK_params_bg.Name = "CHK_params_bg";
             this.CHK_params_bg.UseVisualStyleBackColor = true;
             this.CHK_params_bg.CheckedChanged += new System.EventHandler(this.CHK_params_bg_CheckedChanged);
@@ -734,6 +822,7 @@
             // chk_slowMachine
             // 
             resources.ApplyResources(this.chk_slowMachine, "chk_slowMachine");
+            this.chk_slowMachine.ForeColor = System.Drawing.Color.White;
             this.chk_slowMachine.Name = "chk_slowMachine";
             this.chk_slowMachine.UseVisualStyleBackColor = true;
             this.chk_slowMachine.CheckedChanged += new System.EventHandler(this.chk_slowMachine_CheckedChanged);
@@ -741,18 +830,21 @@
             // CHK_speechArmedOnly
             // 
             resources.ApplyResources(this.CHK_speechArmedOnly, "CHK_speechArmedOnly");
+            this.CHK_speechArmedOnly.ForeColor = System.Drawing.Color.White;
             this.CHK_speechArmedOnly.Name = "CHK_speechArmedOnly";
             this.CHK_speechArmedOnly.UseVisualStyleBackColor = true;
             this.CHK_speechArmedOnly.CheckedChanged += new System.EventHandler(this.CHK_speechArmedOnly_CheckedChanged);
             // 
             // label8
             // 
+            this.label8.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
             // ConfigPlanner
             // 
             resources.ApplyResources(this, "$this");
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.Controls.Add(this.label8);
             this.Controls.Add(this.CHK_speechArmedOnly);
             this.Controls.Add(this.chk_slowMachine);

@@ -32,13 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigArdurover));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.CRUISE_SPEED = new MissionPlanner.Controls.MavlinkNumericUpDown();
             this.MOT_PWM_TYPE = new MissionPlanner.Controls.MavlinkComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.THR_MAX = new MissionPlanner.Controls.MavlinkNumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.THR_MIN = new MissionPlanner.Controls.MavlinkNumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
+            this.CRUISE_SPEED = new MissionPlanner.Controls.MavlinkNumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
             this.CRUISE_THROTTLE = new MissionPlanner.Controls.MavlinkNumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
@@ -103,9 +103,9 @@
             this.label27 = new System.Windows.Forms.Label();
             this.CH10_OPTION = new MissionPlanner.Controls.MavlinkComboBox();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CRUISE_SPEED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_MAX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_MIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CRUISE_SPEED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUISE_THROTTLE)).BeginInit();
             this.groupBox14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ATC_ACCEL_MAX)).BeginInit();
@@ -144,6 +144,7 @@
             this.groupBox3.Controls.Add(this.THR_MIN);
             this.groupBox3.Controls.Add(this.label7);
             resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -151,14 +152,6 @@
             // 
             resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
-            // 
-            // CRUISE_SPEED
-            // 
-            resources.ApplyResources(this.CRUISE_SPEED, "CRUISE_SPEED");
-            this.CRUISE_SPEED.Max = 1F;
-            this.CRUISE_SPEED.Min = 0F;
-            this.CRUISE_SPEED.Name = "CRUISE_SPEED";
-            this.CRUISE_SPEED.ParamName = null;
             // 
             // MOT_PWM_TYPE
             // 
@@ -168,11 +161,6 @@
             this.MOT_PWM_TYPE.Name = "MOT_PWM_TYPE";
             this.MOT_PWM_TYPE.ParamName = null;
             this.MOT_PWM_TYPE.SubControl = null;
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
             // 
             // THR_MAX
             // 
@@ -199,6 +187,19 @@
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
+            // 
+            // CRUISE_SPEED
+            // 
+            resources.ApplyResources(this.CRUISE_SPEED, "CRUISE_SPEED");
+            this.CRUISE_SPEED.Max = 1F;
+            this.CRUISE_SPEED.Min = 0F;
+            this.CRUISE_SPEED.Name = "CRUISE_SPEED";
+            this.CRUISE_SPEED.ParamName = null;
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
             // 
             // CRUISE_THROTTLE
             // 
@@ -232,8 +233,10 @@
             this.groupBox14.Controls.Add(this.SPEED2THR_P);
             this.groupBox14.Controls.Add(this.label76);
             resources.ApplyResources(this.groupBox14, "groupBox14");
+            this.groupBox14.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.TabStop = false;
+            this.groupBox14.Enter += new System.EventHandler(this.groupBox14_Enter);
             // 
             // label23
             // 
@@ -322,15 +325,27 @@
             // 
             // BUT_writePIDS
             // 
+            this.BUT_writePIDS.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_writePIDS.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_writePIDS.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_writePIDS, "BUT_writePIDS");
             this.BUT_writePIDS.Name = "BUT_writePIDS";
+            this.BUT_writePIDS.Outline = System.Drawing.Color.White;
+            this.BUT_writePIDS.TextColor = System.Drawing.Color.White;
+            this.BUT_writePIDS.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_writePIDS.UseVisualStyleBackColor = true;
             this.BUT_writePIDS.Click += new System.EventHandler(this.BUT_writePIDS_Click);
             // 
             // BUT_rerequestparams
             // 
+            this.BUT_rerequestparams.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_rerequestparams.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_rerequestparams.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_rerequestparams, "BUT_rerequestparams");
             this.BUT_rerequestparams.Name = "BUT_rerequestparams";
+            this.BUT_rerequestparams.Outline = System.Drawing.Color.White;
+            this.BUT_rerequestparams.TextColor = System.Drawing.Color.White;
+            this.BUT_rerequestparams.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_rerequestparams.UseVisualStyleBackColor = true;
             this.BUT_rerequestparams.Click += new System.EventHandler(this.BUT_rerequestparams_Click);
             // 
@@ -349,8 +364,10 @@
             this.groupBox4.Controls.Add(this.TURN_G_MAX);
             this.groupBox4.Controls.Add(this.label10);
             resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // WP_SPEED
             // 
@@ -448,6 +465,7 @@
             this.groupBox5.Controls.Add(this.STEER2SRV_P);
             this.groupBox5.Controls.Add(this.label17);
             resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.ForeColor = System.Drawing.Color.White;
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
@@ -527,6 +545,7 @@
             this.groupBox1.Controls.Add(this.SONAR_TRIGGER_CM);
             this.groupBox1.Controls.Add(this.label3);
             resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -587,6 +606,7 @@
             this.groupBox2.Controls.Add(this.TURN_RADIUS);
             this.groupBox2.Controls.Add(this.label11);
             resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -605,8 +625,14 @@
             // 
             // BUT_refreshpart
             // 
+            this.BUT_refreshpart.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_refreshpart.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.BUT_refreshpart.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.BUT_refreshpart, "BUT_refreshpart");
             this.BUT_refreshpart.Name = "BUT_refreshpart";
+            this.BUT_refreshpart.Outline = System.Drawing.Color.White;
+            this.BUT_refreshpart.TextColor = System.Drawing.Color.White;
+            this.BUT_refreshpart.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_refreshpart.UseVisualStyleBackColor = true;
             this.BUT_refreshpart.Click += new System.EventHandler(this.BUT_refreshpart_Click);
             // 
@@ -622,11 +648,13 @@
             // label21
             // 
             resources.ApplyResources(this.label21, "label21");
+            this.label21.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label21.Name = "label21";
             // 
             // label25
             // 
             resources.ApplyResources(this.label25, "label25");
+            this.label25.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label25.Name = "label25";
             // 
             // CH8_OPTION
@@ -641,6 +669,7 @@
             // label26
             // 
             resources.ApplyResources(this.label26, "label26");
+            this.label26.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label26.Name = "label26";
             // 
             // CH9_OPTION
@@ -655,6 +684,7 @@
             // label27
             // 
             resources.ApplyResources(this.label27, "label27");
+            this.label27.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label27.Name = "label27";
             // 
             // CH10_OPTION
@@ -668,6 +698,7 @@
             // 
             // ConfigArdurover
             // 
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.Controls.Add(this.label27);
             this.Controls.Add(this.CH10_OPTION);
             this.Controls.Add(this.label26);
@@ -688,9 +719,9 @@
             this.Name = "ConfigArdurover";
             resources.ApplyResources(this, "$this");
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CRUISE_SPEED)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_MAX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_MIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CRUISE_SPEED)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CRUISE_THROTTLE)).EndInit();
             this.groupBox14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ATC_ACCEL_MAX)).EndInit();

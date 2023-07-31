@@ -212,10 +212,10 @@
     <value>NoControl</value>
   </data>
   <data name="myButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>-1, -2</value>
   </data>
   <data name="myButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 60</value>
+    <value>133, 62</value>
   </data>
   <data name="myButton1.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -300,10 +300,10 @@
     <value>NoControl</value>
   </data>
   <data name="myButton15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 62</value>
+    <value>-1, 60</value>
   </data>
   <data name="myButton15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 60</value>
+    <value>133, 61</value>
   </data>
   <data name="myButton15.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -324,10 +324,10 @@
     <value>1</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>503, 294</value>
+    <value>520, 296</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 121</value>
+    <value>131, 120</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>125</value>
@@ -412,10 +412,10 @@
     <value>NoControl</value>
   </data>
   <data name="myButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 422</value>
+    <value>508, 420</value>
   </data>
   <data name="myButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 63</value>
+    <value>154, 63</value>
   </data>
   <data name="myButton2.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>

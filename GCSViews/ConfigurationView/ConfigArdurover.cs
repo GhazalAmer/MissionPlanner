@@ -268,5 +268,15 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             public float normalvalue;
             public float scale;
         }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox14_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

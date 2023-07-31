@@ -1152,5 +1152,34 @@ SIM_DRIFT_TIME=0
                 panel2.Visible = true;
             }
         }
+
+        private void NUM_heading_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myButton3_Click(object sender, EventArgs e)
+        {
+            
+            if (panel2.Visible == true)
+            { panel2.Visible = false; }
+            else
+            {
+                panel2.Visible = true;
+            }
+            MainV2.MyView.ShowScreen("FlightData");
+        }
+
+        private void myButton2_Click(object sender, EventArgs e)
+        {
+
+            if (panel2.Visible == true)
+            { panel2.Visible = false; }
+            else
+            {
+                panel2.Visible = true;
+            }
+            MainV2.MyView.ShowScreen("FlightPlanner");
+        }
     }
 }
