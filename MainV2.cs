@@ -4067,26 +4067,25 @@ namespace MissionPlanner
 
             if (keyData == Keys.F2)
             {
-                MenuFlightData_Click(null, null);
+                MainV2.MyView.ShowScreen("FlightData");
                 return true;
             }
 
             if (keyData == Keys.F3)
             {
-                MenuFlightPlanner_Click(null, null);
+                MainV2.MyView.ShowScreen("FlightPlanner");
                 return true;
             }
 
             if (keyData == Keys.F4)
             {
-                MenuTuning_Click(null, null);
+                 MainV2.MyView.ShowScreen("SWConfig");
                 return true;
             }
 
             if (keyData == Keys.F5)
             {
-                comPort.getParamList();
-                MyView.ShowScreen(MyView.current.Name);
+               
                 return true;
             }
 

@@ -36,6 +36,8 @@ using Accord.Statistics;
 using DotSpatial.Data;
 using System.Net.Sockets;
 using GMap.NET.MapProviders;
+using Renci.SshNet.Common;
+using MissionPlanner.GCSViews.ConfigurationView;
 
 // written by michael oborne
 
@@ -264,6 +266,11 @@ namespace MissionPlanner.GCSViews
 
             //  mymap.Manager.UseMemoryCache = false;
 
+
+
+
+
+
             log.Info("Tunning Graph Settings");
             // setup default tuning graph
             if (Settings.Instance["Tuning_Graph_Selected"] != null)
@@ -434,6 +441,8 @@ namespace MissionPlanner.GCSViews
             boatstatus.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             boatstatus.Dock = DockStyle.Fill;
             boatstatus.Show();
+
+       
 
         }
 
@@ -6808,6 +6817,10 @@ namespace MissionPlanner.GCSViews
 
         private void myButton14_Click(object sender, EventArgs e)
         {
+           
+            ChView.Visible = true;
+            boatStatusPanel.Visible = false;
+            gMapControl1.Enabled = false;
             //if (panel3.Visible == true)
             //{
             //    panel3.Visible = false;
@@ -6959,6 +6972,29 @@ namespace MissionPlanner.GCSViews
             {
                 panel9.Visible = true;
             }
+        }
+
+        private void ChView_Paint(object sender, PaintEventArgs e)
+        {
+
+            
+        }
+
+        private void FlightData_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if  (e.KeyData == Keys.F5)
+            //{
+            //    Console.WriteLine("show");
+            //    ChView.Visible = true;
+            //    boatStatusPanel.Visible = false;
+
+            //}
+
+        }
+
+        private void label33_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
