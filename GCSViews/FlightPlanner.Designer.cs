@@ -624,8 +624,8 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.myButton1, "myButton1");
             this.myButton1.BackColor = System.Drawing.Color.White;
-            this.myButton1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.myButton1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton1.BGGradBot = System.Drawing.Color.White;
+            this.myButton1.BGGradTop = System.Drawing.Color.White;
             this.myButton1.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "mode", true));
             this.myButton1.FlatAppearance.BorderSize = 0;
@@ -634,7 +634,7 @@ namespace MissionPlanner.GCSViews
             this.myButton1.Outline = System.Drawing.Color.Black;
             this.myButton1.TabStop = false;
             this.myButton1.Tag = "";
-            this.myButton1.TextColor = System.Drawing.Color.White;
+            this.myButton1.TextColor = System.Drawing.Color.Black;
             this.myButton1.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton1.UseVisualStyleBackColor = false;
             this.myButton1.Click += new System.EventHandler(this.myButton1_Click);
