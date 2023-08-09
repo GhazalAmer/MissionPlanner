@@ -4085,7 +4085,8 @@ namespace MissionPlanner
 
             if (keyData == Keys.F5)
             {
-               
+                Form frm1 = new ChView();
+                frm1.Show();
                 return true;
             }
 
@@ -4829,6 +4830,11 @@ namespace MissionPlanner
         }
 
         private void ConnectButtt_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChView_Paint(object sender, PaintEventArgs e)
         {
 
         }

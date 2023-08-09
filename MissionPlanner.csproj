@@ -84,6 +84,9 @@
     <EmbeddedResource Include="boatView.resx">
       <DependentUpon>boatView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChView.resx">
+      <DependentUpon>ChView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\AuthKeys.uk.resx">
       <DependentUpon>AuthKeys.cs</DependentUpon>
     </EmbeddedResource>
@@ -693,6 +696,12 @@
     </Compile>
     <Compile Include="boatView.Designer.cs">
       <DependentUpon>boatView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChView.Designer.cs">
+      <DependentUpon>ChView.cs</DependentUpon>
     </Compile>
     <Compile Include="Common.cs" />
     <Compile Include="Controls\DroneCANSubscriber.cs">

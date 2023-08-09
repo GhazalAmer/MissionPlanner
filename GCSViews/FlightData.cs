@@ -6982,13 +6982,6 @@ namespace MissionPlanner.GCSViews
 
         private void FlightData_KeyDown(object sender, KeyEventArgs e)
         {
-            //if  (e.KeyData == Keys.F5)
-            //{
-            //    Console.WriteLine("show");
-            //    ChView.Visible = true;
-            //    boatStatusPanel.Visible = false;
-
-            //}
 
         }
 
@@ -6996,5 +6989,16 @@ namespace MissionPlanner.GCSViews
         {
 
         }
+
+        private void ChView_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+           
+        }
+
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
+
 }

@@ -54,9 +54,9 @@ namespace MissionPlanner
             this.menu = new MissionPlanner.Controls.MyButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ConnectButtt1 = new System.Windows.Forms.Button();
+            this.ConnectButtt = new MissionPlanner.Controls.MyButton();
             this.status1 = new MissionPlanner.Controls.Status();
             this.toolStripConnectionControl = new MissionPlanner.Controls.ToolStripConnectionControl();
-            this.ConnectButtt = new MissionPlanner.Controls.MyButton();
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -222,6 +222,20 @@ namespace MissionPlanner
             this.ConnectButtt1.UseVisualStyleBackColor = false;
             this.ConnectButtt1.Click += new System.EventHandler(this.ConnectButtt_Click);
             // 
+            // ConnectButtt
+            // 
+            this.ConnectButtt.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.ConnectButtt.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.ConnectButtt.ColorMouseDown = System.Drawing.Color.Chartreuse;
+            this.ConnectButtt.ColorMouseOver = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.ConnectButtt, "ConnectButtt");
+            this.ConnectButtt.Name = "ConnectButtt";
+            this.ConnectButtt.Outline = System.Drawing.Color.Black;
+            this.ConnectButtt.TextColor = System.Drawing.Color.White;
+            this.ConnectButtt.TextColorNotEnabled = System.Drawing.Color.White;
+            this.ConnectButtt.UseVisualStyleBackColor = true;
+            this.ConnectButtt.Click += new System.EventHandler(this.ConnectButtt_Click_1);
+            // 
             // status1
             // 
             resources.ApplyResources(this.status1, "status1");
@@ -236,20 +250,6 @@ namespace MissionPlanner
             this.toolStripConnectionControl.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripConnectionControl.Name = "toolStripConnectionControl";
             this.toolStripConnectionControl.MouseLeave += new System.EventHandler(this.MainMenu_MouseLeave);
-            // 
-            // ConnectButtt
-            // 
-            this.ConnectButtt.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ConnectButtt.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ConnectButtt.ColorMouseDown = System.Drawing.Color.Chartreuse;
-            this.ConnectButtt.ColorMouseOver = System.Drawing.Color.DimGray;
-            resources.ApplyResources(this.ConnectButtt, "ConnectButtt");
-            this.ConnectButtt.Name = "ConnectButtt";
-            this.ConnectButtt.Outline = System.Drawing.Color.Black;
-            this.ConnectButtt.TextColor = System.Drawing.Color.White;
-            this.ConnectButtt.TextColorNotEnabled = System.Drawing.Color.White;
-            this.ConnectButtt.UseVisualStyleBackColor = true;
-            this.ConnectButtt.Click += new System.EventHandler(this.ConnectButtt_Click_1);
             // 
             // MainV2
             // 

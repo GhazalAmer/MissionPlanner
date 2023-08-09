@@ -30,5 +30,10 @@ namespace MissionPlanner
         {
 
         }
+
+        private void Splash_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
