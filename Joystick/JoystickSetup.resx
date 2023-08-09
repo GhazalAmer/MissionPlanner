@@ -130,10 +130,13 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 126</value>
+    <value>579, 155</value>
+  </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 29</value>
+    <value>126, 37</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -151,7 +154,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="AUX_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -166,10 +169,13 @@
     <value>NoControl</value>
   </data>
   <data name="AUX_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 229</value>
+    <value>580, 282</value>
+  </data>
+  <data name="AUX_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="AUX_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 24</value>
+    <value>65, 29</value>
   </data>
   <data name="AUX_label.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -190,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AUX_label.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="ANCH_label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -205,10 +211,13 @@
     <value>NoControl</value>
   </data>
   <data name="ANCH_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 198</value>
+    <value>580, 244</value>
+  </data>
+  <data name="ANCH_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ANCH_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 24</value>
+    <value>109, 29</value>
   </data>
   <data name="ANCH_label.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -229,7 +238,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ANCH_label.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="ENG_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -241,10 +250,13 @@
     <value>NoControl</value>
   </data>
   <data name="ENG_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 164</value>
+    <value>580, 202</value>
+  </data>
+  <data name="ENG_label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ENG_label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 24</value>
+    <value>129, 29</value>
   </data>
   <data name="ENG_label.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -265,7 +277,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ENG_label.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="AuxBtn.Items" xml:space="preserve">
     <value>RZ</value>
@@ -283,7 +295,7 @@
     <value>1366, 477</value>
   </data>
   <data name="AuxBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="AuxBtn.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -310,7 +322,7 @@
     <value>1210, 437</value>
   </data>
   <data name="AnchUpBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="AnchUpBtn.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -337,7 +349,7 @@
     <value>1210, 477</value>
   </data>
   <data name="AnchDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="AnchDown.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -364,7 +376,7 @@
     <value>1077, 477</value>
   </data>
   <data name="EngStBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="EngStBtn.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -391,7 +403,7 @@
     <value>1000, 477</value>
   </data>
   <data name="EngStpBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="EngStpBtn.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -412,10 +424,13 @@
     <value>NoControl</value>
   </data>
   <data name="GearState.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 97</value>
+    <value>435, 119</value>
+  </data>
+  <data name="GearState.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="GearState.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 46</value>
+    <value>62, 58</value>
   </data>
   <data name="GearState.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -433,7 +448,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GearState.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,10 +460,13 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 118</value>
+    <value>268, 145</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 29</value>
+    <value>94, 36</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -466,7 +484,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="SteerCircBar.AnimationFunction" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -496,10 +514,13 @@
     <value>NoControl</value>
   </data>
   <data name="SteerCircBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 60</value>
+    <value>83, 74</value>
+  </data>
+  <data name="SteerCircBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="SteerCircBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 131</value>
+    <value>183, 161</value>
   </data>
   <data name="SteerCircBar.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -514,7 +535,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SteerCircBar.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="ThrottleCircBar.AnimationFunction" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -541,10 +562,13 @@
     <value>Microsoft Sans Serif, 27.75pt, style=Bold</value>
   </data>
   <data name="ThrottleCircBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 56</value>
+    <value>373, 69</value>
+  </data>
+  <data name="ThrottleCircBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="ThrottleCircBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 131</value>
+    <value>183, 161</value>
   </data>
   <data name="ThrottleCircBar.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -559,7 +583,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ThrottleCircBar.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -670,7 +694,7 @@
     <value>1274, 264</value>
   </data>
   <data name="expo_ch8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch8.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -724,7 +748,7 @@
     <value>1039, 260</value>
   </data>
   <data name="CMB_CH8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="CMB_CH8.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -820,7 +844,7 @@
     <value>1274, 235</value>
   </data>
   <data name="expo_ch7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch7.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -874,7 +898,7 @@
     <value>1039, 231</value>
   </data>
   <data name="CMB_CH7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="CMB_CH7.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -970,7 +994,7 @@
     <value>1274, 206</value>
   </data>
   <data name="expo_ch6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch6.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -1024,7 +1048,7 @@
     <value>1039, 202</value>
   </data>
   <data name="CMB_CH6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="CMB_CH6.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -1114,7 +1138,7 @@
     <value>1274, 177</value>
   </data>
   <data name="expo_ch5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch5.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -1168,7 +1192,7 @@
     <value>1039, 173</value>
   </data>
   <data name="CMB_CH5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="CMB_CH5.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1240,10 +1264,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_detch3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 262</value>
+    <value>413, 322</value>
+  </data>
+  <data name="BUT_detch3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_detch3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 23</value>
+    <value>96, 28</value>
   </data>
   <data name="BUT_detch3.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -1261,7 +1288,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BUT_detch3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="BUT_detch2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -1297,10 +1324,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_detch1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 262</value>
+    <value>124, 322</value>
+  </data>
+  <data name="BUT_detch1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_detch1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 23</value>
+    <value>96, 28</value>
   </data>
   <data name="BUT_detch1.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -1318,7 +1348,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BUT_detch1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1423,10 +1453,13 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 15</value>
+    <value>25, 18</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
+    <value>56, 16</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1444,7 +1477,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="BUT_enable.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -1453,10 +1486,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 9</value>
+    <value>316, 11</value>
+  </data>
+  <data name="BUT_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 28</value>
   </data>
   <data name="BUT_enable.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -1474,7 +1510,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BUT_enable.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="BUT_save.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -1483,10 +1519,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 9</value>
+    <value>424, 11</value>
+  </data>
+  <data name="BUT_save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 28</value>
   </data>
   <data name="BUT_save.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1504,7 +1543,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BUT_save.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="revCH4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1537,10 +1576,13 @@
     <value>NoControl</value>
   </data>
   <data name="revCH3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>340, 292</value>
+    <value>453, 359</value>
+  </data>
+  <data name="revCH3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="revCH3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+    <value>18, 17</value>
   </data>
   <data name="revCH3.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1555,7 +1597,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;revCH3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="revCH2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1588,10 +1630,13 @@
     <value>NoControl</value>
   </data>
   <data name="revCH1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 292</value>
+    <value>167, 359</value>
+  </data>
+  <data name="revCH1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="revCH1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+    <value>18, 17</value>
   </data>
   <data name="revCH1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1606,7 +1651,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;revCH1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1645,10 +1690,13 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 192</value>
+    <value>407, 236</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 29</value>
+    <value>116, 36</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1666,7 +1714,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1705,10 +1753,13 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 118</value>
+    <value>11, 145</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 29</value>
+    <value>70, 36</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1726,7 +1777,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1738,10 +1789,13 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 193</value>
+    <value>117, 238</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 29</value>
+    <value>126, 36</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1759,13 +1813,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="expo_ch4.Location" type="System.Drawing.Point, System.Drawing">
     <value>1274, 148</value>
   </data>
   <data name="expo_ch4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1789,7 +1843,7 @@
     <value>1274, 121</value>
   </data>
   <data name="expo_ch3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch3.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1807,7 +1861,7 @@
     <value>1272, 296</value>
   </data>
   <data name="expo_ch2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1828,7 +1882,7 @@
     <value>1274, 67</value>
   </data>
   <data name="expo_ch1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 15</value>
   </data>
   <data name="expo_ch1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1933,7 +1987,7 @@
     <value>1039, 144</value>
   </data>
   <data name="CMB_CH4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="CMB_CH4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1960,10 +2014,13 @@
     <value>SL1</value>
   </data>
   <data name="CMB_CH3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 240</value>
+    <value>413, 295</value>
+  </data>
+  <data name="CMB_CH3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="CMB_CH3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>92, 24</value>
   </data>
   <data name="CMB_CH3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1978,7 +2035,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CMB_CH3.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="CMB_CH2.Items" xml:space="preserve">
     <value>RZ</value>
@@ -1996,7 +2053,7 @@
     <value>1037, 292</value>
   </data>
   <data name="CMB_CH2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>70, 24</value>
   </data>
   <data name="CMB_CH2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2023,10 +2080,13 @@
     <value>SL1</value>
   </data>
   <data name="CMB_CH1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 239</value>
+    <value>124, 294</value>
+  </data>
+  <data name="CMB_CH1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="CMB_CH1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 21</value>
+    <value>92, 24</value>
   </data>
   <data name="CMB_CH1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2041,13 +2101,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CMB_CH1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="CMB_joysticks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 12</value>
+    <value>96, 15</value>
+  </data>
+  <data name="CMB_joysticks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="CMB_joysticks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 21</value>
+    <value>181, 24</value>
   </data>
   <data name="CMB_joysticks.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2062,25 +2125,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CMB_joysticks.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="labelWithPseudoOpacity1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelWithPseudoOpacity1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 49</value>
+  </data>
+  <data name="labelWithPseudoOpacity1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 16</value>
+  </data>
+  <data name="labelWithPseudoOpacity1.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="labelWithPseudoOpacity1.Text" xml:space="preserve">
+    <value>labelWithPseudoOpacity1</value>
+  </data>
+  <data name="&gt;&gt;labelWithPseudoOpacity1.Name" xml:space="preserve">
+    <value>labelWithPseudoOpacity1</value>
+  </data>
+  <data name="&gt;&gt;labelWithPseudoOpacity1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.LabelWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;labelWithPseudoOpacity1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelWithPseudoOpacity1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>566, 452</value>
+    <value>755, 556</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>566, 331</value>
+    <value>755, 407</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>566, 336</value>
+    <value>755, 414</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>

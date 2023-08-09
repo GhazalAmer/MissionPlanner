@@ -106,6 +106,7 @@ namespace MissionPlanner.Joystick
             this.CMB_CH1 = new System.Windows.Forms.ComboBox();
             this.CMB_joysticks = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labelWithPseudoOpacity1 = new MissionPlanner.Controls.LabelWithPseudoOpacity();
             this.SuspendLayout();
             // 
             // label17
@@ -473,6 +474,7 @@ namespace MissionPlanner.Joystick
             this.BUT_detch3.TextColor = System.Drawing.Color.Black;
             this.BUT_detch3.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_detch3.UseVisualStyleBackColor = true;
+            this.BUT_detch3.Click += new System.EventHandler(this.BUT_detch3_Click);
             // 
             // BUT_detch2
             // 
@@ -491,6 +493,7 @@ namespace MissionPlanner.Joystick
             this.BUT_detch1.TextColor = System.Drawing.Color.Black;
             this.BUT_detch1.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_detch1.UseVisualStyleBackColor = true;
+            this.BUT_detch1.Click += new System.EventHandler(this.BUT_detch1_Click);
             // 
             // label9
             // 
@@ -528,6 +531,7 @@ namespace MissionPlanner.Joystick
             this.BUT_enable.TextColor = System.Drawing.Color.Black;
             this.BUT_enable.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_enable.UseVisualStyleBackColor = true;
+            this.BUT_enable.Click += new System.EventHandler(this.BUT_enable_Click_1);
             // 
             // BUT_save
             // 
@@ -539,6 +543,7 @@ namespace MissionPlanner.Joystick
             this.BUT_save.TextColor = System.Drawing.Color.Black;
             this.BUT_save.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_save.UseVisualStyleBackColor = true;
+            this.BUT_save.Click += new System.EventHandler(this.BUT_save_Click_1);
             // 
             // revCH4
             // 
@@ -720,11 +725,18 @@ namespace MissionPlanner.Joystick
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // labelWithPseudoOpacity1
+            // 
+            resources.ApplyResources(this.labelWithPseudoOpacity1, "labelWithPseudoOpacity1");
+            this.labelWithPseudoOpacity1.DoubleBuffered = true;
+            this.labelWithPseudoOpacity1.Name = "labelWithPseudoOpacity1";
+            // 
             // JoystickSetup
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Controls.Add(this.labelWithPseudoOpacity1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.AUX_label);
             this.Controls.Add(this.ANCH_label);
@@ -830,5 +842,6 @@ namespace MissionPlanner.Joystick
         private ComboBox CMB_CH1;
         private ComboBox CMB_joysticks;
         private Timer timer1;
+        private LabelWithPseudoOpacity labelWithPseudoOpacity1;
     }
 }

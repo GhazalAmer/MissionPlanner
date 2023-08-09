@@ -199,7 +199,7 @@ namespace MissionPlanner.Joystick
 
         private void BUT_detch_Click(object sender, EventArgs e)
         {
-            ChannelValue = Detect?.Invoke();
+        //    Joystick.getMovingAxis(CMB_joysticks.Text, 16000).ToString();
         }
 
         private void expo_ch_TextChanged(object sender, EventArgs e)

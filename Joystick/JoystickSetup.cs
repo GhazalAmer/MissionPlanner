@@ -27,9 +27,9 @@ namespace MissionPlanner.Joystick
         {
             try
             {
-                var joysticklist = JoystickBase.getDevices();
+                var joystick = JoystickBase.getDevices();
 
-                foreach (var device in joysticklist)
+                foreach (var device in joystick)
                 {
                     CMB_joysticks.Items.Add(device);
                 }
@@ -695,6 +695,81 @@ namespace MissionPlanner.Joystick
                     MainV2.joystick.UnAcquireJoyStick();
             }
             catch { }
+        }
+
+         
+         
+
+        private void BUT_enable_Click_1(object sender, EventArgs e)
+        {
+            if (MainV2.joystick == null || MainV2.joystick.enabled == false)
+            {
+                try
+                {
+                    if (MainV2.joystick != null)
+                        MainV2.joystick.UnAcquireJoyStick();
+                }
+                catch
+                {
+                }
+
+                // all config is loaded from the xmls
+                var joy = JoystickBase.Create(() => MainV2.comPort);
+
+                joy.elevons = CHK_elevons.Checked;
+
+                //show error message if a joystick is not connected when Enable is clicked
+                if (!joy.start(CMB_joysticks.Text))
+                {
+                    CustomMessageBox.Show("Please Connect a Joystick", "No Joystick");
+                    joy.Dispose();
+                    return;
+                }
+
+                Settings.Instance["joystick_name"] = CMB_joysticks.Text;
+
+                MainV2.joystick = joy;
+                MainV2.joystick.enabled = true;
+
+                BUT_enable.Text = "Disable";
+
+                //timer1.Start();
+            }
+            else
+            {
+                MainV2.joystick.enabled = false;
+
+                MainV2.joystick.clearRCOverride();
+
+                MainV2.joystick = null;
+
+
+                //timer1.Stop();
+
+                BUT_enable.Text = "Enable";
+            }
+        }
+
+        private void BUT_detch1_Click(object sender, EventArgs e)
+        {
+            CMB_CH1.Text = JoystickBase.getMovingAxis(CMB_joysticks.Text, 16000).ToString();
+        }
+
+        private void BUT_detch3_Click(object sender, EventArgs e)
+        {
+            CMB_CH3.Text = JoystickBase.getMovingAxis(CMB_joysticks.Text, 16000).ToString();
+        }
+
+        private void BUT_save_Click_1(object sender, EventArgs e)
+        {
+            if (MainV2.joystick == null)
+            {
+                CustomMessageBox.Show("Please select a joystick");
+                return;
+            }
+            MainV2.joystick.saveconfig();
+
+            Settings.Instance["joy_elevons"] = CHK_elevons.Checked.ToString();
         }
     }
 }
