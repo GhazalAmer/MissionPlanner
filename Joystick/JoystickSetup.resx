@@ -2145,6 +2145,9 @@
   <data name="labelWithPseudoOpacity1.Text" xml:space="preserve">
     <value>labelWithPseudoOpacity1</value>
   </data>
+  <data name="labelWithPseudoOpacity1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;labelWithPseudoOpacity1.Name" xml:space="preserve">
     <value>labelWithPseudoOpacity1</value>
   </data>

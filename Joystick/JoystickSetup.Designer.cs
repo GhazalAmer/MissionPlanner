@@ -192,6 +192,7 @@ namespace MissionPlanner.Joystick
             this.GearState.BackColor = System.Drawing.Color.Gray;
             this.GearState.ForeColor = System.Drawing.Color.Black;
             this.GearState.Name = "GearState";
+            this.GearState.Click += new System.EventHandler(this.GearState_Click);
             // 
             // label16
             // 
@@ -228,6 +229,7 @@ namespace MissionPlanner.Joystick
             this.SteerCircBar.SuperscriptText = "°C";
             this.SteerCircBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.SteerCircBar.Value = 10;
+            this.SteerCircBar.Click += new System.EventHandler(this.SteerCircBar_Click);
             // 
             // ThrottleCircBar
             // 
@@ -257,6 +259,7 @@ namespace MissionPlanner.Joystick
             this.ThrottleCircBar.SuperscriptText = "";
             this.ThrottleCircBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.ThrottleCircBar.Value = 10;
+            this.ThrottleCircBar.Click += new System.EventHandler(this.ThrottleCircBar_Click);
             // 
             // label14
             // 
@@ -690,6 +693,7 @@ namespace MissionPlanner.Joystick
             resources.GetString("CMB_CH3.Items3")});
             resources.ApplyResources(this.CMB_CH3, "CMB_CH3");
             this.CMB_CH3.Name = "CMB_CH3";
+            this.CMB_CH3.SelectedIndexChanged += new System.EventHandler(this.CMB_CH3_SelectedIndexChanged);
             // 
             // CMB_CH2
             // 
@@ -712,6 +716,7 @@ namespace MissionPlanner.Joystick
             resources.GetString("CMB_CH1.Items3")});
             resources.ApplyResources(this.CMB_CH1, "CMB_CH1");
             this.CMB_CH1.Name = "CMB_CH1";
+            this.CMB_CH1.SelectedIndexChanged += new System.EventHandler(this.CMB_CH1_SelectedIndexChanged);
             // 
             // CMB_joysticks
             // 

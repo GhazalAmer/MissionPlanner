@@ -771,5 +771,36 @@ namespace MissionPlanner.Joystick
 
             Settings.Instance["joy_elevons"] = CHK_elevons.Checked.ToString();
         }
+
+        private void SteerCircBar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThrottleCircBar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CMB_CH1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (startup || MainV2.joystick == null)
+                return;
+            MainV2.joystick.setAxis(1, (Joystick.joystickaxis)Enum.Parse(typeof(Joystick.joystickaxis), ((ComboBox)sender).Text));
+        }
+
+        private void CMB_CH3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (startup || MainV2.joystick == null)
+                return;
+            MainV2.joystick.setAxis(3, (Joystick.joystickaxis)Enum.Parse(typeof(Joystick.joystickaxis), ((ComboBox)sender).Text));
+        }
+
+        private void GearState_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
