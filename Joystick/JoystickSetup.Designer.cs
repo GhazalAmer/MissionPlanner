@@ -33,19 +33,11 @@ namespace MissionPlanner.Joystick
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JoystickSetup));
-            this.label17 = new System.Windows.Forms.Label();
-            this.AUX_label = new System.Windows.Forms.Label();
-            this.ANCH_label = new System.Windows.Forms.Label();
-            this.ENG_label = new System.Windows.Forms.Label();
             this.AuxBtn = new System.Windows.Forms.ComboBox();
             this.AnchUpBtn = new System.Windows.Forms.ComboBox();
             this.AnchDown = new System.Windows.Forms.ComboBox();
             this.EngStBtn = new System.Windows.Forms.ComboBox();
             this.EngStpBtn = new System.Windows.Forms.ComboBox();
-            this.GearState = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.SteerCircBar = new CircularProgressBar.CircularProgressBar();
-            this.ThrottleCircBar = new CircularProgressBar.CircularProgressBar();
             this.label14 = new System.Windows.Forms.Label();
             this.BUT_detch8 = new MissionPlanner.Controls.MyButton();
             this.revCH8 = new System.Windows.Forms.CheckBox();
@@ -73,9 +65,7 @@ namespace MissionPlanner.Joystick
             this.CMB_CH5 = new System.Windows.Forms.ComboBox();
             this.CHK_elevons = new System.Windows.Forms.CheckBox();
             this.BUT_detch4 = new MissionPlanner.Controls.MyButton();
-            this.BUT_detch3 = new MissionPlanner.Controls.MyButton();
             this.BUT_detch2 = new MissionPlanner.Controls.MyButton();
-            this.BUT_detch1 = new MissionPlanner.Controls.MyButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -84,14 +74,9 @@ namespace MissionPlanner.Joystick
             this.BUT_enable = new MissionPlanner.Controls.MyButton();
             this.BUT_save = new MissionPlanner.Controls.MyButton();
             this.revCH4 = new System.Windows.Forms.CheckBox();
-            this.revCH3 = new System.Windows.Forms.CheckBox();
             this.revCH2 = new System.Windows.Forms.CheckBox();
-            this.revCH1 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.expo_ch4 = new System.Windows.Forms.TextBox();
             this.expo_ch3 = new System.Windows.Forms.TextBox();
             this.expo_ch2 = new System.Windows.Forms.TextBox();
@@ -101,34 +86,17 @@ namespace MissionPlanner.Joystick
             this.progressBarPith = new MissionPlanner.Controls.HorizontalProgressBar();
             this.progressBarRoll = new MissionPlanner.Controls.HorizontalProgressBar();
             this.CMB_CH4 = new System.Windows.Forms.ComboBox();
-            this.CMB_CH3 = new System.Windows.Forms.ComboBox();
             this.CMB_CH2 = new System.Windows.Forms.ComboBox();
-            this.CMB_CH1 = new System.Windows.Forms.ComboBox();
             this.CMB_joysticks = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.chk_manualcontrol = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Name = "label17";
-            // 
-            // AUX_label
-            // 
-            resources.ApplyResources(this.AUX_label, "AUX_label");
-            this.AUX_label.ForeColor = System.Drawing.Color.White;
-            this.AUX_label.Name = "AUX_label";
-            // 
-            // ANCH_label
-            // 
-            resources.ApplyResources(this.ANCH_label, "ANCH_label");
-            this.ANCH_label.Name = "ANCH_label";
-            // 
-            // ENG_label
-            // 
-            resources.ApplyResources(this.ENG_label, "ENG_label");
-            this.ENG_label.Name = "ENG_label";
             // 
             // AuxBtn
             // 
@@ -184,78 +152,6 @@ namespace MissionPlanner.Joystick
             resources.GetString("EngStpBtn.Items3")});
             resources.ApplyResources(this.EngStpBtn, "EngStpBtn");
             this.EngStpBtn.Name = "EngStpBtn";
-            // 
-            // GearState
-            // 
-            resources.ApplyResources(this.GearState, "GearState");
-            this.GearState.BackColor = System.Drawing.Color.Gray;
-            this.GearState.ForeColor = System.Drawing.Color.Black;
-            this.GearState.Name = "GearState";
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Name = "label16";
-            // 
-            // SteerCircBar
-            // 
-            this.SteerCircBar.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("SteerCircBar.AnimationFunction")));
-            this.SteerCircBar.AnimationSpeed = 500;
-            this.SteerCircBar.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.SteerCircBar, "SteerCircBar");
-            this.SteerCircBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SteerCircBar.InnerColor = System.Drawing.Color.Gray;
-            this.SteerCircBar.InnerMargin = 2;
-            this.SteerCircBar.InnerWidth = -1;
-            this.SteerCircBar.MarqueeAnimationSpeed = 2000;
-            this.SteerCircBar.Maximum = 180;
-            this.SteerCircBar.Name = "SteerCircBar";
-            this.SteerCircBar.OuterColor = System.Drawing.Color.DimGray;
-            this.SteerCircBar.OuterMargin = -25;
-            this.SteerCircBar.OuterWidth = 26;
-            this.SteerCircBar.ProgressColor = System.Drawing.Color.Black;
-            this.SteerCircBar.ProgressWidth = 25;
-            this.SteerCircBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SteerCircBar.StartAngle = 80;
-            this.SteerCircBar.Step = 100;
-            this.SteerCircBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.SteerCircBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.SteerCircBar.SubscriptText = ".23";
-            this.SteerCircBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.SteerCircBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.SteerCircBar.SuperscriptText = "°C";
-            this.SteerCircBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.SteerCircBar.Value = 10;
-            // 
-            // ThrottleCircBar
-            // 
-            this.ThrottleCircBar.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("ThrottleCircBar.AnimationFunction")));
-            this.ThrottleCircBar.AnimationSpeed = 500;
-            this.ThrottleCircBar.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.ThrottleCircBar, "ThrottleCircBar");
-            this.ThrottleCircBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ThrottleCircBar.InnerColor = System.Drawing.Color.Gray;
-            this.ThrottleCircBar.InnerMargin = 2;
-            this.ThrottleCircBar.InnerWidth = -1;
-            this.ThrottleCircBar.MarqueeAnimationSpeed = 2000;
-            this.ThrottleCircBar.Maximum = 180;
-            this.ThrottleCircBar.Name = "ThrottleCircBar";
-            this.ThrottleCircBar.OuterColor = System.Drawing.Color.DimGray;
-            this.ThrottleCircBar.OuterMargin = -25;
-            this.ThrottleCircBar.OuterWidth = 26;
-            this.ThrottleCircBar.ProgressColor = System.Drawing.Color.Red;
-            this.ThrottleCircBar.ProgressWidth = 25;
-            this.ThrottleCircBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThrottleCircBar.StartAngle = 260;
-            this.ThrottleCircBar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.ThrottleCircBar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.ThrottleCircBar.SubscriptText = "";
-            this.ThrottleCircBar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.ThrottleCircBar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.ThrottleCircBar.SuperscriptText = "";
-            this.ThrottleCircBar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.ThrottleCircBar.Value = 10;
             // 
             // label14
             // 
@@ -463,34 +359,12 @@ namespace MissionPlanner.Joystick
             this.BUT_detch4.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.BUT_detch4.UseVisualStyleBackColor = true;
             // 
-            // BUT_detch3
-            // 
-            this.BUT_detch3.BGGradBot = System.Drawing.Color.DimGray;
-            this.BUT_detch3.BGGradTop = System.Drawing.Color.DarkGray;
-            resources.ApplyResources(this.BUT_detch3, "BUT_detch3");
-            this.BUT_detch3.Name = "BUT_detch3";
-            this.BUT_detch3.Outline = System.Drawing.Color.Black;
-            this.BUT_detch3.TextColor = System.Drawing.Color.Black;
-            this.BUT_detch3.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.BUT_detch3.UseVisualStyleBackColor = true;
-            // 
             // BUT_detch2
             // 
             resources.ApplyResources(this.BUT_detch2, "BUT_detch2");
             this.BUT_detch2.Name = "BUT_detch2";
             this.BUT_detch2.TextColorNotEnabled = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(87)))), ((int)(((byte)(4)))));
             this.BUT_detch2.UseVisualStyleBackColor = true;
-            // 
-            // BUT_detch1
-            // 
-            this.BUT_detch1.BGGradBot = System.Drawing.Color.DimGray;
-            this.BUT_detch1.BGGradTop = System.Drawing.Color.DarkGray;
-            resources.ApplyResources(this.BUT_detch1, "BUT_detch1");
-            this.BUT_detch1.Name = "BUT_detch1";
-            this.BUT_detch1.Outline = System.Drawing.Color.Black;
-            this.BUT_detch1.TextColor = System.Drawing.Color.Black;
-            this.BUT_detch1.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.BUT_detch1.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -528,6 +402,7 @@ namespace MissionPlanner.Joystick
             this.BUT_enable.TextColor = System.Drawing.Color.Black;
             this.BUT_enable.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_enable.UseVisualStyleBackColor = true;
+            this.BUT_enable.Click += new System.EventHandler(this.BUT_enable_Click);
             // 
             // BUT_save
             // 
@@ -539,6 +414,7 @@ namespace MissionPlanner.Joystick
             this.BUT_save.TextColor = System.Drawing.Color.Black;
             this.BUT_save.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_save.UseVisualStyleBackColor = true;
+            this.BUT_save.Click += new System.EventHandler(this.BUT_save_Click);
             // 
             // revCH4
             // 
@@ -546,51 +422,21 @@ namespace MissionPlanner.Joystick
             this.revCH4.Name = "revCH4";
             this.revCH4.UseVisualStyleBackColor = true;
             // 
-            // revCH3
-            // 
-            resources.ApplyResources(this.revCH3, "revCH3");
-            this.revCH3.Name = "revCH3";
-            this.revCH3.UseVisualStyleBackColor = true;
-            // 
             // revCH2
             // 
             resources.ApplyResources(this.revCH2, "revCH2");
             this.revCH2.Name = "revCH2";
             this.revCH2.UseVisualStyleBackColor = true;
             // 
-            // revCH1
-            // 
-            resources.ApplyResources(this.revCH1, "revCH1");
-            this.revCH1.Name = "revCH1";
-            this.revCH1.UseVisualStyleBackColor = true;
-            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Name = "label3";
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Name = "label15";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
             // 
             // expo_ch4
             // 
@@ -675,17 +521,6 @@ namespace MissionPlanner.Joystick
             resources.ApplyResources(this.CMB_CH4, "CMB_CH4");
             this.CMB_CH4.Name = "CMB_CH4";
             // 
-            // CMB_CH3
-            // 
-            this.CMB_CH3.FormattingEnabled = true;
-            this.CMB_CH3.Items.AddRange(new object[] {
-            resources.GetString("CMB_CH3.Items"),
-            resources.GetString("CMB_CH3.Items1"),
-            resources.GetString("CMB_CH3.Items2"),
-            resources.GetString("CMB_CH3.Items3")});
-            resources.ApplyResources(this.CMB_CH3, "CMB_CH3");
-            this.CMB_CH3.Name = "CMB_CH3";
-            // 
             // CMB_CH2
             // 
             this.CMB_CH2.FormattingEnabled = true;
@@ -697,54 +532,77 @@ namespace MissionPlanner.Joystick
             resources.ApplyResources(this.CMB_CH2, "CMB_CH2");
             this.CMB_CH2.Name = "CMB_CH2";
             // 
-            // CMB_CH1
-            // 
-            this.CMB_CH1.FormattingEnabled = true;
-            this.CMB_CH1.Items.AddRange(new object[] {
-            resources.GetString("CMB_CH1.Items"),
-            resources.GetString("CMB_CH1.Items1"),
-            resources.GetString("CMB_CH1.Items2"),
-            resources.GetString("CMB_CH1.Items3")});
-            resources.ApplyResources(this.CMB_CH1, "CMB_CH1");
-            this.CMB_CH1.Name = "CMB_CH1";
-            // 
             // CMB_joysticks
             // 
             this.CMB_joysticks.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_joysticks, "CMB_joysticks");
             this.CMB_joysticks.Name = "CMB_joysticks";
-            this.CMB_joysticks.SelectedIndexChanged += new System.EventHandler(this.CMB_joysticks_SelectedIndexChanged_1);
+            this.CMB_joysticks.SelectedIndexChanged += new System.EventHandler(this.CMB_joysticks_SelectedIndexChanged);
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // chk_manualcontrol
+            // 
+            resources.ApplyResources(this.chk_manualcontrol, "chk_manualcontrol");
+            this.chk_manualcontrol.ForeColor = System.Drawing.Color.White;
+            this.chk_manualcontrol.Name = "chk_manualcontrol";
+            this.chk_manualcontrol.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // checkBox1
+            // 
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Name = "label3";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Name = "label15";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Name = "label16";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Name = "label17";
+            // 
             // JoystickSetup
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.AUX_label);
-            this.Controls.Add(this.ANCH_label);
-            this.Controls.Add(this.ENG_label);
-            this.Controls.Add(this.GearState);
+            this.Controls.Add(this.chk_manualcontrol);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.SteerCircBar);
-            this.Controls.Add(this.ThrottleCircBar);
-            this.Controls.Add(this.BUT_detch3);
-            this.Controls.Add(this.BUT_detch1);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.BUT_enable);
             this.Controls.Add(this.BUT_save);
-            this.Controls.Add(this.revCH3);
-            this.Controls.Add(this.revCH1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.CMB_CH3);
-            this.Controls.Add(this.CMB_CH1);
             this.Controls.Add(this.CMB_joysticks);
             this.Name = "JoystickSetup";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.JoystickSetup_FormClosed);
@@ -756,18 +614,11 @@ namespace MissionPlanner.Joystick
 
 
         #endregion
-
-        private Label label17;
-        private Label AUX_label;
-        private Label ANCH_label;
-        private Label ENG_label;
         private ComboBox AuxBtn;
         private ComboBox AnchUpBtn;
         private ComboBox AnchDown;
         private ComboBox EngStBtn;
         private ComboBox EngStpBtn;
-        private Label GearState;
-        private Label label16;
         private CircularProgressBar.CircularProgressBar SteerCircBar;
         private CircularProgressBar.CircularProgressBar ThrottleCircBar;
         private Label label14;
@@ -797,9 +648,7 @@ namespace MissionPlanner.Joystick
         private ComboBox CMB_CH5;
         private CheckBox CHK_elevons;
         private MyButton BUT_detch4;
-        private MyButton BUT_detch3;
         private MyButton BUT_detch2;
-        private MyButton BUT_detch1;
         private Label label9;
         private Label label8;
         private Label label7;
@@ -808,14 +657,9 @@ namespace MissionPlanner.Joystick
         private MyButton BUT_enable;
         private MyButton BUT_save;
         private CheckBox revCH4;
-        private CheckBox revCH3;
         private CheckBox revCH2;
-        private CheckBox revCH1;
         private Label label4;
-        private Label label3;
         private Label label2;
-        private Label label15;
-        private Label label1;
         private TextBox expo_ch4;
         private TextBox expo_ch3;
         private TextBox expo_ch2;
@@ -825,10 +669,15 @@ namespace MissionPlanner.Joystick
         private HorizontalProgressBar progressBarPith;
         private HorizontalProgressBar progressBarRoll;
         private ComboBox CMB_CH4;
-        private ComboBox CMB_CH3;
         private ComboBox CMB_CH2;
-        private ComboBox CMB_CH1;
         private ComboBox CMB_joysticks;
         private Timer timer1;
+        private CheckBox chk_manualcontrol;
+        private Label label1;
+        private CheckBox checkBox1;
+        private Label label3;
+        private Label label15;
+        private Label label16;
+        private Label label17;
     }
 }
