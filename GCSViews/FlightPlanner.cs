@@ -3504,7 +3504,7 @@ namespace MissionPlanner.GCSViews
             MyUserControl joy = new JoystickSetup();
             ThemeManager.ApplyThemeTo(joy);
             /*joy.TopLevel = false;*/
-            Joystick_Panel.Controls.Add(joy);
+            //Joystick_Panel.Controls.Add(joy);
             /*joy.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;*/
             joy.Dock = DockStyle.Fill;
             joy.Show();
@@ -8281,40 +8281,45 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void AUTOQUICK_Click(object sender, EventArgs e)
         {
-            try
-            {
-                ///////////////
-                MAVLink.mavlink_rc_channels_override_t rc = new MAVLink.mavlink_rc_channels_override_t();
+            //try
+            //{
+            //    ///////////////
+            //    MAVLink.mavlink_rc_channels_override_t rc = new MAVLink.mavlink_rc_channels_override_t();
 
-                rc.target_component = MainV2.comPort.MAV.compid;
-                rc.target_system = MainV2.comPort.MAV.sysid;
-                rc.chan1_raw = 1500;
-                rc.chan3_raw = 1500;
-                MainV2.comPort.sendPacket(rc, MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid);
-                MainV2.comPort.sendPacket(rc, MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid);
-                ///////////////////
-                ((Button)sender).Enabled = false;
-                MainV2.comPort.setMode("HOLD");
-            }
-            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
-            ((Button)sender).Enabled = true;
+            //    rc.target_component = MainV2.comPort.MAV.compid;
+            //    rc.target_system = MainV2.comPort.MAV.sysid;
+            //    rc.chan1_raw = 1500;
+            //    rc.chan3_raw = 1500;
+            //    MainV2.comPort.sendPacket(rc, MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid);
+            //    MainV2.comPort.sendPacket(rc, MainV2.comPort.MAV.sysid, MainV2.comPort.MAV.compid);
+            //    ///////////////////
+            //    ((Button)sender).Enabled = false;
+            //    MainV2.comPort.setMode("HOLD");
+            //}
+            //catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            //((Button)sender).Enabled = true;
         }
 
         private void HOLDQUICK_Click(object sender, EventArgs e)
         {
-            if (Joystick_Panel.Visible == true)
-            {
-                Joystick_Panel.Visible = false;
-            }
-            else
-            {
-                Joystick_Panel.Visible = true;
-                FollowMePanel.Visible = false;
-            }
+            //if (Joystick_Panel.Visible == true)
+            //{
+            //    Joystick_Panel.Visible = false;
+            //}
+            //else
+            //{
+            //    Joystick_Panel.Visible = true;
+            //    FollowMePanel.Visible = false;
+            //}
         }
 
         private void myButton1_Click(object sender, EventArgs e)
         {
+            panel10.Visible = false;
+            ToolsTable.Visible = false;
+            DrawPanel.Visible = false;
+            measurePanel.Visible = false;
+
             if (panel9.Visible == true)
             { panel9.Visible = false; }
             else
@@ -8325,6 +8330,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton22_Click(object sender, EventArgs e)
         {
+            panel10.Visible = false;
+            ToolsTable.Visible = false;
+            NextWpPanel.Visible = false;
+            panel9.Visible = false;
+            DrawPanel.Visible = false;
+            measurePanel.Visible = false;
 
             update_main_list_of_polys();
 
@@ -8381,6 +8392,11 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void ToolsBTN_Click(object sender, EventArgs e)
         {
+      
+            NextWpPanel.Visible = false;
+            panel9.Visible = false;
+            panel10.Visible = false;
+
             if (ToolsTable.Visible == true)
             { ToolsTable.Visible = false; }
             else { ToolsTable.Visible = true; }
@@ -8393,11 +8409,15 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton21_Click(object sender, EventArgs e)
         {
+            panel10.Visible = false;
+            ToolsTable.Visible = false;
+            NextWpPanel.Visible = false;
+            panel9.Visible = false;
+            DrawPanel.Visible = false;
+            measurePanel.Visible = false;
+
             BUT_write_Click(this, EventArgs.Empty);
-
-
             update_main_list_of_polys();
-
             MainV2.MyView.ShowScreen("FlightData");
             tableLayoutPanel6.Visible = false;
             Show_BTNs();
@@ -8603,6 +8623,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void EditButton_Click(object sender, EventArgs e)
         {
+            MainMap.Enabled = false;
+            ToolsTable.Visible = false;
+            panel10.Visible = false;
+            NextWpPanel.Visible = false;
+            panel9.Visible = false;
+            DrawPanel.Visible = false;
+            measurePanel.Visible = false;
             // CurentRectMarker = null;
             //GMapMarkerRect rc = markerjustleft;
             //int answer = int.Parse(rc.InnerMarker.Tag.ToString());
@@ -9457,12 +9484,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             /* Form joy = new JoystickSetup();
               ThemeManager.ApplyThemeTo(joy);
               joy.Show();*/
-            if (Joystick_Panel.Visible == true)
-            { Joystick_Panel.Visible = false; }
-            else
-            {
-                Joystick_Panel.Visible = true;
-            }
+            //if (Joystick_Panel.Visible == true)
+            //{ Joystick_Panel.Visible = false; }
+            //else
+            //{
+            //    Joystick_Panel.Visible = true;
+            //}
 
         }
 
@@ -9492,6 +9519,14 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton2_Click(object sender, EventArgs e)
         {
+            MainMap.Enabled = true;
+            if (panel6.Visible == true && SpeedPanel.Visible == false)
+            {
+                panel6.Visible = false;
+                FormatPanel.Visible = false;
+            }
+            else
+            { panel6.Visible = true; }
             double Lat;
             double Latd = (double)LatDeg.Value;
             double Latm = (double)LatMin.Value;
@@ -9530,6 +9565,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void myButton12_Click(object sender, EventArgs e)
         {
             Show_BTNs();
+            if (panel6.Visible == true && SpeedPanel.Visible == false)
+            {
+                panel6.Visible = false;
+                FormatPanel.Visible = false;
+            }
+            else
+            { panel6.Visible = true; }
         }
 
         private void myButton20_Click(object sender, EventArgs e)
@@ -9636,12 +9678,6 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void Deletebu_Click(object sender, EventArgs e)
         {
-
-
-
-
-
-
 
             try
             {
@@ -9775,6 +9811,31 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 EngageAutoNumeris.Value = 1;
             }
             int no = (int)EngageAutoNumeris.Value;
+        }
+
+        private void myButton25_Click(object sender, EventArgs e)
+        {
+            ToolsTable.Visible = false;
+            NextWpPanel.Visible = false;
+            panel9.Visible = false;
+            DrawPanel.Visible = false;
+            measurePanel.Visible = false;
+            if (panel10.Visible == true)
+            { panel10.Visible = false; }
+            else
+            {
+                panel10.Visible = true;
+            }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

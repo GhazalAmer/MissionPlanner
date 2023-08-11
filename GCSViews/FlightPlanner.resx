@@ -139,7 +139,7 @@
     <value>NoControl</value>
   </data>
   <data name="newhome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1239, 398</value>
+    <value>-1, 105</value>
   </data>
   <data name="newhome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -187,13 +187,13 @@
     <value>NoControl</value>
   </data>
   <data name="ToolsBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1668, 0</value>
+    <value>1570, 0</value>
   </data>
   <data name="ToolsBTN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ToolsBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 70</value>
+    <value>195, 55</value>
   </data>
   <data name="ToolsBTN.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -211,7 +211,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;ToolsBTN.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="EditButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -229,13 +229,13 @@
     <value>NoControl</value>
   </data>
   <data name="EditButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1197, 0</value>
+    <value>1190, 0</value>
   </data>
   <data name="EditButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="EditButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 70</value>
+    <value>190, 55</value>
   </data>
   <data name="EditButton.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -253,16 +253,10 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;EditButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Reversewpbutton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>2</value>
   </data>
   <data name="Reversewpbutton.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
-  </data>
-  <data name="Reversewpbutton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="Reversewpbutton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -274,13 +268,13 @@
     <value>NoControl</value>
   </data>
   <data name="Reversewpbutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1542, 0</value>
+    <value>0, 126</value>
   </data>
   <data name="Reversewpbutton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Reversewpbutton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 70</value>
+    <value>162, 63</value>
   </data>
   <data name="Reversewpbutton.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -295,10 +289,10 @@
     <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Reversewpbutton.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel10</value>
   </data>
   <data name="&gt;&gt;Reversewpbutton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="BUT_loadwpfile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -319,13 +313,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_loadwpfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1401, 0</value>
+    <value>190, 0</value>
   </data>
   <data name="BUT_loadwpfile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="BUT_loadwpfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 70</value>
+    <value>190, 55</value>
   </data>
   <data name="BUT_loadwpfile.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -397,10 +391,10 @@
     <value>3</value>
   </data>
   <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 708</value>
+    <value>695, 707</value>
   </data>
   <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 57</value>
+    <value>377, 64</value>
   </data>
   <data name="panel9.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -439,7 +433,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 57</value>
+    <value>89, 64</value>
   </data>
   <data name="myButton11.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -478,7 +472,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 57</value>
+    <value>96, 64</value>
   </data>
   <data name="myButton10.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -517,7 +511,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 57</value>
+    <value>96, 64</value>
   </data>
   <data name="myButton9.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -556,7 +550,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 57</value>
+    <value>96, 64</value>
   </data>
   <data name="myButton8.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -582,9 +576,6 @@
   <data name="BUT_read.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="BUT_read.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="BUT_read.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
@@ -592,13 +583,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_read.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 0</value>
+    <value>-1, 63</value>
   </data>
   <data name="BUT_read.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="BUT_read.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 70</value>
+    <value>163, 63</value>
   </data>
   <data name="BUT_read.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -613,16 +604,13 @@
     <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_read.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel10</value>
   </data>
   <data name="&gt;&gt;BUT_read.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="BUT_write.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
-  </data>
-  <data name="BUT_write.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="BUT_write.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -631,13 +619,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_write.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 0</value>
+    <value>0, 0</value>
   </data>
   <data name="BUT_write.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="BUT_write.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 70</value>
+    <value>162, 63</value>
   </data>
   <data name="BUT_write.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -652,49 +640,10 @@
     <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_write.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel10</value>
   </data>
   <data name="&gt;&gt;BUT_write.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="HOLDQUICK.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="HOLDQUICK.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="HOLDQUICK.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="HOLDQUICK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="HOLDQUICK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 0</value>
-  </data>
-  <data name="HOLDQUICK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="HOLDQUICK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 70</value>
-  </data>
-  <data name="HOLDQUICK.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="HOLDQUICK.Text" xml:space="preserve">
-    <value>JOYSTICK</value>
-  </data>
-  <data name="&gt;&gt;HOLDQUICK.Name" xml:space="preserve">
-    <value>HOLDQUICK</value>
-  </data>
-  <data name="&gt;&gt;HOLDQUICK.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;HOLDQUICK.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;HOLDQUICK.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>0</value>
   </data>
   <data name="BUT_saveWPFile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -712,13 +661,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_saveWPFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1289, 0</value>
+    <value>380, 0</value>
   </data>
   <data name="BUT_saveWPFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="BUT_saveWPFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 70</value>
+    <value>190, 55</value>
   </data>
   <data name="BUT_saveWPFile.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -736,10 +685,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;BUT_saveWPFile.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="ClearClick.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>4</value>
   </data>
   <data name="ClearClick.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -748,13 +694,13 @@
     <value>NoControl</value>
   </data>
   <data name="ClearClick.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1085, 0</value>
+    <value>0, 189</value>
   </data>
   <data name="ClearClick.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ClearClick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 70</value>
+    <value>162, 63</value>
   </data>
   <data name="ClearClick.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -769,49 +715,10 @@
     <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ClearClick.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel10</value>
   </data>
   <data name="&gt;&gt;ClearClick.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="AUTOQUICK.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="AUTOQUICK.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="AUTOQUICK.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="AUTOQUICK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="AUTOQUICK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 0</value>
-  </data>
-  <data name="AUTOQUICK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="AUTOQUICK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 70</value>
-  </data>
-  <data name="AUTOQUICK.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="AUTOQUICK.Text" xml:space="preserve">
-    <value>HOLD</value>
-  </data>
-  <data name="&gt;&gt;AUTOQUICK.Name" xml:space="preserve">
-    <value>AUTOQUICK</value>
-  </data>
-  <data name="&gt;&gt;AUTOQUICK.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;AUTOQUICK.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;AUTOQUICK.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>2</value>
   </data>
   <data name="switchview.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -832,7 +739,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="switchview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 70</value>
+    <value>190, 55</value>
   </data>
   <data name="switchview.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -850,7 +757,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;switchview.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>5</value>
   </data>
   <data name="SpeedPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1234,13 +1141,13 @@
     <value>NoControl</value>
   </data>
   <data name="myButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>705, 0</value>
+    <value>570, 0</value>
   </data>
   <data name="myButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 70</value>
+    <value>620, 55</value>
   </data>
   <data name="myButton1.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -1258,7 +1165,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;myButton1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>6</value>
   </data>
   <data name="Commands.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -1505,13 +1412,13 @@
     <value>125</value>
   </data>
   <data name="Commands.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 65</value>
+    <value>53, 59</value>
   </data>
   <data name="Commands.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="Commands.Size" type="System.Drawing.Size, System.Drawing">
-    <value>659, 559</value>
+    <value>10, 10</value>
   </data>
   <data name="Commands.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1585,6 +1492,93 @@
   <data name="&gt;&gt;splitter1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="panel10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1434, 526</value>
+  </data>
+  <data name="panel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 252</value>
+  </data>
+  <data name="panel10.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="panel10.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panel10.Name" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
+    <value>panelMap</value>
+  </data>
+  <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolsTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="ToolsTable.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DrawBTN.Name" xml:space="preserve">
+    <value>DrawBTN</value>
+  </data>
+  <data name="&gt;&gt;DrawBTN.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DrawBTN.Parent" xml:space="preserve">
+    <value>ToolsTable</value>
+  </data>
+  <data name="&gt;&gt;DrawBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MeasureBTN.Name" xml:space="preserve">
+    <value>MeasureBTN</value>
+  </data>
+  <data name="&gt;&gt;MeasureBTN.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MeasureBTN.Parent" xml:space="preserve">
+    <value>ToolsTable</value>
+  </data>
+  <data name="&gt;&gt;MeasureBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ToolsTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1598, 649</value>
+  </data>
+  <data name="ToolsTable.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ToolsTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 126</value>
+  </data>
+  <data name="ToolsTable.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="ToolsTable.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ToolsTable.Name" xml:space="preserve">
+    <value>ToolsTable</value>
+  </data>
+  <data name="&gt;&gt;ToolsTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolsTable.Parent" xml:space="preserve">
+    <value>panelMap</value>
+  </data>
+  <data name="&gt;&gt;ToolsTable.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ToolsTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DrawBTN" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="MeasureBTN" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="NextWpPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -1619,7 +1613,7 @@
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label24" Row="0" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;Control Name="button3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="EngageAutoNumeris" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;Rows Styles="Percent,28.57143,Percent,71.42857,Absolute,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="NextWpPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 515</value>
+    <value>584, 513</value>
   </data>
   <data name="NextWpPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -1643,7 +1637,7 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;NextWpPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="PlaceAfterPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1733,7 +1727,7 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;PlaceAfterPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="measurePanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -1784,7 +1778,7 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;measurePanel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="zoom_out.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -1817,7 +1811,7 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;zoom_out.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="zoom_in.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -1850,7 +1844,7 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;zoom_in.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="tableLayoutPanel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -1943,16 +1937,16 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="myButton22" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="myButton21" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="myButton18" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="0" RowSpan="1" Column="0" ColumnSpan="4" /&gt;&lt;Control Name="Cancel" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,25.00624,Percent,25.00625,Percent,25.00625,Percent,24.98124" /&gt;&lt;Rows Styles="Percent,71.42857,Percent,28.57143" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="FollowMePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 110</value>
+    <value>34, 41</value>
   </data>
   <data name="FollowMePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 411</value>
+    <value>48, 10</value>
   </data>
   <data name="FollowMePanel.TabIndex" type="System.Int32, mscorlib">
     <value>111</value>
@@ -1970,136 +1964,10 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;FollowMePanel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="DrawPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
-  </data>
-  <data name="tableLayoutPanel8.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;SavePolysBTN.Name" xml:space="preserve">
-    <value>SavePolysBTN</value>
-  </data>
-  <data name="&gt;&gt;SavePolysBTN.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;SavePolysBTN.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;SavePolysBTN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ImportPolysBTN.Name" xml:space="preserve">
-    <value>ImportPolysBTN</value>
-  </data>
-  <data name="&gt;&gt;ImportPolysBTN.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ImportPolysBTN.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;ImportPolysBTN.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;NewDrawPoly.Name" xml:space="preserve">
-    <value>NewDrawPoly</value>
-  </data>
-  <data name="&gt;&gt;NewDrawPoly.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;NewDrawPoly.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;NewDrawPoly.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ApplyPoly.Name" xml:space="preserve">
-    <value>ApplyPoly</value>
-  </data>
-  <data name="&gt;&gt;ApplyPoly.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ApplyPoly.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;ApplyPoly.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;DeletePoly.Name" xml:space="preserve">
-    <value>DeletePoly</value>
-  </data>
-  <data name="&gt;&gt;DeletePoly.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DeletePoly.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;DeletePoly.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;PolyNameBox.Name" xml:space="preserve">
-    <value>PolyNameBox</value>
-  </data>
-  <data name="&gt;&gt;PolyNameBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PolyNameBox.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;PolyNameBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;ColorBTN.Name" xml:space="preserve">
-    <value>ColorBTN</value>
-  </data>
-  <data name="&gt;&gt;ColorBTN.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ColorBTN.Parent" xml:space="preserve">
-    <value>tableLayoutPanel8</value>
-  </data>
-  <data name="&gt;&gt;ColorBTN.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="tableLayoutPanel8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel8.RowCount" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 154</value>
-  </data>
-  <data name="tableLayoutPanel8.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel8.Name" xml:space="preserve">
     <value>tableLayoutPanel8</value>
@@ -2138,100 +2006,16 @@
     <value>panelMap</value>
   </data>
   <data name="&gt;&gt;DrawPanel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="ToolsTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="ToolsTable.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;DrawBTN.Name" xml:space="preserve">
-    <value>DrawBTN</value>
-  </data>
-  <data name="&gt;&gt;DrawBTN.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DrawBTN.Parent" xml:space="preserve">
-    <value>ToolsTable</value>
-  </data>
-  <data name="&gt;&gt;DrawBTN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MeasureBTN.Name" xml:space="preserve">
-    <value>MeasureBTN</value>
-  </data>
-  <data name="&gt;&gt;MeasureBTN.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;MeasureBTN.Parent" xml:space="preserve">
-    <value>ToolsTable</value>
-  </data>
-  <data name="&gt;&gt;MeasureBTN.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ToolsTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1671, 664</value>
-  </data>
-  <data name="ToolsTable.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="ToolsTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 100</value>
-  </data>
-  <data name="ToolsTable.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
-  <data name="ToolsTable.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;ToolsTable.Name" xml:space="preserve">
-    <value>ToolsTable</value>
-  </data>
-  <data name="&gt;&gt;ToolsTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolsTable.Parent" xml:space="preserve">
-    <value>panelMap</value>
-  </data>
-  <data name="&gt;&gt;ToolsTable.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="ToolsTable.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DrawBTN" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="MeasureBTN" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="Joystick_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 186</value>
-  </data>
-  <data name="Joystick_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 334</value>
-  </data>
-  <data name="Joystick_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
-  </data>
-  <data name="Joystick_Panel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Joystick_Panel.Name" xml:space="preserve">
-    <value>Joystick_Panel</value>
-  </data>
-  <data name="&gt;&gt;Joystick_Panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Joystick_Panel.Parent" xml:space="preserve">
-    <value>panelMap</value>
-  </data>
-  <data name="&gt;&gt;Joystick_Panel.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="SwarmPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="SwarmPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>783, 368</value>
+    <value>89, 55</value>
   </data>
   <data name="SwarmPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 400</value>
+    <value>10, 10</value>
   </data>
   <data name="SwarmPanel.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -2261,7 +2045,7 @@
     <value>NoControl</value>
   </data>
   <data name="Joystickbutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 348</value>
+    <value>3, 77</value>
   </data>
   <data name="Joystickbutton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -2294,7 +2078,7 @@
     <value>Bottom</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 769</value>
+    <value>0, 784</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>1765, 0</value>
@@ -2591,19 +2375,31 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;myButton25.Name" xml:space="preserve">
+    <value>myButton25</value>
+  </data>
+  <data name="&gt;&gt;myButton25.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myButton25.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;myButton25.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 769</value>
+    <value>0, 784</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 70</value>
+    <value>1765, 55</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -2621,7 +2417,7 @@
     <value>19</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ToolsBTN" Row="0" RowSpan="1" Column="11" ColumnSpan="1" /&gt;&lt;Control Name="EditButton" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="Reversewpbutton" Row="0" RowSpan="1" Column="10" ColumnSpan="1" /&gt;&lt;Control Name="BUT_loadwpfile" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="BUT_read" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="BUT_write" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="HOLDQUICK" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="BUT_saveWPFile" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="ClearClick" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="AUTOQUICK" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="switchview" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="myButton1" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,7.998702,Percent,7.998702,Percent,7.998702,Percent,7.998702,Percent,7.998702,Percent,21.57091,Percent,6.347878,Percent,5.226478,Percent,6.347878,Percent,7.998702,Percent,7.172729,Percent,5.341909" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="myButton25" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="ToolsBTN" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="EditButton" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="BUT_loadwpfile" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_saveWPFile" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="switchview" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="myButton1" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,10.8115,Percent,10.8115,Percent,10.8115,Percent,35.131,Percent,10.8115,Percent,10.8115,Percent,10.8115,Absolute,20" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="mytest.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2630,10 +2426,10 @@
     <value>NoControl</value>
   </data>
   <data name="mytest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 36</value>
+    <value>89, 36</value>
   </data>
   <data name="mytest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 23</value>
+    <value>10, 10</value>
   </data>
   <data name="mytest.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -2776,6 +2572,9 @@
   <data name="label11.Text" xml:space="preserve">
     <value>Zoom</value>
   </data>
+  <data name="label11.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
   </data>
@@ -2846,7 +2645,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1433, 296</value>
+    <value>1, 135</value>
   </data>
   <data name="myButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -4788,6 +4587,147 @@ Click "Cancel" to stay on this page</value>
   <data name="&gt;&gt;Cancel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="tableLayoutPanel8.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SavePolysBTN.Name" xml:space="preserve">
+    <value>SavePolysBTN</value>
+  </data>
+  <data name="&gt;&gt;SavePolysBTN.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SavePolysBTN.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;SavePolysBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ImportPolysBTN.Name" xml:space="preserve">
+    <value>ImportPolysBTN</value>
+  </data>
+  <data name="&gt;&gt;ImportPolysBTN.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ImportPolysBTN.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;ImportPolysBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;NewDrawPoly.Name" xml:space="preserve">
+    <value>NewDrawPoly</value>
+  </data>
+  <data name="&gt;&gt;NewDrawPoly.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;NewDrawPoly.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;NewDrawPoly.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ApplyPoly.Name" xml:space="preserve">
+    <value>ApplyPoly</value>
+  </data>
+  <data name="&gt;&gt;ApplyPoly.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ApplyPoly.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;ApplyPoly.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DeletePoly.Name" xml:space="preserve">
+    <value>DeletePoly</value>
+  </data>
+  <data name="&gt;&gt;DeletePoly.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DeletePoly.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;DeletePoly.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;PolyNameBox.Name" xml:space="preserve">
+    <value>PolyNameBox</value>
+  </data>
+  <data name="&gt;&gt;PolyNameBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PolyNameBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;PolyNameBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ColorBTN.Name" xml:space="preserve">
+    <value>ColorBTN</value>
+  </data>
+  <data name="&gt;&gt;ColorBTN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColorBTN.Parent" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;ColorBTN.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tableLayoutPanel8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel8.RowCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 154</value>
+  </data>
+  <data name="tableLayoutPanel8.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel8.Name" xml:space="preserve">
+    <value>tableLayoutPanel8</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel8.Parent" xml:space="preserve">
+    <value>DrawPanel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel8.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="SavePolysBTN" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ImportPolysBTN" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="NewDrawPoly" Row="0" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="ApplyPoly" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DeletePoly" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="PolyNameBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ColorBTN" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,39.70588,Percent,60.29412,Absolute,36,Absolute,30,Absolute,28,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="SavePolysBTN.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -5164,13 +5104,13 @@ Click "Cancel" to stay on this page</value>
     <value>NoControl</value>
   </data>
   <data name="DrawBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 50</value>
+    <value>0, 63</value>
   </data>
   <data name="DrawBTN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="DrawBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 50</value>
+    <value>163, 63</value>
   </data>
   <data name="DrawBTN.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -5215,7 +5155,7 @@ Click "Cancel" to stay on this page</value>
     <value>0, 0, 0, 0</value>
   </data>
   <data name="MeasureBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 50</value>
+    <value>163, 63</value>
   </data>
   <data name="MeasureBTN.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -6197,6 +6137,42 @@ Click "Cancel" to stay on this page</value>
   </data>
   <data name="&gt;&gt;LatDeg.ZOrder" xml:space="preserve">
     <value>16</value>
+  </data>
+  <data name="myButton25.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="myButton25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="myButton25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="myButton25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1380, 0</value>
+  </data>
+  <data name="myButton25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="myButton25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 55</value>
+  </data>
+  <data name="myButton25.TabIndex" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="myButton25.Text" xml:space="preserve">
+    <value>ROUTE</value>
+  </data>
+  <data name="&gt;&gt;myButton25.Name" xml:space="preserve">
+    <value>myButton25</value>
+  </data>
+  <data name="&gt;&gt;myButton25.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myButton25.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;myButton25.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="TXT_WPRad.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt</value>

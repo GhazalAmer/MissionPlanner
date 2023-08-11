@@ -50,13 +50,13 @@ namespace MissionPlanner
             this.MenuSimulation = new System.Windows.Forms.ToolStripButton();
             this.MenuHelp = new System.Windows.Forms.ToolStripButton();
             this.MenuConnect = new System.Windows.Forms.ToolStripButton();
+            this.toolStripConnectionControl = new MissionPlanner.Controls.ToolStripConnectionControl();
             this.MenuArduPilot = new System.Windows.Forms.ToolStripButton();
             this.menu = new MissionPlanner.Controls.MyButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.status1 = new MissionPlanner.Controls.Status();
             this.ConnectButtt1 = new System.Windows.Forms.Button();
             this.ConnectButtt = new MissionPlanner.Controls.MyButton();
-            this.status1 = new MissionPlanner.Controls.Status();
-            this.toolStripConnectionControl = new MissionPlanner.Controls.ToolStripConnectionControl();
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -185,6 +185,15 @@ namespace MissionPlanner
             this.MenuConnect.Name = "MenuConnect";
             this.MenuConnect.Click += new System.EventHandler(this.MenuConnect_Click);
             // 
+            // toolStripConnectionControl
+            // 
+            this.toolStripConnectionControl.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            resources.ApplyResources(this.toolStripConnectionControl, "toolStripConnectionControl");
+            this.toolStripConnectionControl.ForeColor = System.Drawing.Color.Black;
+            this.toolStripConnectionControl.Margin = new System.Windows.Forms.Padding(0);
+            this.toolStripConnectionControl.Name = "toolStripConnectionControl";
+            this.toolStripConnectionControl.MouseLeave += new System.EventHandler(this.MainMenu_MouseLeave);
+            // 
             // MenuArduPilot
             // 
             this.MenuArduPilot.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -213,6 +222,12 @@ namespace MissionPlanner
             this.panel1.Name = "panel1";
             this.panel1.MouseLeave += new System.EventHandler(this.MainMenu_MouseLeave);
             // 
+            // status1
+            // 
+            resources.ApplyResources(this.status1, "status1");
+            this.status1.Name = "status1";
+            this.status1.Percent = 0D;
+            // 
             // ConnectButtt1
             // 
             this.ConnectButtt1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
@@ -224,32 +239,17 @@ namespace MissionPlanner
             // 
             // ConnectButtt
             // 
-            this.ConnectButtt.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ConnectButtt.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ConnectButtt.ColorMouseDown = System.Drawing.Color.Chartreuse;
+            this.ConnectButtt.BGGradBot = System.Drawing.Color.LightGray;
+            this.ConnectButtt.BGGradTop = System.Drawing.Color.LightGray;
+            this.ConnectButtt.ColorMouseDown = System.Drawing.SystemColors.ActiveCaption;
             this.ConnectButtt.ColorMouseOver = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.ConnectButtt, "ConnectButtt");
             this.ConnectButtt.Name = "ConnectButtt";
-            this.ConnectButtt.Outline = System.Drawing.Color.Black;
-            this.ConnectButtt.TextColor = System.Drawing.Color.White;
+            this.ConnectButtt.Outline = System.Drawing.Color.Transparent;
+            this.ConnectButtt.TextColor = System.Drawing.Color.Gray;
             this.ConnectButtt.TextColorNotEnabled = System.Drawing.Color.White;
             this.ConnectButtt.UseVisualStyleBackColor = true;
             this.ConnectButtt.Click += new System.EventHandler(this.ConnectButtt_Click_1);
-            // 
-            // status1
-            // 
-            resources.ApplyResources(this.status1, "status1");
-            this.status1.Name = "status1";
-            this.status1.Percent = 0D;
-            // 
-            // toolStripConnectionControl
-            // 
-            this.toolStripConnectionControl.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            resources.ApplyResources(this.toolStripConnectionControl, "toolStripConnectionControl");
-            this.toolStripConnectionControl.ForeColor = System.Drawing.Color.Black;
-            this.toolStripConnectionControl.Margin = new System.Windows.Forms.Padding(0);
-            this.toolStripConnectionControl.Name = "toolStripConnectionControl";
-            this.toolStripConnectionControl.MouseLeave += new System.EventHandler(this.MainMenu_MouseLeave);
             // 
             // MainV2
             // 

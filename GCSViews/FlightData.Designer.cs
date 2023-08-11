@@ -288,7 +288,6 @@ namespace MissionPlanner.GCSViews
             this.button1 = new System.Windows.Forms.Button();
             this.switchview = new MissionPlanner.Controls.MyButton();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.myButton14 = new MissionPlanner.Controls.MyButton();
             this.myButton13 = new MissionPlanner.Controls.MyButton();
             this.myButton19 = new MissionPlanner.Controls.MyButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -299,6 +298,7 @@ namespace MissionPlanner.GCSViews
             this.barRenderer1 = new BrightIdeasSoftware.BarRenderer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.boatStatusPanel = new System.Windows.Forms.Panel();
+            this.joystickSetup1 = new MissionPlanner.Joystick.JoystickSetup();
             this.ChView = new System.Windows.Forms.TableLayoutPanel();
             this.label92 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
@@ -430,6 +430,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.boatStatusPanel.SuspendLayout();
             this.ChView.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2716,7 +2717,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 17100D;
+            this.windDir1.Direction = 18540D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2883,7 +2884,7 @@ namespace MissionPlanner.GCSViews
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Zoom = 3D;
+            this.gMapControl1.Zoom = 4D;
             this.gMapControl1.OnPositionChanged += new GMap.NET.PositionChanged(this.gMapControl1_OnPositionChanged);
             this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
             this.gMapControl1.Click += new System.EventHandler(this.gMapControl1_Click);
@@ -3532,10 +3533,9 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.tableLayoutPanel7.Controls.Add(this.myButton14, 7, 0);
+            this.tableLayoutPanel7.Controls.Add(this.restartroutebutton, 5, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton13, 6, 0);
             this.tableLayoutPanel7.Controls.Add(this.switchview, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.restartroutebutton, 5, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton19, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton6, 4, 0);
             this.tableLayoutPanel7.Controls.Add(this.MeasureBTN, 1, 0);
@@ -3543,20 +3543,6 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel7.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel7_Paint);
-            // 
-            // myButton14
-            // 
-            resources.ApplyResources(this.myButton14, "myButton14");
-            this.myButton14.BackColor = System.Drawing.Color.DimGray;
-            this.myButton14.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.myButton14.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.myButton14.ColorMouseOver = System.Drawing.Color.DimGray;
-            this.myButton14.Name = "myButton14";
-            this.myButton14.Outline = System.Drawing.Color.Black;
-            this.myButton14.TextColor = System.Drawing.Color.White;
-            this.myButton14.TextColorNotEnabled = System.Drawing.Color.Black;
-            this.myButton14.UseVisualStyleBackColor = false;
-            this.myButton14.Click += new System.EventHandler(this.myButton14_Click);
             // 
             // myButton13
             // 
@@ -3676,9 +3662,16 @@ namespace MissionPlanner.GCSViews
             // boatStatusPanel
             // 
             this.boatStatusPanel.BackColor = System.Drawing.Color.Transparent;
+            this.boatStatusPanel.Controls.Add(this.joystickSetup1);
             this.boatStatusPanel.ForeColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.boatStatusPanel, "boatStatusPanel");
             this.boatStatusPanel.Name = "boatStatusPanel";
+            // 
+            // joystickSetup1
+            // 
+            this.joystickSetup1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            resources.ApplyResources(this.joystickSetup1, "joystickSetup1");
+            this.joystickSetup1.Name = "joystickSetup1";
             // 
             // ChView
             // 
@@ -4228,6 +4221,7 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.boatStatusPanel.ResumeLayout(false);
             this.ChView.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -4514,7 +4508,6 @@ namespace MissionPlanner.GCSViews
         private Button button1;
         private Controls.MyButton switchview;
         private TableLayoutPanel tableLayoutPanel7;
-        private Controls.MyButton myButton14;
         private Controls.MyButton myButton13;
         private Panel panel3;
         private BrightIdeasSoftware.BarRenderer barRenderer1;
@@ -4587,5 +4580,6 @@ namespace MissionPlanner.GCSViews
         private Label label65;
         private Label label64;
         private Label label63;
+        private Joystick.JoystickSetup joystickSetup1;
     }
 }

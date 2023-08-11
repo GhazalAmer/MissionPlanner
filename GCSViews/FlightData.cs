@@ -6818,19 +6818,7 @@ namespace MissionPlanner.GCSViews
         private void myButton14_Click(object sender, EventArgs e)
         {
            
-            ChView.Visible = true;
-            boatStatusPanel.Visible = false;
-            gMapControl1.Enabled = false;
-            //if (panel3.Visible == true)
-            //{
-            //    panel3.Visible = false;
 
-            //}
-            //else
-            //{
-            //    panel3.Visible = true;
-
-            //}
         }
 
         private void gMapControl1_Load(object sender, EventArgs e)

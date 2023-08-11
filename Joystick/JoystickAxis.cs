@@ -99,12 +99,18 @@ namespace MissionPlanner.Joystick
             // 
             // BUT_detch
             // 
+            this.BUT_detch.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_detch.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.BUT_detch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BUT_detch.Location = new System.Drawing.Point(141, 3);
+            this.BUT_detch.Location = new System.Drawing.Point(209, 1);
+            this.BUT_detch.Margin = new System.Windows.Forms.Padding(4);
             this.BUT_detch.Name = "BUT_detch";
-            this.BUT_detch.Size = new System.Drawing.Size(45, 23);
+            this.BUT_detch.Outline = System.Drawing.Color.Black;
+            this.BUT_detch.Size = new System.Drawing.Size(88, 32);
             this.BUT_detch.TabIndex = 62;
             this.BUT_detch.Text = "Auto Detect";
+            this.BUT_detch.TextColor = System.Drawing.Color.White;
+            this.BUT_detch.TextColorNotEnabled = System.Drawing.Color.White;
             this.BUT_detch.UseVisualStyleBackColor = true;
             this.BUT_detch.Click += new System.EventHandler(this.BUT_detch_Click);
             // 
@@ -112,31 +118,36 @@ namespace MissionPlanner.Joystick
             // 
             this.revCH.AutoSize = true;
             this.revCH.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.revCH.Location = new System.Drawing.Point(406, 6);
+            this.revCH.Location = new System.Drawing.Point(541, 7);
+            this.revCH.Margin = new System.Windows.Forms.Padding(4);
             this.revCH.Name = "revCH";
-            this.revCH.Size = new System.Drawing.Size(15, 14);
+            this.revCH.Size = new System.Drawing.Size(18, 17);
             this.revCH.TabIndex = 61;
             this.revCH.UseVisualStyleBackColor = true;
+            this.revCH.Visible = false;
             this.revCH.CheckedChanged += new System.EventHandler(this.revCH_CheckedChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(2, 8);
+            this.label13.Location = new System.Drawing.Point(25, 7);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(22, 13);
+            this.label13.Size = new System.Drawing.Size(26, 16);
             this.label13.TabIndex = 60;
-            this.label13.Text = "RC";
+            this.label13.Text = "CH";
             // 
             // expo_ch
             // 
             this.expo_ch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.expo_ch.Location = new System.Drawing.Point(300, 7);
+            this.expo_ch.Location = new System.Drawing.Point(446, 9);
+            this.expo_ch.Margin = new System.Windows.Forms.Padding(4);
             this.expo_ch.Name = "expo_ch";
-            this.expo_ch.Size = new System.Drawing.Size(100, 13);
+            this.expo_ch.Size = new System.Drawing.Size(133, 15);
             this.expo_ch.TabIndex = 59;
             this.expo_ch.Text = "0";
+            this.expo_ch.Visible = false;
             this.expo_ch.TextChanged += new System.EventHandler(this.expo_ch_TextChanged);
             // 
             // ProgressBarCH
@@ -144,13 +155,14 @@ namespace MissionPlanner.Joystick
             this.ProgressBarCH.DrawLabel = true;
             this.ProgressBarCH.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ProgressBarCH.Label = null;
-            this.ProgressBarCH.Location = new System.Drawing.Point(192, 2);
+            this.ProgressBarCH.Location = new System.Drawing.Point(320, 2);
+            this.ProgressBarCH.Margin = new System.Windows.Forms.Padding(4);
             this.ProgressBarCH.Maximum = 2200;
             this.ProgressBarCH.maxline = 0;
             this.ProgressBarCH.Minimum = 800;
             this.ProgressBarCH.minline = 0;
             this.ProgressBarCH.Name = "ProgressBarCH";
-            this.ProgressBarCH.Size = new System.Drawing.Size(100, 23);
+            this.ProgressBarCH.Size = new System.Drawing.Size(149, 28);
             this.ProgressBarCH.TabIndex = 58;
             this.ProgressBarCH.Value = 800;
             // 
@@ -162,9 +174,10 @@ namespace MissionPlanner.Joystick
             "X",
             "Y",
             "SL1"});
-            this.CMB_CH.Location = new System.Drawing.Point(65, 3);
+            this.CMB_CH.Location = new System.Drawing.Point(87, 4);
+            this.CMB_CH.Margin = new System.Windows.Forms.Padding(4);
             this.CMB_CH.Name = "CMB_CH";
-            this.CMB_CH.Size = new System.Drawing.Size(70, 21);
+            this.CMB_CH.Size = new System.Drawing.Size(107, 24);
             this.CMB_CH.TabIndex = 57;
             this.CMB_CH.SelectedIndexChanged += new System.EventHandler(this.CMB_CH_SelectedIndexChanged);
             // 
@@ -175,7 +188,7 @@ namespace MissionPlanner.Joystick
             // 
             // JoystickAxis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.BUT_detch);
             this.Controls.Add(this.revCH);
@@ -183,8 +196,10 @@ namespace MissionPlanner.Joystick
             this.Controls.Add(this.expo_ch);
             this.Controls.Add(this.ProgressBarCH);
             this.Controls.Add(this.CMB_CH);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "JoystickAxis";
-            this.Size = new System.Drawing.Size(427, 28);
+            this.Size = new System.Drawing.Size(569, 34);
+            this.Load += new System.EventHandler(this.JoystickAxis_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +234,11 @@ namespace MissionPlanner.Joystick
 
             ProgressBarCH.maxline = GetValue();
             ProgressBarCH.Value = GetValue();
+        }
+
+        private void JoystickAxis_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

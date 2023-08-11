@@ -394,24 +394,24 @@ namespace MissionPlanner.Joystick
             // 
             // BUT_enable
             // 
-            this.BUT_enable.BGGradBot = System.Drawing.Color.DimGray;
-            this.BUT_enable.BGGradTop = System.Drawing.Color.DarkGray;
+            this.BUT_enable.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_enable.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             resources.ApplyResources(this.BUT_enable, "BUT_enable");
             this.BUT_enable.Name = "BUT_enable";
             this.BUT_enable.Outline = System.Drawing.Color.Black;
-            this.BUT_enable.TextColor = System.Drawing.Color.Black;
+            this.BUT_enable.TextColor = System.Drawing.Color.White;
             this.BUT_enable.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_enable.UseVisualStyleBackColor = true;
             this.BUT_enable.Click += new System.EventHandler(this.BUT_enable_Click);
             // 
             // BUT_save
             // 
-            this.BUT_save.BGGradBot = System.Drawing.Color.DimGray;
-            this.BUT_save.BGGradTop = System.Drawing.Color.DarkGray;
+            this.BUT_save.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.BUT_save.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             resources.ApplyResources(this.BUT_save, "BUT_save");
             this.BUT_save.Name = "BUT_save";
             this.BUT_save.Outline = System.Drawing.Color.Black;
-            this.BUT_save.TextColor = System.Drawing.Color.Black;
+            this.BUT_save.TextColor = System.Drawing.Color.White;
             this.BUT_save.TextColorNotEnabled = System.Drawing.Color.Black;
             this.BUT_save.UseVisualStyleBackColor = true;
             this.BUT_save.Click += new System.EventHandler(this.BUT_save_Click);

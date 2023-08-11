@@ -1053,17 +1053,20 @@
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 18</value>
+    <value>0, 16</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 16</value>
+    <value>60, 17</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1090,7 +1093,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 11</value>
+    <value>281, 11</value>
   </data>
   <data name="BUT_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1123,7 +1126,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 11</value>
+    <value>389, 11</value>
   </data>
   <data name="BUT_save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1468,7 +1471,7 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CMB_joysticks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 15</value>
+    <value>68, 13</value>
   </data>
   <data name="CMB_joysticks.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1602,6 +1605,9 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Reverse</value>
   </data>
+  <data name="label3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
@@ -1617,14 +1623,17 @@
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
   <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 43</value>
+    <value>81, 49</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 16</value>
+    <value>126, 21</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1647,14 +1656,17 @@
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
   <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 43</value>
+    <value>362, 48</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 16</value>
+    <value>65, 21</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -1681,7 +1693,7 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 43</value>
+    <value>631, 77</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 16</value>
@@ -1691,6 +1703,9 @@
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>Expo</value>
+  </data>
+  <data name="label17.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
