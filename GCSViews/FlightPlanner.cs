@@ -7936,6 +7936,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 {
                     CurentRectMarker = null;
                     GMapMarkerRect rc = item as GMapMarkerRect;
+                    markerjustleft = rc;
                     rc.ResetColor();
                     MainMap.Invalidate(false);
                 }
@@ -9683,10 +9684,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             {
                 change_wp_key = true;
                 CurentRectMarker = null;
-                GMapMarkerRect rc = markerjustleft;
+                //GMapMarkerRect rc = markerjustleft;
                 //int answer = int.Parse(rc.InnerMarker.Tag.ToString());
 
-                rc.ResetColor();
+                //rc.ResetColor();
 
                 MainMap.Invalidate(false);
 
