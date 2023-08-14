@@ -9706,6 +9706,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         WPNumber.Value = no;
                     }
                     WPNumberUpdate();
+                    currentwp.Markers.Clear();
 
                 }
             }
