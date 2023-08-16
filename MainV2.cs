@@ -4829,11 +4829,6 @@ namespace MissionPlanner
            
         }
 
-        private void ConnectButtt_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void ChView_Paint(object sender, PaintEventArgs e)
         {
 
