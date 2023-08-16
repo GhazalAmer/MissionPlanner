@@ -249,7 +249,7 @@ namespace MissionPlanner
             this.ConnectButtt.TextColor = System.Drawing.Color.Gray;
             this.ConnectButtt.TextColorNotEnabled = System.Drawing.Color.White;
             this.ConnectButtt.UseVisualStyleBackColor = true;
-            this.ConnectButtt.Click += new System.EventHandler(this.ConnectButtt_Click_1);
+            this.ConnectButtt.Click += new System.EventHandler(this.ConnectButtt_Click);
             // 
             // MainV2
             // 
