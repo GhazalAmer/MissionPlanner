@@ -6987,6 +6987,11 @@ namespace MissionPlanner.GCSViews
         {
 
         }
+
+        private void MeasureLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

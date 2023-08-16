@@ -8217,6 +8217,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void ClearClick_Click(object sender, EventArgs e)
         {
+            panel10.Visible = false;
             DialogResult Reply;
             Reply = (DialogResult)CustomMessageBox.Show("You are about to clear your route. Click OK to confirm", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (Reply == DialogResult.OK)
@@ -8259,25 +8260,25 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         }
         private void Hide_BTNs()
         {
-            if (change_wp_key == false)
-            {
-                WPNumber.Enabled = false;
-                BackWP.Enabled = false;
-                NextWP.Enabled = false;
-                BUT_write.Enabled = false;
-                BUT_read.Enabled = false;
-                switchview.Enabled = false;
-                myButton13.Enabled = false;
-                FormatPanel.Visible = false;
-                EditButton.Enabled = false;
-                Deletebu.Enabled = false;
-                myButton14.Enabled = false;
-                BUT_saveWPFile.Enabled = false;
-                BUT_loadwpfile.Enabled = false;
-                ClearClick.Enabled = false;
-                myButton12.Enabled = true;
-                Reversewpbutton.Enabled = false;
-            }
+            //if (change_wp_key == false)
+            //{
+            //    WPNumber.Enabled = false;
+            //    BackWP.Enabled = false;
+            //    NextWP.Enabled = false;
+            //    BUT_write.Enabled = false;
+            //    BUT_read.Enabled = false;
+            //    switchview.Enabled = false;
+            //    myButton13.Enabled = false;
+            //    FormatPanel.Visible = false;
+            //    EditButton.Enabled = false;
+            //    Deletebu.Enabled = false;
+            //    myButton14.Enabled = false;
+            //    BUT_saveWPFile.Enabled = false;
+            //    BUT_loadwpfile.Enabled = false;
+            //    ClearClick.Enabled = false;
+            //    myButton12.Enabled = true;
+            //    Reversewpbutton.Enabled = false;
+            //}
         }
 
         private void AUTOQUICK_Click(object sender, EventArgs e)
@@ -8405,6 +8406,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void BUT_write_Click_1(object sender, EventArgs e)
         {
+            panel10.Visible = false;
             BUT_write_Click(this, EventArgs.Empty);
         }
 
@@ -8694,6 +8696,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void Reversewpbutton_Click(object sender, EventArgs e)
         {
+            panel10.Visible = false;
             Reverse_my_PTs();
         }
 
@@ -9236,6 +9239,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton19_Click(object sender, EventArgs e)
         {
+            PlaceAfterPanel.Visible = false;
             int row_index = (int)numericUpDown3.Value - 1;
             if (row_index < Commands.RowCount + 1 && row_index >= -1) // down
 
@@ -9256,7 +9260,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 currentwp.Markers.Clear();
             }
             PlaceAfterPanel.Visible = false;
-            Show_BTNs();
+            //Show_BTNs();
         }
 
         private void LatDeg_ValueChanged(object sender, EventArgs e)
@@ -9567,7 +9571,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton12_Click(object sender, EventArgs e)
         {
-            Show_BTNs();
+            //Show_BTNs();
+            MainMap.Enabled = true;
             if (panel6.Visible == true && SpeedPanel.Visible == false)
             {
                 panel6.Visible = false;
@@ -9662,6 +9667,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void MainMap_Load(object sender, EventArgs e)
         {
+            panel10.Visible = false;
             MainMap.MapProvider = GoogleSatelliteMapProvider.Instance;
         }
 
