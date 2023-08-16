@@ -8217,6 +8217,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void ClearClick_Click(object sender, EventArgs e)
         {
+            panel10.Visible = false;
             DialogResult Reply;
             Reply = (DialogResult)CustomMessageBox.Show("You are about to clear your route. Click OK to confirm", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (Reply == DialogResult.OK)
@@ -8405,6 +8406,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void BUT_write_Click_1(object sender, EventArgs e)
         {
+            panel10.Visible = false;
             BUT_write_Click(this, EventArgs.Empty);
         }
 
@@ -8568,6 +8570,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void BUT_read_Click_1(object sender, EventArgs e)
         {
+            panel10.Visible = false ;
             readwps();
         }
 
@@ -8694,6 +8697,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void Reversewpbutton_Click(object sender, EventArgs e)
         {
+            panel10.Visible = false;
             Reverse_my_PTs();
         }
 
@@ -9836,6 +9840,11 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
         {
 
         }
