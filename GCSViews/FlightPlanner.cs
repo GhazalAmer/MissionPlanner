@@ -9107,13 +9107,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     WPSp.Value = (Convert.ToDecimal((Convert.ToDouble(Commands.Rows[no - 1].Cells[Alt.Index].Value) / -0.514444444)));
                     //CustomMessageBox.Show(Commands.Rows[no - 1].Cells[Alt.Index].Value.ToString());
                     WPSp.ForeColor = Color.White;
-                    WPSp.BackColor = Color.Gray;
+                    WPSp.BackColor = Color.Black;
                 }
                 else
                 {
                     WPSp.Value = 0;
                     WPSp.ForeColor = Color.White;
-                    WPSp.BackColor = Color.White;
+                    WPSp.BackColor = Color.Black;
                 }
                 WPTh.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[Command.Index + 3].Value));
                 if (format_flag == 0)
@@ -9840,6 +9840,26 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void UnitsMeasureBTN_Click(object sender, EventArgs e)
+        {
+            measure_unit_flag = (measure_unit_flag + 1) % 3;
+            if (measure_unit_flag == 0)
+            {
+                UnitsMeasureBTN.Text = "m";
+                measureLabel.Text = total_measurement.ToString("0");
+            }
+            else if (measure_unit_flag == 1)
+            {
+                UnitsMeasureBTN.Text = "km";
+                measureLabel.Text = (total_measurement / 1000.0).ToString("F2");
+            }
+            else if (measure_unit_flag == 2)
+            {
+                UnitsMeasureBTN.Text = "Nm";
+                measureLabel.Text = (total_measurement / 1852).ToString("F2");
+            }
         }
     }
 

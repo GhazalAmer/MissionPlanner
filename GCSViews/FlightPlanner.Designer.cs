@@ -1139,6 +1139,7 @@ namespace MissionPlanner.GCSViews
             this.UnitsMeasureBTN.TextColor = System.Drawing.Color.White;
             this.UnitsMeasureBTN.TextColorNotEnabled = System.Drawing.Color.Black;
             this.UnitsMeasureBTN.UseVisualStyleBackColor = true;
+            this.UnitsMeasureBTN.Click += new System.EventHandler(this.UnitsMeasureBTN_Click);
             // 
             // measureLabel
             // 
