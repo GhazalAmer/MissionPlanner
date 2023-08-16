@@ -9253,6 +9253,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     Commands.Rows.Insert(row_index + 1, myrow);
                 }
                 writeKML();
+                currentwp.Markers.Clear();
             }
             PlaceAfterPanel.Visible = false;
             Show_BTNs();
@@ -9558,7 +9559,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 Commands.Rows[no - 1].Cells[5].Value = Lat;
                 Commands.Rows[no - 1].Cells[6].Value = Long;
                 // CustomMessageBox.Show(Lat.ToString());
-                writeKML();
+                //writeKML();
+                currentwp.Markers.Clear();
             }
             Show_BTNs();
         }
