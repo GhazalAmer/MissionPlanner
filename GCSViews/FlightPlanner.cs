@@ -8570,6 +8570,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void BUT_read_Click_1(object sender, EventArgs e)
         {
+            panel10.Visible = false ;
             readwps();
         }
 
@@ -9848,6 +9849,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         }
 
+<<<<<<< HEAD
         private void UnitsMeasureBTN_Click(object sender, EventArgs e)
         {
             measure_unit_flag = (measure_unit_flag + 1) % 3;
@@ -9866,6 +9868,11 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 UnitsMeasureBTN.Text = "Nm";
                 measureLabel.Text = (total_measurement / 1852).ToString("F2");
             }
+=======
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> MAP-GUI
         }
     }
 
