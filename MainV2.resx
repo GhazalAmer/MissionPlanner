@@ -285,36 +285,6 @@
   <metadata name="CTX_mainmenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>127, 17</value>
   </metadata>
-  <data name="autoHideToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 24</value>
-  </data>
-  <data name="autoHideToolStripMenuItem.Text" xml:space="preserve">
-    <value>AutoHide</value>
-  </data>
-  <data name="fullScreenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 24</value>
-  </data>
-  <data name="fullScreenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Full Screen</value>
-  </data>
-  <data name="readonlyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 24</value>
-  </data>
-  <data name="readonlyToolStripMenuItem.Text" xml:space="preserve">
-    <value>Readonly</value>
-  </data>
-  <data name="connectionOptionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 24</value>
-  </data>
-  <data name="connectionOptionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Connection Options</value>
-  </data>
-  <data name="connectionListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 24</value>
-  </data>
-  <data name="connectionListToolStripMenuItem.Text" xml:space="preserve">
-    <value>Connection List</value>
-  </data>
   <data name="CTX_mainmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 124</value>
   </data>
@@ -934,6 +904,36 @@
   <data name="&gt;&gt;MainMenu.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="autoHideToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="autoHideToolStripMenuItem.Text" xml:space="preserve">
+    <value>AutoHide</value>
+  </data>
+  <data name="fullScreenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="fullScreenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Full Screen</value>
+  </data>
+  <data name="readonlyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="readonlyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Readonly</value>
+  </data>
+  <data name="connectionOptionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="connectionOptionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Connection Options</value>
+  </data>
+  <data name="connectionListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 24</value>
+  </data>
+  <data name="connectionListToolStripMenuItem.Text" xml:space="preserve">
+    <value>Connection List</value>
+  </data>
   <data name="menu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -970,29 +970,11 @@
   <data name="&gt;&gt;menu.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="status1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="status1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>430, 12</value>
-  </data>
-  <data name="status1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="status1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 19</value>
-  </data>
-  <data name="status1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="status1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;status1.Name" xml:space="preserve">
     <value>status1</value>
   </data>
   <data name="&gt;&gt;status1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.Status, MAP Planner, Version=1.3.8628.18296, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.Status, MAP Planner, Version=1.3.8629.27213, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;status1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -1026,6 +1008,36 @@
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="status1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="status1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 12</value>
+  </data>
+  <data name="status1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="status1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 19</value>
+  </data>
+  <data name="status1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="status1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;status1.Name" xml:space="preserve">
+    <value>status1</value>
+  </data>
+  <data name="&gt;&gt;status1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.Status, MAP Planner, Version=1.3.8629.27300, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;status1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;status1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="ConnectButtt1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -2865,7 +2877,7 @@
     <value>toolStripConnectionControl</value>
   </data>
   <data name="&gt;&gt;toolStripConnectionControl.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ToolStripConnectionControl, MAP Planner, Version=1.3.8628.18296, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ToolStripConnectionControl, MAP Planner, Version=1.3.8629.27300, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuArduPilot.Name" xml:space="preserve">
     <value>MenuArduPilot</value>

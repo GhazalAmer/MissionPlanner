@@ -239,15 +239,16 @@ namespace MissionPlanner
             // 
             // ConnectButtt
             // 
-            this.ConnectButtt.BGGradBot = System.Drawing.Color.LightGray;
-            this.ConnectButtt.BGGradTop = System.Drawing.Color.LightGray;
+            this.ConnectButtt.BGGradBot = System.Drawing.SystemColors.ButtonFace;
+            this.ConnectButtt.BGGradTop = System.Drawing.SystemColors.ButtonFace;
             this.ConnectButtt.ColorMouseDown = System.Drawing.SystemColors.ActiveCaption;
-            this.ConnectButtt.ColorMouseOver = System.Drawing.Color.DimGray;
+            this.ConnectButtt.ColorMouseOver = System.Drawing.Color.Silver;
             resources.ApplyResources(this.ConnectButtt, "ConnectButtt");
+            this.ConnectButtt.ForeColor = System.Drawing.SystemColors.Window;
             this.ConnectButtt.Name = "ConnectButtt";
             this.ConnectButtt.Outline = System.Drawing.Color.Transparent;
-            this.ConnectButtt.TextColor = System.Drawing.Color.Gray;
-            this.ConnectButtt.TextColorNotEnabled = System.Drawing.Color.White;
+            this.ConnectButtt.TextColor = System.Drawing.SystemColors.Desktop;
+            this.ConnectButtt.TextColorNotEnabled = System.Drawing.SystemColors.HighlightText;
             this.ConnectButtt.UseVisualStyleBackColor = true;
             this.ConnectButtt.Click += new System.EventHandler(this.ConnectButtt_Click);
             // 

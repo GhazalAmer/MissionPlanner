@@ -8250,6 +8250,16 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void switchview_Click(object sender, EventArgs e)
         {
+            panel9.Visible = false;
+            NextWpPanel.Visible = false;
+            panel10.Visible = false;
+            ToolsTable.Visible = false;
+            DrawPanel.Visible = false;
+            measurePanel.Visible = false;
+            SpeedPanel.Visible = false;
+            panel6.Visible = false;
+            PlaceAfterPanel.Visible = false;
+
             if (tableLayoutPanel6.Visible == true)
             { tableLayoutPanel6.Visible = false; }
             else
@@ -8321,6 +8331,9 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             ToolsTable.Visible = false;
             DrawPanel.Visible = false;
             measurePanel.Visible = false;
+            SpeedPanel.Visible = false;
+            panel6.Visible = false;
+            PlaceAfterPanel.Visible = false;
 
             if (panel9.Visible == true)
             { panel9.Visible = false; }
@@ -8398,6 +8411,9 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             NextWpPanel.Visible = false;
             panel9.Visible = false;
             panel10.Visible = false;
+            SpeedPanel.Visible = false;
+            panel6.Visible = false;
+            PlaceAfterPanel.Visible = false;
 
             if (ToolsTable.Visible == true)
             { ToolsTable.Visible = false; }
@@ -9035,6 +9051,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton6_Click(object sender, EventArgs e)
         {
+            SpeedPanel.Visible = false;
             int no = (int)WPNumber.Value;
 
             CurentRectMarker = null;
@@ -9830,6 +9847,9 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             panel9.Visible = false;
             DrawPanel.Visible = false;
             measurePanel.Visible = false;
+            SpeedPanel.Visible = false;
+            panel6.Visible = false;
+            PlaceAfterPanel.Visible = false;
             if (panel10.Visible == true)
             { panel10.Visible = false; }
             else

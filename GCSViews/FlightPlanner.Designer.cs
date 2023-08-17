@@ -47,15 +47,15 @@ namespace MissionPlanner.GCSViews
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightPlanner));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.newhome = new MissionPlanner.Controls.MyButton();
             this.ToolsBTN = new MissionPlanner.Controls.MyButton();
@@ -617,14 +617,14 @@ namespace MissionPlanner.GCSViews
             // 
             this.Commands.AllowUserToAddRows = false;
             resources.ApplyResources(this.Commands, "Commands");
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Commands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle64.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Commands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle64;
             this.Commands.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Command,
             this.Param1,
@@ -647,26 +647,26 @@ namespace MissionPlanner.GCSViews
             this.Dist,
             this.AZ,
             this.TagData});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Commands.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle68.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle68.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle68.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Commands.DefaultCellStyle = dataGridViewCellStyle68;
             this.Commands.Name = "Commands";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.Format = "N0";
-            dataGridViewCellStyle6.NullValue = "0";
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Commands.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            this.Commands.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle69.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle69.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle69.Format = "N0";
+            dataGridViewCellStyle69.NullValue = "0";
+            dataGridViewCellStyle69.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle69.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Commands.RowHeadersDefaultCellStyle = dataGridViewCellStyle69;
+            dataGridViewCellStyle70.ForeColor = System.Drawing.Color.Black;
+            this.Commands.RowsDefaultCellStyle = dataGridViewCellStyle70;
             this.Commands.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellContentClick_1);
             this.Commands.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellEndEdit);
             this.Commands.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.Commands_DataError);
@@ -679,9 +679,9 @@ namespace MissionPlanner.GCSViews
             // Command
             // 
             this.Command.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(68)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            this.Command.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(68)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.White;
+            this.Command.DefaultCellStyle = dataGridViewCellStyle65;
             this.Command.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
             resources.ApplyResources(this.Command, "Command");
             this.Command.Name = "Command";
@@ -770,7 +770,7 @@ namespace MissionPlanner.GCSViews
             // Up
             // 
             this.Up.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            this.Up.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Up.DefaultCellStyle = dataGridViewCellStyle66;
             resources.ApplyResources(this.Up, "Up");
             this.Up.Image = ((System.Drawing.Image)(resources.GetObject("Up.Image")));
             this.Up.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -779,8 +779,8 @@ namespace MissionPlanner.GCSViews
             // Down
             // 
             this.Down.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Down.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Down.DefaultCellStyle = dataGridViewCellStyle67;
             resources.ApplyResources(this.Down, "Down");
             this.Down.Image = ((System.Drawing.Image)(resources.GetObject("Down.Image")));
             this.Down.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -849,11 +849,11 @@ namespace MissionPlanner.GCSViews
             // 
             // panelMap
             // 
+            this.panelMap.Controls.Add(this.measurePanel);
             this.panelMap.Controls.Add(this.panel10);
             this.panelMap.Controls.Add(this.ToolsTable);
             this.panelMap.Controls.Add(this.NextWpPanel);
             this.panelMap.Controls.Add(this.PlaceAfterPanel);
-            this.panelMap.Controls.Add(this.measurePanel);
             this.panelMap.Controls.Add(this.zoom_out);
             this.panelMap.Controls.Add(this.zoom_in);
             this.panelMap.Controls.Add(this.tableLayoutPanel6);
@@ -946,7 +946,7 @@ namespace MissionPlanner.GCSViews
             resources.ApplyResources(this.myButton23, "myButton23");
             this.myButton23.BackColor = System.Drawing.Color.Transparent;
             this.myButton23.BGGradBot = System.Drawing.Color.Tomato;
-            this.myButton23.BGGradTop = System.Drawing.Color.LightCoral;
+            this.myButton23.BGGradTop = System.Drawing.Color.Black;
             this.myButton23.Name = "myButton23";
             this.myButton23.Outline = System.Drawing.Color.Black;
             this.myButton23.TextColor = System.Drawing.Color.White;
@@ -958,8 +958,8 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.myButton24, "myButton24");
             this.myButton24.BackColor = System.Drawing.Color.Transparent;
-            this.myButton24.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.myButton24.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton24.BGGradBot = System.Drawing.Color.Green;
+            this.myButton24.BGGradTop = System.Drawing.Color.Black;
             this.myButton24.ColorMouseOver = System.Drawing.Color.DimGray;
             this.myButton24.Name = "myButton24";
             this.myButton24.Outline = System.Drawing.Color.Black;
@@ -2206,8 +2206,8 @@ namespace MissionPlanner.GCSViews
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle71;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2215,8 +2215,8 @@ namespace MissionPlanner.GCSViews
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle72;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;

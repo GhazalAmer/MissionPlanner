@@ -6800,12 +6800,15 @@ namespace MissionPlanner.GCSViews
 
         private void myButton13_Click(object sender, EventArgs e)
         {
+            var myColor = Color.FromArgb(35,35,35);
+            var myColor1 = Color.FromArgb(50,50,50);
             String Auto_pan_status = (String)MainV2.config["CHK_autopan"];
             if (Auto_pan_status == "False")
             {
                 CHK_autopan.Checked = true;
                 MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
-                AutoPan.BackColor = Color.Gray;
+                myButton13.BGGradBot = Color.Green;
+                myButton13.BGGradTop = Color.Green;
                 //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
                 //MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
             }
@@ -6813,7 +6816,8 @@ namespace MissionPlanner.GCSViews
             {
                 CHK_autopan.Checked = false;
                 MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
-                AutoPan.BackColor = Color.Silver;
+                myButton13.BGGradBot = myColor;
+                myButton13.BGGradTop = myColor1;
                 //CustomMessageBox.Show(MainV2.config["CHK_autopan"].ToString()); 
             }
         }
