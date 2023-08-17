@@ -238,7 +238,7 @@ namespace MissionPlanner.Joystick
             this.label1.Location = new System.Drawing.Point(107, 213);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 39);
+            this.label1.Size = new System.Drawing.Size(124, 38);
             this.label1.TabIndex = 64;
             this.label1.Text = "Rudder";
             // 
@@ -250,7 +250,7 @@ namespace MissionPlanner.Joystick
             this.myTrackBar2.Minimum = 1000F;
             this.myTrackBar2.Name = "myTrackBar2";
             this.myTrackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.myTrackBar2.Size = new System.Drawing.Size(70, 153);
+            this.myTrackBar2.Size = new System.Drawing.Size(56, 153);
             this.myTrackBar2.SmallChange = 1F;
             this.myTrackBar2.TabIndex = 65;
             this.myTrackBar2.TickFrequency = 500F;
@@ -320,9 +320,9 @@ namespace MissionPlanner.Joystick
             this.label4.Location = new System.Drawing.Point(411, 85);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 16);
+            this.label4.Size = new System.Drawing.Size(41, 20);
             this.label4.TabIndex = 70;
-            this.label4.Text = "CH";
+            this.label4.Text = "CH2";
             // 
             // comboBox1
             // 
@@ -362,9 +362,9 @@ namespace MissionPlanner.Joystick
             this.label5.Location = new System.Drawing.Point(411, 167);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 16);
+            this.label5.Size = new System.Drawing.Size(41, 20);
             this.label5.TabIndex = 73;
-            this.label5.Text = "CH";
+            this.label5.Text = "CH3";
             // 
             // comboBox2
             // 

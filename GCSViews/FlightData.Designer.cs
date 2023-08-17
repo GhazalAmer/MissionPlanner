@@ -2717,7 +2717,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 22680D;
+            this.windDir1.Direction = 23040D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3535,11 +3535,11 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.tableLayoutPanel7.Controls.Add(this.myButton6, 4, 0);
             this.tableLayoutPanel7.Controls.Add(this.restartroutebutton, 5, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton13, 6, 0);
             this.tableLayoutPanel7.Controls.Add(this.switchview, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton19, 3, 0);
-            this.tableLayoutPanel7.Controls.Add(this.myButton6, 4, 0);
             this.tableLayoutPanel7.Controls.Add(this.MeasureBTN, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton5, 2, 0);
             this.tableLayoutPanel7.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;

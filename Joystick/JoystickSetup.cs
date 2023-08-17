@@ -77,7 +77,7 @@ namespace MissionPlanner.Joystick
                 var ax = new JoystickAxis()
                 {
                     ChannelNo = a,
-                    Label = "RC " + a,
+                    Label = "CH " + a,
                     AxisArray = (Enum.GetValues(typeof(joystickaxis))),
                     ChannelValue = config.axis.ToString(),
                     ExpoValue = config.expo.ToString(),
@@ -163,7 +163,7 @@ namespace MissionPlanner.Joystick
 
                 BUT_enable.Text = "Disable";
 
-                //timer1.Start();
+                timer1.Start();
             }
             else
             {
@@ -174,7 +174,7 @@ namespace MissionPlanner.Joystick
                 MainV2.joystick = null;
 
 
-                //timer1.Stop();
+                timer1.Stop();
 
                 BUT_enable.Text = "Enable";
             }

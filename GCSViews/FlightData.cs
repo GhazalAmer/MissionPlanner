@@ -6275,9 +6275,11 @@ namespace MissionPlanner.GCSViews
 
         private void MeasureBTN_Click(object sender, EventArgs e)
         {
+           
             if (measurePanel.Visible == true)
             {
                 measurePanel.Visible = false;
+                boatStatusPanel.Visible = true;
                 measure_mode = 0;
                 MeasureBTN.Text = "Measure";
                 MeasurePts.Clear();
@@ -6287,6 +6289,7 @@ namespace MissionPlanner.GCSViews
             else
             {
                 measurePanel.Visible = true;
+                boatStatusPanel.Visible = false;
                 //tableLayoutPanel1.Enabled = false;
                 //MeasureBTN.Enabled = true;
                 measure_mode = 1;
