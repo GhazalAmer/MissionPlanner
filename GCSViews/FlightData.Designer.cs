@@ -234,8 +234,8 @@ namespace MissionPlanner.GCSViews
             this.myButton5 = new MissionPlanner.Controls.MyButton();
             this.MeasureBTN = new MissionPlanner.Controls.MyButton();
             this.measurePanel = new System.Windows.Forms.Panel();
-            this.myButton7 = new MissionPlanner.Controls.MyButton();
             this.MeasureLabel = new System.Windows.Forms.Label();
+            this.myButton7 = new MissionPlanner.Controls.MyButton();
             this.panel9 = new System.Windows.Forms.Panel();
             this.myButton10 = new MissionPlanner.Controls.MyButton();
             this.myButton9 = new MissionPlanner.Controls.MyButton();
@@ -2717,7 +2717,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 20520D;
+            this.windDir1.Direction = 22680D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3014,6 +3014,14 @@ namespace MissionPlanner.GCSViews
             this.measurePanel.Controls.Add(this.myButton7);
             this.measurePanel.Name = "measurePanel";
             // 
+            // MeasureLabel
+            // 
+            resources.ApplyResources(this.MeasureLabel, "MeasureLabel");
+            this.MeasureLabel.BackColor = System.Drawing.Color.White;
+            this.MeasureLabel.ForeColor = System.Drawing.Color.Black;
+            this.MeasureLabel.Name = "MeasureLabel";
+            this.MeasureLabel.Click += new System.EventHandler(this.MeasureLabel_Click);
+            // 
             // myButton7
             // 
             resources.ApplyResources(this.myButton7, "myButton7");
@@ -3027,14 +3035,6 @@ namespace MissionPlanner.GCSViews
             this.myButton7.TextColorNotEnabled = System.Drawing.Color.Black;
             this.myButton7.UseVisualStyleBackColor = true;
             this.myButton7.Click += new System.EventHandler(this.myButton7_Click);
-            // 
-            // MeasureLabel
-            // 
-            resources.ApplyResources(this.MeasureLabel, "MeasureLabel");
-            this.MeasureLabel.BackColor = System.Drawing.Color.White;
-            this.MeasureLabel.ForeColor = System.Drawing.Color.Black;
-            this.MeasureLabel.Name = "MeasureLabel";
-            this.MeasureLabel.Click += new System.EventHandler(this.MeasureLabel_Click);
             // 
             // panel9
             // 

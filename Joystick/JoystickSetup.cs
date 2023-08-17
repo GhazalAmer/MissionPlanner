@@ -14,7 +14,7 @@ namespace MissionPlanner.Joystick
         bool startup = true;
 
         int noButtons = 0;
-        private int maxaxis = 6;
+        private int maxaxis = 3;
 
         public JoystickSetup()
         {
