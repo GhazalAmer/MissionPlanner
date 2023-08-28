@@ -70,8 +70,8 @@ namespace MissionPlanner.Maps
                 try
                 {
                     string file = CacheLocation + Path.DirectorySeparatorChar + GMapProviders.TryGetProvider(type).Name +
-                                  Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.Y +
-                                  Path.DirectorySeparatorChar + pos.X + ".jpg";
+                                  Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.X +
+                                  Path.DirectorySeparatorChar + pos.Y + ".png";
                     string dir = Path.GetDirectoryName(file);
                     Directory.CreateDirectory(dir);
                     using (BinaryWriter sw = new BinaryWriter(File.OpenWrite(file)))
@@ -97,15 +97,15 @@ namespace MissionPlanner.Maps
             try
             {
                 string file = CacheLocation + Path.DirectorySeparatorChar + GMapProviders.TryGetProvider(type).Name +
-                              Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.Y +
-                              Path.DirectorySeparatorChar + pos.X + ".jpg";
+                              Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.X +
+                              Path.DirectorySeparatorChar + pos.Y + ".png";
                 if (File.Exists(file))
                 {
                     using (
                         BinaryReader sr =
                             new BinaryReader(File.Open(file, FileMode.Open, FileAccess.Read, FileShare.Read)))
                     {
-                        byte[] tile = sr.ReadBytes((int) sr.BaseStream.Length);
+                        byte[] tile = sr.ReadBytes((int)sr.BaseStream.Length);
 
                         MemoryStream stm = new MemoryStream(tile, 0, tile.Length, false, true);
 
@@ -144,7 +144,7 @@ namespace MissionPlanner.Maps
                 return 0;
             }
 
-            string[] files = Directory.GetFiles(file, "*.jpg", SearchOption.AllDirectories);
+            string[] files = Directory.GetFiles(file, "*.png", SearchOption.AllDirectories);
 
             foreach (var filen in files)
             {
