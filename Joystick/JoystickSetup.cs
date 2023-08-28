@@ -70,7 +70,7 @@ namespace MissionPlanner.Joystick
 
             this.SuspendLayout();
 
-            for (int a = 1; a <= maxaxis; a++)
+            for (int a = 1; a <= 1; a++)
             {
                 var config = tempjoystick.getChannel(a);
 

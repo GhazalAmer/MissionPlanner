@@ -33,11 +33,18 @@ namespace MissionPlanner
 
 
             connect_msg = Encoding.ASCII.GetBytes("Can i get a cake");
+            //connect_msg1 = Encoding.ASCII.GetBytes("Engine1 OK");
+            //connect_msg2 = Encoding.ASCII.GetBytes("Engine2 OK");
 
             try
             {
                 n2k_client.Connect(N2K_IP, N2K_PORT);
                 n2k_client.Send(connect_msg, connect_msg.Length);
+            //    n2k_client1.Connect(N2K_IP1, N2K_PORT1);
+            //    n2k_client1.Send(connect_msg1, connect_msg1.Length);
+            //    n2k_client2.Connect(N2K_IP2, N2K_PORT2);
+            //    n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            //
             }
 
             catch (Exception e)
@@ -54,13 +61,26 @@ namespace MissionPlanner
             tBoatView.Start();
 
         }
-
-        int N2K_PORT = 8080;                     // Will be Overridden by Text File
-        string N2K_IP = "192.168.1.10";     // Will be Overridden by Text File
+        // engine 1 
+        int N2K_PORT = 49414;                     // Will be Overridden by Text File
+        string N2K_IP = "192.168.1.88";     // Will be Overridden by Text File
         UdpClient n2k_client;
         System.Net.IPEndPoint RemoteIpEndPoint;
         Byte[] connect_msg;
-        
+
+        //// engine 1 
+        //int N2K_PORT1 = 8085;                     // Will be Overridden by Text File
+        //string N2K_IP1 = "192.168.10.8";     // Will be Overridden by Text File
+        //UdpClient n2k_client1;
+        //System.Net.IPEndPoint RemoteIpEndPoint1;
+        //Byte[] connect_msg1;
+
+        ////engine 2
+        //int N2K_PORT2 = 8085;                     // Will be Overridden by Text File
+        //string N2K_IP2 = "192.168.10.9";     // Will be Overridden by Text File
+        //UdpClient n2k_client2;
+        //System.Net.IPEndPoint RemoteIpEndPoint2;
+        //Byte[] connect_msg2;
 
 
         void mainLoop()
@@ -224,6 +244,69 @@ namespace MissionPlanner
             label9.Text = MainV2.comPort.MAV.cs.groundspeed.ToString("0.0");
             //Application.DoEvents();
 
+        }
+
+        private void myButton4_Click(object sender, EventArgs e)
+        {
+            //connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
+            //Console.WriteLine("Stoping PORT Engine");
+            //n2k_client2.Send(connect_msg2, connect_msg2.Length);
+        }
+
+        private void myButton1_Click(object sender, EventArgs e)
+        {
+        //    connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
+        //    Console.WriteLine("Starting STBD Engine");
+        //    n2k_client1.Send(connect_msg1, connect_msg1.Length);
+        }
+
+        private void myLabel1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+           //yahString a = Console.ReadLine();
+           //String b = "$FRFIR,E,132225,FS,FA,003,001,A,V,Fire PreAl: 004 STEERING ROOM - STEERING RO*71\r\n$FREVE,132225,AJ004,DZ PreAlarm   : STEERING ROOM*6E\r\n$FRFIR,E,132231,FS,FA,003,001,A,V,Fire Alarm: 004 STEERING ROOM - STEERING RO*4D\r\n";
+           // if (a == b)
+           // {
+           //     label14.ForeColor = Color.Red;
+           // }
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myButton2_Click(object sender, EventArgs e)
+        {
+            //connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
+            //Console.WriteLine("Stop STBD Engine");
+            //n2k_client1.Send(connect_msg1, connect_msg1.Length);
+        }
+
+        private void myButton3_Click(object sender, EventArgs e)
+        {
+            //connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
+            //Console.WriteLine("Starting PORT Engine");
+            //n2k_client2.Send(connect_msg2, connect_msg2.Length);
         }
     }
 }

@@ -1957,7 +1957,8 @@ namespace MissionPlanner
             }
             else
             {
-                doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
+                doConnect(comPort, "UDP", "5444");
+
             }
 
             _connectionControl.UpdateSysIDS();
