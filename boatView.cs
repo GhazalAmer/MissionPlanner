@@ -101,7 +101,7 @@ namespace MissionPlanner
             //        Console.WriteLine("IP/PORT DONE");
             //    }
             //}
-
+           
             bool oklol = false;
             while (true)
             {
@@ -111,11 +111,32 @@ namespace MissionPlanner
                     //Parse Data shouldn't be causing Errors, get it out of here lol
                     Byte[] rxBytes = n2k_client.Receive(ref RemoteIpEndPoint);
                     string returnData = Encoding.ASCII.GetString(rxBytes);
-                    Console.WriteLine(returnData);
+                    Console.WriteLine("RECEVIED");
+                    int a = returnData.Length; 
+                    Console.WriteLine(a);
                     oklol = true;
                     status_text.Text = "N2K Link ACTIVE";
                     status_text.ForeColor = Color.LimeGreen;
                     parseData(returnData);
+                    switch (a)
+                    {
+                        case 214:
+                        label14.ForeColor = Color.Red;
+                            break;
+
+                        case 134:
+                        label15.ForeColor = Color.Red;
+                         break;
+
+                        case 133:
+                            label16.ForeColor = Color.Red;
+                            break;
+
+                        case 270:
+                            label18.ForeColor = Color.Red;
+                            break;
+
+                       }
 
                 }
 
@@ -237,6 +258,7 @@ namespace MissionPlanner
 
         }
 
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             label7.Text = MainV2.comPort.MAV.cs.yaw.ToString() + "°";
@@ -282,12 +304,7 @@ namespace MissionPlanner
 
         private void label14_Click(object sender, EventArgs e)
         {
-           //yahString a = Console.ReadLine();
-           //String b = "$FRFIR,E,132225,FS,FA,003,001,A,V,Fire PreAl: 004 STEERING ROOM - STEERING RO*71\r\n$FREVE,132225,AJ004,DZ PreAlarm   : STEERING ROOM*6E\r\n$FRFIR,E,132231,FS,FA,003,001,A,V,Fire Alarm: 004 STEERING ROOM - STEERING RO*4D\r\n";
-           // if (a == b)
-           // {
-           //     label14.ForeColor = Color.Red;
-           // }
+          
         }
 
         private void label18_Click(object sender, EventArgs e)
@@ -307,6 +324,19 @@ namespace MissionPlanner
             //connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
             //Console.WriteLine("Starting PORT Engine");
             //n2k_client2.Send(connect_msg2, connect_msg2.Length);
+        }
+
+        private void label14_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myButton5_Click(object sender, EventArgs e)
+        {
+            label14.ForeColor = Color.Lime;
+            label15.ForeColor = Color.Lime;
+            label16.ForeColor = Color.Lime;
+            label18.ForeColor = Color.Lime;
         }
     }
 }
