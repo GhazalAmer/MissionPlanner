@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Sockets;
 using System.IO;
+using ExifLibrary;
 
 namespace MissionPlanner
 {
@@ -112,34 +113,40 @@ namespace MissionPlanner
                     Byte[] rxBytes = n2k_client.Receive(ref RemoteIpEndPoint);
                     string returnData = Encoding.ASCII.GetString(rxBytes);
                     Console.WriteLine("RECEVIED");
-                    int a = returnData.Length; 
-                    Console.WriteLine(a);
+                    string[] a = returnData.Split(',');
+                    string b = a[9].Substring(12, 3);
+                    string c = a[9].Substring(0, 4);
+                    Console.WriteLine(b);
+                    Console.WriteLine(c);
                     oklol = true;
                     status_text.Text = "N2K Link ACTIVE";
                     status_text.ForeColor = Color.LimeGreen;
                     parseData(returnData);
-                    switch (a)
+                    if (c == "Fire")
                     {
-                        case 214:
-                        label14.ForeColor = Color.Red;
-                            break;
 
-                        case 134:
-                        label15.ForeColor = Color.Red;
-                         break;
+                        switch (b)
+                        {
+                            case "001":
+                                label15.ForeColor = Color.Red;
+                                break;
 
-                        case 133:
-                            label16.ForeColor = Color.Red;
-                            break;
+                            case "002":
+                                label16.ForeColor = Color.Red;
+                                break;
 
-                        case 270:
-                            label18.ForeColor = Color.Red;
-                            break;
+                            case "003":
+                                label18.ForeColor = Color.Red;
+                                break;
 
-                       }
+                            case "004":
+                                label14.ForeColor = Color.Red;
+                                break;
 
+                        }
+
+                    }
                 }
-
                 catch (Exception e)
                 {
                     oklol = false;
