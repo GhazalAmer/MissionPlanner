@@ -298,7 +298,7 @@ namespace MissionPlanner
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label7.Text = MainV2.comPort.MAV.cs.yaw.ToString() + "°";
+            label7.Text = MainV2.comPort.MAV.cs.yaw.ToString("0.0") + "°";
             label8.Text = MainV2.comPort.MAV.cs.target_bearing.ToString("0") + "°";
             label9.Text = MainV2.comPort.MAV.cs.groundspeed.ToString("0.0");
             //Application.DoEvents();
