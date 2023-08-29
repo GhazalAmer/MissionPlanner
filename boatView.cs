@@ -27,25 +27,36 @@ namespace MissionPlanner
 
         void setup()
         {
-
+            // alarm
             n2k_client = new UdpClient(N2K_PORT);
             n2k_client.Client.ReceiveTimeout = 2000;
             RemoteIpEndPoint = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
+            //engine 1 
+            n2k_client1 = new UdpClient(N2K_PORT1);
+            n2k_client1.Client.ReceiveTimeout = 2000;
+            RemoteIpEndPoint1 = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
+            //engine 2 
+            n2k_client2 = new UdpClient(N2K_PORT2);
+            n2k_client2.Client.ReceiveTimeout = 2000;
+            RemoteIpEndPoint2 = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
 
 
             connect_msg = Encoding.ASCII.GetBytes("Can i get a cake");
-            //connect_msg1 = Encoding.ASCII.GetBytes("Engine1 OK");
-            //connect_msg2 = Encoding.ASCII.GetBytes("Engine2 OK");
+            connect_msg1 = Encoding.ASCII.GetBytes("Engine1 OK");
+            connect_msg2 = Encoding.ASCII.GetBytes("Engine2 OK");
 
             try
             {
+                //connect alarm
                 n2k_client.Connect(N2K_IP, N2K_PORT);
                 n2k_client.Send(connect_msg, connect_msg.Length);
-            //    n2k_client1.Connect(N2K_IP1, N2K_PORT1);
-            //    n2k_client1.Send(connect_msg1, connect_msg1.Length);
-            //    n2k_client2.Connect(N2K_IP2, N2K_PORT2);
-            //    n2k_client2.Send(connect_msg2, connect_msg2.Length);
-            //
+                //connect engine 1
+                n2k_client1.Connect(N2K_IP1, N2K_PORT1);
+                n2k_client1.Send(connect_msg1, connect_msg1.Length);
+                //connect engine 2
+                n2k_client2.Connect(N2K_IP2, N2K_PORT2);
+                n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            
             }
 
             catch (Exception e)
@@ -62,26 +73,26 @@ namespace MissionPlanner
             tBoatView.Start();
 
         }
-        // engine 1 
+        // alarm 
         int N2K_PORT = 49414;                     // Will be Overridden by Text File
-        string N2K_IP = "192.168.1.88";     // Will be Overridden by Text File
+        string N2K_IP = "192.168.1.88";           // Will be Overridden by Text File
         UdpClient n2k_client;
         System.Net.IPEndPoint RemoteIpEndPoint;
         Byte[] connect_msg;
 
-        //// engine 1 
-        //int N2K_PORT1 = 8085;                     // Will be Overridden by Text File
-        //string N2K_IP1 = "192.168.10.8";     // Will be Overridden by Text File
-        //UdpClient n2k_client1;
-        //System.Net.IPEndPoint RemoteIpEndPoint1;
-        //Byte[] connect_msg1;
+        //engine 1 
+        int N2K_PORT1 = 49412;                     // Will be Overridden by Text File
+        string N2K_IP1 = "192.168.1.88";           // Will be Overridden by Text File
+        UdpClient n2k_client1;
+        System.Net.IPEndPoint RemoteIpEndPoint1;
+        Byte[] connect_msg1;
 
-        ////engine 2
-        //int N2K_PORT2 = 8085;                     // Will be Overridden by Text File
-        //string N2K_IP2 = "192.168.10.9";     // Will be Overridden by Text File
-        //UdpClient n2k_client2;
-        //System.Net.IPEndPoint RemoteIpEndPoint2;
-        //Byte[] connect_msg2;
+        //engine 2
+        int N2K_PORT2 = 49413;                     // Will be Overridden by Text File
+        string N2K_IP2 = "192.168.1.88";           // Will be Overridden by Text File
+        UdpClient n2k_client2;
+        System.Net.IPEndPoint RemoteIpEndPoint2;
+        Byte[] connect_msg2;
 
 
         void mainLoop()
@@ -160,11 +171,30 @@ namespace MissionPlanner
                     {
                         Console.WriteLine("Reconnecting");
                         n2k_client.Close();
+                        n2k_client1.Close();
+                        n2k_client2.Close();
+
                         n2k_client = new UdpClient(N2K_PORT);
+                        n2k_client1 = new UdpClient(N2K_PORT1);
+                        n2k_client2 = new UdpClient(N2K_PORT2);
+
                         n2k_client.Client.SendTimeout = 2000;
                         n2k_client.Client.ReceiveTimeout = 2000;
+
+                        n2k_client1.Client.SendTimeout = 2000;
+                        n2k_client1.Client.ReceiveTimeout = 2000;
+
+                        n2k_client2.Client.SendTimeout = 2000;
+                        n2k_client2.Client.ReceiveTimeout = 2000;
+
                         n2k_client.Connect(N2K_IP, N2K_PORT);
                         n2k_client.Send(connect_msg, connect_msg.Length);
+
+                        n2k_client1.Connect(N2K_IP1, N2K_PORT1);
+                        n2k_client1.Send(connect_msg1, connect_msg1.Length);
+
+                        n2k_client2.Connect(N2K_IP2, N2K_PORT2);
+                        n2k_client2.Send(connect_msg2, connect_msg2.Length);
                         // success_etk = true;
                     }
                     catch (Exception e)
@@ -277,16 +307,16 @@ namespace MissionPlanner
 
         private void myButton4_Click(object sender, EventArgs e)
         {
-            //connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
-            //Console.WriteLine("Stoping PORT Engine");
-            //n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
+            Console.WriteLine("Stoping PORT Engine");
+            n2k_client2.Send(connect_msg2, connect_msg2.Length);
         }
 
         private void myButton1_Click(object sender, EventArgs e)
         {
-        //    connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
-        //    Console.WriteLine("Starting STBD Engine");
-        //    n2k_client1.Send(connect_msg1, connect_msg1.Length);
+           connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
+           Console.WriteLine("Starting STBD Engine");
+           n2k_client1.Send(connect_msg1, connect_msg1.Length);
         }
 
         private void myLabel1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
@@ -321,16 +351,16 @@ namespace MissionPlanner
 
         private void myButton2_Click(object sender, EventArgs e)
         {
-            //connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
-            //Console.WriteLine("Stop STBD Engine");
-            //n2k_client1.Send(connect_msg1, connect_msg1.Length);
+            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
+            Console.WriteLine("Stop STBD Engine");
+            n2k_client1.Send(connect_msg1, connect_msg1.Length);
         }
 
         private void myButton3_Click(object sender, EventArgs e)
         {
-            //connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
-            //Console.WriteLine("Starting PORT Engine");
-            //n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
+            Console.WriteLine("Starting PORT Engine");
+            n2k_client2.Send(connect_msg2, connect_msg2.Length);
         }
 
         private void label14_TextChanged(object sender, EventArgs e)
