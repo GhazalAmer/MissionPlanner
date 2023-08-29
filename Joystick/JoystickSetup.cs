@@ -70,7 +70,7 @@ namespace MissionPlanner.Joystick
 
             this.SuspendLayout();
 
-            for (int a = 1; a <= 1; a++)
+            for (int a = 1; a <= 3; a++)
             {
                 var config = tempjoystick.getChannel(a);
 
@@ -101,7 +101,7 @@ namespace MissionPlanner.Joystick
                 y += ax.Height;
 
 
-                if ((ax.Bottom + 30) > this.Height)
+                if ((ax.Bottom + 5) > this.Height)
                     this.Height = ax.Bottom;
 
                 if ((ax.Right) > this.Width)

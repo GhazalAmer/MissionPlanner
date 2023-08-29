@@ -1630,7 +1630,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 49</value>
+    <value>60, 49</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 17</value>

@@ -37,6 +37,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.myButton5 = new MissionPlanner.Controls.MyButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label10 = new System.Windows.Forms.Label();
-            this.myButton5 = new MissionPlanner.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -98,7 +98,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(422, 29);
+            this.label2.Location = new System.Drawing.Point(451, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 2;
@@ -108,23 +108,24 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(25, 49);
+            this.label7.Location = new System.Drawing.Point(25, 56);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 39);
+            this.label7.Size = new System.Drawing.Size(64, 29);
             this.label7.TabIndex = 7;
             this.label7.Text = "230°";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(393, 48);
+            this.label8.Location = new System.Drawing.Point(436, 58);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 39);
+            this.label8.Size = new System.Drawing.Size(60, 29);
             this.label8.TabIndex = 8;
             this.label8.Text = "150°";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,7 +136,7 @@
             this.label9.BackColor = System.Drawing.SystemColors.Menu;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(212, 49);
+            this.label9.Location = new System.Drawing.Point(208, 49);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 54);
             this.label9.TabIndex = 13;
@@ -183,6 +184,22 @@
             this.panel1.Size = new System.Drawing.Size(510, 616);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // myButton5
+            // 
+            this.myButton5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myButton5.Location = new System.Drawing.Point(178, 195);
+            this.myButton5.Name = "myButton5";
+            this.myButton5.Outline = System.Drawing.Color.Black;
+            this.myButton5.Size = new System.Drawing.Size(153, 34);
+            this.myButton5.TabIndex = 34;
+            this.myButton5.Text = "clear";
+            this.myButton5.TextColor = System.Drawing.Color.White;
+            this.myButton5.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton5.UseVisualStyleBackColor = true;
+            this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -351,6 +368,7 @@
             this.bat_label.Size = new System.Drawing.Size(111, 39);
             this.bat_label.TabIndex = 26;
             this.bat_label.Text = "24.2V";
+            this.bat_label.Visible = false;
             // 
             // label13
             // 
@@ -362,6 +380,7 @@
             this.label13.Size = new System.Drawing.Size(85, 20);
             this.label13.TabIndex = 25;
             this.label13.Text = "BATTERY";
+            this.label13.Visible = false;
             // 
             // bat2_label
             // 
@@ -373,6 +392,7 @@
             this.bat2_label.Size = new System.Drawing.Size(111, 39);
             this.bat2_label.TabIndex = 24;
             this.bat2_label.Text = "24.2V";
+            this.bat2_label.Visible = false;
             // 
             // label11
             // 
@@ -384,6 +404,7 @@
             this.label11.Size = new System.Drawing.Size(88, 20);
             this.label11.TabIndex = 23;
             this.label11.Text = "VOLTAGE";
+            this.label11.Visible = false;
             // 
             // label17
             // 
@@ -395,6 +416,7 @@
             this.label17.Size = new System.Drawing.Size(91, 20);
             this.label17.TabIndex = 17;
             this.label17.Text = "ENGINE  2";
+            this.label17.Visible = false;
             // 
             // rpm2_label
             // 
@@ -406,6 +428,7 @@
             this.rpm2_label.Size = new System.Drawing.Size(97, 39);
             this.rpm2_label.TabIndex = 18;
             this.rpm2_label.Text = "3212";
+            this.rpm2_label.Visible = false;
             // 
             // gear2_label
             // 
@@ -417,6 +440,7 @@
             this.gear2_label.Size = new System.Drawing.Size(110, 113);
             this.gear2_label.TabIndex = 22;
             this.gear2_label.Text = "F";
+            this.gear2_label.Visible = false;
             // 
             // status_text
             // 
@@ -430,6 +454,7 @@
             this.status_text.TabIndex = 21;
             this.status_text.Text = "N2K Link INACTIVE";
             this.status_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.status_text.Visible = false;
             // 
             // gear_label
             // 
@@ -441,6 +466,7 @@
             this.gear_label.Size = new System.Drawing.Size(110, 113);
             this.gear_label.TabIndex = 20;
             this.gear_label.Text = "F";
+            this.gear_label.Visible = false;
             // 
             // rpm1_label
             // 
@@ -452,6 +478,7 @@
             this.rpm1_label.Size = new System.Drawing.Size(97, 39);
             this.rpm1_label.TabIndex = 16;
             this.rpm1_label.Text = "3216";
+            this.rpm1_label.Visible = false;
             // 
             // label19
             // 
@@ -463,6 +490,7 @@
             this.label19.Size = new System.Drawing.Size(91, 20);
             this.label19.TabIndex = 15;
             this.label19.Text = "ENGINE  1";
+            this.label19.Visible = false;
             // 
             // bat1_label
             // 
@@ -474,6 +502,7 @@
             this.bat1_label.Size = new System.Drawing.Size(111, 39);
             this.bat1_label.TabIndex = 10;
             this.bat1_label.Text = "24.2V";
+            this.bat1_label.Visible = false;
             // 
             // label6
             // 
@@ -485,6 +514,7 @@
             this.label6.Size = new System.Drawing.Size(88, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "VOLTAGE";
+            this.label6.Visible = false;
             // 
             // fuel_label
             // 
@@ -496,6 +526,7 @@
             this.fuel_label.Size = new System.Drawing.Size(88, 39);
             this.fuel_label.TabIndex = 8;
             this.fuel_label.Text = "50%";
+            this.fuel_label.Visible = false;
             // 
             // label3
             // 
@@ -507,6 +538,7 @@
             this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "FUEL";
+            this.label3.Visible = false;
             // 
             // timer1
             // 
@@ -524,22 +556,6 @@
             this.label10.Size = new System.Drawing.Size(31, 20);
             this.label10.TabIndex = 15;
             this.label10.Text = "kts";
-            // 
-            // myButton5
-            // 
-            this.myButton5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.myButton5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.myButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myButton5.Location = new System.Drawing.Point(178, 195);
-            this.myButton5.Name = "myButton5";
-            this.myButton5.Outline = System.Drawing.Color.Black;
-            this.myButton5.Size = new System.Drawing.Size(153, 34);
-            this.myButton5.TabIndex = 34;
-            this.myButton5.Text = "clear";
-            this.myButton5.TextColor = System.Drawing.Color.White;
-            this.myButton5.TextColorNotEnabled = System.Drawing.Color.White;
-            this.myButton5.UseVisualStyleBackColor = true;
-            this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
             // 
             // boatView
             // 
