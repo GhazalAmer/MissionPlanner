@@ -111,9 +111,9 @@ namespace MissionPlanner.Comms
 
             dest = OnSettings("UDP_port" + ConfigRef, dest);
 
-            if (inputboxreturn.Cancel == OnInputBoxShow("Listern Port",
-                    "Enter Local port (ensure remote end is already sending)", ref dest)) return;
-            Port = dest;
+           // if (inputboxreturn.Cancel == OnInputBoxShow("Listern Port",
+              //      "Enter Local port (ensure remote end is already sending)", ref dest)) return;
+            Port = "5444";
 
             OnSettings("UDP_port" + ConfigRef, Port, true);
 

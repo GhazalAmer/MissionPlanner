@@ -3852,6 +3852,7 @@ namespace MissionPlanner
             GMapMarkerBase.DisplayNavBearing = Settings.Instance.GetBoolean("GMapMarkerBase_DisplayNavBearing", true);
             GMapMarkerBase.DisplayRadius = Settings.Instance.GetBoolean("GMapMarkerBase_DisplayRadius", true);
             GMapMarkerBase.DisplayTarget = Settings.Instance.GetBoolean("GMapMarkerBase_DisplayTarget", true);
+            Connect_onStart();
         }
 
         private void BGLogMessagesMetaData(object nothing)
@@ -4867,7 +4868,7 @@ namespace MissionPlanner
             else
             {
                 //doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
-                doConnect(comPort, "UDP", "57600");
+                doConnect(comPort, "UDP", "5444");
             }
 
         }
