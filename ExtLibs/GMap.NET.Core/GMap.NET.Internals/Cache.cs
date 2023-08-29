@@ -48,7 +48,7 @@ namespace GMap.NET.Internals
             // http://greatmaps.codeplex.com/discussions/403151
             if (string.IsNullOrEmpty(location))
             {
-                GMaps.Instance.Mode = AccessMode.ServerOnly;
+                GMaps.Instance.Mode = AccessMode.CacheOnly;
                 GMaps.Instance.UseDirectionsCache = false;
                 GMaps.Instance.UseGeocoderCache = false;
                 GMaps.Instance.UsePlacemarkCache = false;
