@@ -1194,12 +1194,13 @@ namespace MissionPlanner.GCSViews
 
                     if (pass == false)
                     {
-                       CustomMessageBox.Show("You must have a home altitude");
-                        string homealt = "100";
-                          if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
-                        return;
-                        TXT_homealt.Text = homealt;
-                    }
+                        //CustomMessageBox.Show("You must have a home altitude");
+                        // string homealt = "100";
+                        //  if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
+                        TXT_homealt.Text = "100";
+                    
+                    return;
+                         }
 
                     int results1;
                     if (!int.TryParse(TXT_DefaultAlt.Text, out results1))
