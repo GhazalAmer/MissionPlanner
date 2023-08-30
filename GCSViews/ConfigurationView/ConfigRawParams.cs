@@ -42,6 +42,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         public ConfigRawParams()
         {
             InitializeComponent();
+            ChangeDataGridViewColors();
         }
 
         public void Activate()
@@ -85,6 +86,16 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             startup = false;
 
             txt_search.Focus();
+        }
+        public void ChangeDataGridViewColors()
+        {
+            Params.DefaultCellStyle.BackColor = Color.Black;
+            Params.RowsDefaultCellStyle.BackColor = Color.Black;
+            Params.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+            Params.DefaultCellStyle.ForeColor = Color.White;
+            Params.RowsDefaultCellStyle.ForeColor = Color.White;
+            Params.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            Params.Refresh();
         }
 
         public void Deactivate()
