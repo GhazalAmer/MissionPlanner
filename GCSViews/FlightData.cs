@@ -2889,6 +2889,11 @@ namespace MissionPlanner.GCSViews
                 goHereToolStripMenuItem_Click(null, null);
                 return;
             }
+            if (e.Button == MouseButtons.Left && measure_mode == 1)
+            {
+
+                isMouseDown = true;
+            }
 
             if (CurrentGMapMarker is GMapMarkerADSBPlane)
             {
