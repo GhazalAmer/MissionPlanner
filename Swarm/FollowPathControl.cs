@@ -34,7 +34,7 @@ namespace MissionPlanner.Swarm
             CMB_mavs.ValueMember = "Value";
             CMB_mavs.DisplayMember = "Key";
 
-            MessageBox.Show("this is beta, use at own risk");
+            //MessageBox.Show("this is beta, use at own risk");
 
             MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }

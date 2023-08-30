@@ -46,7 +46,7 @@ namespace MissionPlanner.Swarm
 
             this.MouseWheel += new MouseEventHandler(FollowLeaderControl_MouseWheel);
 
-            MessageBox.Show("this is beta, use at own risk");
+           // MessageBox.Show("this is beta, use at own risk");
 
             MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }

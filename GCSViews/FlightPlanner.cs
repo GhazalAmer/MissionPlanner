@@ -1194,10 +1194,10 @@ namespace MissionPlanner.GCSViews
 
                     if (pass == false)
                     {
-                        CustomMessageBox.Show("You must have a home altitude");
+                       CustomMessageBox.Show("You must have a home altitude");
                         string homealt = "100";
-                        if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
-                            return;
+                          if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
+                        return;
                         TXT_homealt.Text = homealt;
                     }
 
@@ -9723,7 +9723,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
             if (MainV2.comPort.MAV.cs.lat != 0)
             {
-                TXT_homealt.Text = (MainV2.comPort.MAV.cs.altasl).ToString("0");
+                TXT_homealt.Text = (MainV2.comPort.MAV.cs.altasl).ToString("100");
                 TXT_homelat.Text = MainV2.comPort.MAV.cs.lat.ToString();
                 TXT_homelng.Text = MainV2.comPort.MAV.cs.lng.ToString();
             }
