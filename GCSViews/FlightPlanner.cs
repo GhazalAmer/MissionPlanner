@@ -7496,6 +7496,37 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     writeKML();
                     return;
                 }
+                if (isMouseDown == true && measure_mode == 1)
+                {
+                    // Add Pt.
+                    GMapMarker Marker_Measure = new GMarkerGoogle(new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng), GMarkerGoogleType.orange);
+                    if (first_measurementpt == false)
+                    {
+                        Marker_Measure.ToolTip = new GMapToolTip(Marker_Measure);
+                        Marker_Measure.ToolTipMode = MarkerTooltipMode.OnMouseOver;
+                        total_measurement = total_measurement + MainMap.MapProvider.Projection.GetDistance(start_point, new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng)) * 1000;
+                        Marker_Measure.ToolTipText = "Dist: " + ((MainMap.MapProvider.Projection.GetDistance(start_point, new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng)) * 1000)).ToString("0") + "\nBearing: " + ((MainMap.MapProvider.Projection.GetBearing(start_point, new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng)))).ToString("0");
+                        if (measure_unit_flag == 0)
+                        {
+                            measureLabel.Text = total_measurement.ToString("0");
+                        }
+                        else if (measure_unit_flag == 1)
+                        {
+                            measureLabel.Text = (total_measurement / 1000.0).ToString("F2");
+                        }
+                        else if (measure_unit_flag == 2)
+                        {
+                            measureLabel.Text = (total_measurement / 1852).ToString("F2");
+                        }
+                    }
+                    MeasurePts.Markers.Add(Marker_Measure);
+                    MeasureRoute.Points.Add(new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng));
+                    MeasurePts.Routes.Add(MeasureRoute);
+                    first_measurementpt = false;
+                    start_point = new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng);
+                    isMouseDown = false;
+                    return;
+                }
 
                 if (e.Button == MouseButtons.Left)
                 {
