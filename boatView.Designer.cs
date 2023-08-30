@@ -37,6 +37,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.myButton5 = new MissionPlanner.Controls.MyButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label10 = new System.Windows.Forms.Label();
-            this.myButton5 = new MissionPlanner.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -115,6 +115,7 @@
             this.label7.Size = new System.Drawing.Size(92, 39);
             this.label7.TabIndex = 7;
             this.label7.Text = "230°";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -183,6 +184,22 @@
             this.panel1.Size = new System.Drawing.Size(510, 616);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // myButton5
+            // 
+            this.myButton5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myButton5.Location = new System.Drawing.Point(178, 195);
+            this.myButton5.Name = "myButton5";
+            this.myButton5.Outline = System.Drawing.Color.Black;
+            this.myButton5.Size = new System.Drawing.Size(153, 34);
+            this.myButton5.TabIndex = 34;
+            this.myButton5.Text = "clear";
+            this.myButton5.TextColor = System.Drawing.Color.White;
+            this.myButton5.TextColorNotEnabled = System.Drawing.Color.White;
+            this.myButton5.UseVisualStyleBackColor = true;
+            this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -524,22 +541,6 @@
             this.label10.Size = new System.Drawing.Size(31, 20);
             this.label10.TabIndex = 15;
             this.label10.Text = "kts";
-            // 
-            // myButton5
-            // 
-            this.myButton5.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.myButton5.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.myButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myButton5.Location = new System.Drawing.Point(178, 195);
-            this.myButton5.Name = "myButton5";
-            this.myButton5.Outline = System.Drawing.Color.Black;
-            this.myButton5.Size = new System.Drawing.Size(153, 34);
-            this.myButton5.TabIndex = 34;
-            this.myButton5.Text = "clear";
-            this.myButton5.TextColor = System.Drawing.Color.White;
-            this.myButton5.TextColorNotEnabled = System.Drawing.Color.White;
-            this.myButton5.UseVisualStyleBackColor = true;
-            this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
             // 
             // boatView
             // 
