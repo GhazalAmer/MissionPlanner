@@ -2161,6 +2161,7 @@ namespace MissionPlanner
                                         if (pair.Key == highlatency.custom_mode)
                                         {
                                             mode = pair.Value;
+                                            mode = mode.ToUpper();
                                             _mode = highlatency.custom_mode;
                                             found = true;
                                             break;
@@ -3115,7 +3116,7 @@ namespace MissionPlanner
 
                             wpno = wpcur.seq;
 
-                            if (mode.ToLower() == "auto" && wpno != 0) lastautowp = (int)wpno;
+                            if (mode.ToUpper() == "AUTO" && wpno != 0) lastautowp = (int)wpno;
                             try
                             {
                                 if (oldwp != wpno && Speech != null && Speech.speechEnable && parent != null &&
@@ -3721,6 +3722,7 @@ namespace MissionPlanner
             lock (this)
             {
                 mode = "Unknown";
+                mode = mode.ToUpper();
                 _mode = 99999;
                 messages = new List<(DateTime time, string message)>();
                 useLocation = false;

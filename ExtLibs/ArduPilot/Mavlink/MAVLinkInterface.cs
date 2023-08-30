@@ -4518,6 +4518,7 @@ Mission Planner waits for 2 valid heartbeat packets before connecting");
         [Obsolete]
         public void setMode(string modein)
         {
+            modein = modein.ToUpper();
             setMode(MAV.sysid, MAV.compid, modein);
         }
 
