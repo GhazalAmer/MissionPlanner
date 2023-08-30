@@ -221,6 +221,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Params.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.Params, "Params");
             this.Params.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Command,
             this.Value,
@@ -237,7 +238,6 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Params.DefaultCellStyle = dataGridViewCellStyle3;
-            resources.ApplyResources(this.Params, "Params");
             this.Params.Name = "Params";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
