@@ -7009,6 +7009,16 @@ namespace MissionPlanner.GCSViews
         {
 
         }
+
+        private void zoom_in_Click(object sender, EventArgs e)
+        {
+            gMapControl1.Zoom += 1;
+        }
+
+        private void zoom_out_Click(object sender, EventArgs e)
+        {
+            gMapControl1.Zoom -= 1;
+        }
     }
 
 }

@@ -721,7 +721,7 @@
     <value>modifyandSetLoiterRad</value>
   </data>
   <data name="&gt;&gt;modifyandSetLoiterRad.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetLoiterRad.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -892,7 +892,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -928,7 +928,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ModifyandSet, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ModifyandSet, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1690,7 +1690,7 @@
     <value>checkListControl1</value>
   </data>
   <data name="&gt;&gt;checkListControl1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PreFlight.CheckListControl, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.PreFlight.CheckListControl, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;checkListControl1.Parent" xml:space="preserve">
     <value>tabPagePreFlight</value>
@@ -3236,7 +3236,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3260,7 +3260,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3284,7 +3284,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3308,7 +3308,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3332,7 +3332,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3356,7 +3356,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3380,7 +3380,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3404,7 +3404,7 @@
     <value>servoOptions8</value>
   </data>
   <data name="&gt;&gt;servoOptions8.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions8.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3428,7 +3428,7 @@
     <value>servoOptions9</value>
   </data>
   <data name="&gt;&gt;servoOptions9.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions9.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3452,7 +3452,7 @@
     <value>servoOptions10</value>
   </data>
   <data name="&gt;&gt;servoOptions10.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions10.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3476,7 +3476,7 @@
     <value>servoOptions11</value>
   </data>
   <data name="&gt;&gt;servoOptions11.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions11.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3500,7 +3500,7 @@
     <value>servoOptions12</value>
   </data>
   <data name="&gt;&gt;servoOptions12.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.ServoOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions12.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3524,7 +3524,7 @@
     <value>relayOptions1</value>
   </data>
   <data name="&gt;&gt;relayOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3548,7 +3548,7 @@
     <value>relayOptions2</value>
   </data>
   <data name="&gt;&gt;relayOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3572,7 +3572,7 @@
     <value>relayOptions3</value>
   </data>
   <data name="&gt;&gt;relayOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3596,7 +3596,7 @@
     <value>relayOptions4</value>
   </data>
   <data name="&gt;&gt;relayOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3620,7 +3620,7 @@
     <value>relayOptions5</value>
   </data>
   <data name="&gt;&gt;relayOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3644,7 +3644,7 @@
     <value>relayOptions6</value>
   </data>
   <data name="&gt;&gt;relayOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.RelayOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;relayOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3725,7 +3725,7 @@
     <value>auxOptions1</value>
   </data>
   <data name="&gt;&gt;auxOptions1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3749,7 +3749,7 @@
     <value>auxOptions2</value>
   </data>
   <data name="&gt;&gt;auxOptions2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3773,7 +3773,7 @@
     <value>auxOptions3</value>
   </data>
   <data name="&gt;&gt;auxOptions3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3797,7 +3797,7 @@
     <value>auxOptions4</value>
   </data>
   <data name="&gt;&gt;auxOptions4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3821,7 +3821,7 @@
     <value>auxOptions5</value>
   </data>
   <data name="&gt;&gt;auxOptions5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3845,7 +3845,7 @@
     <value>auxOptions6</value>
   </data>
   <data name="&gt;&gt;auxOptions6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -3869,7 +3869,7 @@
     <value>auxOptions7</value>
   </data>
   <data name="&gt;&gt;auxOptions7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.AuxOptions, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;auxOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -5681,7 +5681,7 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DistanceBar, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.DistanceBar, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -6227,7 +6227,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MainH.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="gMapControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -6254,7 +6254,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;gMapControl1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <metadata name="ZedGraphTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>137, 14</value>
@@ -6372,7 +6372,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LightCTRLBtn.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="restartroutebutton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6614,7 +6614,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AutoPan.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt, style=Bold</value>
@@ -6653,7 +6653,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="myButton5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6970,7 +6970,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;measurePanel.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="panel9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -7120,7 +7120,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="myButton11.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -7159,7 +7159,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;myButton11.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="NextWpPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -7596,7 +7596,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;NextWpPanel.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="panel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -7822,7 +7822,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="WPNumber1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 36pt</value>
@@ -7855,7 +7855,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;WPNumber1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -7897,7 +7897,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="myTrackBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -7930,7 +7930,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;myTrackBar1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -8803,7 +8803,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label32" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label18" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label19" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label20" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label21" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33333" /&gt;&lt;Rows Styles="Percent,50,Percent,50,Absolute,25,Absolute,25,Absolute,25,Absolute,25,Absolute,26,Absolute,24,Absolute,25,Absolute,25,Absolute,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -9007,7 +9007,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label12" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label14" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.5,Percent,62.5" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -9046,7 +9046,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MouseLabel.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -9079,7 +9079,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="switchview.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -9357,7 +9357,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="tableLayoutPanel7.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="myButton6" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="restartroutebutton" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="myButton13" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="switchview" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="myButton19" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="MeasureBTN" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="myButton5" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,10.82164,Percent,10.82164,Percent,10.82164,Percent,35.07014,Percent,10.82164,Percent,10.82164,Percent,10.82164" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -9757,7 +9757,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <metadata name="barRenderer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>956, 46</value>
@@ -9799,7 +9799,7 @@
     <value>joystickSetup1</value>
   </data>
   <data name="&gt;&gt;joystickSetup1.Type" xml:space="preserve">
-    <value>MissionPlanner.Joystick.JoystickSetup, MAP Planner, Version=1.3.8642.27540, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Joystick.JoystickSetup, MAP Planner, Version=1.3.8642.29270, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;joystickSetup1.Parent" xml:space="preserve">
     <value>boatStatusPanel</value>
@@ -9829,7 +9829,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;boatStatusPanel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="ChView.ColumnCount" type="System.Int32, mscorlib">
     <value>6</value>
@@ -11839,7 +11839,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ChView.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="ChView.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label92" Row="9" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label91" Row="9" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label90" Row="9" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label89" Row="9" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label88" Row="9" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label87" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label86" Row="7" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label85" Row="7" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label84" Row="7" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label83" Row="7" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label82" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label81" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label80" Row="5" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label79" Row="5" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label78" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label77" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label76" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label74" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label73" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label72" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label71" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label70" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label69" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label68" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label67" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label66" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label65" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label64" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label63" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label35" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label40" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label42" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label43" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label44" Row="2" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label45" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label46" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label47" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label48" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label49" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label52" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label51" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label53" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label54" Row="6" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label55" Row="6" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label56" Row="6" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label57" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label58" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label59" Row="8" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label60" Row="8" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label61" Row="8" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label62" Row="8" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label50" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label75" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16.66667,Percent,16.58842,Percent,16.69275,Percent,16.66667,Percent,16.66667,Percent,16.66667" /&gt;&lt;Rows Styles="Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -11847,6 +11847,72 @@
   <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1101, 46</value>
   </metadata>
+  <data name="zoom_out.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="zoom_out.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 36pt</value>
+  </data>
+  <data name="zoom_out.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="zoom_out.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1855, 532</value>
+  </data>
+  <data name="zoom_out.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 46</value>
+  </data>
+  <data name="zoom_out.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="zoom_out.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="&gt;&gt;zoom_out.Name" xml:space="preserve">
+    <value>zoom_out</value>
+  </data>
+  <data name="&gt;&gt;zoom_out.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;zoom_out.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;zoom_out.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="zoom_in.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="zoom_in.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 28pt</value>
+  </data>
+  <data name="zoom_in.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="zoom_in.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1855, 455</value>
+  </data>
+  <data name="zoom_in.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 46</value>
+  </data>
+  <data name="zoom_in.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="zoom_in.Text" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="&gt;&gt;zoom_in.Name" xml:space="preserve">
+    <value>zoom_in</value>
+  </data>
+  <data name="&gt;&gt;zoom_in.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;zoom_in.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;zoom_in.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

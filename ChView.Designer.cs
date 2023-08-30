@@ -51,8 +51,8 @@
             this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
+            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
             this.label71 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
@@ -69,7 +69,6 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -91,13 +90,14 @@
             this.label62 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -429,6 +429,10 @@
             this.label72.Text = "-";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // bindingSourceQuickTab
+            // 
+            this.bindingSourceQuickTab.DataSource = typeof(MissionPlanner.CurrentState);
+            // 
             // label71
             // 
             this.label71.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceQuickTab, "ch3out", true));
@@ -441,19 +445,6 @@
             this.label71.TabIndex = 133;
             this.label71.Text = "-";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label70
-            // 
-            this.label70.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceQuickTab, "ch2out", true));
-            this.label70.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F);
-            this.label70.ForeColor = System.Drawing.Color.Black;
-            this.label70.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label70.Location = new System.Drawing.Point(322, 189);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(261, 58);
-            this.label70.TabIndex = 132;
-            this.label70.Text = "-";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label69
             // 
@@ -507,7 +498,7 @@
             // 
             // label65
             // 
-            this.label65.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceQuickTab, "ch3in", true));
+            this.label65.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceStatusTab, "ch3in", true));
             this.label65.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F);
             this.label65.ForeColor = System.Drawing.Color.Black;
             this.label65.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -651,18 +642,6 @@
             this.label41.TabIndex = 10;
             this.label41.Text = "CH3 OUT";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F);
-            this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label42.Location = new System.Drawing.Point(960, 126);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(261, 58);
-            this.label42.TabIndex = 11;
-            this.label42.Text = "CH4 OUT";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label43
             // 
@@ -917,6 +896,31 @@
             this.label75.Text = "-";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label70
+            // 
+            this.label70.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceQuickTab, "ch2out", true));
+            this.label70.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F);
+            this.label70.ForeColor = System.Drawing.Color.Black;
+            this.label70.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label70.Location = new System.Drawing.Point(322, 189);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(261, 58);
+            this.label70.TabIndex = 132;
+            this.label70.Text = "-";
+            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label42
+            // 
+            this.label42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F);
+            this.label42.ForeColor = System.Drawing.Color.Black;
+            this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label42.Location = new System.Drawing.Point(960, 126);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(261, 58);
+            this.label42.TabIndex = 11;
+            this.label42.Text = "CH4 OUT";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // bindingSource1
             // 
             this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
@@ -924,10 +928,6 @@
             // bindingSourceStatusTab
             // 
             this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
-            // 
-            // bindingSourceQuickTab
-            // 
-            this.bindingSourceQuickTab.DataSource = typeof(MissionPlanner.CurrentState);
             // 
             // ChView
             // 
@@ -944,9 +944,9 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.ChView_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
             this.ResumeLayout(false);
 
         }
