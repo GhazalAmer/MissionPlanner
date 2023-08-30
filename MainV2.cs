@@ -692,6 +692,7 @@ namespace MissionPlanner
                 t.SelectedIndex = 0;
 
                 MainV2.instance.FlightData.loadTabControlActions();
+                
             }
 
             if (MainV2.instance.FlightPlanner != null)
@@ -3852,6 +3853,7 @@ namespace MissionPlanner
             GMapMarkerBase.DisplayNavBearing = Settings.Instance.GetBoolean("GMapMarkerBase_DisplayNavBearing", true);
             GMapMarkerBase.DisplayRadius = Settings.Instance.GetBoolean("GMapMarkerBase_DisplayRadius", true);
             GMapMarkerBase.DisplayTarget = Settings.Instance.GetBoolean("GMapMarkerBase_DisplayTarget", true);
+            Connect_onStart();
         }
 
         private void BGLogMessagesMetaData(object nothing)
@@ -4039,6 +4041,7 @@ namespace MissionPlanner
                 log.Info("myview width " + MyView.Width + " height " + MyView.Height);
 
             log.Info("this   width " + this.Width + " height " + this.Height);
+           
         }
 
         private void MenuHelp_Click(object sender, EventArgs e)
@@ -4808,7 +4811,7 @@ namespace MissionPlanner
 
         private void MainV2_Load(object sender, EventArgs e)
         {
-
+            
 
         }
 
@@ -4834,5 +4837,43 @@ namespace MissionPlanner
         {
 
         }
+
+        private void Connect_onStart()
+        {
+            comPort.giveComport = false;
+
+            log.Info("MenuConnect Start");
+
+            try
+            {
+                log.Info("Cleanup last logfiles");
+                // cleanup from any previous sessions
+                if (comPort.logfile != null)
+                    comPort.logfile.Close();
+
+                if (comPort.rawlogfile != null)
+                    comPort.rawlogfile.Close();
+            }
+            catch (Exception ex)
+            {
+                //CustomMessageBox.Show(Strings.ErrorClosingLogFile + ex.Message, Strings.ERROR);
+            }
+
+            comPort.logfile = null;
+            comPort.rawlogfile = null;
+
+            // decide if this is a connect or disconnect
+            if (comPort.BaseStream.IsOpen)
+            {
+                doDisconnect(comPort);
+            }
+            else
+            {
+                //doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
+                doConnect(comPort, "UDP", "5444");
+            }
+
+        }
+
     }
 }
