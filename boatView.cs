@@ -140,17 +140,24 @@ namespace MissionPlanner
                         {
                             case "001":
                                 label15.ForeColor = Color.Red;
+                                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
                                 break;
 
                             case "002":
+                                System.Media.SoundPlayer player1 = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
+                                player1.Play();
                                 label16.ForeColor = Color.Red;
                                 break;
 
                             case "003":
+                                System.Media.SoundPlayer player2 = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
+                                player2.Play();
                                 label18.ForeColor = Color.Red;
                                 break;
 
                             case "004":
+                                System.Media.SoundPlayer player3 = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
+                                player3.Play();
                                 label14.ForeColor = Color.Red;
                                 break;
 
@@ -387,6 +394,11 @@ namespace MissionPlanner
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
