@@ -79,6 +79,7 @@ namespace MissionPlanner
         private float _localsnrdb;
 
         private uint _mode = 99999;
+        private string _mode1;
 
         private PointLatLngAlt _movingbase = new PointLatLngAlt();
         private float _remotesnrdb;
@@ -981,7 +982,12 @@ namespace MissionPlanner
 
         [GroupText("NAV")]
         [DisplayText("Mode")]
-        public string mode { get; set; }
+        public string mode
+        {
+            get { return _mode1; }
+            set { _mode1 = value?.ToUpper(); }
+        }
+
 
         [DisplayText("ClimbRate (speed)")]
         [GroupText("Position")]
