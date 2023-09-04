@@ -74,22 +74,22 @@ namespace MissionPlanner
 
         }
         // alarm 
-        int N2K_PORT = 49414;                     // Will be Overridden by Text File
-        string N2K_IP = "192.168.1.88";           // Will be Overridden by Text File
+        int N2K_PORT = 8696;                     // Will be Overridden by Text File
+        string N2K_IP = "192.168.10.63";           // Will be Overridden by Text File
         UdpClient n2k_client;
         System.Net.IPEndPoint RemoteIpEndPoint;
         Byte[] connect_msg;
 
         //engine 1 
-        int N2K_PORT1 = 49412;                     // Will be Overridden by Text File
-        string N2K_IP1 = "192.168.1.88";           // Will be Overridden by Text File
+        int N2K_PORT1 = 8085;                     // Will be Overridden by Text File
+        string N2K_IP1 = "192.168.10.8";           // Will be Overridden by Text File
         UdpClient n2k_client1;
         System.Net.IPEndPoint RemoteIpEndPoint1;
         Byte[] connect_msg1;
 
         //engine 2
-        int N2K_PORT2 = 49413;                     // Will be Overridden by Text File
-        string N2K_IP2 = "192.168.1.88";           // Will be Overridden by Text File
+        int N2K_PORT2 = 8085;                     // Will be Overridden by Text File
+        string N2K_IP2 = "192.168.10.9";           // Will be Overridden by Text File
         UdpClient n2k_client2;
         System.Net.IPEndPoint RemoteIpEndPoint2;
         Byte[] connect_msg2;
@@ -135,28 +135,30 @@ namespace MissionPlanner
                     parseData(returnData);
                     if (c == "Fire")
                     {
-
+                        string soundname = "Alarm_Warning.wav";
+                        string path = Path.Combine(Environment.CurrentDirectory, @"sounds\", soundname);
                         switch (b)
+                          
                         {
                             case "001":
                                 label15.ForeColor = Color.Red;
-                                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
+                                System.Media.SoundPlayer player = new System.Media.SoundPlayer(path);
                                 break;
 
                             case "002":
-                                System.Media.SoundPlayer player1 = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
+                                System.Media.SoundPlayer player1 = new System.Media.SoundPlayer(path);
                                 player1.Play();
                                 label16.ForeColor = Color.Red;
                                 break;
 
                             case "003":
-                                System.Media.SoundPlayer player2 = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
+                                System.Media.SoundPlayer player2 = new System.Media.SoundPlayer(path);
                                 player2.Play();
                                 label18.ForeColor = Color.Red;
                                 break;
 
                             case "004":
-                                System.Media.SoundPlayer player3 = new System.Media.SoundPlayer(@"C:\Users\alimo\Desktop\MP-Git\MissionPlanner\Resources\Alarm_Warning.wav");
+                                System.Media.SoundPlayer player3 = new System.Media.SoundPlayer(path);
                                 player3.Play();
                                 label14.ForeColor = Color.Red;
                                 break;
@@ -317,6 +319,9 @@ namespace MissionPlanner
             connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
             Console.WriteLine("Stoping PORT Engine");
             n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
+            Console.WriteLine("Stop STBD Engine");
+            n2k_client1.Send(connect_msg1, connect_msg1.Length);
         }
 
         private void myButton1_Click(object sender, EventArgs e)
@@ -324,6 +329,9 @@ namespace MissionPlanner
            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
            Console.WriteLine("Starting STBD Engine");
            n2k_client1.Send(connect_msg1, connect_msg1.Length);
+           connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
+           Console.WriteLine("Starting PORT Engine");
+           n2k_client2.Send(connect_msg2, connect_msg2.Length);
         }
 
         private void myLabel1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
@@ -358,6 +366,9 @@ namespace MissionPlanner
 
         private void myButton2_Click(object sender, EventArgs e)
         {
+            connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
+            Console.WriteLine("Stoping PORT Engine");
+            n2k_client2.Send(connect_msg2, connect_msg2.Length);
             connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
             Console.WriteLine("Stop STBD Engine");
             n2k_client1.Send(connect_msg1, connect_msg1.Length);
@@ -368,6 +379,9 @@ namespace MissionPlanner
             connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
             Console.WriteLine("Starting PORT Engine");
             n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
+            Console.WriteLine("Starting STBD Engine");
+            n2k_client1.Send(connect_msg1, connect_msg1.Length);
         }
 
         private void label14_TextChanged(object sender, EventArgs e)
