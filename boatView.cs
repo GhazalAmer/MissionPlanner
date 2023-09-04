@@ -80,14 +80,14 @@ namespace MissionPlanner
         System.Net.IPEndPoint RemoteIpEndPoint;
         Byte[] connect_msg;
 
-        //engine 1 
-        int N2K_PORT1 = 8085;                     // Will be Overridden by Text File
+        //STBD Engine  
+        int N2K_PORT1 = 8084;                     // Will be Overridden by Text File
         string N2K_IP1 = "192.168.10.8";           // Will be Overridden by Text File
         UdpClient n2k_client1;
         System.Net.IPEndPoint RemoteIpEndPoint1;
         Byte[] connect_msg1;
 
-        //engine 2
+        //PORT Engine
         int N2K_PORT2 = 8085;                     // Will be Overridden by Text File
         string N2K_IP2 = "192.168.10.9";           // Will be Overridden by Text File
         UdpClient n2k_client2;
@@ -319,9 +319,6 @@ namespace MissionPlanner
             connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
             Console.WriteLine("Stoping PORT Engine");
             n2k_client2.Send(connect_msg2, connect_msg2.Length);
-            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
-            Console.WriteLine("Stop STBD Engine");
-            n2k_client1.Send(connect_msg1, connect_msg1.Length);
         }
 
         private void myButton1_Click(object sender, EventArgs e)
@@ -329,9 +326,7 @@ namespace MissionPlanner
            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
            Console.WriteLine("Starting STBD Engine");
            n2k_client1.Send(connect_msg1, connect_msg1.Length);
-           connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
-           Console.WriteLine("Starting PORT Engine");
-           n2k_client2.Send(connect_msg2, connect_msg2.Length);
+           
         }
 
         private void myLabel1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
@@ -366,9 +361,7 @@ namespace MissionPlanner
 
         private void myButton2_Click(object sender, EventArgs e)
         {
-            connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
-            Console.WriteLine("Stoping PORT Engine");
-            n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            
             connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
             Console.WriteLine("Stop STBD Engine");
             n2k_client1.Send(connect_msg1, connect_msg1.Length);
@@ -379,9 +372,6 @@ namespace MissionPlanner
             connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
             Console.WriteLine("Starting PORT Engine");
             n2k_client2.Send(connect_msg2, connect_msg2.Length);
-            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
-            Console.WriteLine("Starting STBD Engine");
-            n2k_client1.Send(connect_msg1, connect_msg1.Length);
         }
 
         private void label14_TextChanged(object sender, EventArgs e)

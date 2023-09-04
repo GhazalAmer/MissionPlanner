@@ -97,8 +97,8 @@ namespace MissionPlanner.Maps
             try
             {
                 string file = CacheLocation + Path.DirectorySeparatorChar + GMapProviders.TryGetProvider(type).Name +
-                              Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.Y +
-                              Path.DirectorySeparatorChar + pos.X + ".png";
+                              Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.X +
+                              Path.DirectorySeparatorChar + pos.Y + ".png";
                 if (File.Exists(file))
                 {
                     using (
