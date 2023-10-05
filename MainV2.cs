@@ -38,6 +38,11 @@ using System.Linq;
 using MissionPlanner.Joystick;
 using System.Net;
 using Newtonsoft.Json;
+using static MissionPlanner.Utilities.LTM;
+using Accord.Math;
+using System.Security.Cryptography.X509Certificates;
+using Accord.MachineLearning;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace MissionPlanner
 {
@@ -517,6 +522,7 @@ namespace MissionPlanner
 
         Thread httpthread;
         Thread pluginthread;
+        Thread Targets;
 
         /// <summary>
         /// track the last heartbeat sent
@@ -1966,6 +1972,11 @@ namespace MissionPlanner
 
             if (comPort.BaseStream.IsOpen)
                 loadph_serial();
+
+
+
+
+
         }
 
         void loadph_serial()
@@ -2520,6 +2531,119 @@ namespace MissionPlanner
 
             joysendThreadExited = true; //so we know this thread exited.
         }
+        public class targets
+        {
+            public int id;
+            public double lat;
+            public double lon;
+            public double heading;
+        }
+
+
+        public static targets target = new targets();
+        public static string all;
+        public static string sid;
+        public static string slat;
+        public static string slon;
+        public static string sheading;
+        private void SPx_targets()
+        {
+
+            int spx_port = 9050;
+            string spx_ip = "192.168.1.117";
+            Byte[] connect_msg;
+            Console.WriteLine("STARTING SPx Connection THREAD");
+            Console.WriteLine("SETTINGS ARE:");
+            Console.WriteLine(spx_port);
+            Console.WriteLine(spx_ip);
+
+
+            UdpClient spx_udpClient = new UdpClient(spx_port);
+            spx_udpClient.Client.ReceiveTimeout = 2000;
+            System.Net.IPEndPoint RemoteIpEndPoint = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
+            connect_msg = Encoding.ASCII.GetBytes("SPx is connected");
+
+            try
+            {
+                spx_udpClient.Connect(spx_ip, spx_port);
+                spx_udpClient.Send(connect_msg, connect_msg.Length);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            while (true)
+            {
+                try
+                {
+                    // receving data from || SPx 
+                    Byte[] receiveBytes = spx_udpClient.Receive(ref RemoteIpEndPoint);
+                    string reciveData = Encoding.ASCII.GetString(receiveBytes);
+                    Console.WriteLine("SPx Data :");
+                    Console.WriteLine(reciveData);
+
+
+                    //storing and spliting data into array 
+                    string[] a = reciveData.Split(',');
+                    foreach (string s in a)
+                    {
+                        string[] b = s.Split('=');
+
+                        foreach (string v in b)
+
+                            switch (b[0]) {
+
+                                case "$SPX:ID":
+                                    { sid = b[1]; }
+                                    break;
+
+                                case "LAT":
+                                    { slat = b[1]; }
+                                    break;
+
+                                case "LON":
+                                    { slon = b[1]; }
+                                    break;
+
+                                        case "HDG":
+                                    { sheading = b[1]; }
+                                    break;
+
+                            }
+                    }
+                
+
+
+
+                   
+                   
+
+                    Console.WriteLine("id:" + sid + ", lat:" + slat + ", lon:" + slon + ", heading:" + sheading);
+
+                    //storing data into list and then assign 
+                    //all = (sid+","+slat+","+slon+","+sheading);
+                    // Console.WriteLine(all);
+
+
+                    //Assign to tagert class 
+                      target.id = Convert.ToInt32(sid);
+                      target.lat = Convert.ToDouble(slat);
+                      target.lon = Convert.ToDouble(slon);
+                      target.heading = Convert.ToDouble(sheading);
+                      Console.WriteLine("targest data");
+                      Console.WriteLine("id:" + target.id + ", lat:" + target.lat + ", lon:" + target.lon + ", heading:" + target.heading);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.ToString());
+                }
+            }
+
+          
+        }
+
+       
 
         /// <summary>
         /// Used to fix the icon status for unexpected unplugs etc...
@@ -3279,6 +3403,17 @@ namespace MissionPlanner
             {
                 log.Error(ex);
             }
+
+            log.Info("Starting SPx thread");
+            
+                //setup Spx targets thread 
+                Targets = new Thread(new ThreadStart(SPx_targets))
+                {
+                    IsBackground = true,
+                    Priority = ThreadPriority.AboveNormal,
+                    Name = "Display Position of targets"
+                };
+                Targets.Start();
 
 
             ThreadPool.QueueUserWorkItem(LoadGDALImages);

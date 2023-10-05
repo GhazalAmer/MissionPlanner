@@ -52,6 +52,10 @@ using Resources = MissionPlanner.Properties.Resources;
 using Newtonsoft.Json;
 using MissionPlanner.ArduPilot.Mavlink;
 using MissionPlanner.Joystick;
+using Org.BouncyCastle.Asn1.X509;
+using Microsoft.Scripting.Hosting.Shell;
+using static alglib;
+using static MissionPlanner.Utilities.Pelco;
 
 namespace MissionPlanner.GCSViews
 {
@@ -3420,6 +3424,7 @@ namespace MissionPlanner.GCSViews
         }
 
         Thread thisthread;
+      
         public void FlightPlanner_Load(object sender, EventArgs e)
         {
             quickadd = true;
@@ -6723,50 +6728,65 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         /// <param name="e"></param>
         public void timer1_Tick(object sender, EventArgs e)
         {
-            try
+            while (true)
             {
-                if (isMouseDown || CurentRectMarker != null)
-                    return;
+                // PLACING TARGETS ON THE MAP FROM SPx
+             
+                
 
-                prop.alt = MainV2.comPort.MAV.cs.alt;
-                prop.altasl = MainV2.comPort.MAV.cs.altasl;
-                prop.center = MainMap.Position;
-                prop.Update(MainV2.comPort.MAV.cs.PlannedHomeLocation, MainV2.comPort.MAV.cs.Location,
-                    MainV2.comPort.MAV.cs.battery_kmleft);
+                    
+                    PointLatLng targetloc = new PointLatLng(MainV2.target.lat, MainV2.target.lon);
+                    routesoverlay.Markers.Add(new GMapMarkerBoat(targetloc, (float)MainV2.target.heading));
+                    Console.WriteLine("target placed");
+               
 
-                // clear every 10 seconds
-                if (DateTime.Now.Second % 10 == 0)
-                    routesoverlay.Markers.Clear();
 
-                if (MainV2.comPort.MAV.cs.TrackerLocation != MainV2.comPort.MAV.cs.HomeLocation &&
-                    MainV2.comPort.MAV.cs.TrackerLocation.Lng != 0)
+                try
                 {
-                    addpolygonmarker(this, "Tracker Home", MainV2.comPort.MAV.cs.TrackerLocation.Lng,
-                        MainV2.comPort.MAV.cs.TrackerLocation.Lat, (int)MainV2.comPort.MAV.cs.TrackerLocation.Alt,
-                        Color.Blue, routesoverlay);
+                    if (isMouseDown || CurentRectMarker != null)
+                        return;
+
+
+
+                    prop.alt = MainV2.comPort.MAV.cs.alt;
+                    prop.altasl = MainV2.comPort.MAV.cs.altasl;
+                    prop.center = MainMap.Position;
+                    prop.Update(MainV2.comPort.MAV.cs.PlannedHomeLocation, MainV2.comPort.MAV.cs.Location,
+                        MainV2.comPort.MAV.cs.battery_kmleft);
+
+                    // clear every 10 seconds
+                    if (DateTime.Now.Second % 10 == 0)
+                        routesoverlay.Markers.Clear();
+
+                    if (MainV2.comPort.MAV.cs.TrackerLocation != MainV2.comPort.MAV.cs.HomeLocation &&
+                        MainV2.comPort.MAV.cs.TrackerLocation.Lng != 0)
+                    {
+                        addpolygonmarker(this, "Tracker Home", MainV2.comPort.MAV.cs.TrackerLocation.Lng,
+                            MainV2.comPort.MAV.cs.TrackerLocation.Lat, (int)MainV2.comPort.MAV.cs.TrackerLocation.Alt,
+                            Color.Blue, routesoverlay);
+                    }
+
+                    if (MainV2.comPort.MAV.cs.lat == 0 || MainV2.comPort.MAV.cs.lng == 0)
+                        return;
+
+                    var marker = Common.getMAVMarker(MainV2.comPort.MAV, routesoverlay);
+
+                    if (marker != null)
+                        routesoverlay.Markers.Add(marker);
+
+                    if (MainV2.comPort.MAV.cs.mode.ToLower() == "guided" && MainV2.comPort.MAV.GuidedMode.x != 0)
+                    {
+                        addpolygonmarker(this, "Guided Mode", MainV2.comPort.MAV.GuidedMode.y / 1e7,
+                            MainV2.comPort.MAV.GuidedMode.x / 1e7,
+                            (int)MainV2.comPort.MAV.GuidedMode.z, Color.Blue, routesoverlay);
+                    }
                 }
-
-                if (MainV2.comPort.MAV.cs.lat == 0 || MainV2.comPort.MAV.cs.lng == 0)
-                    return;
-
-                var marker = Common.getMAVMarker(MainV2.comPort.MAV, routesoverlay);
-
-                if (marker != null)
-                    routesoverlay.Markers.Add(marker);
-
-                if (MainV2.comPort.MAV.cs.mode.ToLower() == "guided" && MainV2.comPort.MAV.GuidedMode.x != 0)
+                catch (Exception ex)
                 {
-                    addpolygonmarker(this, "Guided Mode", MainV2.comPort.MAV.GuidedMode.y / 1e7,
-                        MainV2.comPort.MAV.GuidedMode.x / 1e7,
-                        (int)MainV2.comPort.MAV.GuidedMode.z, Color.Blue, routesoverlay);
+                    log.Warn(ex);
                 }
-            }
-            catch (Exception ex)
-            {
-                log.Warn(ex);
             }
         }
-
         public void trackBar1_Scroll(object sender, EventArgs e)
         {
             try
@@ -9919,6 +9939,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 measureLabel.Text = (total_measurement / 1852).ToString("F2");
             }
         }
+
     }
 
 }

@@ -195,7 +195,7 @@ namespace MissionPlanner
 
                         n2k_client2.Client.SendTimeout = 2000;
                         n2k_client2.Client.ReceiveTimeout = 2000;
-
+                        
                         n2k_client.Connect(N2K_IP, N2K_PORT);
                         n2k_client.Send(connect_msg, connect_msg.Length);
 
@@ -314,19 +314,52 @@ namespace MissionPlanner
 
         }
 
-        private void myButton4_Click(object sender, EventArgs e)
-        {
-            connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
-            Console.WriteLine("Stoping PORT Engine");
-            n2k_client2.Send(connect_msg2, connect_msg2.Length);
-        }
+
 
         private void myButton1_Click(object sender, EventArgs e)
         {
-           connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=START");
-           Console.WriteLine("Starting STBD Engine");
-           n2k_client1.Send(connect_msg1, connect_msg1.Length);
+            Byte[] msg;
+            Byte[] msg2;
+            msg = Encoding.ASCII.GetBytes("ENGINE2=START");
+            msg2 = Encoding.ASCII.GetBytes("ENGINE1=START");
+            Console.WriteLine("Starting PORT Engine");
+           n2k_client2.Send(msg, msg.Length);
+            n2k_client2.Send(msg2, msg2.Length);
            
+        }
+
+
+        private void myButton2_Click(object sender, EventArgs e)
+        {
+            Byte[] msg;
+            Byte[] msg2;
+            msg = Encoding.ASCII.GetBytes("ENGINE2=STOP");
+            msg2 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
+            Console.WriteLine("Stop PORT Engine");
+            n2k_client2.Send(msg, msg.Length);
+            n2k_client2.Send(msg2, msg2.Length);
+        }
+
+        private void myButton3_Click(object sender, EventArgs e)
+        {
+            Byte[] msg;
+            Byte[] msg2;
+            msg = Encoding.ASCII.GetBytes("ENGINE1=START");
+            msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
+            Console.WriteLine("Starting STBD Engine");
+            n2k_client1.Send(msg, msg.Length);
+            n2k_client1.Send(msg2, msg2.Length);
+        }
+
+        private void myButton4_Click(object sender, EventArgs e)
+        {
+            Byte[] msg;
+            Byte[] msg2;
+            msg = Encoding.ASCII.GetBytes("ENGINE1=STOP");
+            msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
+            Console.WriteLine("Stoping STBD Engine");
+            n2k_client1.Send(msg, msg.Length);
+            n2k_client1.Send(msg2, msg2.Length);
         }
 
         private void myLabel1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
@@ -359,21 +392,6 @@ namespace MissionPlanner
 
         }
 
-        private void myButton2_Click(object sender, EventArgs e)
-        {
-            
-            connect_msg1 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
-            Console.WriteLine("Stop STBD Engine");
-            n2k_client1.Send(connect_msg1, connect_msg1.Length);
-        }
-
-        private void myButton3_Click(object sender, EventArgs e)
-        {
-            connect_msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
-            Console.WriteLine("Starting PORT Engine");
-            n2k_client2.Send(connect_msg2, connect_msg2.Length);
-        }
-
         private void label14_TextChanged(object sender, EventArgs e)
         {
 
@@ -403,6 +421,11 @@ namespace MissionPlanner
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }

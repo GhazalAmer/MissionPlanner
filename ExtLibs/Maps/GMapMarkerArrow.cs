@@ -8,18 +8,19 @@ namespace MissionPlanner.Maps
     public class GMapMarkerArrow: GMapMarker
     {
         public float Bearing = 0;
-
-        public GMapMarkerArrow(PointLatLng p, float Bearing, Pen color)
+        public Double heading = 0;
+        public GMapMarkerArrow(PointLatLng p, Double heading)
            : base(p)
         {
-            this.Bearing = Bearing;
+            this.Heading = heading;
             Offset = new Point(0, 0);
-            this.Color = color;
+           
 
         }
 
-        static readonly Point[] Arrow = new Point[] { new Point(-7, 7), new Point(0, -7), new Point(7, 7)/*, new Point(0, 2)*/ };
 
+        static readonly Point[] Arrow = new Point[] { new Point(-7, 7), new Point(0, -7), new Point(7, 7)/*, new Point(0, 2)*/ };
+        public Double Heading { get => heading; set => heading = value; }
         public Pen Color { get; set; }
 
         public override void OnRender(IGraphics g)

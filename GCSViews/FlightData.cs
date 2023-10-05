@@ -3847,6 +3847,9 @@ namespace MissionPlanner.GCSViews
 
                         //updateClearRoutesMarkers();
 
+
+                        Console.WriteLine(">................................................");
+
                         // add this after the mav icons are drawn
                         if (MainV2.comPort.MAV.cs.MovingBase != null &&
                             MainV2.comPort.MAV.cs.MovingBase != PointLatLngAlt.Zero)

@@ -27,7 +27,12 @@ namespace MissionPlanner.Maps
             this.nav_bearing = nav_bearing;
             Size = SizeSt;
         }
-
+        public GMapMarkerBoat(PointLatLng p, float heading)
+           : base(p)
+        {
+            this.heading = heading;
+            Size = SizeSt;
+        }
         public override void OnRender(IGraphics g)
         {
             var temp = g.Transform;
