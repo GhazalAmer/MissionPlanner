@@ -278,5 +278,10 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         {
 
         }
+
+        private void STEER2SRV_P_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

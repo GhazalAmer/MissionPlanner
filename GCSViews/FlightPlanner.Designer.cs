@@ -258,6 +258,7 @@ namespace MissionPlanner.GCSViews
             this.fenceExclusionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStripZoom = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStripPoly = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource1)).BeginInit();
@@ -593,6 +594,7 @@ namespace MissionPlanner.GCSViews
             0,
             0});
             this.WPSp.Name = "WPSp";
+            this.WPSp.ValueChanged += new System.EventHandler(this.WPSp_ValueChanged);
             // 
             // myButton1
             // 
@@ -2619,5 +2621,6 @@ namespace MissionPlanner.GCSViews
         private Button button2;
         private MyButton myButton25;
         private Panel panel10;
+        private ColorDialog colorDialog1;
     }
 }

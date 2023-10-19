@@ -284,6 +284,8 @@ namespace MissionPlanner.GCSViews
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
             this.MouseLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.switchview = new MissionPlanner.Controls.MyButton();
@@ -2719,7 +2721,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 27540D;
+            this.windDir1.Direction = 27900D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3469,6 +3471,8 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel6.Controls.Add(this.label15, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label14, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label11, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label93, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label94, 2, 1);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // label12
@@ -3504,6 +3508,22 @@ namespace MissionPlanner.GCSViews
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Name = "label11";
             this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label93
+            // 
+            resources.ApplyResources(this.label93, "label93");
+            this.label93.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label93.ForeColor = System.Drawing.Color.White;
+            this.label93.Name = "label93";
+            this.label93.Click += new System.EventHandler(this.label93_Click);
+            // 
+            // label94
+            // 
+            resources.ApplyResources(this.label94, "label94");
+            this.label94.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label94.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "xtrack_error", true));
+            this.label94.ForeColor = System.Drawing.SystemColors.Control;
+            this.label94.Name = "label94";
             // 
             // MouseLabel
             // 
@@ -4614,5 +4634,7 @@ namespace MissionPlanner.GCSViews
         private Joystick.JoystickSetup joystickSetup1;
         private Controls.MyButton zoom_out;
         private Controls.MyButton zoom_in;
+        private Label label93;
+        private Label label94;
     }
 }

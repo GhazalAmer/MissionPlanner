@@ -56,6 +56,7 @@ using Org.BouncyCastle.Asn1.X509;
 using Microsoft.Scripting.Hosting.Shell;
 using static alglib;
 using static MissionPlanner.Utilities.Pelco;
+using static MAVLink;
 
 namespace MissionPlanner.GCSViews
 {
@@ -6731,14 +6732,22 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             while (true)
             {
                 // PLACING TARGETS ON THE MAP FROM SPx
-             
-                
 
-                    
-                    PointLatLng targetloc = new PointLatLng(MainV2.target.lat, MainV2.target.lon);
-                    routesoverlay.Markers.Add(new GMapMarkerBoat(targetloc, (float)MainV2.target.heading));
+                int id = MainV2.target.id;
+                double lat = MainV2.target.lat;
+                double lon = MainV2.target.lon;
+                double hdg = MainV2.target.heading;
+
+                if (id == 0)
+                {
+                    Console.WriteLine("No target found ");
+                }
+                else
+                {
+                    PointLatLng targetloc = new PointLatLng(lat, lon);
+                    routesoverlay.Markers.Add(new GMapMarkerBoat(targetloc, (float)hdg));
                     Console.WriteLine("target placed");
-               
+                }
 
 
                 try
@@ -6755,8 +6764,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         MainV2.comPort.MAV.cs.battery_kmleft);
 
                     // clear every 10 seconds
-                    if (DateTime.Now.Second % 10 == 0)
-                        routesoverlay.Markers.Clear();
+                    if (DateTime.Now.Second % 10 == 0 && id ==MainV2.target.id)
+                      routesoverlay.Markers.Clear();
 
                     if (MainV2.comPort.MAV.cs.TrackerLocation != MainV2.comPort.MAV.cs.HomeLocation &&
                         MainV2.comPort.MAV.cs.TrackerLocation.Lng != 0)
@@ -8667,6 +8676,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void myButton9_Click(object sender, EventArgs e)
         {
             panel9.Visible = false;
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 52);
 
             try
             {
@@ -9796,6 +9806,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton24_Click(object sender, EventArgs e)
         {
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
             NextWpPanel.Visible = false;
             panel9.Enabled = true;
             panel9.Visible = false;
@@ -9836,10 +9847,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         }
 
 
+       
 
-
-        private void myButton23_Click(object sender, EventArgs e)
+        private void myButton23_Click(object sender, EventArgs e )
         {
+
+
             if (NextWpPanel.Visible == true)
             {
                 NextWpPanel.Visible = false;
@@ -9850,10 +9863,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             {
                 NextWpPanel.Visible = true;
 
-
-
             }
-        }
+            }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -9940,6 +9951,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             }
         }
 
+        private void WPSp_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

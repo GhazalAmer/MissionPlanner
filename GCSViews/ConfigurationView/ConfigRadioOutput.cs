@@ -66,6 +66,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             min1.setup(800, 2200, 1, 1, servo + "_MIN", MainV2.comPort.MAV.param);
             trim1.setup(800, 2200, 1, 1, servo + "_TRIM", MainV2.comPort.MAV.param);
             max1.setup(800, 2200, 1, 1, servo + "_MAX", MainV2.comPort.MAV.param);
+
         }
 
         public void Activate()
@@ -89,6 +90,11 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             {
                 Console.WriteLine(ex.ToString());
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
