@@ -3847,9 +3847,6 @@ namespace MissionPlanner.GCSViews
 
                         //updateClearRoutesMarkers();
 
-
-                        Console.WriteLine(">................................................");
-
                         // add this after the mav icons are drawn
                         if (MainV2.comPort.MAV.cs.MovingBase != null &&
                             MainV2.comPort.MAV.cs.MovingBase != PointLatLngAlt.Zero)
@@ -6359,9 +6356,11 @@ namespace MissionPlanner.GCSViews
 
         private void myButton12_Click(object sender, EventArgs e)
         {
-           // myButton12.Enabled = false;
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
+            // myButton12.Enabled = false;
             NextWpPanel.Visible = false;
             panel9.Enabled=true;
+
             try
             {
                 ((Button)sender).Enabled = false;
@@ -6397,7 +6396,7 @@ namespace MissionPlanner.GCSViews
 
         private void myButton9_Click(object sender, EventArgs e)
         {
-
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 52);
             if (panel9.Visible == true)
             {
                 panel9.Visible = false;
@@ -7021,6 +7020,23 @@ namespace MissionPlanner.GCSViews
         private void zoom_out_Click(object sender, EventArgs e)
         {
             gMapControl1.Zoom -= 1;
+        }
+
+        private void label93_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myButton14_Click_1(object sender, EventArgs e)
+        {
+            if (boatStatusPanel.Visible == true)
+            {
+                boatStatusPanel.Visible = false;
+            }
+            else
+            {
+                boatStatusPanel.Visible = true;
+            }
         }
     }
 

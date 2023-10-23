@@ -9335,8 +9335,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 {
                     Commands.Rows.Insert(row_index + 1, myrow);
                 }
+                WPNumberUpdate();
                 writeKML();
                 currentwp.Markers.Clear();
+               
             }
             PlaceAfterPanel.Visible = false;
             //Show_BTNs();
