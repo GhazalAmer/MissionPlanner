@@ -1747,17 +1747,24 @@ namespace MissionPlanner.GCSViews
             // lbl_distance
             // 
             resources.ApplyResources(this.lbl_distance, "lbl_distance");
+            this.lbl_distance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.lbl_distance.ForeColor = System.Drawing.Color.White;
             this.lbl_distance.Name = "lbl_distance";
             // 
             // lbl_homedist
             // 
             resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
+            this.lbl_homedist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.lbl_homedist.ForeColor = System.Drawing.Color.White;
             this.lbl_homedist.Name = "lbl_homedist";
             // 
             // lbl_prevdist
             // 
             resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
+            this.lbl_prevdist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.lbl_prevdist.ForeColor = System.Drawing.Color.White;
             this.lbl_prevdist.Name = "lbl_prevdist";
+            this.lbl_prevdist.Click += new System.EventHandler(this.lbl_prevdist_Click);
             // 
             // label11
             // 
