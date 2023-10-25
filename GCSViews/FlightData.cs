@@ -6966,6 +6966,7 @@ namespace MissionPlanner.GCSViews
 
         private void myButton19_Click(object sender, EventArgs e)
         {
+            boatStatusPanel.Visible = false;
             if (panel9.Visible == true)
             {
                 panel9.Visible = false;
@@ -7029,6 +7030,8 @@ namespace MissionPlanner.GCSViews
 
         private void myButton14_Click_1(object sender, EventArgs e)
         {
+            NextWpPanel.Visible = false;
+            panel9.Visible = false;
             if (boatStatusPanel.Visible == true)
             {
                 boatStatusPanel.Visible = false;

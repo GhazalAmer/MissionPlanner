@@ -81,6 +81,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
@@ -93,6 +94,7 @@
             this.label1.Size = new System.Drawing.Size(65, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "HDG";
+            this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -105,6 +107,7 @@
             this.label2.Size = new System.Drawing.Size(63, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "CRS";
+            this.label2.Visible = false;
             // 
             // label7
             // 
@@ -117,6 +120,7 @@
             this.label7.Size = new System.Drawing.Size(64, 29);
             this.label7.TabIndex = 7;
             this.label7.Text = "230°";
+            this.label7.Visible = false;
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
@@ -131,6 +135,7 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "150°";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label8.Visible = false;
             // 
             // label9
             // 
@@ -143,6 +148,7 @@
             this.label9.Size = new System.Drawing.Size(149, 91);
             this.label9.TabIndex = 13;
             this.label9.Text = "0.0";
+            this.label9.Visible = false;
             // 
             // label12
             // 
@@ -155,6 +161,7 @@
             this.label12.Size = new System.Drawing.Size(134, 38);
             this.label12.TabIndex = 12;
             this.label12.Text = "SPEED";
+            this.label12.Visible = false;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // panel1
@@ -186,6 +193,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(510, 410);
             this.panel1.TabIndex = 14;
+            this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // myButton5
@@ -559,6 +567,7 @@
             this.label10.Size = new System.Drawing.Size(31, 20);
             this.label10.TabIndex = 15;
             this.label10.Text = "kts";
+            this.label10.Visible = false;
             // 
             // boatView
             // 

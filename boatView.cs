@@ -28,71 +28,71 @@ namespace MissionPlanner
         void setup()
         {
             // alarm
-            n2k_client = new UdpClient(N2K_PORT);
-            n2k_client.Client.ReceiveTimeout = 2000;
-            RemoteIpEndPoint = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
-            //engine 1 
-            n2k_client1 = new UdpClient(N2K_PORT1);
-            n2k_client1.Client.ReceiveTimeout = 2000;
-            RemoteIpEndPoint1 = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
-            //engine 2 
-            n2k_client2 = new UdpClient(N2K_PORT2);
-            n2k_client2.Client.ReceiveTimeout = 2000;
-            RemoteIpEndPoint2 = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
+            //n2k_client = new UdpClient(N2K_PORT);
+            //n2k_client.Client.ReceiveTimeout = 2000;
+            //RemoteIpEndPoint = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
+            ////engine 1 
+            //n2k_client1 = new UdpClient(N2K_PORT1);
+            //n2k_client1.Client.ReceiveTimeout = 2000;
+            //RemoteIpEndPoint1 = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
+            ////engine 2 
+            //n2k_client2 = new UdpClient(N2K_PORT2);
+            //n2k_client2.Client.ReceiveTimeout = 2000;
+            //RemoteIpEndPoint2 = new System.Net.IPEndPoint(System.Net.IPAddress.Any, 0);
 
 
-            connect_msg = Encoding.ASCII.GetBytes("Can i get a cake");
-            connect_msg1 = Encoding.ASCII.GetBytes("Engine1 OK");
-            connect_msg2 = Encoding.ASCII.GetBytes("Engine2 OK");
+            //connect_msg = Encoding.ASCII.GetBytes("Can i get a cake");
+            //connect_msg1 = Encoding.ASCII.GetBytes("Engine1 OK");
+            //connect_msg2 = Encoding.ASCII.GetBytes("Engine2 OK");
 
-            try
-            {
-                //connect alarm
-                n2k_client.Connect(N2K_IP, N2K_PORT);
-                n2k_client.Send(connect_msg, connect_msg.Length);
-                //connect engine 1
-                n2k_client1.Connect(N2K_IP1, N2K_PORT1);
-                n2k_client1.Send(connect_msg1, connect_msg1.Length);
-                //connect engine 2
-                n2k_client2.Connect(N2K_IP2, N2K_PORT2);
-                n2k_client2.Send(connect_msg2, connect_msg2.Length);
+            //try
+            //{
+            //    //connect alarm
+            //    n2k_client.Connect(N2K_IP, N2K_PORT);
+            //    n2k_client.Send(connect_msg, connect_msg.Length);
+            //    //connect engine 1
+            //    n2k_client1.Connect(N2K_IP1, N2K_PORT1);
+            //    n2k_client1.Send(connect_msg1, connect_msg1.Length);
+            //    //connect engine 2
+            //    n2k_client2.Connect(N2K_IP2, N2K_PORT2);
+            //    n2k_client2.Send(connect_msg2, connect_msg2.Length);
             
-            }
+            //}
 
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.ToString());
 
-            }
+            //}
 
-            tBoatView = new System.Threading.Thread(new System.Threading.ThreadStart(mainLoop))
-            {
-                IsBackground = true,
-                Name = "Boat View"
-            };
-            tBoatView.Start();
+            //tBoatView = new System.Threading.Thread(new System.Threading.ThreadStart(mainLoop))
+            //{
+            //    IsBackground = true,
+            //    Name = "Boat View"
+            //};
+            //tBoatView.Start();
 
         }
         // alarm 
-        int N2K_PORT = 8696;                     // Will be Overridden by Text File
-        string N2K_IP = "192.168.10.63";           // Will be Overridden by Text File
-        UdpClient n2k_client;
-        System.Net.IPEndPoint RemoteIpEndPoint;
-        Byte[] connect_msg;
+        //int N2K_PORT = 8696;                     // Will be Overridden by Text File
+        //string N2K_IP = "192.168.10.63";           // Will be Overridden by Text File
+        //UdpClient n2k_client;
+        //System.Net.IPEndPoint RemoteIpEndPoint;
+        //Byte[] connect_msg;
 
-        //STBD Engine  
-        int N2K_PORT1 = 8084;                     // Will be Overridden by Text File
-        string N2K_IP1 = "192.168.10.8";           // Will be Overridden by Text File
-        UdpClient n2k_client1;
-        System.Net.IPEndPoint RemoteIpEndPoint1;
-        Byte[] connect_msg1;
+        ////STBD Engine  
+        //int N2K_PORT1 = 8084;                     // Will be Overridden by Text File
+        //string N2K_IP1 = "192.168.10.8";           // Will be Overridden by Text File
+        //UdpClient n2k_client1;
+        //System.Net.IPEndPoint RemoteIpEndPoint1;
+        //Byte[] connect_msg1;
 
-        //PORT Engine
-        int N2K_PORT2 = 8085;                     // Will be Overridden by Text File
-        string N2K_IP2 = "192.168.10.9";           // Will be Overridden by Text File
-        UdpClient n2k_client2;
-        System.Net.IPEndPoint RemoteIpEndPoint2;
-        Byte[] connect_msg2;
+        ////PORT Engine
+        //int N2K_PORT2 = 8085;                     // Will be Overridden by Text File
+        //string N2K_IP2 = "192.168.10.9";           // Will be Overridden by Text File
+        //UdpClient n2k_client2;
+        //System.Net.IPEndPoint RemoteIpEndPoint2;
+        //Byte[] connect_msg2;
 
 
         void mainLoop()
@@ -114,108 +114,108 @@ namespace MissionPlanner
             //    }
             //}
            
-            bool oklol = false;
-            while (true)
-            {
+            //bool oklol = false;
+            //while (true)
+            //{
 
-                try
-                {
-                    //Parse Data shouldn't be causing Errors, get it out of here lol
-                    Byte[] rxBytes = n2k_client.Receive(ref RemoteIpEndPoint);
-                    string returnData = Encoding.ASCII.GetString(rxBytes);
-                    Console.WriteLine("RECEVIED");
-                    string[] a = returnData.Split(',');
-                    string b = a[9].Substring(12, 3);
-                    string c = a[9].Substring(0, 4);
-                    Console.WriteLine(b);
-                    Console.WriteLine(c);
-                    oklol = true;
-                    status_text.Text = "N2K Link ACTIVE";
-                    status_text.ForeColor = Color.LimeGreen;
-                    parseData(returnData);
-                    if (c == "Fire")
-                    {
-                        string soundname = "Alarm_Warning.wav";
-                        string path = Path.Combine(Environment.CurrentDirectory, @"sounds\", soundname);
-                        switch (b)
+            //    try
+            //    {
+            //        //Parse Data shouldn't be causing Errors, get it out of here lol
+            //        Byte[] rxBytes = n2k_client.Receive(ref RemoteIpEndPoint);
+            //        string returnData = Encoding.ASCII.GetString(rxBytes);
+            //        Console.WriteLine("RECEVIED");
+            //        string[] a = returnData.Split(',');
+            //        string b = a[9].Substring(12, 3);
+            //        string c = a[9].Substring(0, 4);
+            //        Console.WriteLine(b);
+            //        Console.WriteLine(c);
+            //        oklol = true;
+            //        status_text.Text = "N2K Link ACTIVE";
+            //        status_text.ForeColor = Color.LimeGreen;
+            //        parseData(returnData);
+            //        if (c == "Fire")
+            //        {
+            //            string soundname = "Alarm_Warning.wav";
+            //            string path = Path.Combine(Environment.CurrentDirectory, @"sounds\", soundname);
+            //            switch (b)
                           
-                        {
-                            case "001":
-                                label15.ForeColor = Color.Red;
-                                System.Media.SoundPlayer player = new System.Media.SoundPlayer(path);
-                                break;
+            //            {
+            //                case "001":
+            //                    label15.ForeColor = Color.Red;
+            //                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(path);
+            //                    break;
 
-                            case "002":
-                                System.Media.SoundPlayer player1 = new System.Media.SoundPlayer(path);
-                                player1.Play();
-                                label16.ForeColor = Color.Red;
-                                break;
+            //                case "002":
+            //                    System.Media.SoundPlayer player1 = new System.Media.SoundPlayer(path);
+            //                    player1.Play();
+            //                    label16.ForeColor = Color.Red;
+            //                    break;
 
-                            case "003":
-                                System.Media.SoundPlayer player2 = new System.Media.SoundPlayer(path);
-                                player2.Play();
-                                label18.ForeColor = Color.Red;
-                                break;
+            //                case "003":
+            //                    System.Media.SoundPlayer player2 = new System.Media.SoundPlayer(path);
+            //                    player2.Play();
+            //                    label18.ForeColor = Color.Red;
+            //                    break;
 
-                            case "004":
-                                System.Media.SoundPlayer player3 = new System.Media.SoundPlayer(path);
-                                player3.Play();
-                                label14.ForeColor = Color.Red;
-                                break;
+            //                case "004":
+            //                    System.Media.SoundPlayer player3 = new System.Media.SoundPlayer(path);
+            //                    player3.Play();
+            //                    label14.ForeColor = Color.Red;
+            //                    break;
 
-                        }
+            //            }
 
-                    }
-                }
-                catch (Exception e)
-                {
-                    oklol = false;
-                    status_text.Text = "N2K Link INACTIVE";
-                    status_text.ForeColor = Color.Red;
-                }
+            //        }
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        oklol = false;
+            //        status_text.Text = "N2K Link INACTIVE";
+            //        status_text.ForeColor = Color.Red;
+            //    }
 
-                if (oklol == false)
-                {
-                    try
-                    {
-                        Console.WriteLine("Reconnecting");
-                        n2k_client.Close();
-                        n2k_client1.Close();
-                        n2k_client2.Close();
+                //if (oklol == false)
+                //{
+                //    try
+                //    {
+                //        Console.WriteLine("Reconnecting");
+                //        n2k_client.Close();
+                //        n2k_client1.Close();
+                //        n2k_client2.Close();
 
-                        n2k_client = new UdpClient(N2K_PORT);
-                        n2k_client1 = new UdpClient(N2K_PORT1);
-                        n2k_client2 = new UdpClient(N2K_PORT2);
+                //        n2k_client = new UdpClient(N2K_PORT);
+                //        n2k_client1 = new UdpClient(N2K_PORT1);
+                //        n2k_client2 = new UdpClient(N2K_PORT2);
 
-                        n2k_client.Client.SendTimeout = 2000;
-                        n2k_client.Client.ReceiveTimeout = 2000;
+                //        n2k_client.Client.SendTimeout = 2000;
+                //        n2k_client.Client.ReceiveTimeout = 2000;
 
-                        n2k_client1.Client.SendTimeout = 2000;
-                        n2k_client1.Client.ReceiveTimeout = 2000;
+                //        n2k_client1.Client.SendTimeout = 2000;
+                //        n2k_client1.Client.ReceiveTimeout = 2000;
 
-                        n2k_client2.Client.SendTimeout = 2000;
-                        n2k_client2.Client.ReceiveTimeout = 2000;
+                //        n2k_client2.Client.SendTimeout = 2000;
+                //        n2k_client2.Client.ReceiveTimeout = 2000;
                         
-                        n2k_client.Connect(N2K_IP, N2K_PORT);
-                        n2k_client.Send(connect_msg, connect_msg.Length);
+                //        n2k_client.Connect(N2K_IP, N2K_PORT);
+                //        n2k_client.Send(connect_msg, connect_msg.Length);
 
-                        n2k_client1.Connect(N2K_IP1, N2K_PORT1);
-                        n2k_client1.Send(connect_msg1, connect_msg1.Length);
+                //        n2k_client1.Connect(N2K_IP1, N2K_PORT1);
+                //        n2k_client1.Send(connect_msg1, connect_msg1.Length);
 
-                        n2k_client2.Connect(N2K_IP2, N2K_PORT2);
-                        n2k_client2.Send(connect_msg2, connect_msg2.Length);
-                        // success_etk = true;
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.ToString());
-                    }
+                //        n2k_client2.Connect(N2K_IP2, N2K_PORT2);
+                //        n2k_client2.Send(connect_msg2, connect_msg2.Length);
+                //        // success_etk = true;
+                //    }
+                //    catch (Exception e)
+                //    {
+                //        Console.WriteLine(e.ToString());
+                //    }
 
-                }
-                System.Threading.Thread.Sleep(10);
+                //}
+                //System.Threading.Thread.Sleep(10);
             }
 
-        }
+        
 
         void parseData(string data)
         {
@@ -318,48 +318,48 @@ namespace MissionPlanner
 
         private void myButton1_Click(object sender, EventArgs e)
         {
-            Byte[] msg;
-            Byte[] msg2;
-            msg = Encoding.ASCII.GetBytes("ENGINE2=START");
-            msg2 = Encoding.ASCII.GetBytes("ENGINE1=START");
-            Console.WriteLine("Starting PORT Engine");
-           n2k_client2.Send(msg, msg.Length);
-            n2k_client2.Send(msg2, msg2.Length);
+           // Byte[] msg;
+           // Byte[] msg2;
+           // msg = Encoding.ASCII.GetBytes("ENGINE2=START");
+           // msg2 = Encoding.ASCII.GetBytes("ENGINE1=START");
+           // Console.WriteLine("Starting PORT Engine");
+           //n2k_client2.Send(msg, msg.Length);
+           // n2k_client2.Send(msg2, msg2.Length);
            
         }
 
 
         private void myButton2_Click(object sender, EventArgs e)
         {
-            Byte[] msg;
-            Byte[] msg2;
-            msg = Encoding.ASCII.GetBytes("ENGINE2=STOP");
-            msg2 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
-            Console.WriteLine("Stop PORT Engine");
-            n2k_client2.Send(msg, msg.Length);
-            n2k_client2.Send(msg2, msg2.Length);
+            //Byte[] msg;
+            //Byte[] msg2;
+            //msg = Encoding.ASCII.GetBytes("ENGINE2=STOP");
+            //msg2 = Encoding.ASCII.GetBytes("ENGINE1=STOP");
+            //Console.WriteLine("Stop PORT Engine");
+            //n2k_client2.Send(msg, msg.Length);
+            //n2k_client2.Send(msg2, msg2.Length);
         }
 
         private void myButton3_Click(object sender, EventArgs e)
         {
-            Byte[] msg;
-            Byte[] msg2;
-            msg = Encoding.ASCII.GetBytes("ENGINE1=START");
-            msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
-            Console.WriteLine("Starting STBD Engine");
-            n2k_client1.Send(msg, msg.Length);
-            n2k_client1.Send(msg2, msg2.Length);
+            //Byte[] msg;
+            //Byte[] msg2;
+            //msg = Encoding.ASCII.GetBytes("ENGINE1=START");
+            //msg2 = Encoding.ASCII.GetBytes("ENGINE2=START");
+            //Console.WriteLine("Starting STBD Engine");
+            //n2k_client1.Send(msg, msg.Length);
+            //n2k_client1.Send(msg2, msg2.Length);
         }
 
         private void myButton4_Click(object sender, EventArgs e)
         {
-            Byte[] msg;
-            Byte[] msg2;
-            msg = Encoding.ASCII.GetBytes("ENGINE1=STOP");
-            msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
-            Console.WriteLine("Stoping STBD Engine");
-            n2k_client1.Send(msg, msg.Length);
-            n2k_client1.Send(msg2, msg2.Length);
+            //Byte[] msg;
+            //Byte[] msg2;
+            //msg = Encoding.ASCII.GetBytes("ENGINE1=STOP");
+            //msg2 = Encoding.ASCII.GetBytes("ENGINE2=STOP");
+            //Console.WriteLine("Stoping STBD Engine");
+            //n2k_client1.Send(msg, msg.Length);
+            //n2k_client1.Send(msg2, msg2.Length);
         }
 
         private void myLabel1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)

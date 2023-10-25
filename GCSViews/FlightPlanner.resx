@@ -187,13 +187,13 @@
     <value>NoControl</value>
   </data>
   <data name="ToolsBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1570, 0</value>
+    <value>1256, 0</value>
   </data>
   <data name="ToolsBTN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ToolsBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 55</value>
+    <value>156, 55</value>
   </data>
   <data name="ToolsBTN.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -229,13 +229,13 @@
     <value>NoControl</value>
   </data>
   <data name="EditButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1190, 0</value>
+    <value>952, 0</value>
   </data>
   <data name="EditButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="EditButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 55</value>
+    <value>152, 55</value>
   </data>
   <data name="EditButton.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -313,13 +313,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_loadwpfile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 0</value>
+    <value>152, 0</value>
   </data>
   <data name="BUT_loadwpfile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="BUT_loadwpfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 55</value>
+    <value>152, 55</value>
   </data>
   <data name="BUT_loadwpfile.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -499,7 +499,7 @@
     <value>3</value>
   </data>
   <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>693, 716</value>
+    <value>517, 544</value>
   </data>
   <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
     <value>377, 64</value>
@@ -613,13 +613,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_saveWPFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 0</value>
+    <value>304, 0</value>
   </data>
   <data name="BUT_saveWPFile.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="BUT_saveWPFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 55</value>
+    <value>152, 55</value>
   </data>
   <data name="BUT_saveWPFile.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -691,7 +691,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="switchview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 55</value>
+    <value>152, 55</value>
   </data>
   <data name="switchview.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -964,7 +964,7 @@
     <value>4</value>
   </data>
   <data name="SpeedPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1160, 148</value>
+    <value>807, 148</value>
   </data>
   <data name="SpeedPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 151</value>
@@ -1006,13 +1006,13 @@
     <value>NoControl</value>
   </data>
   <data name="myButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 0</value>
+    <value>456, 0</value>
   </data>
   <data name="myButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>620, 55</value>
+    <value>496, 55</value>
   </data>
   <data name="myButton1.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -1283,7 +1283,7 @@
     <value>50</value>
   </data>
   <data name="Commands.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>0, 0</value>
   </data>
   <data name="Commands.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1310,10 +1310,10 @@
     <value>NoControl</value>
   </data>
   <data name="splitter2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1762, 0</value>
+    <value>1402, 0</value>
   </data>
   <data name="splitter2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>3, 836</value>
+    <value>10, 664</value>
   </data>
   <data name="splitter2.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -1337,10 +1337,10 @@
     <value>NoControl</value>
   </data>
   <data name="splitter1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 836</value>
+    <value>0, 664</value>
   </data>
   <data name="splitter1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 3</value>
+    <value>1412, 3</value>
   </data>
   <data name="splitter1.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -1442,7 +1442,7 @@
     <value>1</value>
   </data>
   <data name="measurePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1357, 674</value>
+    <value>1004, 502</value>
   </data>
   <data name="measurePanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 86</value>
@@ -1469,7 +1469,7 @@
     <value>Bottom, Right</value>
   </data>
   <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1370, 528</value>
+    <value>1017, 356</value>
   </data>
   <data name="panel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 252</value>
@@ -1589,7 +1589,7 @@
     <value>1</value>
   </data>
   <data name="ToolsTable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1573, 654</value>
+    <value>1220, 482</value>
   </data>
   <data name="ToolsTable.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2035,7 +2035,7 @@
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label24" Row="0" RowSpan="1" Column="0" ColumnSpan="3" /&gt;&lt;Control Name="button3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="EngageAutoNumeris" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;Rows Styles="Percent,28.57143,Percent,71.42857,Absolute,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="NextWpPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>582, 524</value>
+    <value>406, 352</value>
   </data>
   <data name="NextWpPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -2314,7 +2314,7 @@
     <value>4</value>
   </data>
   <data name="PlaceAfterPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1244, 3</value>
+    <value>891, 3</value>
   </data>
   <data name="PlaceAfterPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 140</value>
@@ -2347,7 +2347,7 @@
     <value>NoControl</value>
   </data>
   <data name="zoom_out.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1695, 457</value>
+    <value>1342, 285</value>
   </data>
   <data name="zoom_out.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 46</value>
@@ -2380,7 +2380,7 @@
     <value>NoControl</value>
   </data>
   <data name="zoom_in.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1695, 380</value>
+    <value>1342, 208</value>
   </data>
   <data name="zoom_in.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 46</value>
@@ -2605,7 +2605,7 @@ Click "Cancel" to stay on this page</value>
     <value>4</value>
   </data>
   <data name="tableLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 639</value>
+    <value>1, 467</value>
   </data>
   <data name="tableLayoutPanel6.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3052,7 +3052,7 @@ Click "Cancel" to stay on this page</value>
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="SavePolysBTN" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ImportPolysBTN" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="NewDrawPoly" Row="0" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;Control Name="ApplyPoly" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DeletePoly" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="PolyNameBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ColorBTN" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,39.70588,Percent,60.29412,Absolute,36,Absolute,30,Absolute,28,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="DrawPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1298, 623</value>
+    <value>945, 451</value>
   </data>
   <data name="DrawPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>262, 154</value>
@@ -3079,7 +3079,7 @@ Click "Cancel" to stay on this page</value>
     <value>Bottom, Right</value>
   </data>
   <data name="SwarmPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 55</value>
+    <value>-264, -117</value>
   </data>
   <data name="SwarmPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
@@ -3112,7 +3112,7 @@ Click "Cancel" to stay on this page</value>
     <value>NoControl</value>
   </data>
   <data name="Joystickbutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 77</value>
+    <value>-350, -95</value>
   </data>
   <data name="Joystickbutton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -3145,10 +3145,10 @@ Click "Cancel" to stay on this page</value>
     <value>Bottom</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 784</value>
+    <value>0, 612</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 0</value>
+    <value>1412, 0</value>
   </data>
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -4024,7 +4024,7 @@ Click "Cancel" to stay on this page</value>
     <value>16</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1392, 3</value>
+    <value>1039, 3</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>370, 296</value>
@@ -4096,13 +4096,13 @@ Click "Cancel" to stay on this page</value>
     <value>NoControl</value>
   </data>
   <data name="myButton25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1380, 0</value>
+    <value>1104, 0</value>
   </data>
   <data name="myButton25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="myButton25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 55</value>
+    <value>152, 55</value>
   </data>
   <data name="myButton25.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -4126,13 +4126,13 @@ Click "Cancel" to stay on this page</value>
     <value>Bottom</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 784</value>
+    <value>0, 612</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 55</value>
+    <value>1412, 55</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -4294,7 +4294,7 @@ Click "Cancel" to stay on this page</value>
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1600, 5</value>
+    <value>1247, 5</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 16</value>
@@ -4342,7 +4342,7 @@ Click "Cancel" to stay on this page</value>
     <value>NoControl</value>
   </data>
   <data name="HOMECLICK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1374, 260</value>
+    <value>1198, 88</value>
   </data>
   <data name="HOMECLICK.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 32</value>
@@ -4378,7 +4378,7 @@ Click "Cancel" to stay on this page</value>
     <value>NoControl</value>
   </data>
   <data name="myButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 135</value>
+    <value>-352, -37</value>
   </data>
   <data name="myButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -4513,7 +4513,7 @@ Click "Cancel" to stay on this page</value>
     <value>2</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1542, -9</value>
+    <value>1189, -9</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 76</value>
@@ -4738,7 +4738,7 @@ Click "Cancel" to stay on this page</value>
     <value>4</value>
   </data>
   <data name="FormatPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1305, 117</value>
+    <value>952, 117</value>
   </data>
   <data name="FormatPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 90</value>
@@ -4774,7 +4774,7 @@ Click "Cancel" to stay on this page</value>
     <value>0, 0</value>
   </data>
   <data name="MainMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 839</value>
+    <value>1412, 667</value>
   </data>
   <data name="MainMap.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -4843,13 +4843,13 @@ Click "Cancel" to stay on this page</value>
     <value>NoControl</value>
   </data>
   <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1722, 7</value>
+    <value>1369, 7</value>
   </data>
   <data name="trackBar1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Vertical</value>
   </data>
   <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 634</value>
+    <value>56, 462</value>
   </data>
   <data name="trackBar1.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -4879,7 +4879,7 @@ Click "Cancel" to stay on this page</value>
     <value>27, 27</value>
   </data>
   <data name="panelMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 839</value>
+    <value>1412, 667</value>
   </data>
   <data name="panelMap.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -5413,7 +5413,7 @@ Click "Cancel" to stay on this page</value>
     <value>1, 22</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2204, 0</value>
+    <value>1410, 0</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -5716,13 +5716,13 @@ Click "Cancel" to stay on this page</value>
     <value>Bottom</value>
   </data>
   <data name="panelWaypoints.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 839</value>
+    <value>0, 667</value>
   </data>
   <data name="panelWaypoints.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>21, 21</value>
   </data>
   <data name="panelWaypoints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 21</value>
+    <value>1412, 21</value>
   </data>
   <data name="panelWaypoints.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -5776,7 +5776,7 @@ Click "Cancel" to stay on this page</value>
     <value>0, 0</value>
   </data>
   <data name="panelBASE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1765, 860</value>
+    <value>1412, 688</value>
   </data>
   <data name="panelBASE.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>

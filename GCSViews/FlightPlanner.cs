@@ -8729,7 +8729,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             else
             { panel6.Visible = true; }
             WPNumber.Value = 1;
-            /*if (no > 0 && panel6.Visible == true)
+            if (no > 0 && panel6.Visible == true)
             {
                 LatDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value));
                 LatMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value) * 60) % 60);
@@ -8737,7 +8737,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
                 LongDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value));
                 LongMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value) * 60) % 60);
-            }*/
+            }
+            WPNumberUpdate();
 
             //Refresh_my_PTs();
         }
@@ -9335,9 +9336,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 else
                 {
                     Commands.Rows.Insert(row_index + 1, myrow);
-                    WPNumberUpdate();
+                   
                 }
                 writeKML();
+                WPNumberUpdate();
                 currentwp.Markers.Clear();
                
             }
@@ -9348,11 +9350,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void LatDeg_ValueChanged(object sender, EventArgs e)
         {
             Hide_BTNs();
+           
         }
 
         private void LongDeg_ValueChanged(object sender, EventArgs e)
         {
             Hide_BTNs();
+           
         }
 
         private void LatMin_ValueChanged(object sender, EventArgs e)
@@ -9385,7 +9389,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             if (WPNumber.Value > 1) { WPNumber.Value = WPNumber.Value - 1; }
             else { WPNumber.Value = Commands.Rows.Count; }
             int no = (int)WPNumber.Value;
-            /* if (no > 0 && no <= Commands.Rows.Count)
+             if (no > 0 && no <= Commands.Rows.Count)
              {
                  LatDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value));
                  LatMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value)*60)%60);
@@ -9394,10 +9398,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
                  LongDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value));
                  LongMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value) * 60) % 60);
+                
 
 
 
-             }*/
+            }
+            WPNumberUpdate();
         }
 
         private void myButton5_Click(object sender, EventArgs e)
@@ -9414,7 +9420,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
             WPNumber.Value = WPNumber.Value + 1;
             int no = (int)WPNumber.Value;
-            /*if (no > 0 && no <= Commands.Rows.Count)
+            if (no > 0 && no <= Commands.Rows.Count)
             {
                 LatDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value));
                 LatMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value) * 60) % 60);
@@ -9422,7 +9428,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 WPTh.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[Command.Index + 3].Value));
                 LongDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value));
                 LongMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value) * 60) % 60);
-            }*/
+            }
+            WPNumberUpdate();
         }
 
         private void myButton3_Click(object sender, EventArgs e)
@@ -9607,7 +9614,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton2_Click(object sender, EventArgs e)
         {
-            WPNumberUpdate();
+          
             MainMap.Enabled = true;
             if (panel6.Visible == true && SpeedPanel.Visible == false)
             {
@@ -9647,6 +9654,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 Commands.Rows[no - 1].Cells[6].Value = Long;
                 // CustomMessageBox.Show(Lat.ToString());
                 //writeKML();
+                WPNumberUpdate();
                 currentwp.Markers.Clear();
             }
             Show_BTNs();
