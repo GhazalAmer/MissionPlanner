@@ -9330,12 +9330,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 if (curr_index < row_index)
                 {
                     Commands.Rows.Insert(row_index, myrow);
+                    WPNumberUpdate();
                 }
                 else
                 {
                     Commands.Rows.Insert(row_index + 1, myrow);
+                    WPNumberUpdate();
                 }
-                WPNumberUpdate();
                 writeKML();
                 currentwp.Markers.Clear();
                
@@ -9606,6 +9607,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton2_Click(object sender, EventArgs e)
         {
+            WPNumberUpdate();
             MainMap.Enabled = true;
             if (panel6.Visible == true && SpeedPanel.Visible == false)
             {
