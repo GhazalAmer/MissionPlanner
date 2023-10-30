@@ -156,6 +156,10 @@ namespace MissionPlanner.GCSViews
             this.Joystickbutton = new MissionPlanner.Controls.MyButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.myButton13 = new MissionPlanner.Controls.MyButton();
             this.Deletebu = new MissionPlanner.Controls.MyButton();
@@ -170,18 +174,8 @@ namespace MissionPlanner.GCSViews
             this.myButton12 = new MissionPlanner.Controls.MyButton();
             this.EW = new System.Windows.Forms.Button();
             this.NS = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.LongSec = new System.Windows.Forms.NumericUpDown();
-            this.LongMin = new System.Windows.Forms.NumericUpDown();
-            this.LongDeg = new System.Windows.Forms.NumericUpDown();
-            this.LatSec = new System.Windows.Forms.NumericUpDown();
-            this.LatMin = new System.Windows.Forms.NumericUpDown();
-            this.LatDeg = new System.Windows.Forms.NumericUpDown();
             this.cmb_missiontype = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.myButton25 = new MissionPlanner.Controls.MyButton();
@@ -205,6 +199,12 @@ namespace MissionPlanner.GCSViews
             this.MainMap = new MissionPlanner.Controls.myGMAP();
             this.button1 = new System.Windows.Forms.Button();
             this.trackBar1 = new MissionPlanner.Controls.MyTrackBar();
+            this.LatMin = new System.Windows.Forms.NumericUpDown();
+            this.LatSec = new System.Windows.Forms.NumericUpDown();
+            this.LatDeg = new System.Windows.Forms.NumericUpDown();
+            this.LongSec = new System.Windows.Forms.NumericUpDown();
+            this.LongMin = new System.Windows.Forms.NumericUpDown();
+            this.LongDeg = new System.Windows.Forms.NumericUpDown();
             this.panelWaypoints = new BSE.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelAction = new BSE.Windows.Forms.Panel();
@@ -288,17 +288,17 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LongSec)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LongMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LongDeg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LatSec)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LatMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LatDeg)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.FormatPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatSec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatDeg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongSec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongDeg)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -883,6 +883,12 @@ namespace MissionPlanner.GCSViews
             this.panelMap.Controls.Add(this.MainMap);
             this.panelMap.Controls.Add(this.button1);
             this.panelMap.Controls.Add(this.trackBar1);
+            this.panelMap.Controls.Add(this.LatMin);
+            this.panelMap.Controls.Add(this.LatSec);
+            this.panelMap.Controls.Add(this.LatDeg);
+            this.panelMap.Controls.Add(this.LongSec);
+            this.panelMap.Controls.Add(this.LongMin);
+            this.panelMap.Controls.Add(this.LongDeg);
             resources.ApplyResources(this.panelMap, "panelMap");
             this.panelMap.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelMap.Name = "panelMap";
@@ -1398,25 +1404,43 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.panel6, "panel6");
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.textBox2);
+            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.label25);
             this.panel6.Controls.Add(this.tableLayoutPanel4);
             this.panel6.Controls.Add(this.tableLayoutPanel5);
             this.panel6.Controls.Add(this.tableLayoutPanel2);
             this.panel6.Controls.Add(this.EW);
             this.panel6.Controls.Add(this.NS);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.LongSec);
-            this.panel6.Controls.Add(this.LongMin);
-            this.panel6.Controls.Add(this.LongDeg);
-            this.panel6.Controls.Add(this.LatSec);
-            this.panel6.Controls.Add(this.LatMin);
-            this.panel6.Controls.Add(this.LatDeg);
             this.panel6.Name = "panel6";
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Name = "label25";
             // 
             // tableLayoutPanel4
             // 
@@ -1574,125 +1598,17 @@ namespace MissionPlanner.GCSViews
             this.NS.Name = "NS";
             this.NS.UseVisualStyleBackColor = false;
             // 
-            // label13
-            // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Name = "label13";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Name = "label12";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Name = "label10";
-            // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Name = "label9";
             // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Name = "label8";
-            // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Name = "label7";
-            // 
-            // LongSec
-            // 
-            this.LongSec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LongSec.DecimalPlaces = 2;
-            resources.ApplyResources(this.LongSec, "LongSec");
-            this.LongSec.ForeColor = System.Drawing.Color.Black;
-            this.LongSec.Maximum = new decimal(new int[] {
-            360,
-            0,
-            0,
-            0});
-            this.LongSec.Name = "LongSec";
-            this.LongSec.ValueChanged += new System.EventHandler(this.LongSec_ValueChanged);
-            // 
-            // LongMin
-            // 
-            this.LongMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LongMin.DecimalPlaces = 3;
-            resources.ApplyResources(this.LongMin, "LongMin");
-            this.LongMin.ForeColor = System.Drawing.Color.Black;
-            this.LongMin.Maximum = new decimal(new int[] {
-            360,
-            0,
-            0,
-            0});
-            this.LongMin.Name = "LongMin";
-            this.LongMin.ValueChanged += new System.EventHandler(this.LongMin_ValueChanged);
-            // 
-            // LongDeg
-            // 
-            this.LongDeg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LongDeg.DecimalPlaces = 5;
-            resources.ApplyResources(this.LongDeg, "LongDeg");
-            this.LongDeg.ForeColor = System.Drawing.Color.Black;
-            this.LongDeg.Maximum = new decimal(new int[] {
-            360,
-            0,
-            0,
-            0});
-            this.LongDeg.Name = "LongDeg";
-            this.LongDeg.ValueChanged += new System.EventHandler(this.LongDeg_ValueChanged);
-            // 
-            // LatSec
-            // 
-            this.LatSec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LatSec.DecimalPlaces = 2;
-            resources.ApplyResources(this.LatSec, "LatSec");
-            this.LatSec.ForeColor = System.Drawing.Color.Black;
-            this.LatSec.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.LatSec.Name = "LatSec";
-            this.LatSec.ValueChanged += new System.EventHandler(this.LatSec_ValueChanged);
-            // 
-            // LatMin
-            // 
-            this.LatMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LatMin.DecimalPlaces = 3;
-            resources.ApplyResources(this.LatMin, "LatMin");
-            this.LatMin.ForeColor = System.Drawing.Color.Black;
-            this.LatMin.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.LatMin.Name = "LatMin";
-            this.LatMin.ValueChanged += new System.EventHandler(this.LatMin_ValueChanged);
-            // 
-            // LatDeg
-            // 
-            this.LatDeg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LatDeg.DecimalPlaces = 5;
-            resources.ApplyResources(this.LatDeg, "LatDeg");
-            this.LatDeg.ForeColor = System.Drawing.Color.Black;
-            this.LatDeg.Maximum = new decimal(new int[] {
-            360,
-            0,
-            0,
-            0});
-            this.LatDeg.Name = "LatDeg";
-            this.LatDeg.ValueChanged += new System.EventHandler(this.LatDeg_ValueChanged);
             // 
             // cmb_missiontype
             // 
@@ -1947,6 +1863,90 @@ namespace MissionPlanner.GCSViews
             this.trackBar1.TickFrequency = 1F;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.trackBar1.Value = 2F;
+            // 
+            // LatMin
+            // 
+            this.LatMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LatMin.DecimalPlaces = 3;
+            resources.ApplyResources(this.LatMin, "LatMin");
+            this.LatMin.ForeColor = System.Drawing.Color.Black;
+            this.LatMin.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.LatMin.Name = "LatMin";
+            this.LatMin.ValueChanged += new System.EventHandler(this.LatMin_ValueChanged);
+            // 
+            // LatSec
+            // 
+            this.LatSec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LatSec.DecimalPlaces = 2;
+            resources.ApplyResources(this.LatSec, "LatSec");
+            this.LatSec.ForeColor = System.Drawing.Color.Black;
+            this.LatSec.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.LatSec.Name = "LatSec";
+            this.LatSec.ValueChanged += new System.EventHandler(this.LatSec_ValueChanged);
+            // 
+            // LatDeg
+            // 
+            this.LatDeg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LatDeg.DecimalPlaces = 5;
+            resources.ApplyResources(this.LatDeg, "LatDeg");
+            this.LatDeg.ForeColor = System.Drawing.Color.Black;
+            this.LatDeg.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LatDeg.Name = "LatDeg";
+            this.LatDeg.ValueChanged += new System.EventHandler(this.LatDeg_ValueChanged);
+            // 
+            // LongSec
+            // 
+            this.LongSec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LongSec.DecimalPlaces = 2;
+            resources.ApplyResources(this.LongSec, "LongSec");
+            this.LongSec.ForeColor = System.Drawing.Color.Black;
+            this.LongSec.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LongSec.Name = "LongSec";
+            this.LongSec.ValueChanged += new System.EventHandler(this.LongSec_ValueChanged);
+            // 
+            // LongMin
+            // 
+            this.LongMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LongMin.DecimalPlaces = 3;
+            resources.ApplyResources(this.LongMin, "LongMin");
+            this.LongMin.ForeColor = System.Drawing.Color.Black;
+            this.LongMin.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LongMin.Name = "LongMin";
+            this.LongMin.ValueChanged += new System.EventHandler(this.LongMin_ValueChanged);
+            // 
+            // LongDeg
+            // 
+            this.LongDeg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LongDeg.DecimalPlaces = 5;
+            resources.ApplyResources(this.LongDeg, "LongDeg");
+            this.LongDeg.ForeColor = System.Drawing.Color.Black;
+            this.LongDeg.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.LongDeg.Name = "LongDeg";
+            this.LongDeg.ValueChanged += new System.EventHandler(this.LongDeg_ValueChanged);
             // 
             // panelWaypoints
             // 
@@ -2392,12 +2392,6 @@ namespace MissionPlanner.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.WPNumber)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LongSec)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LongMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LongDeg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LatSec)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LatMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LatDeg)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -2406,6 +2400,12 @@ namespace MissionPlanner.GCSViews
             this.FormatPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatSec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LatDeg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongSec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LongDeg)).EndInit();
             this.panelWaypoints.ResumeLayout(false);
             this.panelWaypoints.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -2530,11 +2530,7 @@ namespace MissionPlanner.GCSViews
         public MyButton myButton12;
         private Button EW;
         private Button NS;
-        private Label label13;
-        private Label label12;
-        private Label label10;
         private Label label9;
-        private Label label8;
         private Label label7;
         private NumericUpDown LongSec;
         private NumericUpDown LongMin;
@@ -2629,5 +2625,9 @@ namespace MissionPlanner.GCSViews
         private MyButton myButton25;
         private Panel panel10;
         private ColorDialog colorDialog1;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label25;
     }
 }

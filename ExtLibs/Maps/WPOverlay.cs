@@ -374,11 +374,11 @@ namespace MissionPlanner.ArduPilot
                 if(type == MAVLink.MAV_MISSION_TYPE.MISSION)
                 {
                     m = new GMapMarkerWP(point, tag);
-                    if (alt.HasValue)
-                    {
-                        m.ToolTipMode = MarkerTooltipMode.OnMouseOver;
-                        m.ToolTipText = "Alt: " + alt.Value.ToString("0");
-                    }
+                    //if (alt.HasValue)
+                    //{
+                    //    m.ToolTipMode = MarkerTooltipMode.OnMouseOver;
+                    //    m.ToolTipText = "Alt: " + alt.Value.ToString("0");
+                    //}
                     m.Tag = tag;
                 }
                 else if (type == MAVLink.MAV_MISSION_TYPE.FENCE)

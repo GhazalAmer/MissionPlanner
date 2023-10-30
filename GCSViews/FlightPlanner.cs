@@ -57,6 +57,8 @@ using Microsoft.Scripting.Hosting.Shell;
 using static alglib;
 using static MissionPlanner.Utilities.Pelco;
 using static MAVLink;
+using static IronPython.Modules.PythonIterTools;
+using CoordinateSharp;
 
 namespace MissionPlanner.GCSViews
 {
@@ -159,6 +161,7 @@ namespace MissionPlanner.GCSViews
         public GMapPolygon wppolygon;
         private GMapMarker CurrentMidLine;
         public int clickedmarker = 0;
+        private bool cycle = false;
 
         public void Init()
         {
@@ -1203,9 +1206,9 @@ namespace MissionPlanner.GCSViews
                         // string homealt = "100";
                         //  if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
                         TXT_homealt.Text = "100";
-                    
-                    return;
-                         }
+
+                        return;
+                    }
 
                     int results1;
                     if (!int.TryParse(TXT_DefaultAlt.Text, out results1))
@@ -2258,7 +2261,7 @@ namespace MissionPlanner.GCSViews
                     }
                 }
 
-                MainMap.MapProvider = (GMapProvider)comboBoxMapType.SelectedItem;                
+                MainMap.MapProvider = (GMapProvider)comboBoxMapType.SelectedItem;
                 if (FlightData.mymap != null)
                     FlightData.mymap.MapProvider = (GMapProvider)comboBoxMapType.SelectedItem;
                 Settings.Instance["MapType"] = comboBoxMapType.Text;
@@ -3425,7 +3428,7 @@ namespace MissionPlanner.GCSViews
         }
 
         Thread thisthread;
-      
+
         public void FlightPlanner_Load(object sender, EventArgs e)
         {
             quickadd = true;
@@ -3526,7 +3529,7 @@ namespace MissionPlanner.GCSViews
             fllowmeform.Dock = DockStyle.Fill;
             fllowmeform.Show();
             //////////////////////////////////////////////////
-            
+
             try
             {
                 thisthread = new Thread(mainloop);
@@ -6764,8 +6767,8 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         MainV2.comPort.MAV.cs.battery_kmleft);
 
                     // clear every 10 seconds
-                    if (DateTime.Now.Second % 10 == 0 && id ==MainV2.target.id)
-                      routesoverlay.Markers.Clear();
+                    if (DateTime.Now.Second % 10 == 0 && id == MainV2.target.id)
+                        routesoverlay.Markers.Clear();
 
                     if (MainV2.comPort.MAV.cs.TrackerLocation != MainV2.comPort.MAV.cs.HomeLocation &&
                         MainV2.comPort.MAV.cs.TrackerLocation.Lng != 0)
@@ -8456,7 +8459,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             BUT_saveWPFile.Enabled = true;
             BUT_loadwpfile.Enabled = true;
             ClearClick.Enabled = true;
-           // myButton12.Enabled = false;
+            // myButton12.Enabled = false;
             Reversewpbutton.Enabled = true;
         }
 
@@ -8468,7 +8471,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void ToolsBTN_Click(object sender, EventArgs e)
         {
-      
+
             NextWpPanel.Visible = false;
             panel9.Visible = false;
             panel10.Visible = false;
@@ -9245,7 +9248,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
                 GMapMarkerWP m = new GMapMarkerWP(point, tag);
                 //m.ToolTipMode = MarkerTooltipMode.OnMouseOver;
-                //m.ToolTipText = "Alt: " + alt.ToString("0");
+                //m.ToolTipText = "WPNo: " + alt.ToString("0");
                 m.Tag = tag;
 
 
@@ -9336,12 +9339,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 else
                 {
                     Commands.Rows.Insert(row_index + 1, myrow);
-                   
+
                 }
                 writeKML();
                 WPNumberUpdate();
                 currentwp.Markers.Clear();
-               
+
             }
             PlaceAfterPanel.Visible = false;
             //Show_BTNs();
@@ -9349,14 +9352,46 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void LatDeg_ValueChanged(object sender, EventArgs e)
         {
+            try
+            {
+                if (!cycle)
+                {
+                    double latitude = (double)LatDeg.Value;
+                    double longitude = (double)LongDeg.Value;
+                    Coordinate c = new Coordinate(latitude, longitude);
+                    textBox3.Text = c.MGRS.ToString();
+                    Hide_BTNs();
+                }
+                cycle = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error");
+            }
             Hide_BTNs();
-           
+
         }
 
         private void LongDeg_ValueChanged(object sender, EventArgs e)
         {
+            try
+            {
+                if (!cycle)
+                {
+                    double latitude = (double)LatDeg.Value;
+                    double longitude = (double)LongDeg.Value;
+                    Coordinate c = new Coordinate(latitude, longitude);
+                    textBox3.Text = c.MGRS.ToString();
+                    Hide_BTNs();
+                }
+                cycle = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error");
+            }
             Hide_BTNs();
-           
+
         }
 
         private void LatMin_ValueChanged(object sender, EventArgs e)
@@ -9386,24 +9421,27 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void BackWP_Click(object sender, EventArgs e)
         {
+            cycle = true;
             if (WPNumber.Value > 1) { WPNumber.Value = WPNumber.Value - 1; }
             else { WPNumber.Value = Commands.Rows.Count; }
             int no = (int)WPNumber.Value;
-             if (no > 0 && no <= Commands.Rows.Count)
-             {
-                 LatDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value));
-                 LatMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value)*60)%60);
-                 WPSp.Value = (Convert.ToDecimal((Convert.ToDouble(Commands.Rows[no - 1].Cells[Command.Index + 2].Value) / 0.514444444)));
-                 WPTh.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[Command.Index + 3].Value));
+            if (no > 0 && no <= Commands.Rows.Count)
+            {
+                LatDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value));
+                LatMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[5].Value) * 60) % 60);
+                WPSp.Value = (Convert.ToDecimal((Convert.ToDouble(Commands.Rows[no - 1].Cells[Command.Index + 2].Value) / 0.514444444)));
+                WPTh.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[Command.Index + 3].Value));
 
-                 LongDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value));
-                 LongMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value) * 60) % 60);
-                
+                LongDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value));
+                LongMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value) * 60) % 60);
+
 
 
 
             }
+            cycle = false;
             WPNumberUpdate();
+          
         }
 
         private void myButton5_Click(object sender, EventArgs e)
@@ -9418,6 +9456,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void NextWP_Click(object sender, EventArgs e)
         {
+            cycle = true;
             WPNumber.Value = WPNumber.Value + 1;
             int no = (int)WPNumber.Value;
             if (no > 0 && no <= Commands.Rows.Count)
@@ -9429,7 +9468,9 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 LongDeg.Value = Math.Floor(Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value));
                 LongMin.Value = ((Convert.ToDecimal(Commands.Rows[no - 1].Cells[6].Value) * 60) % 60);
             }
+            cycle = false;
             WPNumberUpdate();
+            
         }
 
         private void myButton3_Click(object sender, EventArgs e)
@@ -9614,7 +9655,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton2_Click(object sender, EventArgs e)
         {
-          
+
             MainMap.Enabled = true;
             if (panel6.Visible == true && SpeedPanel.Visible == false)
             {
@@ -9650,10 +9691,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             no = (int)WPNumber.Value;
             if (no > 0 && no <= Commands.Rows.Count)
             {
-                Commands.Rows[no - 1].Cells[5].Value = Lat;
-                Commands.Rows[no - 1].Cells[6].Value = Long;
+                Commands.Rows[no - 1].Cells[5].Value = textBox1.Text;
+                Commands.Rows[no - 1].Cells[6].Value = textBox2.Text;
                 // CustomMessageBox.Show(Lat.ToString());
-                //writeKML();
+                writeKML();
                 WPNumberUpdate();
                 currentwp.Markers.Clear();
             }
@@ -9859,9 +9900,9 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         }
 
 
-       
 
-        private void myButton23_Click(object sender, EventArgs e )
+
+        private void myButton23_Click(object sender, EventArgs e)
         {
 
 
@@ -9876,7 +9917,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 NextWpPanel.Visible = true;
 
             }
-            }
+        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -9972,6 +10013,140 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
 
         }
-    }
 
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            {
+                string mgrsValue = textBox3.Text;
+
+                if (!string.IsNullOrEmpty(mgrsValue))
+                {
+                    try
+                    {
+                        if (Coordinate.TryParse(mgrsValue, out Coordinate c))
+                        {
+
+                            textBox1.Text = $"{c.Latitude.DecimalDegree}";
+                            textBox2.Text = $"{c.Longitude.DecimalDegree}";
+                        }
+                        else
+                        {
+
+                            MessageBox.Show("Invalid MGRS format.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                        MessageBox.Show("An error occurred: " + ex.Message);
+                    }
+                }
+                else
+                {
+
+                    MessageBox.Show("MGRS value is empty.");
+                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //    if (!cycle)
+            //    {
+            //        double latitude;
+            //        if (double.TryParse(textBox1.Text, out latitude))
+            //        {
+            //            double longitude;
+            //            if (double.TryParse(textBox2.Text, out longitude))
+            //            {
+            //                Coordinate c = new Coordinate(latitude, longitude);
+            //                textBox3.Text = c.MGRS.ToString();
+            //                Hide_BTNs();
+            //            }
+            //        }
+            //    }
+            //    cycle = false;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("An error occurred: " + ex.Message, "Error");
+            //}
+            //Hide_BTNs();
+            //try
+            //{
+            //    if (!cycle)
+            //    {
+            //        double latitude;
+            //        if (double.TryParse(textBox1.Text, out latitude))
+            //        {
+            //            double longitude;
+            //            if (double.TryParse(textBox2.Text, out longitude))
+            //            {
+            //                Coordinate c = new Coordinate(latitude, longitude);
+            //                textBox3.Text = c.MGRS.ToString();
+            //            }
+            //        }
+            //    }
+            //    cycle = false;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("An error occurred: " + ex.Message, "Error");
+            //}
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //    if (!cycle)
+            //    {
+            //        double latitude;
+            //        if (double.TryParse(textBox1.Text, out latitude))
+            //        {
+            //            double longitude;
+            //            if (double.TryParse(textBox2.Text, out longitude))
+            //            {
+            //                Coordinate c = new Coordinate(latitude, longitude);
+            //                textBox3.Text = c.MGRS.ToString();
+            //                Hide_BTNs();
+            //            }
+            //        }
+            //    }
+            //    cycle = false;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("An error occurred: " + ex.Message, "Error");
+            //}
+            //Hide_BTNs();
+            //    try
+            //    {
+            //        if (!cycle)
+            //        {
+            //            double latitude;
+            //            if (double.TryParse(textBox1.Text, out latitude))
+            //            {
+            //                double longitude;
+            //                if (double.TryParse(textBox2.Text, out longitude))
+            //                {
+            //                    Coordinate c = new Coordinate(latitude, longitude);
+            //                    textBox3.Text = c.MGRS.ToString();
+            //                }
+            //            }
+            //        }
+            //        cycle = false;
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show("An error occurred: " + ex.Message, "Error");
+            //    }
+
+            //}
+        }
+
+    }
 }

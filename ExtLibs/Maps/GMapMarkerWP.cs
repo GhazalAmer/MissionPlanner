@@ -12,15 +12,17 @@ namespace MissionPlanner.Maps
     public class GMapMarkerWP : GMarkerGoogle
     {
         string wpno = "";
+        bool showToolTip = false;
         public bool selected = false;
         SizeF txtsize = SizeF.Empty;
         static Dictionary<string, Bitmap> fontBitmaps = new Dictionary<string, Bitmap>();
         static Font font;
 
         public GMapMarkerWP(PointLatLng p, string wpno)
-            : base(p, GMarkerGoogleType.green)
+            : base(p, Resources.markerarrow2)
         {
             this.wpno = wpno;
+            ToolTipText = "Waypoint Number: "+ wpno;
             if (font == null)
                 font = SystemFonts.DefaultFont;
 
@@ -38,9 +40,20 @@ namespace MissionPlanner.Maps
                 fontBitmaps[wpno] = temp;
             }
         }
-
+        //public override string ToolTipText => string.Empty;
+        //public void ShowToolTip(bool show)
+        //{
+        //    showToolTip = show;
+        //    if (Overlay != null)
+        //    {
+        //        Overlay.Control.Invalidate();
+        //    }
+        //}
         public override void OnRender(IGraphics g)
         {
+            //g.FillEllipse(Brushes.Gray, new Rectangle(this.LocalPosition.X + 3, this.LocalPosition.Y + 3, this.Size.Width, this.Size.Height));
+            //g.DrawArc(Pens.Gray, new Rectangle(this.LocalPosition.X + 3, this.LocalPosition.Y + 3, this.Size.Width, this.Size.Height), 0, 360);
+
             if (selected)
             {
                 g.FillEllipse(Brushes.Red, new Rectangle(this.LocalPosition, this.Size));
@@ -49,14 +62,15 @@ namespace MissionPlanner.Maps
             
             base.OnRender(g);
 
-            var midw = LocalPosition.X + 10;
-            var midh = LocalPosition.Y + 3;
+            var midw = LocalPosition.X + 20;
+            var midh = LocalPosition.Y - 12;
 
+            var txtsize = g.MeasureString(wpno, SystemFonts.DefaultFont);
             if (txtsize.Width > 15)
                 midw -= 4;
+            Font boldF = new Font("Arial", 15, FontStyle.Bold);
 
-            if (Overlay.Control.Zoom> 16 || IsMouseOver)
-                g.DrawImageUnscaled(fontBitmaps[wpno], midw,midh);
+            g.DrawString(wpno, boldF, Brushes.Black, new PointF(midw, midh));
         }
     }
 }
