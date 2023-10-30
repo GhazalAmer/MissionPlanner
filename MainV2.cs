@@ -2550,7 +2550,7 @@ namespace MissionPlanner
         {
 
             int spx_port = 9050;
-            string spx_ip = "192.168.1.117";
+            string spx_ip = "192.168.10.65";
             Byte[] connect_msg;
             Console.WriteLine("STARTING SPx Connection THREAD");
             Console.WriteLine("SETTINGS ARE:");
