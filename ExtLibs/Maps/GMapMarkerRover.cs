@@ -10,8 +10,8 @@ namespace MissionPlanner.Maps
     public class GMapMarkerRover : GMapMarkerBase
     {
         static readonly System.Drawing.Size SizeSt =
-            new System.Drawing.Size(global::MissionPlanner.Maps.Resources.arrow1.Width,
-                global::MissionPlanner.Maps.Resources.arrow1.Height);
+            new System.Drawing.Size(global::MissionPlanner.Maps.Resources.rover.Width,
+                global::MissionPlanner.Maps.Resources.rover.Height);
 
         float heading = 0;
         float cog = -1;
@@ -74,7 +74,7 @@ namespace MissionPlanner.Maps
             {
             }
 
-            g.DrawImageUnscaled(global::MissionPlanner.Maps.Resources.arrow1,
+            g.DrawImageUnscaled(global::MissionPlanner.Maps.Resources.rover,
                 Size.Width / -2,
                 Size.Height / -2);
 
