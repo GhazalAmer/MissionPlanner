@@ -6732,14 +6732,19 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         /// <param name="e"></param>
         public void timer1_Tick(object sender, EventArgs e)
         {
+            var radarData = new List<PointLatLng>();
+            int id = MainV2.target.id;
+            double lat = MainV2.target.lat;
+            double lon = MainV2.target.lon;
+            double hdg = MainV2.target.heading;
+            radarData.Add(new PointLatLng(lat, lon));
+
+
             while (true)
             {
                 // PLACING TARGETS ON THE MAP FROM SPx
+               
 
-                int id = MainV2.target.id;
-                double lat = MainV2.target.lat;
-                double lon = MainV2.target.lon;
-                double hdg = MainV2.target.heading;
 
                 if (id == 0)
                 {
@@ -6747,9 +6752,12 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 }
                 else
                 {
-                    PointLatLng targetloc = new PointLatLng(lat, lon);
-                    routesoverlay.Markers.Add(new GMapMarkerBoat(targetloc, (float)hdg));
-                    Console.WriteLine("target placed");
+                    foreach (var point in radarData)
+                    {
+
+                        routesoverlay.Markers.Add(new GMapMarkerBoat(point, (float)hdg));
+                        Console.WriteLine("target placed");
+                    }
                 }
 
 
