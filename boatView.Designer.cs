@@ -149,6 +149,7 @@
             this.label9.TabIndex = 13;
             this.label9.Text = "0.0";
             this.label9.Visible = false;
+            this.label9.Click += new System.EventHandler(this.label9_Click_1);
             // 
             // label12
             // 

@@ -6732,33 +6732,33 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         /// <param name="e"></param>
         public void timer1_Tick(object sender, EventArgs e)
         {
-            var radarData = new List<PointLatLng>();
-            int id = MainV2.target.id;
-            double lat = MainV2.target.lat;
-            double lon = MainV2.target.lon;
-            double hdg = MainV2.target.heading;
-            radarData.Add(new PointLatLng(lat, lon));
+            //var radarData = new List<PointLatLng>();
+            //int id = MainV2.target.id;
+            //double lat = MainV2.target.lat;
+            //double lon = MainV2.target.lon;
+            //double hdg = MainV2.target.heading;
+            //radarData.Add(new PointLatLng(lat, lon));
 
 
-            while (true)
-            {
-                // PLACING TARGETS ON THE MAP FROM SPx
+            //while (true)
+            //{
+            //    // PLACING TARGETS ON THE MAP FROM SPx
                
 
 
-                if (id == 0)
-                {
-                    Console.WriteLine("No target found ");
-                }
-                else
-                {
-                    foreach (var point in radarData)
-                    {
+            //    if (id == 0)
+            //    {
+            //        Console.WriteLine("No target found ");
+            //    }
+            //    else
+            //    {
+            //        foreach (var point in radarData)
+            //        {
 
-                        routesoverlay.Markers.Add(new GMapMarkerBoat(point, (float)hdg));
-                        Console.WriteLine("target placed");
-                    }
-                }
+            //            routesoverlay.Markers.Add(new GMapMarkerBoat(point, (float)hdg));
+            //            Console.WriteLine("target placed");
+            //        }
+            //    }
 
 
                 try
@@ -6775,7 +6775,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         MainV2.comPort.MAV.cs.battery_kmleft);
 
                     // clear every 10 seconds
-                    if (DateTime.Now.Second % 10 == 0 && id == MainV2.target.id)
+                    if (DateTime.Now.Second % 10 == 0 )
                         routesoverlay.Markers.Clear();
 
                     if (MainV2.comPort.MAV.cs.TrackerLocation != MainV2.comPort.MAV.cs.HomeLocation &&
@@ -6806,7 +6806,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     log.Warn(ex);
                 }
             }
-        }
+        
         public void trackBar1_Scroll(object sender, EventArgs e)
         {
             try
