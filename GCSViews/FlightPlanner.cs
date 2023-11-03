@@ -6732,33 +6732,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         /// <param name="e"></param>
         public void timer1_Tick(object sender, EventArgs e)
         {
-            //var radarData = new List<PointLatLng>();
-            //int id = MainV2.target.id;
-            //double lat = MainV2.target.lat;
-            //double lon = MainV2.target.lon;
-            //double hdg = MainV2.target.heading;
-            //radarData.Add(new PointLatLng(lat, lon));
-
-
-            //while (true)
-            //{
-            //    // PLACING TARGETS ON THE MAP FROM SPx
-               
-
-
-            //    if (id == 0)
-            //    {
-            //        Console.WriteLine("No target found ");
-            //    }
-            //    else
-            //    {
-            //        foreach (var point in radarData)
-            //        {
-
-            //            routesoverlay.Markers.Add(new GMapMarkerBoat(point, (float)hdg));
-            //            Console.WriteLine("target placed");
-            //        }
-            //    }
+            
 
 
                 try
@@ -6766,6 +6740,29 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     if (isMouseDown || CurentRectMarker != null)
                         return;
 
+
+                var radarData = new List<PointLatLng>();
+                int id = MainV2.target.id;
+                double lat = MainV2.target.lat;
+                double lon = MainV2.target.lon;
+                double hdg = MainV2.target.heading;
+                radarData.Add(new PointLatLng(lat, lon));
+
+
+
+                    if (id == 0)
+                    {
+                        Console.WriteLine("No target found ");
+                    }
+                    else
+                    {
+                        foreach (var point in radarData)
+                        {
+
+                           // routesoverlay.Markers.Add(new GMapMarkerBoat(point, (float)hdg));
+                            Console.WriteLine("target placed");
+                        }
+                    }
 
 
                     prop.alt = MainV2.comPort.MAV.cs.alt;
