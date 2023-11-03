@@ -88,9 +88,9 @@ namespace MissionPlanner
                 return (new GMapMarkerRover(portlocation, MAV.cs.yaw,
                     MAV.cs.groundcourse, MAV.cs.nav_bearing, MAV.cs.target_bearing)
                 {
-                    ToolTipText = MAV.cs.alt.ToString("0") + "\n" + MAV.sysid.ToString("sysid: 0"),
-                    ToolTipMode = MarkerTooltipMode.Always,
-                    Tag = MAV
+                   // ToolTipText = MAV.cs.alt.ToString("0") + "\n" + MAV.sysid.ToString("sysid: 0"),
+                    //ToolTipMode = MarkerTooltipMode.Always,
+                  //  Tag = MAV
                 });
             }
             else if (MAV.aptype == MAVLink.MAV_TYPE.SURFACE_BOAT)
