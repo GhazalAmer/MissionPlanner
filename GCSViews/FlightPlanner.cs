@@ -702,7 +702,7 @@ namespace MissionPlanner.GCSViews
             }
             catch
             {
-                CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
+             //   CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
                 return;
             }
 
