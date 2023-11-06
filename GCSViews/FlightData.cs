@@ -6510,15 +6510,15 @@ namespace MissionPlanner.GCSViews
 
         private void GOTOButt_Click(object sender, EventArgs e)
         {
-            if (panel4.Visible == true && tableLayoutPanel6.Visible == true)
+            if (panel4.Visible == true )
             { 
                 panel4.Visible = false;
-                tableLayoutPanel6.Visible = false;
+                //tableLayoutPanel6.Visible = false;
             }
             else
             { 
               panel4.Visible = true;
-                tableLayoutPanel6.Visible = true;
+              //  tableLayoutPanel6.Visible = true;
 
             }
 
@@ -7019,6 +7019,32 @@ namespace MissionPlanner.GCSViews
         private void zoom_out_Click(object sender, EventArgs e)
         {
             gMapControl1.Zoom -= 1;
+        }
+
+        private void myButton14_Click_1(object sender, EventArgs e)
+        {
+            panel9.Visible = false;
+            NextWpPanel.Visible = false;
+            measurePanel.Visible = false;
+
+            if (panel5.Visible == true)
+            {
+                panel5.Visible = false;
+            }
+            else
+            {
+                panel5.Visible = true;
+            }
+        }
+
+        private void label93_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label94_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

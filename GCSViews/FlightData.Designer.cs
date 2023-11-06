@@ -363,6 +363,13 @@ namespace MissionPlanner.GCSViews
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.zoom_out = new MissionPlanner.Controls.MyButton();
             this.zoom_in = new MissionPlanner.Controls.MyButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.myButton14 = new MissionPlanner.Controls.MyButton();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
@@ -432,8 +439,8 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.boatStatusPanel.SuspendLayout();
             this.ChView.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainH
@@ -2719,7 +2726,7 @@ namespace MissionPlanner.GCSViews
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 27720D;
+            this.windDir1.Direction = 27900D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -3465,10 +3472,15 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel6.Controls.Add(this.label97, 2, 2);
+            this.tableLayoutPanel6.Controls.Add(this.label96, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.label95, 2, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label93, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.label12, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.label15, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label14, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label11, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.label94, 0, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             // 
             // label12
@@ -3536,11 +3548,12 @@ namespace MissionPlanner.GCSViews
             // 
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.tableLayoutPanel7.Controls.Add(this.myButton6, 4, 0);
-            this.tableLayoutPanel7.Controls.Add(this.restartroutebutton, 5, 0);
-            this.tableLayoutPanel7.Controls.Add(this.myButton13, 6, 0);
+            this.tableLayoutPanel7.Controls.Add(this.myButton14, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.myButton6, 5, 0);
+            this.tableLayoutPanel7.Controls.Add(this.myButton19, 4, 0);
+            this.tableLayoutPanel7.Controls.Add(this.restartroutebutton, 6, 0);
+            this.tableLayoutPanel7.Controls.Add(this.myButton13, 7, 0);
             this.tableLayoutPanel7.Controls.Add(this.switchview, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.myButton19, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.MeasureBTN, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.myButton5, 2, 0);
             this.tableLayoutPanel7.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
@@ -3664,7 +3677,6 @@ namespace MissionPlanner.GCSViews
             // boatStatusPanel
             // 
             this.boatStatusPanel.BackColor = System.Drawing.Color.Transparent;
-            this.boatStatusPanel.Controls.Add(this.joystickSetup1);
             this.boatStatusPanel.ForeColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.boatStatusPanel, "boatStatusPanel");
             this.boatStatusPanel.Name = "boatStatusPanel";
@@ -4131,10 +4143,71 @@ namespace MissionPlanner.GCSViews
             this.zoom_in.UseVisualStyleBackColor = true;
             this.zoom_in.Click += new System.EventHandler(this.zoom_in_Click);
             // 
+            // panel5
+            // 
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Controls.Add(this.joystickSetup1);
+            this.panel5.Name = "panel5";
+            // 
+            // myButton14
+            // 
+            resources.ApplyResources(this.myButton14, "myButton14");
+            this.myButton14.BackColor = System.Drawing.Color.DimGray;
+            this.myButton14.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.myButton14.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.myButton14.ColorMouseOver = System.Drawing.Color.DimGray;
+            this.myButton14.Name = "myButton14";
+            this.myButton14.Outline = System.Drawing.Color.Black;
+            this.myButton14.TextColor = System.Drawing.Color.White;
+            this.myButton14.TextColorNotEnabled = System.Drawing.Color.Black;
+            this.myButton14.UseVisualStyleBackColor = false;
+            this.myButton14.Click += new System.EventHandler(this.myButton14_Click_1);
+            // 
+            // label93
+            // 
+            resources.ApplyResources(this.label93, "label93");
+            this.label93.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label93.ForeColor = System.Drawing.Color.White;
+            this.label93.Name = "label93";
+            this.label93.Click += new System.EventHandler(this.label93_Click);
+            // 
+            // label94
+            // 
+            resources.ApplyResources(this.label94, "label94");
+            this.label94.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label94.ForeColor = System.Drawing.Color.White;
+            this.label94.Name = "label94";
+            this.label94.Click += new System.EventHandler(this.label94_Click);
+            // 
+            // label95
+            // 
+            resources.ApplyResources(this.label95, "label95");
+            this.label95.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label95.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "xtrack_error", true));
+            this.label95.ForeColor = System.Drawing.Color.White;
+            this.label95.Name = "label95";
+            // 
+            // label96
+            // 
+            resources.ApplyResources(this.label96, "label96");
+            this.label96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label96.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "lat", true));
+            this.label96.ForeColor = System.Drawing.Color.White;
+            this.label96.Name = "label96";
+            // 
+            // label97
+            // 
+            resources.ApplyResources(this.label97, "label97");
+            this.label97.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.label97.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "lng", true));
+            this.label97.ForeColor = System.Drawing.Color.White;
+            this.label97.Name = "label97";
+            // 
             // FlightData
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.zoom_out);
             this.Controls.Add(this.zoom_in);
             this.Controls.Add(this.WPNumber1);
@@ -4252,8 +4325,8 @@ namespace MissionPlanner.GCSViews
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.boatStatusPanel.ResumeLayout(false);
             this.ChView.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4614,5 +4687,12 @@ namespace MissionPlanner.GCSViews
         private Joystick.JoystickSetup joystickSetup1;
         private Controls.MyButton zoom_out;
         private Controls.MyButton zoom_in;
+        private Panel panel5;
+        private Controls.MyButton myButton14;
+        private Label label93;
+        private Label label94;
+        private Label label97;
+        private Label label96;
+        private Label label95;
     }
 }
