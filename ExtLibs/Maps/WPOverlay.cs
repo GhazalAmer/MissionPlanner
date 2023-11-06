@@ -556,7 +556,7 @@ namespace MissionPlanner.ArduPilot
                     route.Points.Add(x);
                 });
 
-                homeroute.Stroke = new Pen(Color.Yellow, 2);
+                homeroute.Stroke = new Pen(Color.Red, 2);
                 // if we have a large distance between home and the first/last point, it hangs on the draw of a the dashed line.
                 if (homepoint.GetDistance(lastpoint) < 5000 && homepoint.GetDistance(firstpoint) < 5000)
                     homeroute.Stroke.DashStyle = DashStyle.Dash;
@@ -567,7 +567,7 @@ namespace MissionPlanner.ArduPilot
                     overlay.Routes.Add(homeroute);
                 }
 
-                route.Stroke = new Pen(Color.Yellow, 4);
+                route.Stroke = new Pen(Color.Red, 4);
                 route.Stroke.DashStyle = DashStyle.Custom;
                 overlay.Routes.Add(route);
             }

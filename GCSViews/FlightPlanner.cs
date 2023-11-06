@@ -8646,6 +8646,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton9_Click(object sender, EventArgs e)
         {
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 52);
             panel9.Visible = false;
 
             try
@@ -9776,6 +9777,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton24_Click(object sender, EventArgs e)
         {
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
             NextWpPanel.Visible = false;
             panel9.Enabled = true;
             panel9.Visible = false;

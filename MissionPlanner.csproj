@@ -4896,6 +4896,7 @@
     <None Include="Resources\milkor_boat_3.png" />
     <None Include="Resources\icon.ico" />
     <None Include="Resources\arrow1.png" />
+    <None Include="Resources\markerarrow.png" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
