@@ -702,7 +702,7 @@ namespace MissionPlanner.GCSViews
             }
             catch
             {
-             //   CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
+                CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
                 return;
             }
 
@@ -1271,7 +1271,7 @@ namespace MissionPlanner.GCSViews
                 }
                 else
                 {
-                   // CustomMessageBox.Show("Invalid Home or wp Alt");
+                    CustomMessageBox.Show("Invalid Home or wp Alt");
                     cell.Style.BackColor = Color.Red;
                 }
             }
@@ -1430,21 +1430,22 @@ namespace MissionPlanner.GCSViews
             updateRowNumbers();
 
             PointLatLngAlt home = new PointLatLngAlt();
-            if (TXT_homealt.Text != "" && TXT_homelat.Text != "" && TXT_homelng.Text != "")
-            {
-                try
-                {
-                    home = new PointLatLngAlt(
-                            double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text),
-                            double.Parse(TXT_homealt.Text) / CurrentState.multiplieralt, "H")
-                    { Tag2 = CMB_altmode.SelectedValue.ToString() };
-                }
-                catch (Exception ex)
-                {
-                    CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
-                    log.Error(ex);
-                }
-            }
+            home = new PointLatLngAlt(24, 54, 0);
+            //if (TXT_homealt.Text != "" && TXT_homelat.Text != "" && TXT_homelng.Text != "")
+            //{
+            //    try
+            //    {
+            //        home = new PointLatLngAlt(
+            //                double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text),
+            //                double.Parse(TXT_homealt.Text) / CurrentState.multiplieralt, "H")
+            //        { Tag2 = CMB_altmode.SelectedValue.ToString() };
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
+            //        log.Error(ex);
+            //    }
+            //}
 
             try
             {
@@ -8605,7 +8606,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 }
             }
 
-            ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
+            IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
                 Text = "Receiving WP's"
