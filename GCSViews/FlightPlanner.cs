@@ -1122,7 +1122,7 @@ namespace MissionPlanner.GCSViews
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("A invalid entry has been detected\n" + ex.Message, Strings.ERROR);
+                //CustomMessageBox.Show("A invalid entry has been detected\n" + ex.Message, Strings.ERROR);
             }
 
             // remove more than 40 revisions
@@ -1271,7 +1271,7 @@ namespace MissionPlanner.GCSViews
                 }
                 else
                 {
-                    CustomMessageBox.Show("Invalid Home or wp Alt");
+                   // CustomMessageBox.Show("Invalid Home or wp Alt");
                     cell.Style.BackColor = Color.Red;
                 }
             }
@@ -3119,7 +3119,7 @@ namespace MissionPlanner.GCSViews
             }
             catch (Exception ex)
             {
-                throw new FormatException("Invalid number on row " + (a + 1).ToString(), ex);
+               throw new FormatException("Invalid number on row " + (a + 1).ToString(), ex);
             }
         }
 
@@ -6740,30 +6740,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                     if (isMouseDown || CurentRectMarker != null)
                         return;
 
-
-                var radarData = new List<PointLatLng>();
-                int id = MainV2.target.id;
-                double lat = MainV2.target.lat;
-                double lon = MainV2.target.lon;
-                double hdg = MainV2.target.heading;
-                radarData.Add(new PointLatLng(lat, lon));
-
-
-
-                    if (id == 0)
-                    {
-                        Console.WriteLine("No target found ");
-                    }
-                    else
-                    {
-                        foreach (var point in radarData)
-                        {
-
-                           // routesoverlay.Markers.Add(new GMapMarkerBoat(point, (float)hdg));
-                            Console.WriteLine("target placed");
-                        }
-                    }
-
+                    routesoverlay.Markers.Clear();
 
                     prop.alt = MainV2.comPort.MAV.cs.alt;
                     prop.altasl = MainV2.comPort.MAV.cs.altasl;
@@ -6772,7 +6749,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         MainV2.comPort.MAV.cs.battery_kmleft);
 
                     // clear every 10 seconds
-                    if (DateTime.Now.Second % 10 == 0 )
+                    if (DateTime.Now.Second % 5 == 0 )
                         routesoverlay.Markers.Clear();
 
                     if (MainV2.comPort.MAV.cs.TrackerLocation != MainV2.comPort.MAV.cs.HomeLocation &&
@@ -6797,8 +6774,35 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                             MainV2.comPort.MAV.GuidedMode.x / 1e7,
                             (int)MainV2.comPort.MAV.GuidedMode.z, Color.Blue, routesoverlay);
                     }
+
+                var radarData = new List<PointLatLng>();
+                int id = MainV2.target.id;
+                double lat = MainV2.target.lat;
+                double lon = MainV2.target.lon;
+                double hdg = MainV2.target.heading;
+                radarData.Add(new PointLatLng(lat, lon));
+
+
+
+                if (id == 0)
+                {
+                    Console.WriteLine("No target found ");
                 }
-                catch (Exception ex)
+                else
+                {
+                    foreach (var point in radarData)
+                    {
+
+                        // routesoverlay.Markers.Add(new GMapMarkerBoat(point, (float)hdg));
+                        Console.WriteLine("target placed");
+                    }
+                }
+
+
+
+
+            }
+            catch (Exception ex)
                 {
                     log.Warn(ex);
                 }
