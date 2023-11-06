@@ -12,7 +12,7 @@ namespace GMap.NET.WindowsForms
     [Serializable]
     public class GMapMarkerRect : GMapMarker
     {
-        public Pen Pen = new Pen(Brushes.White, 2);
+        public Pen Pen = new Pen(Brushes.Black, 2);
 
         public Color Color
         {
@@ -37,7 +37,7 @@ namespace GMap.NET.WindowsForms
             if (initcolor.HasValue)
                 Color = initcolor.Value;
             else
-                Color = Color.White;
+                Color = Color.Black;
         }
 
         public GMapMarkerRect(PointLatLng p)
@@ -60,7 +60,7 @@ namespace GMap.NET.WindowsForms
 
             // if we have drawn it, then keep that color
             if (!initcolor.HasValue)
-                Color = Color.White;
+                Color = Color.Black;
 
             // undo autochange in mouse over
             //if (Pen.Color == Color.Blue)

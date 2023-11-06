@@ -18,7 +18,7 @@ namespace MissionPlanner.Maps
         static Font font;
 
         public GMapMarkerWP(PointLatLng p, string wpno)
-            : base(p, Resources.marker_02)
+            : base(p, Resources.markerarrow)
         {
             this.wpno = wpno;
             ToolTipText = "Waypoint Number: " + wpno;
