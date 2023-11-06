@@ -18,9 +18,10 @@ namespace MissionPlanner.Maps
         static Font font;
 
         public GMapMarkerWP(PointLatLng p, string wpno)
-            : base(p, GMarkerGoogleType.green)
+            : base(p, Resources.markerarrow2)
         {
             this.wpno = wpno;
+            ToolTipText = "Waypoint Number: " + wpno;
             if (font == null)
                 font = SystemFonts.DefaultFont;
 
@@ -49,14 +50,15 @@ namespace MissionPlanner.Maps
             
             base.OnRender(g);
 
-            var midw = LocalPosition.X + 10;
-            var midh = LocalPosition.Y + 3;
+            var midw = LocalPosition.X + 20;
+            var midh = LocalPosition.Y -12;
 
+            var txtsize = g.MeasureString(wpno, SystemFonts.DefaultFont);
             if (txtsize.Width > 15)
                 midw -= 4;
+            Font boldF = new Font("Arial", 15, FontStyle.Bold);
 
-            if (Overlay.Control.Zoom> 16 || IsMouseOver)
-                g.DrawImageUnscaled(fontBitmaps[wpno], midw,midh);
+            g.DrawString(wpno, boldF, Brushes.Black, new PointF(midw, midh));
         }
     }
 }
