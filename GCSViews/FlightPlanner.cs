@@ -694,7 +694,7 @@ namespace MissionPlanner.GCSViews
             }
             catch
             {
-                CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
+               // CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
                 return;
             }
 
@@ -1433,7 +1433,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch (Exception ex)
                 {
-                    CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
+                   // CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
                     log.Error(ex);
                 }
             }
@@ -1459,8 +1459,8 @@ namespace MissionPlanner.GCSViews
                     }
                     catch (FormatException)
                     {
-                        CustomMessageBox.Show(Strings.InvalidNumberEntered + "\n" + "WP Radius or Loiter Radius",
-                            Strings.ERROR);
+                        //CustomMessageBox.Show(Strings.InvalidNumberEntered + "\n" + "WP Radius or Loiter Radius",
+                         //   Strings.ERROR);
                     }
 
                     MainMap.HoldInvalidation = true;
