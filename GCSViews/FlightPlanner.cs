@@ -167,7 +167,7 @@ namespace MissionPlanner.GCSViews
         {
             instance = this;
 
-
+            chk_usemavftp.Checked = true;   // Added by Safi - makes read/write faster
 
             // config map
             MainMap.CacheLocation = Settings.GetDataDirectory() +
@@ -3120,7 +3120,8 @@ namespace MissionPlanner.GCSViews
             }
             catch (Exception ex)
             {
-               throw new FormatException("Invalid number on row " + (a + 1).ToString(), ex);
+                throw new FormatException("Invalid number on row " + (a + 1).ToString(), ex);
+
             }
         }
 
@@ -3479,7 +3480,7 @@ namespace MissionPlanner.GCSViews
                 if (TXT_homelat.Text != "")
                 {
                     MainMap.Position = new PointLatLng(double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text));
-                    MainMap.Zoom = 16;
+                    MainMap.Zoom = 12;
                 }
             }
             catch (Exception ex)
@@ -5416,6 +5417,7 @@ namespace MissionPlanner.GCSViews
         {
             quickadd = true;
 
+            // THE PROBLEM MIGHT EXIST HERE - SAFI
 
             // mono fix
             Commands.CurrentCell = null;
@@ -5432,12 +5434,13 @@ namespace MissionPlanner.GCSViews
             Commands.Enabled = false;
 
             int i = Commands.Rows.Count - 1;
+           // int i = Commands.Rows.Count;
             int cmdidx = -1;
             foreach (Locationwp temp in cmds)
             {
                 i++;
                 cmdidx++;
-                //Console.WriteLine("FP processToScreen " + i);
+                Console.WriteLine("FP processToScreen " + i);
                 if (temp.id == 0 && i != 0) // 0 and not home
                     break;
                 if (temp.id == 255 && i != 0) // bad record - never loaded any WP's - but have started the board up.

@@ -368,7 +368,7 @@ namespace MissionPlanner.GCSViews
                                          "gmapcache" + Path.DirectorySeparatorChar;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
-            gMapControl1.Zoom = 3;
+            gMapControl1.Zoom = 12;
 
             gMapControl1.OnMapZoomChanged += gMapControl1_OnMapZoomChanged;
 

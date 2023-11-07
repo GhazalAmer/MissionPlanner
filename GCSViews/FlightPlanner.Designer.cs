@@ -105,7 +105,6 @@ namespace MissionPlanner.GCSViews
             this.AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TagData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelBASE = new System.Windows.Forms.Panel();
-            this.splitter2 = new BSE.Windows.Forms.Splitter();
             this.splitter1 = new BSE.Windows.Forms.Splitter();
             this.panelMap = new System.Windows.Forms.Panel();
             this.measurePanel = new System.Windows.Forms.Panel();
@@ -827,20 +826,12 @@ namespace MissionPlanner.GCSViews
             // 
             // panelBASE
             // 
-            this.panelBASE.Controls.Add(this.splitter2);
             this.panelBASE.Controls.Add(this.splitter1);
             this.panelBASE.Controls.Add(this.panelMap);
             this.panelBASE.Controls.Add(this.panelWaypoints);
             this.panelBASE.Controls.Add(this.label6);
             resources.ApplyResources(this.panelBASE, "panelBASE");
             this.panelBASE.Name = "panelBASE";
-            // 
-            // splitter2
-            // 
-            this.splitter2.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.splitter2, "splitter2");
-            this.splitter2.Name = "splitter2";
-            this.splitter2.TabStop = false;
             // 
             // splitter1
             // 
@@ -1999,7 +1990,7 @@ namespace MissionPlanner.GCSViews
             // 
             // panelAction
             // 
-            this.panelAction.AssociatedSplitter = this.splitter2;
+            this.panelAction.AssociatedSplitter = null;
             this.panelAction.BackColor = System.Drawing.Color.Transparent;
             this.panelAction.CaptionFont = new System.Drawing.Font("Segoe UI", 11.75F, System.Drawing.FontStyle.Bold);
             this.panelAction.CaptionHeight = 21;
@@ -2464,7 +2455,6 @@ namespace MissionPlanner.GCSViews
         private DataGridViewTextBoxColumn Dist;
         private DataGridViewTextBoxColumn AZ;
         private Panel panelBASE;
-        private BSE.Windows.Forms.Splitter splitter2;
         private BSE.Windows.Forms.Splitter splitter1;
         private Panel panelMap;
         private MyButton zoom_out;
