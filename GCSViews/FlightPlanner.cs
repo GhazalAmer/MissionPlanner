@@ -5433,8 +5433,8 @@ namespace MissionPlanner.GCSViews
             Commands.SuspendLayout();
             Commands.Enabled = false;
 
-            int i = Commands.Rows.Count - 1;
-           // int i = Commands.Rows.Count;
+           // int i = Commands.Rows.Count - 1;
+            int i = Commands.Rows.Count;
             int cmdidx = -1;
             foreach (Locationwp temp in cmds)
             {
@@ -8470,7 +8470,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void BUT_write_Click_1(object sender, EventArgs e)
         {
             panel10.Visible = false;
-            BUT_write_Click(this, EventArgs.Empty);
+            uploadwps();
         }
 
         private void myButton21_Click(object sender, EventArgs e)
