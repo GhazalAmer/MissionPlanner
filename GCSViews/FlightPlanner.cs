@@ -1418,6 +1418,7 @@ namespace MissionPlanner.GCSViews
         /// <summary>
         /// used to write a KML, update the Map view polygon, and update the row headers
         /// </summary>
+        PointLatLngAlt home = new PointLatLngAlt();
         public void writeKML()
         {
             // quickadd is for when loading wps from eeprom or file, to prevent slow, loading times
@@ -1429,23 +1430,23 @@ namespace MissionPlanner.GCSViews
 
             updateRowNumbers();
 
-            PointLatLngAlt home = new PointLatLngAlt();
-            home = new PointLatLngAlt(24, 54, 0);
-            //if (TXT_homealt.Text != "" && TXT_homelat.Text != "" && TXT_homelng.Text != "")
-            //{
-            //    try
-            //    {
-            //        home = new PointLatLngAlt(
-            //                double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text),
-            //                double.Parse(TXT_homealt.Text) / CurrentState.multiplieralt, "H")
-            //        { Tag2 = CMB_altmode.SelectedValue.ToString() };
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
-            //        log.Error(ex);
-            //    }
-            //}
+
+            //home = new PointLatLngAlt(24, 54, 0);
+            if (TXT_homealt.Text != "" && TXT_homelat.Text != "" && TXT_homelng.Text != "")
+            {
+                try
+                {
+                    home = new PointLatLngAlt(
+                            double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text),
+                            double.Parse(TXT_homealt.Text) / CurrentState.multiplieralt, "H")
+                    { Tag2 = CMB_altmode.SelectedValue.ToString() };
+                }
+                catch (Exception ex)
+                {
+                    //CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
+                    log.Error(ex);
+                }
+            }
 
             try
             {
@@ -3114,7 +3115,7 @@ namespace MissionPlanner.GCSViews
 
                 temp.Tag = Commands.Rows[a].Cells[TagData.Index].Value;
 
-                temp.frame = (byte)(int)Commands.Rows[a].Cells[Frame.Index].Value;
+                temp.frame = (int)altmode.Relative;
 
                 return temp;
             }
@@ -5433,8 +5434,8 @@ namespace MissionPlanner.GCSViews
             Commands.SuspendLayout();
             Commands.Enabled = false;
 
-           // int i = Commands.Rows.Count - 1;
-            int i =0;
+           int i = Commands.Rows.Count - 1;
+            //int i =0;
             int cmdidx = -1;
             foreach (Locationwp temp in cmds)
             {
@@ -8470,15 +8471,15 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void BUT_write_Click_1(object sender, EventArgs e)
         {
             panel10.Visible = false;
-                if ((altmode)CMB_altmode.SelectedValue == altmode.Absolute)
-                {
-                    if ((int)DialogResult.No ==
-                        CustomMessageBox.Show("Absolute Alt is selected are you sure?", "Alt Mode",
-                            MessageBoxButtons.YesNo))
-                    {
-                        CMB_altmode.SelectedValue = (int)altmode.Relative;
-                    }
-                }
+                //if ((altmode)CMB_altmode.SelectedValue == altmode.Absolute)
+                //{
+                //    if ((int)DialogResult.No ==
+                //        CustomMessageBox.Show("Absolute Alt is selected are you sure?", "Alt Mode",
+                //            MessageBoxButtons.YesNo))
+                //    {
+                //        CMB_altmode.SelectedValue = (int)altmode.Relative;
+                //    }
+                //}
 
                 // check home
                 Locationwp home = new Locationwp();
@@ -10210,6 +10211,5 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
             //}
         }
-
     }
 }
