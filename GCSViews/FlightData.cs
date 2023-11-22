@@ -6356,7 +6356,7 @@ namespace MissionPlanner.GCSViews
 
         private void myButton12_Click(object sender, EventArgs e)
         {
-            //MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
             // myButton12.Enabled = false;
             NextWpPanel.Visible = false;
             panel9.Enabled=true;
@@ -6396,7 +6396,7 @@ namespace MissionPlanner.GCSViews
 
         private void myButton9_Click(object sender, EventArgs e)
         {
-            //MainV2.comPort.setParam("SERVO2_FUNCTION", 52);
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 52);
             if (panel9.Visible == true)
             {
                 panel9.Visible = false;
