@@ -8551,7 +8551,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 frmProgressReporter.Dispose();
 
                 MainMap.Focus();
-            }
+
+            readwps();
+            update_main_list_of_polys();
+        }
         
 
         private void myButton21_Click(object sender, EventArgs e)
@@ -8682,13 +8685,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void readwps()
         {
-            if (Commands.Rows.Count > 0)
-            {
-                if ((DialogResult)CustomMessageBox.Show("This will clear your existing planned mission, Continue?", "Confirm", MessageBoxButtons.OKCancel) != DialogResult.OK)
-                {
-                    return;
-                }
-            }
+            //if (Commands.Rows.Count > 0)
+            //{
+            //    if ((DialogResult)CustomMessageBox.Show("This will clear your existing planned mission, Continue?", "Confirm", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            //    {
+            //        return;
+            //    }
+            //}
 
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {

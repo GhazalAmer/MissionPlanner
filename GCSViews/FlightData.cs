@@ -368,7 +368,7 @@ namespace MissionPlanner.GCSViews
                                          "gmapcache" + Path.DirectorySeparatorChar;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
-            gMapControl1.Zoom = 12;
+            gMapControl1.Zoom = 21;
 
             gMapControl1.OnMapZoomChanged += gMapControl1_OnMapZoomChanged;
 
@@ -6418,14 +6418,6 @@ namespace MissionPlanner.GCSViews
         private void myButton10_Click(object sender, EventArgs e)
         {
 
-            panel9.Visible =false;
-            try
-            {
-                ((Button)sender).Enabled = false;
-                MainV2.comPort.setMode("RTL");
-            }
-            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
-            ((Button)sender).Enabled = true;
         }
 
         private void myButton11_Click(object sender, EventArgs e)
@@ -6838,7 +6830,7 @@ namespace MissionPlanner.GCSViews
         private void gMapControl1_Load(object sender, EventArgs e)
         {
             gMapControl1.MapProvider = GoogleSatelliteMapProvider.Instance;
-            gMapControl1.Zoom = 0D;
+            gMapControl1.Zoom = 12;
         }
 
         private void myButton4_Click(object sender, EventArgs e)
