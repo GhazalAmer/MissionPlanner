@@ -1418,6 +1418,7 @@ namespace MissionPlanner.GCSViews
         /// <summary>
         /// used to write a KML, update the Map view polygon, and update the row headers
         /// </summary>
+        PointLatLngAlt home = new PointLatLngAlt();
         public void writeKML()
         {
             // quickadd is for when loading wps from eeprom or file, to prevent slow, loading times
@@ -1429,23 +1430,23 @@ namespace MissionPlanner.GCSViews
 
             updateRowNumbers();
 
-            PointLatLngAlt home = new PointLatLngAlt();
-            home = new PointLatLngAlt(24, 54, 0);
-            //if (TXT_homealt.Text != "" && TXT_homelat.Text != "" && TXT_homelng.Text != "")
-            //{
-            //    try
-            //    {
-            //        home = new PointLatLngAlt(
-            //                double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text),
-            //                double.Parse(TXT_homealt.Text) / CurrentState.multiplieralt, "H")
-            //        { Tag2 = CMB_altmode.SelectedValue.ToString() };
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
-            //        log.Error(ex);
-            //    }
-            //}
+
+            //home = new PointLatLngAlt(24, 54, 0);
+            if (TXT_homealt.Text != "" && TXT_homelat.Text != "" && TXT_homelng.Text != "")
+            {
+                try
+                {
+                    home = new PointLatLngAlt(
+                            double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text),
+                            double.Parse(TXT_homealt.Text) / CurrentState.multiplieralt, "H")
+                    { Tag2 = CMB_altmode.SelectedValue.ToString() };
+                }
+                catch (Exception ex)
+                {
+                    //CustomMessageBox.Show(Strings.Invalid_home_location, Strings.ERROR);
+                    log.Error(ex);
+                }
+            }
 
             try
             {
@@ -3114,7 +3115,7 @@ namespace MissionPlanner.GCSViews
 
                 temp.Tag = Commands.Rows[a].Cells[TagData.Index].Value;
 
-                temp.frame = (byte)(int)Commands.Rows[a].Cells[Frame.Index].Value;
+                temp.frame = (int)altmode.Relative;
 
                 return temp;
             }
@@ -5433,8 +5434,8 @@ namespace MissionPlanner.GCSViews
             Commands.SuspendLayout();
             Commands.Enabled = false;
 
-           // int i = Commands.Rows.Count - 1;
-            int i =0;
+           int i = Commands.Rows.Count - 1;
+            //int i =0;
             int cmdidx = -1;
             foreach (Locationwp temp in cmds)
             {
@@ -8470,15 +8471,15 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void BUT_write_Click_1(object sender, EventArgs e)
         {
             panel10.Visible = false;
-                if ((altmode)CMB_altmode.SelectedValue == altmode.Absolute)
-                {
-                    if ((int)DialogResult.No ==
-                        CustomMessageBox.Show("Absolute Alt is selected are you sure?", "Alt Mode",
-                            MessageBoxButtons.YesNo))
-                    {
-                        CMB_altmode.SelectedValue = (int)altmode.Relative;
-                    }
-                }
+                //if ((altmode)CMB_altmode.SelectedValue == altmode.Absolute)
+                //{
+                //    if ((int)DialogResult.No ==
+                //        CustomMessageBox.Show("Absolute Alt is selected are you sure?", "Alt Mode",
+                //            MessageBoxButtons.YesNo))
+                //    {
+                //        CMB_altmode.SelectedValue = (int)altmode.Relative;
+                //    }
+                //}
 
                 // check home
                 Locationwp home = new Locationwp();
@@ -8550,7 +8551,10 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 frmProgressReporter.Dispose();
 
                 MainMap.Focus();
-            }
+
+            readwps();
+            update_main_list_of_polys();
+        }
         
 
         private void myButton21_Click(object sender, EventArgs e)
@@ -8681,13 +8685,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void readwps()
         {
-            if (Commands.Rows.Count > 0)
-            {
-                if ((DialogResult)CustomMessageBox.Show("This will clear your existing planned mission, Continue?", "Confirm", MessageBoxButtons.OKCancel) != DialogResult.OK)
-                {
-                    return;
-                }
-            }
+            //if (Commands.Rows.Count > 0)
+            //{
+            //    if ((DialogResult)CustomMessageBox.Show("This will clear your existing planned mission, Continue?", "Confirm", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            //    {
+            //        return;
+            //    }
+            //}
 
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
@@ -8742,7 +8746,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void myButton9_Click(object sender, EventArgs e)
         {
             panel9.Visible = false;
-            //MainV2.comPort.setParam("SERVO2_FUNCTION", 52);
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 52);
 
             try
             {
@@ -9922,7 +9926,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton24_Click(object sender, EventArgs e)
         {
-            //MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
             NextWpPanel.Visible = false;
             panel9.Enabled = true;
             panel9.Visible = false;
@@ -10210,6 +10214,5 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
             //}
         }
-
     }
 }
