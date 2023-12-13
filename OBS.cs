@@ -73,7 +73,7 @@ namespace MissionPlanner
                 lock (lockObject)
                 {
                     isOnline = true;
-                    label1.Text = "ONLINE";
+                    label1.Text = "ONLINE"; 
                     label1.ForeColor = Color.Green;
                 }
 

@@ -8522,14 +8522,14 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         if (cmd < (ushort)MAVLink.MAV_CMD.LAST &&
                             double.Parse(Commands[Alt.Index, a].Value.ToString()) < double.Parse(TXT_altwarn.Text))
                         {
-                            if (cmd != (ushort)MAVLink.MAV_CMD.TAKEOFF &&
-                                cmd != (ushort)MAVLink.MAV_CMD.LAND &&
-                                cmd != (ushort)MAVLink.MAV_CMD.RETURN_TO_LAUNCH)
-                            {
-                                CustomMessageBox.Show("Low alt on WP#" + (a + 1) +
-                                                      "\nPlease reduce the alt warning, or increase the altitude");
-                                return;
-                            }
+                            //if (cmd != (ushort)MAVLink.MAV_CMD.TAKEOFF &&
+                            //    cmd != (ushort)MAVLink.MAV_CMD.LAND &&
+                            //    cmd != (ushort)MAVLink.MAV_CMD.RETURN_TO_LAUNCH)
+                            //{
+                            //    CustomMessageBox.Show("Low alt on WP#" + (a + 1) +
+                            //                          "\nPlease reduce the alt warning, or increase the altitude");
+                            //    return;
+                            //}
                         }
                     }
                 }
@@ -9717,7 +9717,6 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
             SpeedPanel.Visible = true;
             SpeedPanel.Enabled = true;
-            panel6.Enabled = false;
         }
 
         private void myButton2_Click(object sender, EventArgs e)
