@@ -509,6 +509,7 @@
             resources.ApplyResources(this.label92, "label92");
             this.label92.ForeColor = System.Drawing.Color.White;
             this.label92.Name = "label92";
+            this.label92.Click += new System.EventHandler(this.label92_Click);
             // 
             // CMB_videosources
             // 

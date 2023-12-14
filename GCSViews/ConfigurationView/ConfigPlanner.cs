@@ -1018,5 +1018,10 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             MainV2.speech_armed_only = CHK_speechArmedOnly.Checked;
             Settings.Instance["speech_armed_only"] = CHK_speechArmedOnly.Checked.ToString();
         }
+
+        private void label92_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

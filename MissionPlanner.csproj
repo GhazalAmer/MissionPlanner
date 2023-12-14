@@ -710,7 +710,9 @@
       <DependentUpon>ChView.cs</DependentUpon>
     </Compile>
     <Compile Include="Common.cs" />
-    <Compile Include="Controls\DroneCANSubscriber.cs" />
+    <Compile Include="Controls\DroneCANSubscriber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\ConnectionOptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -822,11 +824,15 @@
     <Compile Include="Controls\FollowMe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigADSB.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigADSB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigADSB.Designer.cs">
       <DependentUpon>ConfigADSB.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigCubeID.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigCubeID.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigCubeID.Designer.cs">
       <DependentUpon>ConfigCubeID.cs</DependentUpon>
     </Compile>
@@ -836,31 +842,45 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigFirmwareManifest.Designer.cs">
       <DependentUpon>ConfigFirmwareManifest.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigGPSOrder.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigGPSOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigGPSOrder.Designer.cs">
       <DependentUpon>ConfigGPSOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWCompass2.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWCompass2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigHWCompass2.Designer.cs">
       <DependentUpon>ConfigHWCompass2.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWIDs.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWIDs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigHWIDs.Designer.cs">
       <DependentUpon>ConfigHWIDs.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigAdvanced.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigAdvanced.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAdvanced.Designer.cs">
       <DependentUpon>ConfigAdvanced.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigInitialParams.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigInitialParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigInitialParams.Designer.cs">
       <DependentUpon>ConfigInitialParams.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigOSD.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigOSD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigOSD.Designer.cs">
       <DependentUpon>ConfigOSD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\DroneCANParams.cs" />
+    <Compile Include="Controls\DroneCANParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\DroneCANParams.Designer.cs">
       <DependentUpon>DroneCANParams.cs</DependentUpon>
     </Compile>
@@ -885,7 +905,9 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigSerialInjectGPS.Designer.cs">
       <DependentUpon>ConfigSerialInjectGPS.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigREPL.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigREPL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigREPL.Designer.cs">
       <DependentUpon>ConfigREPL.cs</DependentUpon>
     </Compile>
@@ -895,18 +917,24 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigTradHeli4.Designer.cs">
       <DependentUpon>ConfigTradHeli4.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigDroneCAN.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigDroneCAN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigDroneCAN.Designer.cs">
       <DependentUpon>ConfigDroneCAN.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\ConfigurationView\ConfigUserDefined.cs" />
+    <Compile Include="GCSViews\ConfigurationView\ConfigUserDefined.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigUserDefined.Designer.cs">
       <DependentUpon>ConfigUserDefined.cs</DependentUpon>
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\DeviceInfo.cs" />
     <Compile Include="GCSViews\ConfigurationView\DroneCANModel.cs" />
     <Compile Include="GCSViews\ConfigurationView\uitype.cs" />
-    <Compile Include="GCSViews\FlightPlannerMarakeb.cs" />
+    <Compile Include="GCSViews\FlightPlannerMarakeb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GCSViews\FlightPlannerMarakeb.Designer.cs">
       <DependentUpon>FlightPlannerMarakeb.cs</DependentUpon>
     </Compile>
@@ -969,7 +997,9 @@
     <Compile Include="OBS.Designer.cs">
       <DependentUpon>OBS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\AirMarket.cs" />
+    <Compile Include="Utilities\AirMarket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <None Include="plugins\example2-menu.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1338,7 +1368,9 @@
     <Compile Include="Controls\MavlinkCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\MavlinkCheckBoxBitMask.cs" />
+    <Compile Include="Controls\MavlinkCheckBoxBitMask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\MavlinkComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1358,7 +1390,9 @@
     <Compile Include="Controls\ServoOptions.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GCSViews\SITL.cs" />
+    <Compile Include="GCSViews\SITL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\ToolStripConnectionControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1380,54 +1414,150 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\PreFlight\CheckListItem.cs" />
-    <Compile Include="GCSViews\FlightData.cs" />
-    <Compile Include="GCSViews\FlightPlanner.cs" />
-    <Compile Include="GCSViews\Help.cs" />
-    <Compile Include="GCSViews\InitialSetup.cs" />
-    <Compile Include="GCSViews\SoftwareConfig.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigTerminal.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigAC_Fence.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigAntennaTracker.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigArducopter.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigArduplane.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigArdurover.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigAteryx.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigAteryxSensors.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigBatteryMonitoring.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigBatteryMonitoring2.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigCompassMot.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigESCCalibration.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFailSafe.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFFT.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFirmware.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFirmwareDisabled.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFlightModes.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFrameClassType.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFrameType.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFriendlyParams.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigFriendlyParamsAdv.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWAirspeed.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWBT.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWCompass.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWesp8266.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWOptFlow.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWOSD.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWParachute.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWPX4Flow.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWRangeFinder.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigHWCAN.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigMandatory.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigMotorTest.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigMount.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigOptional.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigPlanner.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigPlannerAdv.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigRadioInput.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigRadioOutput.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigRawParams.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigSimplePids.cs" />
-    <Compile Include="GCSViews\ConfigurationView\ConfigTradHeli.cs" />
+    <Compile Include="GCSViews\FlightData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\FlightPlanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\Help.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\InitialSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\SoftwareConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigTerminal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigAC_Fence.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigAntennaTracker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigArducopter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigArduplane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigArdurover.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigAteryx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigAteryxSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigBatteryMonitoring.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigBatteryMonitoring2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigCompassMot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigESCCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFailSafe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFFT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFirmware.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFirmwareDisabled.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFlightModes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFrameClassType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFrameType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFriendlyParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigFriendlyParamsAdv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWAirspeed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWBT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWCompass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWesp8266.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWOptFlow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWOSD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWParachute.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWPX4Flow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWRangeFinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigHWCAN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigMandatory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigMotorTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigMount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigOptional.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigPlanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigPlannerAdv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigRadioInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigRadioOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigRawParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigSimplePids.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigTradHeli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="GeoRef\georefimage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1435,7 +1565,9 @@
     <Compile Include="Grid\GridUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Joystick\JoystickSetup.cs" />
+    <Compile Include="Joystick\JoystickSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Joystick\Joy_Button_axis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1497,7 +1629,9 @@
     <Compile Include="Swarm\FormationControl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Swarm\Grid.cs" />
+    <Compile Include="Swarm\Grid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Swarm\Status.cs">
       <SubType>UserControl</SubType>
     </Compile>
