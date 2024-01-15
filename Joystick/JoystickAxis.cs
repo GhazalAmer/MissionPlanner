@@ -358,7 +358,7 @@ namespace MissionPlanner.Joystick
 
         private void BUT_detch_Click(object sender, EventArgs e)
         {
-            Detect?.Invoke();
+            ChannelValue = Detect?.Invoke();
         }
 
         private void expo_ch_TextChanged(object sender, EventArgs e)
