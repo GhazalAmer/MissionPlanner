@@ -6325,6 +6325,7 @@ namespace MissionPlanner.GCSViews
 
         private void myButton5_Click(object sender, EventArgs e)
         {
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
             try
             {
                 ((Button)sender).Enabled = false;

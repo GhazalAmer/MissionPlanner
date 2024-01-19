@@ -8722,6 +8722,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void myButton8_Click(object sender, EventArgs e)
         {
+            MainV2.comPort.setParam("SERVO2_FUNCTION", 70);
             panel9.Visible = false;
             try
             {
