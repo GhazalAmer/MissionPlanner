@@ -8566,11 +8566,82 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             DrawPanel.Visible = false;
             measurePanel.Visible = false;
 
-            BUT_write_Click(this, EventArgs.Empty);
             update_main_list_of_polys();
             MainV2.MyView.ShowScreen("FlightData");
             tableLayoutPanel6.Visible = false;
             Show_BTNs();
+            Locationwp home = new Locationwp();
+            try
+            {
+                home.frame = (byte)MAVLink.MAV_FRAME.GLOBAL;
+                home.id = (ushort)MAVLink.MAV_CMD.WAYPOINT;
+                home.lat = (double.Parse(TXT_homelat.Text));
+                home.lng = (double.Parse(TXT_homelng.Text));
+                home.alt = (float.Parse(TXT_homealt.Text) / CurrentState.multiplierdist); // use saved home
+            }
+            catch
+            {
+                CustomMessageBox.Show("Your home location is invalid", Strings.ERROR);
+                return;
+            }
+
+            // check for invalid grid data
+            for (int a = 0; a < Commands.Rows.Count - 0; a++)
+            {
+                for (int b = 0; b < Commands.ColumnCount - 0; b++)
+                {
+                    double answer;
+                    if (b >= 1 && b <= 7)
+                    {
+                        if (!double.TryParse(Commands[b, a].Value.ToString(), out answer))
+                        {
+                            CustomMessageBox.Show("There are errors in your mission");
+                            return;
+                        }
+                    }
+
+                    if (TXT_altwarn.Text == "") TXT_altwarn.Text = (0).ToString();
+
+                    if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("UNKNOWN"))
+                        continue;
+
+                    ushort cmd = getCmdID(Commands.Rows[a].Cells[Command.Index].Value.ToString());
+
+                    if (cmd < (ushort)MAVLink.MAV_CMD.LAST &&
+                        double.Parse(Commands[Alt.Index, a].Value.ToString()) < double.Parse(TXT_altwarn.Text))
+                    {
+                        //if (cmd != (ushort)MAVLink.MAV_CMD.TAKEOFF &&
+                        //    cmd != (ushort)MAVLink.MAV_CMD.LAND &&
+                        //    cmd != (ushort)MAVLink.MAV_CMD.RETURN_TO_LAUNCH)
+                        //{
+                        //    CustomMessageBox.Show("Low alt on WP#" + (a + 1) +
+                        //                          "\nPlease reduce the alt warning, or increase the altitude");
+                        //    return;
+                        //}
+                    }
+                }
+            }
+
+            IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
+            {
+                StartPosition = FormStartPosition.CenterScreen,
+                Text = "Sending WP's"
+            };
+
+            frmProgressReporter.DoWork += saveWPs;
+
+            frmProgressReporter.UpdateProgressAndStatus(-1, "Sending WP's");
+
+            ThemeManager.ApplyThemeTo(frmProgressReporter);
+
+            frmProgressReporter.RunBackgroundOperationAsync();
+
+            frmProgressReporter.Dispose();
+
+            MainMap.Focus();
+
+            readwps();
+            update_main_list_of_polys();
         }
 
         private void uploadwps()

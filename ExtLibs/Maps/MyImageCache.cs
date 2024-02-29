@@ -70,8 +70,8 @@ namespace MissionPlanner.Maps
                 try
                 {
                     string file = CacheLocation + Path.DirectorySeparatorChar + GMapProviders.TryGetProvider(type).Name +
-                                  Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.X +
-                                  Path.DirectorySeparatorChar + pos.Y + ".png";
+                                  Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.Y +
+                                  Path.DirectorySeparatorChar + pos.X + ".png";
                     string dir = Path.GetDirectoryName(file);
                     Directory.CreateDirectory(dir);
                     using (BinaryWriter sw = new BinaryWriter(File.OpenWrite(file)))
@@ -97,8 +97,8 @@ namespace MissionPlanner.Maps
             try
             {
                 string file = CacheLocation + Path.DirectorySeparatorChar + GMapProviders.TryGetProvider(type).Name +
-                              Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.X +
-                              Path.DirectorySeparatorChar + pos.Y + ".png";
+                              Path.DirectorySeparatorChar + zoom + Path.DirectorySeparatorChar + pos.Y +
+                              Path.DirectorySeparatorChar + pos.X + ".png";
                 if (File.Exists(file))
                 {
                     using (
